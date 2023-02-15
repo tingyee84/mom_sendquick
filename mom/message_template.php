@@ -176,6 +176,9 @@
 		<!-- Modal End -->
 		<?php include('footnote.php'); ?>
 	</div>
-	<?php include('message_template_js.php'); ?>
+	<script src="js/dataTables.buttons.min.js"></script>
+	<script src="js/buttons.html5.min.js"></script>
+	<script language="javascript" src="js/txvalidator.js"></script>
+	<script type="application/javascript" src="message_template_js.php"></script>
 </body>
 </html>
