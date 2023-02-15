@@ -526,9 +526,10 @@
 
 		<?php include('footnote.php'); ?>
 	</div>
-	
+	<?php //include('send_sms_js.php'); ?>
+
 	<script src="js/autosize.min.js"></script>
 	<script src="js/bootstrap-datepicker.min.js"></script>
-	<script src="send_sms_js.php"></script>
+	<script nonce="<%=nonce%>" type="text/javascript" src="send_sms_js.php"></script>
 </body>
 </html>

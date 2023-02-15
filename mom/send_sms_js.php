@@ -1167,4 +1167,3 @@ loadlist('#campaign_id','campaign_lib.php?mode=select','campaign_id','campaign_n
 loadlist('#bot_id','broadcast_sms_status_lib.php?mode=select_bot','bot_id','bot_name');
 ShowTplParamDiv();
 ShowMIMBotDiv( '' );
-
