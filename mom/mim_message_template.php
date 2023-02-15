@@ -191,6 +191,7 @@
 		<!-- Modal End -->
 		<?php include('footnote.php'); ?>
 	</div>
-	<?php include('mim_message_template_js.php'); ?>
+	
+	<script type="application/javascript" src="mim_message_template_js.php"></script>
 </body>
 </html>
