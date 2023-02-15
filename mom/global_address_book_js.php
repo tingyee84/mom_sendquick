@@ -1,9 +1,6 @@
-<script src="js/dataTables.buttons.min.js"></script>
-<script src="js/buttons.html5.min.js"></script>
-<script src="js/jquery.redirect.js"></script>
-<script language="javascript" src="js/txvalidator.js"></script>
-<script language="javascript" src="js/txcommon.js"></script>
-<script nonce="<?php echo session_id();?>">
+<?php
+header("Content-type:text/javascript");
+?>
 // $('[data-toggle="tooltip"]').tooltip();
 var table = $('#address').DataTable({
 	deferRender: false,
@@ -287,5 +284,3 @@ $('#send_mim').on('click', function(){
 
 });
 
-
-</script>
