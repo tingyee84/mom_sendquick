@@ -1,4 +1,5 @@
 <?php
+header("Content-type:text/javascript");
 include("./lib/commonFunc.php");
 ?>
 $('#datefrom, #dateto').val(moment().format('DD/MM/YYYY'));
