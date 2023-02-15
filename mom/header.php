@@ -8,7 +8,6 @@ $xml_common = GetLanguage("common",$lang);
 $access_arr = explode(",",trim($_SESSION['access_string']));
 $disable_lang = (in_array('57',$access_arr) ? '' : 'disabled');
 #Customized project header
-$header_lib = "header_lib.php";
 $project_header_lib = "project/header_lib.php";
 if(file_exists($project_header_lib)){
 	$header_lib = $project_header_lib;
@@ -149,4 +148,4 @@ if( $UserType == "admin" ){
 			</div> -->
 			
 		</div>
-	<script src="js/header_js_.php"></script>
+	<script src="js/header_js.php"></script>

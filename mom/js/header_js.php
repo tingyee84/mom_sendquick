@@ -1,5 +1,6 @@
 <?php header("Content-type:text/javascript");
 include_once("../lib/commonFunc.php");
+$header_lib = "header_lib.php";
 ?>
 $.sessionTimeout({
     warnAfter:<?php echo ($_SESSION["timeout"] - 1) * 0.06; ?>e+6,
