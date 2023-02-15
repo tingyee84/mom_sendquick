@@ -1,0 +1,1369 @@
+<?xml version="1.0"?>
+<CB>
+<common>
+	<add>添加</add>
+	<save>儲存</save>
+	<reset>重置</reset>
+	<cancel>取消</cancel>
+	<enable>啟用</enable>
+	<disable>禁用</disable>
+	<none>None</none>
+	<sys_message>System Message:</sys_message>
+	<err_accessdenied>User have not login. Access denied.</err_accessdenied>
+	<err_noaccess>You do not have permission to access this page. &lt;br&gt; Please refer to your System Administrator.</err_noaccess>
+	<err_unknown>Unknown request</err_unknown>
+	<err_completeform>Sorry, please complete the form</err_completeform>
+	<err_invalidinput>Invalid input</err_invalidinput>
+	<err_syserror>System Error</err_syserror>
+	<ascii>English (ASCII)</ascii>
+	<utf8>Non-English (UTF-8)</utf8>
+	<upload>上傳</upload>
+	<download>下載</download>
+	<hourly>Hourly</hourly>
+	<daily>每天</daily>
+	<weekly>每週</weekly>
+	<monthly>每月</monthly>
+	<add_new_record>加入新記錄</add_new_record>
+	<delete>刪除</delete>
+	<no_cond>No Condition</no_cond>
+	<contains>Contains</contains>
+	<not_contain>Does Not Contain</not_contain>
+	<is>Is</is>
+	<is_not>Is Not</is_not>
+	<start_with>Starts With</start_with>
+	<not_start_with>Does Not Start With</not_start_with>
+	<end_with>Ends With</end_with>
+	<not_end_with>Does Not End With</not_end_with>
+	<list_num>No</list_num>
+	<confirm_delete>Confirm Delete</confirm_delete>
+	<yes>是</yes>
+	<no>編號</no>
+	<select>選取</select>
+	<all>所有</all>
+	<submit>登錄</submit>
+	<change_lang>Change language to</change_lang>
+	<check_conn>Checking Connection...</check_conn>
+	<processing>正在處理 . . . </processing>
+	<date_from>開始日期</date_from>
+	<date_to>截止日期</date_to>
+	<export>導出</export>
+	<unlimited>無限</unlimited>
+</common>
+<button>
+	<lang_en>英文</lang_en>
+	<lang_cb>中文(T)</lang_cb>
+	<lang_cu>中文(S)</lang_cu>
+	<logout>退出</logout>
+	<cancel>取消</cancel>
+	<copyright>版權所有</copyright>
+	<bottom>TalariaX Pte Ltd，新加坡。保留所有權利</bottom>
+	<confirm_logout> 確定要登出嗎？</confirm_logout>
+	<confirm_logout_msg>You are about to logout. Please confirm this action.</confirm_logout_msg>
+	<logout_msg>You have successfully logged out.</logout_msg>
+	<quota_aval>可用金額</quota_aval>
+	<unlimited>無限</unlimited>
+	<welcome>歡迎</welcome>
+</button>
+<menu>
+	<shortended_url>Shortended URL</shortended_url>
+	<user_transfer>用户转移</user_transfer>
+	<user_mgnt>使用者管理</user_mgnt>
+	<user_acc_mgnt>使用者帳戶管理</user_acc_mgnt>
+	<user_role_mgnt>使用者角色管理</user_role_mgnt>
+	<department_mgnt>部門管理</department_mgnt>
+	<access_log>存取日誌</access_log>
+	<address_book>位址簿</address_book>
+	<address_group>位址群組</address_group>
+	<global_address_book>公共位址簿</global_address_book>
+	<global_address_group>公共位址群組</global_address_group>
+	<msg_tmpl>訊息範本</msg_tmpl>
+	<global_msg_tmpl>公共訊息範本</global_msg_tmpl>
+	<mim_msg_tmpl>MIM訊息範本</mim_msg_tmpl>
+	<send_msg>傳送 信息</send_msg>
+	<send_sms>傳送 SMS</send_sms>
+	<send_sms_upload>透過上傳的檔案傳送 SMS</send_sms_upload>
+	<send_sms_upload_status>文件上传状态</send_sms_upload_status>
+	<broadcast_mim>廣播 MIM</broadcast_mim>
+	<schedule_msg>定时消息</schedule_msg>
+	<schedule_sms>定时 SMS</schedule_sms>
+	<schedule_mim>定时 MIM</schedule_mim>
+	<common_inbox>通用收件匣</common_inbox>
+	<logs_mgnt>收件匣/日誌管理</logs_mgnt>
+	<inbox>收件匣</inbox>
+	<global_inbox>公共收件匣</global_inbox>
+	<sent_log>已傳送日誌</sent_log>
+	<global_sent>公共已傳送日誌</global_sent>
+	<unsent_log>未傳送日誌</unsent_log>
+	<global_unsent_log>公共未傳送日誌</global_unsent_log>
+	<queue_log>佇列日誌</queue_log>
+	<global_queue_log>公共佇列日誌</global_queue_log>
+	<broadcast_log>廣播日誌</broadcast_log>
+	<email_log>電子郵件日志</email_log>
+	<unsub_list>取消訂閱清單</unsub_list>
+	<unsub_mobile>退订手机号码</unsub_mobile>
+	<unsub_kw>取消訂閱關鍵字</unsub_kw>
+	<quota_mgnt>金額管理</quota_mgnt>
+	<keyword_mgnt>關鍵字管理</keyword_mgnt>
+	<system_config>系統配置</system_config>
+	<ldap_mgnt>ＬＤＡＰ伺服器管理</ldap_mgnt>
+	<modem_conf>調製解調器配置</modem_conf>
+	<web_logo>Web Interface Logo</web_logo>
+	<time_config>SMS時間配置</time_config>
+	<sms_rdb>通過遠程數據庫發送短信</sms_rdb>
+	<sms_routine>發送常規短信</sms_routine>
+	<remotedb_set>遠程數據庫設置</remotedb_set>
+	<resp_summary>回應摘要</resp_summary>
+	<sql_tmpl>SQL模板</sql_tmpl>
+	<conversation>對話</conversation>
+	<maintenance_report>維護與報告</maintenance_report>
+	<campaign>活動</campaign>
+	<campaign_mgnt>活動管理</campaign_mgnt>
+	<report>報告</report>
+	<preport>View Report</preport>
+	<alldeptsreport>All Depts Report</alldeptsreport>
+	<deptreport>Dept Report</deptreport>
+	<file_upload_status>文件上傳狀態</file_upload_status>
+	<mim_msg_tmpl>MIM消息模板</mim_msg_tmpl>
+	<incident_report>Incident Report</incident_report>
+	<global_mim_msg_tmpl>全局MIM消息模板</global_mim_msg_tmpl>
+	<setting>設置</setting>
+</menu>
+<access_log>
+	<title>存取日誌</title>
+	<login>登錄日期和時間</login>
+	<username>使用者名</username>
+	<remoteip>遠端 IP 位址</remoteip>
+	<agent>使用者代理</agent>
+	<date_from>開始日期</date_from><date_to>截止日期</date_to>
+</access_log>
+<add_keyword>
+	<title>添加 SMS 關鍵字 </title>
+	<header>添加新 SMS 關鍵字</header>
+	<keyword>關鍵字</keyword>
+	<keyword_desc>關鍵字為 SMS 訊息的第一個詞。系統將基於指定的關鍵字對收到的 SMS 進行路由。關鍵字『EM』為保留關鍵字。關鍵字度『xDEFAULTx』為默認關鍵字。（最多 15 個字元）</keyword_desc>
+	<keyword_description>關鍵字描述</keyword_description>
+	<unsubscribe_keyword>取消訂閱關鍵字</unsubscribe_keyword>
+	<email>電子郵件</email>
+	<email_desc>系統將訊息路由（基於關鍵字）至這些電子郵件位址。設為『NA』以將其禁用。</email_desc>
+	<redirect_mno>重定向行動電話號碼</redirect_mno>
+	<redirect_mno_desc>收到的 SMS 的副本將被轉發到此行動電話號碼。設為『NA』以將其禁用。</redirect_mno_desc>
+	<url>URL</url>
+	<url_desc>系統將訊息路由（基於關鍵字）至此 URL（透過 HTTP Post）。設為『NA』以將其禁用。</url_desc>
+	<xml_url>XML URL</xml_url>
+	<xml_url_desc>系統將訊息路由（基於關鍵字）至此 URL（透過 HTTP + POX Post）。設為『NA』以將其禁用。</xml_url_desc>
+	<soap_url>SOAP URL</soap_url>
+	<soap_url_desc>系統將訊息路由（基於關鍵字）至此 URL（透過 HTTP + SOAP Post）。設為『NA』以將其禁用。</soap_url_desc>
+	<soap_service>Service Name</soap_service>
+	<json_url>JSON URL</json_url>
+	<json_url_desc>系統將訊息路由（基於關鍵字）至此 URL（透過 HTTP + JSON Post）。設為『NA』以將其禁用。</json_url_desc>
+	<auto_msg>自動回復訊息</auto_msg>
+	<auto_msg_desc>請選取以啟用對發件人的自動回復訊息。</auto_msg_desc>
+	<standard>標準（靜態）</standard>
+	<standard_desc>自動回復訊息。（最多 160 個字元）</standard_desc>
+	<char_left>剩餘字元數</char_left>
+	<email_brochure>電子郵件手冊</email_brochure>
+	<email_brochure_desc>電子郵件手冊功能允許伺服器自動向 SMS 發件人（如果已指定電子郵件位址）傳送電子郵件。請選取以啟動此服務。</email_brochure_desc>
+	<reply_email_address>回復電子郵件位址</reply_email_address>
+	<reply_email_address_desc>這將是自動電子郵件功能向使用者傳送電子郵件手冊時使用的 Reply-To 電子郵件位址。</reply_email_address_desc>
+	<email_subject>電子郵件主旨</email_subject>
+	<email_subject_desc>向使用者傳送的電子郵件中的主旨事項。</email_subject_desc>
+	<email_content>電子郵件內容</email_content>
+	<email_content_desc>這是向使用者傳送的電子郵件的介紹性資訊。</email_content_desc>
+	<file_upload>檔案上傳</file_upload>
+	<file_upload_desc>請選取要附加在電子郵件中的檔案。請將檔案上傳至伺服器。</file_upload_desc>
+	<alert_1>關鍵字不能為空！</alert_1>
+	<alert_2>關鍵字最大長度為 15 個字元！</alert_2>
+	<alert_3>自動回復訊息最大長度為 160 個字元！</alert_3>
+	<alert_4>系統中已存在此關鍵字！</alert_4>
+	<alert_5>抱歉，您超過了 160 個字元的最大限制</alert_5>
+	<senderchkenb>挑選以檢查發件人的手機</senderchkenb>
+	<senderchklst>手機發件人清單</senderchklst>
+	<senderchklst_desc1>所有服務約束是限制在單單列出的手機號碼。</senderchklst_desc1>
+	<senderchklst_desc2>每一個手機號碼會輸入在另一個錄入。</senderchklst_desc2>
+	<senderchklst_desc3>所有的手機號碼，必須選項在國際移動格式。</senderchklst_desc3>
+	<senderchklst_desc4>例子。</senderchklst_desc4>
+	<senderchklst_desc5>+6512345678</senderchklst_desc5>
+	<senderchklst_desc6>+60161234567</senderchklst_desc6>
+	<modem_imei>調製解調器IMEI號碼</modem_imei>
+	<modem_imei_desc>這會將系統設置為僅將關鍵字與特定的調製解調器匹配。\ n在新行中輸入每個IMEI號。</modem_imei_desc>
+</add_keyword>
+<address_book>
+	<email>电子邮件</email>
+	<title>個人位址簿</title>
+	<add_new>添加新個人位址簿</add_new>
+	<create_new>建立新個人聯繫人</create_new>
+	<add_upload>透過上傳的檔案添加聯繫人</add_upload>
+	<upload_button>上傳聯繫</upload_button>
+	<csv>上傳的檔案必須為 CSV 格式</csv>
+	<upload_file>上傳檔案</upload_file>
+	<list_contact>個人聯繫人清單</list_contact>
+	<contact_name>聯繫人姓名</contact_name>
+	<mobile_number>行動電話號碼</mobile_number>
+	<group_list>群組清單</group_list>
+	<delete>選中以刪除</delete>
+	<delete_checked>刪除所選聯繫人</delete_checked>
+	<move_to_grp>移至群組</move_to_grp>
+	<empty_str>清空所有聯繫>人</empty_str>
+	<new_contact>新聯繫人姓名：</new_contact>
+	<new_mno>新聯繫人行動電話號碼 ：</new_mno>
+	<!-- <numbers_only>僅限數字&lt;br&gt;請輸入國際格式行動電話號碼&lt;br&gt;例如：對於新加坡，+65xxxxxxxx，『+65為國家碼』</numbers_only> -->
+	<numbers_only>僅限數字&#013;請輸入國際格式行動電話號碼&#013;例如：對於新加坡，+65xxxxxxxx，『+65為國家碼』</numbers_only>
+	<modem_label>數據機標籤</modem_label>
+	<list_add_group>位址群組清單</list_add_group>
+	<edit_contact>編輯現有個人聯繫人</edit_contact>
+	<curr_contact>聯繫人姓名：</curr_contact>
+	<curr_mno>變更行動電話號>碼：</curr_mno>
+	<alert_1>請勿將聯繫人姓名留空！不要使用特殊字元（單引號除外）！</alert_1>
+	<alert_2>請僅對聯繫人行動電話號碼輸入（+國家碼後跟號碼）或（國家碼後跟號碼）！</alert_2>
+	<alert_3>請勿將聯繫人姓名留空！</alert_3>
+	<alert_4>未選取聯繫人！</alert_4>
+	<alert_5>確定要刪除所選聯繫人嗎？此>操作無法撤銷 – 刪除的聯繫人將從系統中永久移除！</alert_5>
+	<alert_6>請>指定要上載的檔！</alert_6>
+	<alert_7>要上載的檔不是正確的檔格式！</alert_7>
+	<alert_8>確定要清空所有聯繫人嗎？此操作無法撤銷 – 刪除的聯繫>人將從系統中永久移除！</alert_8>
+	<alert_9>Personal Contact(s) Successfully Added!</alert_9>
+	<alert_10>Confirm To Cancel Add Contact(s) By File Upload? All Records Uploaded Will Be Deleted!</alert_10>
+	<err>未找到任何個人地址簿組！</err>
+</address_book>
+<address_group>
+	<title>個人位址群組</title><add_new>添加新個人位址群組：</add_new>
+	<create_new>建立個人位址群組</create_new><list_group>個人位址群組清單 </list_group>
+	<group_name>群組名稱</group_name><delete>選中以刪除</delete><delete_checked>刪除所選聯繫人</delete_checked><empty_str>清空所有聯繫人</empty_str>
+	<contact_name>聯繫人姓名</contact_name><mobile_number>行動電話號碼</mobile_number><put_contact>選聯繫人至新個人群組</put_contact>
+	<new_group_name>新群組名稱：</new_group_name><add>添加</add><cancel>取消</cancel><alert_1>請勿將群組名稱留空！</alert_1><alert_2>未選取位址群組！</alert_2>
+	<alert_3>確定要刪除所選位址群組嗎？此操作無法撤銷 – 刪除的位址群組將從系統中永久移除！</alert_3><alert_4>確定要清空所有位址群組嗎？此為不可撤銷操作 – 刪除的位址群組將從系統中永久移除！</alert_4>
+</address_group>
+<broadcast_sms>
+	<title>通過檔案上載發送 SMS</title><file_format>檔格式：</file_format><file_format_1>逗號分隔 (.csv, .txt)</file_format_1><file_format_2>跳位字元分隔 (.csv, .txt)</file_format_2>
+	<char_set>字元集選取：</char_set><ascii>ASCII/Text</ascii><utf8>UTF-8</utf8><contents_upload>已上載檔的內容：</contents_upload><contents_upload_1>行動電話號碼</contents_upload_1>
+	<contents_upload_2>行動電話號碼和資料欄位</contents_upload_2><contents_upload_3>行動電話號碼和訊息文字</contents_upload_3>
+	<numbers_only>僅限數字 - 請輸入國際格式行動電話號碼t&lt;br&gt;例如：對於新加坡，+65xxxxxxxx，『+65為國家碼』</numbers_only><specify_file>請指定要上載的檔：</specify_file>
+	<schedulingsms>排定 SMS：</schedulingsms><date>日期：</date><date_format>yyyy-mm-dd</date_format><time>時間：</time><priority>優先順序：</priority><default_str>預設</default_str>
+	<enter_text>在下面輸入訊息文字：</enter_text><mail_merge>郵件合併變數為</mail_merge><select_msgtemplate>從訊息範本中選取</select_msgtemplate><characters>字串：</characters>
+	<msgcounts>訊息計數： 0 /</msgcounts><yes>是</yes><upload>上傳</upload><cancel>取消</cancel><alert_1>此 SMS 為空白訊息！</alert_1><alert_2>請指定要上載的檔!</alert_2>
+	<alert_3>要上載的檔不是正確的檔格式！</alert_3><alert_4>請選取一個排定傳送 SMS 的日期！</alert_4><alert_5>選取了無效的日期！請重新選取</alert_5><alert_6>當前時間為</alert_6>
+	<alert_7>請選取排定傳送 SMS 的有效時間！</alert_7>
+	<alert_8> SMS已成功排隊！</alert_8>
+	<alert_9> SMS超過了最大長度</alert_9>
+	<alert_10>字符！</alert_10>
+	<alert_11>退訂號碼</alert_11>
+	<alert_12>文件已上傳。 請在上傳狀態下查看處理狀態</alert_12>
+	<alert_13>上傳文件失敗。 請稍後再試</alert_13>
+	<upload_file_txt>允许的文件：仅csv，xls和xlsx。档案大小上限：5MB。</upload_file_txt>
+	<mim_image1_txt>允许的文件：仅png和jpeg。档案大小上限：5MB。</mim_image1_txt>
+</broadcast_sms>
+<button><welcome>歡迎</welcome><logout>退出</logout><quota_aval>可用金額：</quota_aval><usermgnt>使用者管理</usermgnt><addressbook>位址簿</addressbook><msgtemplate>訊息範本</msgtemplate><sendsms>傳送 SMS</sendsms><scheduledsms>排定 SMS</scheduledsms><commoninbox>通用收件匣</commoninbox><logsmgnt>收件匣/日誌管理</logsmgnt><unsublist>取消訂閱清單</unsublist><quotamgnt>金額管理</quotamgnt><keywordmgnt>關鍵字管理</keywordmgnt><sysconfig>系統配置</sysconfig><languagesetup>語言設置</languagesetup><changepassword>變更密碼</changepassword><unlimited>無限</unlimited><httplog>HTTP 日誌</httplog></button>
+<change_password><title>更改個人資料</title><header>變更個人密碼和行動電話號碼</header><username>使用者名：</username><mobile>使用者行動電話號碼</mobile><numbers_only>(僅限數字)</numbers_only><old_pass>輸入舊密碼</old_pass><new_pass>輸入新密碼</new_pass><minimum>(最少 8 個字元)</minimum><cfm_pass>重新確認新密碼</cfm_pass><must_match>(必須匹配上面的新密碼)</must_match><save>儲存</save><cancel>取消</cancel><alert_1>請對使用者行動電話號碼僅輸入數字！</alert_1><alert_2>新密碼長度必須至少為 8 個字元！</alert_2><alert_3>輸入的新密碼與確認密碼不一致！請重新檢查！</alert_3><alert_4>輸入的舊密碼不正確！請重新檢查！</alert_4><processing>正在處理資料...</processing></change_password>
+<check_user_access><msg_1>抱歉，您未登錄或者會話已過期。</msg_1><msg_2>抱歉，您沒有查看此頁的存取許可權</msg_2><msg_3>無效的部門使用者</msg_3></check_user_access>
+<common_inbox>
+	<title>通用收件匣</title>
+	<unmatched_keyword>不匹配的關鍵字</unmatched_keyword>
+	<mobile_number>行動電話號碼</mobile_number>
+	<date_time>日期和時間</date_time>
+	<empty_str>清空通用收件匣</empty_str>
+	<alert_1>未選取收件匣日誌！</alert_1>
+	<alert_2>確定要刪除所選收件箱日誌嗎？此為不可撤銷操作 – 刪除的收件箱日誌將從系統中永久移除！</alert_2>
+	<alert_3>確定要清空通用收件箱嗎？此為不可撤銷操作 – 刪除的收件箱日誌將從系統中永久移除！</alert_3>
+</common_inbox>
+<edit_keyword>
+	<title>編輯 SMS 關鍵字</title>
+	<header>編輯現有 SMS 關鍵字</header> <keyword>關鍵字</keyword>
+	<keyword_desc>關鍵字為 SMS 訊息的第一個詞。系統將基於指定的關鍵字對收到的 SMS 進行路由。關鍵字『EM』為保留關鍵字。關鍵字度『xDEFAULTx』為默認關鍵字。（最多 15 個字元）</keyword_desc>
+	<keyword_description>關鍵字描述</keyword_description>
+	<unsubscribe_keyword>取消訂閱關鍵字</unsubscribe_keyword>
+	<email>電子郵件</email>
+	<email_desc>系統將訊息路由（基於關鍵字）至這些電子郵件位址。設為『NA』以將其禁用。</email_desc>
+	<redirect_mno>重定向行動電話號碼</redirect_mno>
+	<redirect_mno_desc>收到的 SMS 的副本將被轉發到此行動電話號碼。設為『NA』以將其禁用。</redirect_mno_desc>
+	<url>URL</url>
+	<url_desc>系統將訊息路由（基於關鍵字）至此 URL（透過 HTTP Post）。設為『NA』以將其禁用。</url_desc>
+	<xml_url>XML URL</xml_url>
+	<xml_url_desc>系統將訊息路由（基於關鍵字）至此 URL（透過 HTTP + POX Post）。設為『NA』以將其禁用。</xml_url_desc>
+	<soap_url>SOAP URL</soap_url> <soap_url_desc>系統將訊息路由（基於關鍵字）至此 URL（透過 HTTP + SOAP Post）。設為『NA』以將其禁用。</soap_url_desc>
+	<soap_service>Service Name</soap_service> <json_url>JSON URL</json_url> <json_url_desc>系統將訊息路由（基於關鍵字）至此 URL（透過 HTTP + SOAP Post）。設為『NA』以將其禁用。</json_url_desc> <auto_msg>自動回復訊息</auto_msg> <auto_msg_desc>請選取以啟用對發件人的自動回復訊息。</auto_msg_desc> <standard>標準（靜態）</standard> <standard_desc>自動回復訊息。（最多 160 個字元）</standard_desc> <char_left>剩餘字元數</char_left> <email_brochure>電子郵件手冊</email_brochure> <email_brochure_desc>電子郵件手冊功能允許伺服器自動向 SMS 發件人（如果已指定電子郵件位址）傳送電子郵件。請選取以啟動此服務。</email_brochure_desc> <reply_email_address>回復電子郵件位址</reply_email_address>
+	<reply_email_address_desc>這將是自動電子郵件功能向使用者傳送電子郵件手冊時使用的 Reply-To 電子郵件位址。</reply_email_address_desc> <email_subject>電子郵件主旨</email_subject> <email_subject_desc>向使用者傳送的電子郵件中的主旨事項。</email_subject_desc> <email_content>電子郵件內容</email_content> <email_content_desc>這是向使用者傳送的電子郵件的介紹性資訊。</email_content_desc> <file_upload>檔案上傳</file_upload> <file_upload_desc>請選取要附加在電子郵件中的檔案。請將檔案上傳至伺服器。</file_upload_desc> <file_upload_note>注意：新上傳的檔案將覆蓋當前檔案。</file_upload_note> <uploaded_file>已上傳的檔案：</uploaded_file>
+	<alert_1>系統錯誤 – 未設置關鍵字 ID！</alert_1> <alert_2>自動回復訊息最大長度為 160 個字元！</alert_2> <senderchkenb>挑選以檢查發件人的手機</senderchkenb> <senderchklst>手機發件人清單</senderchklst> <senderchklst_desc1>所有服務約束是限制在單單列出的手機號碼。</senderchklst_desc1> <senderchklst_desc2>每一個手機號碼會輸入在另一個錄入。</senderchklst_desc2> <senderchklst_desc3>所有的手機號碼，必須選項在國際移動格式。</senderchklst_desc3> <senderchklst_desc4>例子。</senderchklst_desc4> <senderchklst_desc5>+6512345678</senderchklst_desc5> <senderchklst_desc6>+60161234567</senderchklst_desc6>
+	<modem_imei>Modem IMEI Number</modem_imei>
+	<modem_imei_desc>This will set the system to match the keyword to a specific modem only.\nEnter each IMEI number in a new line.</modem_imei_desc>
+</edit_keyword>
+<error><title>錯誤</title><click>按</click><here>這裡</here><back>返回</back><str_or>或</str_or><to></to><login>轉到登錄頁</login><op_err>錯誤!</op_err><usermgnt>使用者管理</usermgnt><addressbook>位址簿</addressbook><msgtemplate>訊息範本</msgtemplate><sendsms>傳送 SMS</sendsms><scheduledsms>排定 SMS</scheduledsms><commoninbox>通用收件匣</commoninbox>
+<logsmgnt>收件匣/日誌管理</logsmgnt><unsublist>取消訂閱清單</unsublist><quotamgnt>金額管理</quotamgnt><keywordmgnt>關鍵字管理</keywordmgnt><sysconfig>系統配置</sysconfig><languagesetup>語言設置</languagesetup><changepassword>變更密碼</changepassword><httplog>HTTP 日誌</httplog><report>報告</report></error>
+<execute_alert><title>金額警報配置</title><check_session>抱歉，您未登錄或者會話已過期。</check_session><add_quota_config>金額警報配置（透過電子郵件）</add_quota_config><save>警報配置檔案已成功儲存。&lt;br&gt;按</save><here>這裡</here><to_see>查看已更新的警報配置。</to_see><err_1>無法寫入檔案 (autogenerate_report.xml)</err_1></execute_alert>
+<execute_sysconfig><title>SMS 時間配置</title><alert_1>無法寫入檔案 (autogenerate_report.xml)</alert_1><alert_2>sms 時間配置檔案已成功儲存.</alert_2></execute_sysconfig>
+<f_system_functions>
+	<user_transfer>用户转移</user_transfer>
+	<shortened_url>网址缩短</shortened_url>
+	<department_administrator>部門管理員</department_administrator>
+	<user_management>使用者管理</user_management>
+	<global_address_book>公共位址簿</global_address_book>
+	<personal_address_book>個人位址簿</personal_address_book>
+	<global_message_template>公共訊息範本</global_message_template>
+	<personal_message_template>個人訊息範本</personal_message_template>
+	<send_sms>傳送 SMS</send_sms>
+	<send_sms_upload_status>文件上傳狀態</send_sms_upload_status>
+	<common_inbox>通用收件匣</common_inbox>
+	<personal_inbox>個人收件匣</personal_inbox>
+	<personal_sent_log>個人已傳送日誌</personal_sent_log><personal_unsent_log>個人未傳送日誌</personal_unsent_log><personal_queue_log>個人佇列日誌</personal_queue_log><export_personal_inboxlogs>匯出個人收件匣/日誌</export_personal_inboxlogs>
+	<campaign>活動</campaign>
+	<p_report>查看個人報告</p_report>
+	<dept_report>查看部門報告</dept_report>
+	<users_report>查看用戶報告</users_report>
+	<incident_report>事件報告</incident_report>
+<delete_personal_inboxlogs>刪除個人收件匣/日誌</delete_personal_inboxlogs>
+<global_inbox>公共收件匣</global_inbox><global_sent_log>公共已傳送日誌</global_sent_log><global_unsent_log>公共未傳送日誌</global_unsent_log><global_queue_log>公共佇列日誌</global_queue_log><export_global_inboxlogs>匯出公共收件匣/日誌</export_global_inboxlogs><delete_global_inboxlogs>刪除公共收件匣/日誌</delete_global_inboxlogs><edit_global_address_book>編輯公共位址簿</edit_global_address_book><edit_global_message_template>編輯公共訊息範本</edit_global_message_template><logout>退出</logout>
+<create_user_account>建立使用者帳戶</create_user_account>
+<edit_user_account>編輯使用者帳戶</edit_user_account><create_user_role>建立使用者角色</create_user_role><edit_user_role>編輯使用者角色</edit_user_role><create_department>建立部門</create_department><edit_department>編輯部門</edit_department><access_log>存取日誌</access_log><unsubscribe_list>取消訂閱清單</unsubscribe_list><quota_management>金額管理</quota_management>
+<keyword_management>密碼管理</keyword_management><system_configuration>系統配置</system_configuration><language_setup>語言設置</language_setup><change_personal_password>變更個人密碼</change_personal_password><http_log>HTTP 日誌</http_log><mim_message_template>MIM消息模板</mim_message_template><global_mim_message_template>全局MIM消息模板</global_mim_message_template></f_system_functions>
+<footnote><copyright>版權所有</copyright><talariax>TalariaX Pte Ltd，新加坡。保留所有權利</talariax></footnote>
+<get_contacts>
+	<email>電子郵件</email>
+	<title_addressbook>從位址簿中選取</title_addressbook>
+	<contact_name>聯繫人姓名</contact_name>
+	<mobile_number>行動電話號碼</mobile_number>
+	<title_addressbook_global>公共聯繫人位址簿</title_addressbook_global>
+	<department>部門</department>
+	<title_personal_group>聯繫人群組</title_personal_group>
+	<group_name>群組名稱</group_name>
+	<contacts_name>聯繫人姓名</contacts_name>
+	<title_global_group>公共聯繫人群組</title_global_group>
+	<system_admin>系統管理員</system_admin>
+	<db_err>資料庫錯誤</db_err>
+	<contacts>個人聯繫人</contacts>
+	<global_contacts>公共聯繫人</global_contacts>
+	<group>個人聯繫人群組</group>
+	<global_group>公共聯繫人群組</global_group>
+	<choosetype_1>兩者（電子郵件和手機號碼）<![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;]]></choosetype_1>
+	<choosetype_2>手機號碼</choosetype_2>
+	<choosetype_3>電子郵件</choosetype_3>
+</get_contacts>
+<get_global_template><title>公共訊息範本</title><select_msgtemplate>請從下面選取 SMS 的訊息範本：</select_msgtemplate><select>選取</select><cancel>取消</cancel><empty_str>公共訊息範本清單為空</empty_str></get_global_template>
+<get_template>
+	<title>個人訊息範本</title>
+	<select_msgtemplate>請從下面選取 SMS 的訊息範本：</select_msgtemplate>
+	<empty_str>訊息範本清單為空</empty_str>
+	<db_err>資料庫錯誤</db_err>
+	<msg_template>訊息範本</msg_template>
+	<global_msg_template>公共訊息範本</global_msg_template>
+	<mim_msg_template>MIM訊息範本</mim_msg_template>
+	<global_mim_msg_template>公共MIM訊息範本</global_mim_msg_template>
+</get_template>
+<global_address_book>
+	<email>電子郵件</email>
+	<title>公共位址簿</title>
+	<add_new>添加新公共位址簿：</add_new>
+	<create_new>建立新公共聯繫人</create_new>
+	<add_upload>透過上傳的檔案添加聯繫人</add_upload>
+	<csv>上傳的檔案必須為 CSV 格式</csv>
+	<upload_file>上傳檔案</upload_file>
+	<upload_button>上傳聯繫</upload_button>
+	<list_contact>��共聯繫人清單</list_contact>
+	<contact_name>聯繫人姓名</contact_name>
+	<mobile_number>行動電話號碼</mobile_number>
+	<group_list>群組清單</group_list>
+	<department>部門</department>
+	<all_departments>所有部門</all_departments>
+	<delete>選中以刪除</delete>
+	<delete_checked>刪除所選聯繫人</delete_checked>
+	<empty_str>清空所有聯繫人</empty_str>
+	<new_contact>新聯繫人姓名： </new_contact>
+	<new_mno>新聯繫人行動電話號碼��</new_mno>
+	<!-- <numbers_only>僅限數字&lt;br&gt;請輸入國際格式行動電話號碼&lt;br&gt;例如：對於新加坡，+65xxxxxxxx，『+65為國家碼』</numbers_only> -->
+	<numbers_only>僅限數字&#013;請輸入國際格式行動電話號碼&#013;例如：對於新加坡，+65xxxxxxxx，『+65為國家碼』</numbers_only>
+	<list_add_group>位址群組清單</list_add_group>
+	<edit_contact>編輯現有公共聯繫人</edit_contact>
+	<curr_contact>聯繫人姓名：</curr_contact>
+	<curr_mno>變更行動電話號碼：</curr_mno>
+	<alert_1>請勿將聯繫人姓名留空！</alert_1>
+	<alert_2>請僅對聯繫人行動電話號碼輸入（+國家碼後�號碼）或（國家碼後跟號碼）！</alert_2>
+	<alert_3>未選取聯繫人！</alert_3>
+	<alert_4>確定要刪除所選聯繫人嗎？此操作無法撤銷 – 刪除的聯繫人將從系統中永久移除！</alert_4>
+	<alert_5>確定要清空所有聯繫人嗎？此操作無法撤銷 – 刪除的聯�人將從系統中永久移除！</alert_5>
+	<alert_6>請指定要上載的檔！</alert_6>
+	<alert_7>要上載的檔不是正確的檔格式！</alert_7>
+	<err>未找到任何公共地址簿組！</err>
+	<modem_label>數據機標籤</modem_label>
+	<modem_desc>所選的數據機會被用於向這個手機號發送資訊。選擇\\"無\\"，如果你不想把手機號綁定到該數據機上。</modem_desc>
+	<download_contact>從LDAP伺服器中下載連絡人</download_contact>
+	<download_new>從LDAP伺服器中下載連絡人</download_new>
+	<select_ldap>選擇LDAP伺服器</select_ldap>
+	<l_profile_id_desc>您必須先添加LDAP服務器或啟用與之同步。</l_profile_id_desc>
+</global_address_book>
+<global_address_group>
+	<ad_grp_loc>AD組的位置</ad_grp_loc>
+	<select_ldap> LDAP服務器</select_ldap>
+	<download_new>下載LDAP組</download_new>
+	<lp_grp> LDAP組</lp_grp>
+	<contact_name>聯繫人姓名</contact_name><mobile_number>行動電話號碼</mobile_number><put_contact>選聯繫人至公共位址群組</put_contact>
+	<title>公共位址群組</title><add_new>添加新公共位址群組：</add_new><create_new>建立新公共群組</create_new><list_group>公共位址群組清單</list_group><group_name>群組名稱</group_name><department>部門</department><all_departments>所有部門</all_departments><delete>選中以刪除</delete><delete_checked>刪除所選聯繫人</delete_checked><empty_str>清空所有聯繫人</empty_str><new_group_name>新群組名稱：</new_group_name><add>添加</add><cancel>取消</cancel><alert_1>請勿將群組名稱留空！</alert_1><alert_2>未選取位址群組！</alert_2><alert_3>確定要刪除所選位址群組嗎？此操作無法撤銷 – 刪除的位址群組將從系統中永久移除！</alert_3><alert_4>確定要清空所有位址群組嗎？此為不可撤銷操作 – 刪除的位址群組將從系統中永久移除！</alert_4>
+</global_address_group>
+<global_inbox>
+	<title>公共收件匣</title><keyword>關鍵字</keyword><date_from>開始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy)</date_format><export>將公共收件匣匯出至 CSV 檔案</export><mobile_number>行動電話號碼</mobile_number><department>部門</department><date_time>日期和時間</date_time><message_text>訊息文本</message_text><delete>選中以刪除</delete><delete_checked>刪除所選收件匣日誌</delete_checked><empty_str>清空公共收件匣</empty_str><alert_1>請僅在搜寻行動電話號碼中輸入數字</alert_1><alert_2>日期範圍無效！請選中『日期選取』！</alert_2><alert_3>未選取收件匣日誌！</alert_3><alert_4>確定要刪除所選收件箱日誌嗎？此為不可撤銷操作 – 刪除的收件箱日誌將從系統中永久移除！</alert_4><alert_5>確定要清空所有公共收件箱日誌嗎？此為不可撤銷操作 – 刪除的收件箱日誌將從系統中永久移除！</alert_5><system_admin>系統管理員</system_admin>
+</global_inbox>
+<global_message_template>
+	<new_tpl_name_text>键入下面的标题</new_tpl_name_text>
+	<template_name>标题</template_name>
+	<title>公共訊息範本</title>
+	<add_new>添加新公共訊息範本：</add_new>
+	<create_new>建立新公共訊息範本</create_new>
+	<list_template>公共訊息範本清單</list_template>
+	<msg_template>訊息範本</msg_template>
+	<department>部門</department>
+	<all_departments>所有部門</all_departments>
+	<empty_str>清空所有訊息範本</empty_str>
+	<new_msg_text>在下麵鍵入訊息文本：</new_msg_text>
+	<edit_template>編輯現有公共訊息範本</edit_template>
+	<curr_msg_text>編輯下麵的訊息文本：</curr_msg_text>
+	<alert_1>請勿將訊息文本留空！</alert_1>
+	<alert_2>未選取訊息範本！</alert_2>
+	<alert_3>確定要刪除所選公共訊息範本嗎？此為不可撤銷操作 – 刪除的公共訊息範本將從系統中永久移除！</alert_3>
+	<alert_4>確定要清空所有公共訊息範本嗎？此為不可撤銷操作 – 刪除的公共訊息範本將從系統中永久移除！</alert_4>
+	<alert_5>Please Specify A File To Be Uploaded!</alert_5>
+	<alert_6>Confirm To Cancel Add Message(s) By File Upload? All Records Uploaded Will Be Deleted!</alert_6>
+	<alert_7>Global Message(s) Successfully Added!</alert_7>
+	<export>Export Global Message Template(s) To CSV File</export>
+	<add_upload>Add Global Message(s) By File Upload :</add_upload>
+	<upload_file>Upload File</upload_file>
+	<preview>Preview Contact(s) By File Upload</preview>
+	<file_format>File Format</file_format>
+</global_message_template>
+<global_queue_log>
+	<title>公共佇列日誌</title><date_from>開始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy)</date_format><export>將公共佇列日誌匯出至 CSV 檔案</export><mobile_number>行動電話號碼</mobile_number><department>部門</department><system_admin>系統管理員</system_admin><date_time>日期和時間</date_time><message_text>訊息文本</message_text><status>狀態</status><delete>選中以刪除</delete><delete_checked>刪除所選佇列日誌</delete_checked><empty_str>清空公共佇列日誌</empty_str><alert_1>請僅在搜寻行動電話號碼中輸入數字</alert_1><alert_2>日期範圍無效！請選中『日期選取』！</alert_2><alert_3>未選取佇列日誌！</alert_3><alert_4>確定要刪除所選佇列日誌嗎？此為不可撤銷操作 – 刪除的佇列日誌將從系統中永久移除！</alert_4><alert_5>確定要清空所有公共佇列日誌嗎？此為不可撤銷操作 – 刪除的佇列日誌將從系統中永久移除！</alert_5>
+</global_queue_log>
+<global_sent_log>
+	<empty_email_log>空電子郵件日誌</empty_email_log>
+	<from>发件人</from>
+	<to>接受者</to>
+	<subject>主题</subject>
+	<alert_4>確認要刪除選定的電子郵件日誌？ 這是不可逆的操作-刪除的電子郵件日誌將永久從系統中刪除！</alert_4>
+	<alert_5>是否確認清空所有電子郵件日誌？ 這是不可逆的操作-刪除的電子郵件日誌將被永久從系統中刪除</alert_5>
+	<comment>註釋</comment>
+	<campaignname>活動名稱</campaignname>
+	<recipient>接受者</recipient>
+	<title>公共已傳送日誌</title><department>部門</department><date_from>開始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy)</date_format><export>將公共已傳送日誌匯出至 CSV 檔案</export><mobile_number>行動電話號碼</mobile_number><sender>發件人</sender><system_admin>系統管理員</system_admin><date_time>日期和時間</date_time><message_text>訊息文本</message_text><status>狀態</status><totalsms>SMS 總數</totalsms><delete>選中以刪除</delete><delete_checked>刪除所選已傳送日誌</delete_checked><empty_str>清空公共已傳送日誌</empty_str><alert_1>請僅在搜寻行動電話號碼中輸入數字</alert_1><alert_2>日期範圍無效！請選中『日期選取』！</alert_2><alert_3>未選取已發送日誌！</alert_3><alert_4>確定要刪除所選已發送日誌嗎？此為不可撤銷操作 – 刪除的已發送日誌將從系統中永久移除！</alert_4><alert_5>確定要清空所有公共已發送日誌嗎？此操作無法撤銷 – 刪除的已發送日誌將從系統中永久移除！</alert_5>
+</global_sent_log>
+<global_unsent_log>
+	<title>公共未傳送日誌</title><resend>重新發送</resend><date_from>開始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy)</date_format><export>將公共未傳送日誌匯出至 CSV 檔案</export><mobile_number>行動電話號碼</mobile_number><department>部門</department><system_admin>系統管理員</system_admin><date_time>日期和時間</date_time><message_text>訊息文本</message_text><status>狀態</status><delete>選中以刪除</delete><delete_checked>刪除所選未傳送日誌</delete_checked><empty_str>清空公共未傳送日誌</empty_str><alert_1>請僅在搜寻行動電話號碼中輸入數字</alert_1><alert_2>日期範圍無效！請選中『日期選取』！</alert_2><alert_3>未選取未發送日誌！</alert_3><alert_4>確定要刪除所選未發送日誌嗎？此為不可撤銷操作 – 刪除的未發送日誌將從系統中永久移除！</alert_4><alert_5>確定要清空所有公共未發送日誌嗎？此為不可撤銷操作 – 刪除的未發送日誌將從系統中永久移除！</alert_5>
+</global_unsent_log>
+<inbox>
+	<title>個人收件匣</title><date_from>開始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy)</date_format><export>將個人收件匣匯出至 CSV 檔案</export><mobile_number>行動電話號碼</mobile_number><date_time>日期和時間</date_time><message_text>訊息文本</message_text><delete>選中以刪除</delete><delete_checked>刪除所選收件匣日誌</delete_checked><empty_str>清空收件匣</empty_str><alert_1>請僅在搜寻行動電話號碼中輸入數字</alert_1><alert_2>日期範圍無效！請選中『日期選取』！</alert_2><alert_3>未選取收件匣日誌！</alert_3><alert_4>確定要刪除所選收件箱日誌嗎？此為不可撤銷操作 – 刪除的收件箱日誌將從系統中永久移除！</alert_4><alert_5>確定要清空所有收件箱日誌嗎？此為不可撤銷操作 – 刪除的收件箱日誌將從系統中永久移除！</alert_5>
+</inbox>
+<index><talariax>登錄到您的帳戶</talariax><header>使用者登錄</header><user>使用者</user><password>密碼</password><submit>登錄</submit><reset>重置</reset><admin_login>管理員登錄</admin_login><copyright>版權所有</copyright><all_rights>TalariaX Pte Ltd，新加坡。保留所有權利</all_rights></index>
+<keyword_management>
+	<title>關鍵字管理</title>
+	<header>SMS 關鍵字清單</header>
+	<add_new>添加新關鍵字：</add_new>
+	<add_sms_keyword>添加 SMS 關鍵字</add_sms_keyword>
+	<keyword>關鍵字</keyword>
+	<description>描述</description>
+	<email>電子郵件</email>
+	<mobile_number>行動電話號碼</mobile_number>
+	<url>網址</url>
+	<delete>選中以刪除</delete>
+	<delete_checked>刪除所選關鍵字</delete_checked>
+	<empty_str>清空所有關鍵字</empty_str>
+	<alert_1>未選取關鍵字！</alert_1>
+	<alert_2>確定要刪除所選關鍵字嗎？此為不可撤銷操作 – 刪除的關鍵字將從系統中永久移除！</alert_2>
+	<alert_3>確定要清空所有關鍵字嗎？此為不可撤銷操作 – 刪除的關鍵字將從系統中永久移除！</alert_3>
+	<senderchksms>查看短信發送者</senderchksms>
+	<senderchksmsy>是</senderchksmsy>
+	<senderchksmsn>不是</senderchksmsn>
+	<modem_imei>IMEI調製解調器</modem_imei>
+	<from>从</from>
+	<department>部門</department>
+</keyword_management>
+<language_setup><header>語言設置</header><select>請選取一種語言作為在系統中顯示的預設語言</select><english>英文</english><chinese_utf8>中文-UTF8</chinese_utf8><chinese_big5>中文-BIG5</chinese_big5><korean>韓文</korean><thai>泰文</thai><save>保存</save><reset>重置</reset><ses_err>抱歉，您未登錄或者會話已過期。</ses_err></language_setup>
+<ldap_add>
+	<server_mgnt>ＬＤＡＰ伺服器管理</server_mgnt>
+	<title>添加新的ＬＤＡＰ伺服器</title>
+	<name>名字</name>
+	<name_desc>ＬＤＡＰ伺服器的專屬名字</name_desc>
+	<desc>描述</desc>
+	<server1>伺服器１:</server1>
+	<server1_desc>主要ＬＤＡＰ伺服器ＩＰ和埠號。ＬＤＡＰ默認埠：３８９</server1_desc>
+	<server2>伺服器２:</server2>
+	<server2_desc>第二ＬＤＡＰ伺服器ＩＰ和埠號。ＬＤＡＰ默認埠：３８９</server2_desc>
+	<port>埠</port>
+	<type>種類</type>
+	<service_bind>服務帳號Bind DN:</service_bind>
+	<test_service>測試服務帳號</test_service>
+	<account_passwd>服務帳號密碼 :</account_passwd>
+	<login_mode>登錄模式 :</login_mode>
+	<lm_help_title>登錄ＩＤ種類，在ＬＤＡＰ伺服器內檢查以下屬性</lm_help_title>
+	<lm_help_note>注意：如果在ｓｅｎｄＱｕｉｃｋ系統內有已下載的使用者，登錄模式不能改變</lm_help_note>
+	<mobile_attr>對於手機號碼的LDAP名字屬性</mobile_attr>
+	<mobile_desc>如果留白，預設LDAP屬性可變。 </mobile_desc>
+	<basedn>Base DN :</basedn>
+	<basedn_desc>用戶列表的地址的基礎DN</basedn_desc>
+	<search_scope>搜索範圍</search_scope>
+	<scope_sub_desc>對以下整個樹狀圖和目的程式庫進行搜索</scope_sub_desc>
+	<scope_base_desc>僅搜索目的程式庫</scope_base_desc>
+	<scope_one_desc>立即搜索目的程式庫下方的條目</scope_one_desc>
+	<filter>額外LDAP過濾字串</filter>
+	<filter_desc>輸入額外LDAP過濾字串</filter_desc>
+	<filter_default>默認為空</filter_default>
+	<filter_help>比如，允許所有用戶在VPN用戶群,</filter_help>
+	<sync>自動同步設定</sync>
+	<frequency>頻率</frequency>
+	<time>時間</time>
+	<sync_with>與XXX同步</sync_with>
+	<user_list>用戶列表</user_list>
+	<addr_book>全球地址簿</addr_book>
+	<never>從不</never>
+	<daily>每天</daily>
+	<dept_new>新用戶部門</dept_new>
+	<dept_contact>新連絡人部門</dept_contact>
+	<role_new>新用戶角色</role_new>
+	<no_department>沒有部門</no_department>
+	<success_msg1>LDAP Server</success_msg1>
+	<success_msg2>Added Successfully</success_msg2>
+	<mail_attr>电子邮件属性</mail_attr>
+	<mail_desc>如果您保留空白，則默認LDAP屬性將為mail</mail_desc>
+	<login_mode>登錄模式和聯繫人姓名</login_mode>
+	<basedn_desc>用戶或組列表的位置的基本DN。</basedn_desc>
+	<groups_desc>它將下載所有組並將組創建到全局地址簿中並將成員添加到其中。</groups_desc>
+	<group_download>下載廣告組和成員</group_download>
+	<domain_name>域名</domain_name>
+	<email>電子郵件</email>
+	<login_id>登錄ID</login_id>
+	<display_name>顯示名稱</display_name>
+	<ad_attr>AD 屬性</ad_attr>
+	<ldap_attr>LDAP 屬性</ldap_attr>
+	<name_in_outlook>在Outlook中命名</name_in_outlook>
+	<search_scope>搜索範圍</search_scope>
+	<search_scope_sub>搜索下面的整個樹，包括基礎對象。</search_scope_sub>
+	<search_scope_base>僅搜索基礎對象。</search_scope_base>
+	<search_scope_one>搜索緊靠基礎對像下方的條目。</search_scope_one>
+</ldap_add>
+<ldap_edit>
+	<search_scope_sub>搜索下面的整個樹，包括基礎對象。</search_scope_sub>
+	<search_scope_base>僅搜索基礎對象。</search_scope_base>
+	<search_scope_one>搜索緊靠基礎對像下方的條目。</search_scope_one>
+	<search_scope>搜索範圍</search_scope>
+	<name_in_outlook>在Outlook中命名</name_in_outlook>
+	<ldap_attr>LDAP 屬性</ldap_attr>
+	<ad_attr>AD 屬性</ad_attr>
+	<display_name>顯示名稱</display_name>
+	<login_id>登錄ID</login_id>
+	<email>電子郵件</email>
+	<domain_name>域名</domain_name>
+	<login_mode>登錄模式和聯繫人姓名</login_mode>
+	<basedn_desc>用戶或組列表的位置的基本DN。</basedn_desc>
+	<groups_desc>它將下載所有組並將組創建到全局地址簿中並將成員添加到其中。</groups_desc>
+	<group_download>下載廣告組和成員</group_download>
+	<mail_desc>如果您保留空白，則默認LDAP屬性將為mail</mail_desc>
+	<mail_attr>电子邮件属性</mail_attr>
+	<server_mgnt>ＬＤＡＰ伺服器管理</server_mgnt>
+	<title>编辑 ＬＤＡＰ伺服器</title>
+	<name>名字</name>
+	<name_desc>ＬＤＡＰ伺服器的專屬名字</name_desc>
+	<desc>描述</desc>
+	<server1>伺服器１ :</server1>
+	<server1_desc>主要ＬＤＡＰ伺服器ＩＰ和埠號。ＬＤＡＰ默認埠：３８９</server1_desc>
+	<server2>伺服器２ :</server2>
+	<server2_desc>第二ＬＤＡＰ伺服器ＩＰ和埠號。ＬＤＡＰ默認埠：３８９</server2_desc>
+	<port>埠</port>
+	<type>種類</type>
+	<service_bind>服務帳號Bind DN:</service_bind>
+	<test_service>測試服務帳號</test_service>
+	<account_passwd>服務帳號密碼 :</account_passwd>
+	<login_mode>登錄模式:</login_mode>
+	<lm_help_title>登錄ＩＤ種類，在ＬＤＡＰ伺服器內檢查以下屬性</lm_help_title>
+	<lm_help_note>注意：如果在ｓｅｎｄＱｕｉｃｋ系統內有已下載的使用者，登錄模式不能改變</lm_help_note>
+	<mobile_attr>對於手機號碼的LDAP名字屬性</mobile_attr>
+	<mobile_desc>如果留白，預設LDAP屬性可變。 </mobile_desc>
+	<basedn>Base DN :</basedn>
+	<basedn_desc>用戶列表的地址的基礎DN</basedn_desc>
+	<search_scope>搜索範圍</search_scope>
+	<scope_sub_desc>對以下整個樹狀圖和目的程式庫進行搜索</scope_sub_desc>
+	<scope_base_desc>僅搜索目的程式庫</scope_base_desc>
+	<scope_one_desc>立即搜索目的程式庫下方的條目</scope_one_desc>
+	<filter>額外LDAP過濾字串:</filter>
+	<filter_desc>輸入額外LDAP過濾字串</filter_desc>
+	<filter_default>默認為空</filter_default>
+	<filter_help>比如，允許所有用戶在VPN用戶群,</filter_help>
+	<sync>自動同步設定</sync>
+	<frequency>頻率</frequency>
+	<time>時間</time>
+	<sync_with>與XXX同步</sync_with>
+	<user_list>用戶列表</user_list>
+	<addr_book>全球地址簿</addr_book>
+	<never>從不</never>
+	<daily>每天</daily>
+	<dept_new>新用戶部門</dept_new>
+	<dept_contact>新連絡人部門</dept_contact>
+	<role_new>新用戶角色</role_new>
+	<no_department>沒有部門</no_department>
+	<success_msg1>LDAP 伺服器</success_msg1>
+	<success_msg2>已成功添加</success_msg2>
+</ldap_edit>
+<ldap_mgnt>
+	<no>編號</no>
+	<sync_info>同步信息</sync_info>
+	<dlgrp>下載組</dlgrp>
+	<new_ldap_server>創建新的 LDAP 伺服器</new_ldap_server>
+	<name>名字</name>
+	<description>描述</description>
+	<server>伺服器</server>
+	<login_mode>登錄模式</login_mode>
+	<attr_name>LDAP 名字屬性</attr_name>
+	<basedn>Base DN</basedn>
+	<scope>搜索範圍</scope>
+	<server_empty>ＬＤＡＰ伺服器列表為空</server_empty>
+	<select_all>選擇所有</select_all>
+	<delete>刪除所選ＬＤＡＰ伺服器</delete>
+	<alert_1>沒有帳戶被選中！</alert_1>
+	<alert_2>確定刪除所選的資料嗎？刪除不可逆－所選的使用者和資料會從系統中永久刪除</alert_2>
+	<processing>處理中...</processing>
+	<err_msg>刪除所選資料失敗</err_msg>
+	<success_msg>成功刪除資料</success_msg>
+</ldap_mgnt>
+<lib><db_err>資料庫錯誤</db_err><user>使用者</user><checkUser_msg1>和密碼已驗證。</checkUser_msg1><getUserPassword_msg1>不存在。</getUserPassword_msg1><getUserDepartment_msg1>系統錯誤 – 在表“user_list”中無法找到使用者</getUserDepartment_msg1><getUserDepartment_msg2></getUserDepartment_msg2><changeUserDetails_msg1>對使用者資料的更改未更新到表“user_list”中</changeUserDetails_msg1><changeUserDetails_msg2>對使用者資料的更改已成功更新!</changeUserDetails_msg2><changeUserDetails_msg3>多個使用者資料已更新到表“user_list”中</changeUserDetails_msg3><doSQLcmd_msg1> -- 表未更新</doSQLcmd_msg1><updateTotal_msg1>ID</updateTotal_msg1><updateTotal_msg2>未找到在表</updateTotal_msg2><pageNumbering_msg1>頁:</pageNumbering_msg1></lib>
+<lib_address_book><db_err>資料庫錯誤</db_err><listAddressBook_msg1>未找到任何地址簿聯繫人！</listAddressBook_msg1><contact>聯繫人</contact><addAddressBook_msg1>已存在個人地址簿中!</addAddressBook_msg1><addAddressBook_msg2>已成功添加至個人地址簿！</addAddressBook_msg2><addAddressBook_msg3>添加不成功！</addAddressBook_msg3><editAddressBook_msg1>系統錯誤 – 在表“address_book”中無法找到聯繫人 ID</editAddressBook_msg1><editAddressBook_msg2></editAddressBook_msg2><saveAddressBook_msg1>對聯繫人</saveAddressBook_msg1><saveAddressBook_msg2>所作的更改已成功保存！</saveAddressBook_msg2><saveAddressBook_msg3>所作的更改不成功！</saveAddressBook_msg3><deleteAddressBook_msg1>聯繫人刪除不成功！</deleteAddressBook_msg1><deleteAddressBook_msg2>刪除所選聯繫人的操作已成功完成！</deleteAddressBook_msg2><deleteAddressBook_msg3>聯繫人的刪除操作已成功完成！\n</deleteAddressBook_msg3><emptyAddressBook_msg1>個聯繫人已從系統中被成功刪除！</emptyAddressBook_msg1><listGlobalBook_msg1>未找到任何公共地址簿聯繫人！</listGlobalBook_msg1><addGlobalBook_msg1>已存在公共地址簿中!</addGlobalBook_msg1><addGlobalBook_msg2>已成功添加至公共地址簿！</addGlobalBook_msg2><addGlobalBook_msg3>添加不成功！</addGlobalBook_msg3><editGlobalBook_msg1>系統錯誤 – 在表“address_book”中無法找到聯繫人 ID</editGlobalBook_msg1><editGlobalBook_msg2></editGlobalBook_msg2><saveGlobalBook_msg1>對聯繫人</saveGlobalBook_msg1><saveGlobalBook_msg2>所作的更改已成功保存！</saveGlobalBook_msg2><saveGlobalBook_msg3>所作的更改不成功！</saveGlobalBook_msg3><listContacts_msg1>沒有可用預覽！</listContacts_msg1></lib_address_book>
+<lib_address_group><db_err>資料庫錯誤</db_err><listAddressGroup_msg1>未找到任何地址群組！</listAddressGroup_msg1><group>群組</group><addAddressGroup_msg1>已存在個人地址群組中！</addAddressGroup_msg1><addAddressGroup_msg2>已成功添加至個人地址簿！</addAddressGroup_msg2><addAddressGroup_msg3>添加不成功！</addAddressGroup_msg3><deleteAddressGroup_msg1>地址群組刪除不成功！</deleteAddressGroup_msg1><deleteAddressGroup_msg2>刪除所選位址群組的操作已成功！</deleteAddressGroup_msg2><deleteAddressGroup_msg3>位址群組的刪除操作已成功完成！\n</deleteAddressGroup_msg3><emptyAddressGroup_msg1>個位址群組已從系統中被成功刪除！</emptyAddressGroup_msg1><listGlobalGroup_msg1>未找到任何公共地址群組！</listGlobalGroup_msg1><address_group>地址群組</address_group><addGlobalGroup_msg1>已存在公共地址群組中!</addGlobalGroup_msg1><addGlobalGroup_msg2>已成功添加至公共地址群組！</addGlobalGroup_msg2><addGlobalGroup_msg3>添加不成功！</addGlobalGroup_msg3></lib_address_group>
+<lib_common_inbox><db_err>資料庫錯誤</db_err><listCommonInbox_msg1>通用收件箱為空！</listCommonInbox_msg1><deleteCommonInbox_msg1>收件箱日誌刪除不成功！</deleteCommonInbox_msg1><deleteCommonInbox_msg2>刪除所選收件箱日誌的操作已成功完成！</deleteCommonInbox_msg2><deleteCommonInbox_msg3>收件箱日誌的刪除操作已成功完成！\n</deleteCommonInbox_msg3><emptyCommonInbox_msg1>通用收件箱已成功清空！</emptyCommonInbox_msg1></lib_common_inbox>
+<lib_http_log>
+	<db_err>資料庫錯誤</db_err><listLog_msg1>已發送日誌為空！</listLog_msg1>
+	<listLog_msg2>佇列日誌為空！</listLog_msg2>
+	<deleteLog_http_msg1>HTTP 日誌刪除不成功！</deleteLog_http_msg1>
+	<deleteLog_http_msg2>刪除所選 HTTP 日誌的操作已成功完成！</deleteLog_http_msg2>
+	<deleteLog_http_msg3>HTTP 日誌的刪除操作已成功完成！\n</deleteLog_http_msg3>
+	<deleteLog_scheduled_msg1>HTTP 計劃日誌刪除不成功！</deleteLog_scheduled_msg1>
+	<deleteLog_scheduled_msg2>刪除所選 HTTP 計劃日誌的操作已成功完成！</deleteLog_scheduled_msg2>
+	<deleteLog_scheduled_msg3>HTTP 計劃日誌的刪除操作已成功完成！\n</deleteLog_scheduled_msg3>
+	<emptyLog_msg1>條 HTTP 日誌已從系統中被成功刪除！</emptyLog_msg1>
+	<emptyLog_msg2>條 HTTP 計劃日誌已從系統中被成功刪除！</emptyLog_msg2>
+	<no>編號</no><date_time>日期和時間</date_time>
+	<mobile_number>行動電話號碼</mobile_number>
+	<message_text>訊息文字</message_text><status>狀態</status>
+	<message_from>訊息來源</message_from><modem_label>數據機標籤</modem_label>
+</lib_http_log>
+<lib_ldap>
+	<db_err>資料庫錯誤</db_err>
+	<err_msg1>沒有找到 LDAP 伺服器資料</err_msg1>
+	<err_msg2>對不起，LDAP 連接失敗</err_msg2>
+	<err_msg3>不能綁定遠端伺服器.... </err_msg3>
+	<info_msg1>沒有使用者從活動目錄中被下載 </info_msg1>
+	<info_msg2>沒有在活動目錄中找到新使用者 </info_msg2>
+	<info_msg3>沒有連絡人從活動目錄中被下載 </info_msg3>
+	<info_msg4>沒有在活動目錄中找到新的連絡人 </info_msg4>
+	<outof>從中</outof><diul>下載到用戶列表 </diul>
+	<diab>下載到全球地址簿 </diab>
+	<alreadyhas>user(s) already exist in the user list.</alreadyhas>
+	<nomobile_ab>在 LDAP 伺服器中，用戶沒有手機號碼</nomobile_ab>
+	<alreadyhas_ab>該用戶已經存在於全球地址簿</alreadyhas_ab>
+	<err_msg4>請選擇LDAP服務器</err_msg4>
+</lib_ldap>
+<lib_logs_management>
+	<db_err>資料庫錯誤</db_err>
+	<listInbox_msg1>收件箱為空</listInbox_msg1>
+	<deleteInbox_msg1>收件箱日誌刪除不成功！</deleteInbox_msg1>
+	<deleteInbox_msg2>刪除所選收件箱日誌的操作已成功完成！</deleteInbox_msg2>
+	<deleteInbox_msg3>收件箱日誌的刪除操作已成功完成！\n</deleteInbox_msg3>
+	<emptyInbox_msg1> 條收件箱日誌已從系統中被成功刪除！</emptyInbox_msg1>
+	<listGlobalInbox_msg1>公共收件箱為空！</listGlobalInbox_msg1>
+	<deleteGlobalInbox_msg1>公共收件箱日誌刪除不成功！</deleteGlobalInbox_msg1>
+	<deleteGlobalInbox_msg2>刪除公共收件箱日誌的操作已成功完成！</deleteGlobalInbox_msg2>
+	<deleteGlobalInbox_msg3>公共收件箱日誌的刪除操作已成功完成！\n</deleteGlobalInbox_msg3>
+	<emptyGlobalInbox_msg1>條公共收件箱日誌已從系統中被成功刪除！</emptyGlobalInbox_msg1>
+	<sent_log>已發送日誌</sent_log><unsent_log>未發送日誌</unsent_log>
+	<queue_log>佇列日誌</queue_log>
+	<global_sent_log>公共已發送日誌</global_sent_log><global_unsent_log>公共未發送日誌</global_unsent_log>
+	<global_queue_log>公共佇列日誌</global_queue_log><listLog_msg1>已傳送日誌為空！</listLog_msg1>
+	<listLog_msg2>未傳送日誌為空！</listLog_msg2><listLog_msg3>佇列日誌為空！</listLog_msg3>
+	<deleteLog_sent_msg1>已發送日誌刪除不成功！</deleteLog_sent_msg1>
+	<deleteLog_sent_msg2>所選已發送日誌刪除已成功完成！</deleteLog_sent_msg2>
+	<deleteLog_sent_msg3>已發送日誌刪除已成功完成！\n</deleteLog_sent_msg3>
+	<deleteLog_unsent_msg1>未發送日誌刪除不成功！</deleteLog_unsent_msg1>
+	<deleteLog_unsent_msg2>所選未發送日誌刪除已成功完成！</deleteLog_unsent_msg2>
+	<deleteLog_unsent_msg3>未發送日誌刪除已成功完成！\n</deleteLog_unsent_msg3>
+	<deleteLog_queue_msg1>佇列日誌刪除不成功！</deleteLog_queue_msg1>
+	<deleteLog_queue_msg2>所選佇列日誌刪除已成功完成！</deleteLog_queue_msg2>
+	<deleteLog_queue_msg3>佇列日誌刪除已成功完成！</deleteLog_queue_msg3>
+	<emptyLog_msg1>條已發送日誌已從系統中永久移除！</emptyLog_msg1>
+	<emptyLog_msg2>條未發送日誌已從系統中永久移除！</emptyLog_msg2>
+	<emptyLog_msg3>條佇列日誌已從系統中永久移除！</emptyLog_msg3>
+	<listGlobalLog_msg1>公共已傳送日誌為空！</listGlobalLog_msg1>
+	<listGlobalLog_msg2>公共未傳送日誌為空！</listGlobalLog_msg2>
+	<listGlobalLog_msg3>公共佇列日誌為空！</listGlobalLog_msg3>
+	<deleteGlobalLog_sent_msg1>公共已發送日誌刪除不成功！</deleteGlobalLog_sent_msg1>
+	<deleteGlobalLog_sent_msg2>所選公共已發送日誌刪除已成功完成！</deleteGlobalLog_sent_msg2>
+	<deleteGlobalLog_sent_msg3>公共已發送日誌刪除已成功完成！\n</deleteGlobalLog_sent_msg3>
+	<deleteGlobalLog_unsent_msg1>公共未發送日誌刪除不成功！</deleteGlobalLog_unsent_msg1>
+	<deleteGlobalLog_unsent_msg2>所選公共未發送日誌刪除已成功完成！</deleteGlobalLog_unsent_msg2>
+	<deleteGlobalLog_unsent_msg3>公共未發送日誌刪除已成功完成！\n</deleteGlobalLog_unsent_msg3>
+	<deleteGlobalLog_queue_msg1>公共佇列日誌刪除不成功！</deleteGlobalLog_queue_msg1>
+	<deleteGlobalLog_queue_msg2>所選公共佇列日誌刪除已成功完成！</deleteGlobalLog_queue_msg2>
+	<deleteGlobalLog_queue_msg3>公共佇列日誌刪除已成功完成！\n</deleteGlobalLog_queue_msg3>
+	<emptyGlobalLog_msg1>公共已發送日誌已從系統中永久移除！</emptyGlobalLog_msg1>
+	<emptyGlobalLog_msg2>公共未發送日誌已從系統中永久移除！</emptyGlobalLog_msg2>
+	<emptyGlobalLog_msg3>公共佇列日誌已從系統中永久移除！</emptyGlobalLog_msg3>
+	<exportCSVFile_msg1>無法打開檔案</exportCSVFile_msg1><listScheduled_msg1>沒有計劃的 SMS！</listScheduled_msg1>
+	<deleteScheduled_msg1>計劃的 SMS 刪除不成功！</deleteScheduled_msg1>
+	<deleteScheduled_msg2>所選計劃的 SMS 已成功刪除！</deleteScheduled_msg2>
+	<deleteScheduled_msg3>計劃的 SMS 的刪除操作已成功完成！</deleteScheduled_msg3>
+	<emptyScheduled_msg1>條計劃的 SMS 已從系統中被成功刪除！</emptyScheduled_msg1>
+	<no>編號</no><date_time>日期和時間</date_time><mobile_number>行動電話號碼</mobile_number>
+	<message_text>訊息文本</message_text><keyword>關鍵字</keyword><department>部門</department>
+	<status>狀態</status><totalSMS>SMS 總數</totalSMS><sender>發件人</sender>
+</lib_logs_management>
+<lib_message_template><db_err>資料庫錯誤</db_err><listMessageTemplate_msg1>未找到任何訊息範本！</listMessageTemplate_msg1><addMessageTemplate_msg1>訊息範本已創建成功！</addMessageTemplate_msg1><addMessageTemplate_msg2>訊息範本創建不成功！</addMessageTemplate_msg2><editMessageTemplate_msg1>系統錯誤 – 在表“message_template”中無法找到訊息範本 ID</editMessageTemplate_msg1><editMessageTemplate_msg2></editMessageTemplate_msg2><saveMessageTemplate_msg1>對訊息範本所作的更改已成功保存！</saveMessageTemplate_msg1><saveMessageTemplate_msg2>對訊息範本所作的更改不成功！</saveMessageTemplate_msg2><deleteMessageTemplate_msg1>訊息範本刪除不成功！</deleteMessageTemplate_msg1><deleteMessageTemplate_msg2>刪除所選訊息範本的操作已成功完成！</deleteMessageTemplate_msg2><deleteMessageTemplate_msg3>訊息範本的刪除操作已成功完成！\n</deleteMessageTemplate_msg3><emptyMessageTemplate_msg1>個訊息範本已從系統中被成功刪除！</emptyMessageTemplate_msg1></lib_message_template>
+<lib_send_sms>
+	<db_err>資料庫錯誤</db_err><sendSMS_msg1>您沒有足夠金額可用於發送 SMS。您的某些 SMS 可能會被拒絕。</sendSMS_msg1>
+	<sendSMS_msg2>條 SMS 未成功發送！</sendSMS_msg2>
+	<sendScheduledSMS_msg1>條計劃的 SMS 未成功進入佇列！</sendScheduledSMS_msg1>
+	<sendAutomatedSMS_msg1>無法發送 SMS</sendAutomatedSMS_msg1>
+	<retrieveContacts_msg1>系統錯誤 – 在表“address_book”中無法找到聯繫人 ID</retrieveContacts_msg1>
+	<retrieveContacts_msg2></retrieveContacts_msg2>
+	<listContacts_msg1>個人地址簿為空！</listContacts_msg1>
+	<retrieveGroup_msg1>系統錯誤 – 在表“address_group”中無法找到群組 ID</retrieveGroup_msg1>
+	<retrieveGroup_msg2></retrieveGroup_msg2>
+	<listGlobalContacts_msg1>公共地址簿為空！</listGlobalContacts_msg1>
+	<listGroup_msg1>個人群組清單為空！</listGroup_msg1>
+	<listGlobalGroup_msg1>公共群組清單為空！</listGlobalGroup_msg1>
+	<retrieveTemplate_msg1>系統錯誤 – 在表“message_template”中無法找到範本 ID</retrieveTemplate_msg1>
+	<retrieveTemplate_msg2></retrieveTemplate_msg2>
+	<listBroadCast_msg1>無可用預覽！已上載檔的檔格式錯誤。請檢查！</listBroadCast_msg1>
+	<msg_tmp>Message Template List Is Empty</msg_tmp>
+</lib_send_sms>
+<lib_unsubscribe><db_err>資料庫錯誤</db_err><listUnsubscribe_msg1>取消訂閱者清單為空！</listUnsubscribe_msg1><deleteUnsubscribe_msg1>取消訂閱者刪除不成功！</deleteUnsubscribe_msg1><deleteUnsubscribe_msg2>刪除所選取消訂閱者的操作已成功完成！</deleteUnsubscribe_msg2><deleteUnsubscribe_msg3>取消訂閱者的刪除操作已成功完成！</deleteUnsubscribe_msg3><emptyUnsubscribe_msg1>取消訂閱者清單已成功清空！</emptyUnsubscribe_msg1><keywordexist>退订关键字已经存在</keywordexist><keywordadded>成功添加退订关键字!</keywordadded><keywordfailed>新退订关键字添加失败!</keywordfailed><keywordempty>退订关键字列表是空的!</keywordempty><responseupdate>退订响应成功更新!</responseupdate><responsefailed>退订响应更新失败!</responsefailed><delkeywordfail>删除退订关键字不成功!</delkeywordfail><delkeywordsuccess>选择退订关键字删除成功完成!</delkeywordsuccess><delkeywordmsg1>退订关键字删除成功完成!</delkeywordmsg1><delkeywordmsg2>退订关键字删除不成功!</delkeywordmsg2><unsubadded>退订移动成功添加!</unsubadded><unsubexist>退订移动已经存在</unsubexist><unsubfailed>新退订添加失败!</unsubfailed></lib_unsubscribe>
+<lib_user_management><getDepartmentList_msg1>系統錯誤 – 對於使用者</getDepartmentList_msg1><getDepartmentList_msg2>，沒有部門可供選取。請聯繫系統管理員以確保部門清單在系統中可用</getDepartmentList_msg2><getAccessRightsList_msg1>嚴重系統錯誤 – 未找到存取許可權清單。\n 請立即聯繫系統管理員！</getAccessRightsList_msg1><retrieveAccessRights_msg1>系統錯誤 – 未找到使用者角色的 ID</retrieveAccessRights_msg1><db_err>資料庫錯誤</db_err><retrieveAccessRights_msg2>系統錯誤 – 未找到使用者角色的存取許可權</retrieveAccessRights_msg2><getDepartmentAccess_msg1>嚴重系統錯誤 – 未找到部門存取許可權清單。\n 請立即聯繫系統管理員！</getDepartmentAccess_msg1><getUserRoleList_msg1>系統錯誤 -- 對於使用者</getUserRoleList_msg1><getUserRoleList_msg2>，沒有使用者角色可供選取。請聯繫系統管理員以確保使用者角色清單在系統中可用</getUserRoleList_msg2><listUserAccount_msg1>未找到任何使用者帳戶！</listUserAccount_msg1><addUserAccount_msg1>使用者</addUserAccount_msg1><already_exist>已存在系統中</already_exist><addUserAccount_msg2>使用者帳戶</addUserAccount_msg2><success_created>已創建成功！</success_created><unsuccess_created>創建不成功！</unsuccess_created><editUserAccount_msg1>系統錯誤 – 在表“user_list”中無法找到使用者 ID</editUserAccount_msg1><editUserAccount_msg2></editUserAccount_msg2><saveUserAccount_msg1>在表“user_list”中未找到使用者 ID</saveUserAccount_msg1><saveUserAccount_msg2></saveUserAccount_msg2><saveUserAccount_msg3>對使用者帳戶</saveUserAccount_msg3><success_save>所作的更改已成功保存！</success_save><unsuccess>所作的更改不成功！”</unsuccess><deleteUserAccount_msg1>使用者刪除不成功！</deleteUserAccount_msg1><deleteUserAccount_msg2>刪除所選使用者的操作已成功完成！</deleteUserAccount_msg2><deleteUserAccount_msg3>使用者已成功刪除！\n</deleteUserAccount_msg3><emptyUserAccount_msg1>個使用者帳戶已從系統中被成功刪除！</emptyUserAccount_msg1><listUserRole_msg1>未找到任何使用者角色！</listUserRole_msg1><addUserRole_msg1>使用者角色</addUserRole_msg1><editUserRole_msg1>系統錯誤 – 在表“user_role_list”中無法找到角色 ID</editUserRole_msg1><editUserRole_msg2></editUserRole_msg2><saveUserRole_msg1>對使用者角色</saveUserRole_msg1><saveUserRole_msg2>所作的更改已成功保存！\n請注意，在此使用者角色下的現有使用者將不會受此更改影響</saveUserRole_msg2><deleteUserRole_msg1>使用者角色刪除不成功！</deleteUserRole_msg1><deleteUserRole_msg2>刪除所選使用者的操作已成功完成！</deleteUserRole_msg2><deleteUserRole_msg3>使用者角色的刪除操作已成功完成！\n</deleteUserRole_msg3><emptyUserRole_msg1>個使用者帳戶已從系統中被成功刪除！</emptyUserRole_msg1><listDepartment_msg1>未找到部門！</listDepartment_msg1><addDepartment_msg1>部門</addDepartment_msg1><deleteDepartment_msg1>部門刪除不成功！</deleteDepartment_msg1><deleteDepartment_msg2>刪除所選部門的操作已成功完成！</deleteDepartment_msg2><deleteDepartment_msg3>部門的刪除操作已成功完成！\n</deleteDepartment_msg3><emptyDepartment_msg1>操作被拒絕！僅允許系統管理員從系統刪除/清空部門！</emptyDepartment_msg1><emptyDepartment_msg2>個部門已從系統中被成功刪除！</emptyDepartment_msg2><getAccessLog_msg1>未找到任何存取日誌！</getAccessLog_msg1></lib_user_management>
+<logout><title>登出確認</title><user>使用者</user><yes>是</yes><no>否</no><message_1>已成功登出系統</message_1><message_2>--- 確定要登出嗎？</message_2></logout>
+<mim_message_template>
+	<new_tpl_name_text>键入下面的标题</new_tpl_name_text>
+	<title>MIM訊息範本</title>
+	<add_new>添加新訊息範本：</add_new>
+	<create_new>建立新訊息範本</create_new>
+	<list_template>訊息範本清單</list_template>
+	<msg_template>訊息範本</msg_template>
+	<empty_str>清空所有訊息範本</empty_str>
+	<new_msg_text>在下麵鍵入訊息文本：</new_msg_text>
+	<new_msg_text>在下麵鍵入訊息文本：</new_msg_text>
+	<edit_template>編輯現有訊息範本</edit_template>
+	<curr_msg_text>編輯下麵的訊息文本：</curr_msg_text>
+	<alert_1>請勿將訊息文本留空！</alert_1>
+	<alert_2>未選取訊息範本！</alert_2>
+	<alert_3>確定要刪除所選訊息範本嗎？此為不可撤銷操作 – 刪除的訊息範本將從系統中永久移除！</alert_3>
+	<alert_4>確定要清空訊息範本嗎？此為不可撤銷操作 – 刪除的訊息範本將從系統中永久移除！</alert_4>
+	<alert_5>Please Specify A File To Be Uploaded!</alert_5>
+	<alert_6>Confirm To Cancel Add Message(s) By File Upload? All Records Uploaded Will Be Deleted!</alert_6>
+	<alert_7>Personal Message(s) Successfully Added!</alert_7>
+	<export>Export Message Template(s) To CSV File</export>
+	<add_upload>Add Message(s) By File Upload :</add_upload>
+	<upload_file>Upload File</upload_file>
+	<preview>Preview Message(s) By File Upload</preview>
+	<file_format>File Format</file_format>
+	<mim_tpl_id>模板ID</mim_tpl_id>
+	<department>部門</department>
+	<template_name>标题</template_name>
+</mim_message_template>
+<message_template>
+	<new_tpl_name_text>键入下面的标题</new_tpl_name_text>
+	<template_name>标题</template_name>
+	<title>個人訊息範本</title>
+	<add_new>添加新訊息範本：</add_new>
+	<create_new>建立新訊息範本</create_new>
+	<list_template>訊息範本清單</list_template>
+	<msg_template>訊息範本</msg_template>
+	<empty_str>清空所有訊息範本</empty_str>
+	<new_msg_text>在下麵鍵入訊息文本：</new_msg_text>
+	<new_msg_text>在下麵鍵入訊息文本：</new_msg_text>
+	<edit_template>編輯現有訊息範本</edit_template>
+	<curr_msg_text>編輯下麵的訊息文本：</curr_msg_text>
+	<alert_1>請勿將訊息文本留空！</alert_1>
+	<alert_2>未選取訊息範本！</alert_2>
+	<alert_3>確定要刪除所選訊息範本嗎？此為不可撤銷操作 – 刪除的訊息範本將從系統中永久移除！</alert_3>
+	<alert_4>確定要清空訊息範本嗎？此為不可撤銷操作 – 刪除的訊息範本將從系統中永久移除！</alert_4>
+	<alert_5>Please Specify A File To Be Uploaded!</alert_5>
+	<alert_6>Confirm To Cancel Add Message(s) By File Upload? All Records Uploaded Will Be Deleted!</alert_6>
+	<alert_7>Personal Message(s) Successfully Added!</alert_7>
+	<export>Export Message Template(s) To CSV File</export>
+	<add_upload>Add Message(s) By File Upload :</add_upload>
+	<upload_file>Upload File</upload_file>
+	<preview>Preview Message(s) By File Upload</preview>
+	<file_format>File Format</file_format>
+</message_template>
+<new_http_log>
+	<title>HTTP 已發送日誌</title><date_from>開始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy)</date_format><export>將 HTTP 已發送日誌導出至 CSV 檔案</export><mobile_number>行動電話號碼</mobile_number><date_time>日期和時間</date_time><message_text>訊息文字</message_text><status>狀態</status><message_from>訊息來源</message_from><modem_label>數據機標籤</modem_label><delete>選中以刪除</delete><delete_checked>刪除所選已發送日誌</delete_checked><empty_str>清空已發送日誌</empty_str><alert_1>請僅在搜寻行動電話號碼中輸入數字</alert_1><alert_2>日期範圍無效！請選中『日期選取』！</alert_2><alert_3>未選取已發送日誌！</alert_3><alert_4>確定要刪除所選已發送日誌嗎？此為不可撤銷操作 – 刪除的已發送日誌將從系統中永久移除！</alert_4><alert_5>確定要清空所有已發送日誌嗎？此為不可撤銷操作 – 刪除的已發送日誌將從系統中永久移除！</alert_5><http_log>HTTP 日誌</http_log><http_schedule_log>HTTP 計劃日誌</http_schedule_log>
+</new_http_log>
+<new_http_queuelog>
+	<title>HTTP 計劃日誌</title><date_from>開始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy)</date_format><export>將 HTTP 計劃日誌導出至 CSV 檔案</export><mobile_number>行動電話號碼</mobile_number><date_time>日期和時間</date_time><message_text>訊息文字</message_text><status>狀態</status><message_from>訊息來源</message_from><modem_label>數據機標籤</modem_label><delete>選中以刪除 </delete><delete_checked>刪除所選計劃日誌</delete_checked><empty_str>清空計劃日誌</empty_str><alert_1>請僅在搜寻行動電話號碼中輸入數字</alert_1><alert_2>日期範圍無效！請選中『日期選取』</alert_2><alert_3>未選取計劃日誌！</alert_3><alert_4>確定要刪除所選計劃日誌嗎？此為不可撤銷操作 – 刪除的計劃日誌將從系統中永久移除！</alert_4><alert_5>確定要清空所有計劃日誌嗎？此為不可撤銷操作 – 刪除的計劃日誌將從系統中永久移除！</alert_5><http_log>HTTP 日誌</http_log><http_schedule_log>HTTP 計劃日誌</http_schedule_log>
+</new_http_queuelog>
+<queue_log>
+	<title>個人佇列日誌</title><date_from>開始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy)</date_format><export>將個人佇列日誌匯出至 CSV 檔案</export><mobile_number>行動電話號碼</mobile_number><date_time>日期和時間</date_time><message_text> 訊息文本</message_text><status>狀態</status><delete>選中以刪除</delete><delete_checked>刪除所選佇列日誌</delete_checked><empty_str>清空佇列日誌</empty_str><alert_1>請僅在搜寻行動電話號碼中輸入數字</alert_1><alert_2>日期範圍無效！請選中『日期選取』！</alert_2><alert_3>未選取佇列日誌！</alert_3><alert_4>確定要刪除所選佇列日誌嗎？此為不可撤銷操作 – 刪除的佇列日誌將從系統中永久移除！</alert_4><alert_5>確定要清空所有佇列日誌嗎？此為不可撤銷操作 – 刪除的佇列日誌將從系統中永久移除！</alert_5>
+</queue_log>
+<quota_mnt>
+	<add_quota_profile>添加金額配置檔案</add_quota_profile>
+	<edit_quota_profile>編輯新金額配置檔案</edit_quota_profile>
+	<userid>使用者ID</userid>
+	<quota_left>剩餘金額</quota_left>
+	<auto_topup>自動充值</auto_topup>
+	<topup_value>充值額</topup_value>
+	<last_topup>最後充值日期（自動充值）</last_topup>
+	<next_topup>下一次充值日期（自動充值）</next_topup>
+	<update_dtm>已更新配置檔案 DTM</update_dtm>
+	<update_by>配置檔案更新者</update_by>
+	<enable_unlimited>啟用無限金額</enable_unlimited>
+	<quota_alert_config>金額警報配置</quota_alert_config>
+	<add_quota_config>金額警報配置（透過電子郵件）</add_quota_config>
+	<alert_status>警報狀態</alert_status>
+	<alert_email>警報電子郵件</alert_email>
+	<alert_email_desc>**僅允許一個電子郵件傳送警報。**</alert_email_desc>
+	<credit_alert>餘額警報：</credit_alert>
+	<alert_3>Confirm To Delete Selected Quota Profile(s)? This Is A Irreversible Action - Deleted Quota Profile(s) Will Be Permanently Removed From The System!</alert_3>
+	<addQuotaProfile_msg1>金額設定檔已存在。</addQuotaProfile_msg1>
+	<dept_quota_left>部門剩余</dept_quota_left>
+	<addQuotaProfile_msg2>部門剩余不足</addQuotaProfile_msg2>
+	<QuotaProfile_msg1>添加余额</QuotaProfile_msg1>
+	<QuotaProfile_msg2>余额</QuotaProfile_msg2>
+</quota_mnt>
+<save_keyword><msg_1>系統錯誤 – 關鍵字 ID沒有設置保存！</msg_1><msg_2>系統錯誤 – 關鍵字沒有設定模式！</msg_2><msg_3>電子郵件手冊已被激活，但沒有文件上傳！</msg_3><msg_4>上傳失敗 - 文件為空</msg_4><msg_5>上傳失敗 -</msg_5><msg_6>請取消選中電子郵件手冊或重新選擇要上傳的文件。</msg_6><msg_7>上傳的文件名應以ASCII文本格式！</msg_7><alert_1>新關鍵字</alert_1><alert_2>已成功添加！</alert_2><alert_3>對關鍵字</alert_3><alert_4>所作的更改已成功保存！</alert_4></save_keyword>
+<scheduled_sms><send_type>发送类型</send_type><title>排定的 SMS</title><mobile_number>行動電話號碼</mobile_number><message_text>訊息文本</message_text><scheduled_date>排程日期和時間</scheduled_date><priority_status>優先順序狀態</priority_status><delete>選中以刪除</delete><delete_checked>刪除所選 SMS</delete_checked><empty_str>清空排定的 SMS</empty_str><alert_1>未選取 SMS！</alert_1><alert_2>確定要刪除所選 SMS 嗎？此為不可撤銷操作 – 刪除的 SMS 將從系統中永久移除！</alert_2><alert_3>確定要清空所有計劃的 SMS 嗎？此為不可撤銷操作 – 刪除的 SMS 將從系統中永久移除！</alert_3></scheduled_sms>
+<send_sms>
+	<subject>題目</subject>
+	<image>圖片</image>
+	<text>文本</text>
+	<scheduling_message>調度消息</scheduling_message>
+	<descr2>選擇要上傳的圖像</descr2>
+	<content_type>內容類型</content_type>
+	<descr1>選擇廣播消息的收件人</descr1>
+	<header>傳送 SMS </header>
+	<file_upload>透過上傳的檔案傳送 SMS</file_upload>
+	<mno_1>在文本框中輸入行動電話號碼</mno_1>
+	<mno_2>（用新行隔開每個條目）</mno_2>
+	<mno_3>僅限數字 - 請輸入國際格式行動電話號碼</mno_3>
+	<mno_4>例如：對於新加坡，+65xxxxxxxx，『+65為國家碼』</mno_4>
+	<select_addressbook>從位址簿中選取</select_addressbook>
+	<char_set>字元集選取：</char_set>
+	<message>在文本框紅輸入訊息文本</message>
+	<select_msgtemplate>從訊息範本中選取</select_msgtemplate>
+	<characters>字串：</characters>
+	<msgcounts>訊息計數：</msgcounts>
+	<prioritysms>優先順序 SMS：</prioritysms>
+	<schedulingsms>排定 SMS：</schedulingsms>
+	<yes>是</yes>
+	<date>日期：</date>
+	<date_format>yyyy-mm-dd</date_format>
+	<time>時間：</time>
+	<send>傳送</send>
+	<cancel>取消</cancel>
+	<alert_1>未輸入行動電話號碼！請重新檢查！</alert_1>
+	<alert_2>請選取一個排定傳送 SMS 的日期！</alert_2>
+	<alert_3>選取了無效的日期！請重新選取</alert_3>
+	<alert_4>當前時間為</alert_4>
+	<alert_5>請選取排定傳送 SMS 的有效時間！</alert_5>
+	<alert_6>此 SMS 為空白訊息！</alert_6>
+	<alert_7> SMS 已成功發出。</alert_7>
+	<alert_8> SMS 已成功進入佇列。</alert_8>
+	<alert_9>SMS 超過了字元數</alert_9>
+	<alert_10>最大長度！</alert_10>
+	<alert_11> Unsubscribe Number(s)</alert_11>
+	<select_sqltemplate>Select From SQL Template</select_sqltemplate>
+	<sql_tmpl_dtl><![CDATA[Use the standard SQL script format to get the data from external database. Example:&#013;<i><b>SELECT Handphone,Name,AppointmentDateTime FROM tbl_AppointmentScheduling</b></i>]]></sql_tmpl_dtl>
+	<send_mode>發送模式</send_mode>
+	<email_address>電子郵件地址</email_address>
+	<email_subject>電子郵件主題</email_subject>
+	<send_mode_sms>短信</send_mode_sms>
+	<send_mode_email>電子郵件</send_mode_email>
+	<send_mode_mim>MIM</send_mode_mim>
+	<email_1>電子郵件地址</email_1>
+	<email_2>電子郵件主題</email_2>
+	<email_3>從地址發送電子郵件</email_3>
+	<alert_12>SMS &amp; MIM 已成功进入队列</alert_12>
+	<alert_13>MIM 已成功进入队列</alert_13>
+</send_sms>
+<sent_log>
+	<title>個人已傳送日誌</title><date_from>開始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy)</date_format><export>將個人已傳送匯出至 CSV 檔案</export><mobile_number>行動電話號碼</mobile_number>
+	<campaignname>活動名稱</campaignname><date_time>日期和時間</date_time><message_text>訊息文本</message_text><status>狀態</status><totalsms>SMS 總數</totalsms><delete>選中以刪除</delete><delete_checked>刪除所選已傳送日誌</delete_checked><empty_str>清空已傳送日誌</empty_str><alert_1>請僅在搜寻行動電話號碼中輸入數字</alert_1><alert_2>日期範圍無效！請選中『日期選取』！</alert_2><alert_3>未選取已發送日誌！</alert_3><alert_4>確定要刪除所選已發送日誌嗎？此為不可撤銷操作 – 刪除的已發送日誌將從系統中永久移除！</alert_4><alert_5>確定要清空所有已發送日誌嗎？此為不可撤銷操作 – 刪除的已發送日誌將從系統中永久移除！</alert_5>
+</sent_log>
+<success><title>操作成功</title><click>單擊</click><here>這裡</here><back>返回</back><str_or>或</str_or><to></to><op_success>操作成功！</op_success><usermgnt>使用者管理</usermgnt><addressbook>位址簿</addressbook><msgtemplate>訊息範本</msgtemplate><sendsms>傳送 SMS</sendsms><scheduledsms>排定 SMS</scheduledsms><commoninbox>通用收件匣</commoninbox><logsmgnt>收件匣/日誌管理</logsmgnt><unsublist>取消訂閱清單</unsublist><quotamgnt>金額管理</quotamgnt><keywordmgnt>關鍵字管理</keywordmgnt><sysconfig>系統配置</sysconfig><languagesetup>語言設置</languagesetup><changepassword>變更密碼</changepassword><httplog>HTTP 日誌</httplog></success>
+<sysconfig>
+	<title>SMS Time Configuration</title>
+	<modem_config>Modem Configuration</modem_config>
+	<web_logo>Web Interface Logo</web_logo>
+	<ldap_server_mgnt>ＬＤＡＰ伺服器管理</ldap_server_mgnt>
+	<sysconfig_desc>此選項允許使用者設定傳送 SMS 的星期，開始和截止時間。默認情況下，不應用任何控制。要控制 SMS 傳送時間，只需簡��地選取星期和時間範圍。</sysconfig_desc>
+	<enable>啟用 :</enable>
+	<mon>星期一 :</mon>
+	<tue>星期二 :</tue><wed>星期三 :</wed>
+	<thu>星期四 :</thu>
+	<fri>星期五 :</fri>
+	<sat>星期六 :</sat>
+	<sun>星期日 :</sun><modem_config>Modem Configuration</modem_config>
+	<web_logo>Web Interface Logo</web_logo>
+	<start>開始 :</start>
+	<end>截止 :</end>
+	<hour>小時</hour>
+	<min>分鐘</min>
+	<submit>提交</submit><reset>重置</reset>
+	<upload_image>上傳圖像頭</upload_image>
+	<upload_image_from>上傳圖像：</upload_image_from>
+	<image_allow_1>允許的圖像格式：（gif、jpeg、jpg、png、bmp）</image_allow_1>
+	<image_allow_2>所有圖像將可轉換為��170 x 40 圖元）</image_allow_2>
+	<latest_image>最後的圖像：</latest_image>
+	<delete_image>刪除此圖像</delete_image>
+	<latest_upload>最後上傳：</latest_upload>
+	<by>由</by>
+	<upload>上傳</upload>
+	<cancel>取消</cancel>
+	<alert_1>抱歉，檔案不存在。</alert_1>
+	<alert_2>錯誤的檔案副檔案名。</alert_2>
+	<alert_3>無法寫入檔案 (image_header.xml)</alert_3>
+	<alert_4>檔案</alert_4>
+	<alert_5>已上傳</alert_5>
+	<alert_6>上傳檔案時發生錯誤，請��試！</alert_6>
+	<alert_7>請選取要上傳的檔案！</alert_7>
+	<alert_8>Confirm Remove Image File?</alert_8>
+	<alert_9>Modem Configuration Saved Successfully!</alert_9>
+	<alert_10>Confirm To Remove Modem Setting?</alert_10>
+	<alert_11>sms 時間配置檔案已成功儲存.</alert_11>
+	<modem_config_title>部門數據機配置清單</modem_config_title>
+	<department>部門</department>
+	<modem_label>數據機標籤</modem_label>
+	<created_by>被創建</created_by>
+	<created_dtm>創建DTM</created_dtm>
+	<updated_by>被更新</updated_by>
+	<updated_dtm>更新DTM</updated_dtm>
+	<nomodem_desc>所有部門沒有專屬的數據機</nomodem_desc>
+	<title_add>加入各部門數據機路由選擇設置</title_add>
+	<title_edit>編輯各部門數據機路由選擇設置</title_edit>
+</sysconfig>
+<unsent_log>
+	<title>個人未傳送日誌</title><resend>重新發送</resend><date_from>開始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy)</date_format><export>將個人未傳送日誌匯出至 CSV 檔案</export><mobile_number>行動電話號碼</mobile_number><date_time>日期和時間</date_time><message_text>訊息文本</message_text><status>狀態</status><delete>選中以刪除</delete><delete_checked>刪除所選未傳送日誌</delete_checked><empty_str>清空未傳送日誌</empty_str><alert_1>請僅在搜寻行動電話號碼中輸入數字</alert_1><alert_2>日期範圍無效！請選中『日期選取』！</alert_2><alert_3>未選取未發送日誌！</alert_3><alert_4>確定要刪除所選未發送日誌嗎？此為不可撤銷操作 – 刪除的未發送日誌將從系統中永久移除！</alert_4><alert_5>確定要清空所有未發送日誌嗎？此為不可撤銷操作 – 刪除的未發送日誌將從系統中永久移除！</alert_5>
+</unsent_log>
+<unsubscribe_list>
+	<button1>新退订关键字</button1>
+	<button2>查看退订关键词列表</button2>
+	<button3>保存设置</button3>
+	<button4>复位</button4>
+	<button5>删除选中的关键字</button5>
+	<button6>返回退订列表</button6>
+	<button7>加</button7>
+	<button8>取消</button8>
+	<button9>删除选中的关键字</button9>
+	<button10>取消</button10>
+	<respmsgtitle1>退订响应消息</respmsgtitle1>
+	<respmsgtitle2>退订响应回复(短信回给用户):</respmsgtitle2>
+	<respmsgtitle3>这将是接收到的短信发送回给发件人，如果系统使用的关键字是从退订关键字列表匹配</respmsgtitle3>
+	<keywordtitle>退订关键字列表</keywordtitle>
+	<unsub_keyword>退订关键字</unsub_keyword>
+	<created_by>创建者</created_by>
+	<createtitle1>创建新退订关键字</createtitle1>
+	<createtitle2>退订关键字</createtitle2>
+	<createtitle3>关键字是短信的第一个字。系统将路线传入的短信退订列表。</createtitle3>
+	<upload_header>上傳退訂手機號碼</upload_header>
+	<title>取消訂閱清單</title>
+	<header>取消訂閱者清單</header>
+	<mobile_number>行動電話號碼</mobile_number>
+	<date_time>日期和時間</date_time>
+	<delete>選中以刪除</delete>
+	<delete_checked>刪除所選取消訂閱者</delete_checked>
+	<empty_str>清空所有取消訂閱者</empty_str>
+	<alert_1>未選取取消訂閱者！</alert_1>
+	<alert_2>確定要刪除所選取消訂閱者嗎？此為不可撤銷操作 – 刪除的取消訂閱者將從系統中永久移除！</alert_2>
+	<alert_3>確定要清空所有取消訂閱者嗎？此為不可撤銷操作 – 刪除的取消訂閱者將從系統中永久移除！</alert_3>
+	<keyword_alert1>未选择关键字</keyword_alert1>
+	<keyword_alert2>确认删除选定的关键字? 这是一个不可逆转的行动 -删除关键字将被永久删除从系统中!</keyword_alert2>
+	<keyword_blank>不允许空白关键字</keyword_blank>
+	<createtitle4>创建新退订手机号码</createtitle4>
+	<createtitle5>退订手机号码</createtitle5>
+	<alert_4>请指定要上的传文件!</alert_4>
+	<alert_5>要上传的文件的文件格式不正确</alert_5>
+	<source>Source</source>
+	<uploadtitle>请指定要上传的文件 (*csv或 .txt扩展名):</uploadtitle>
+	<add>添加退订手机</add>
+	<upload>Upload</upload>
+	<mobile_blank>您没有输入电话号码</mobile_blank>
+	<mobile_illegal>电话号码中含有非法字符</mobile_illegal>
+	<resp_btn>響應</resp_btn>
+	<responseupdate>Unsubscribe Response Successfully Updated!</responseupdate>
+</unsubscribe_list>
+<update_language>
+	<header>語言設置</header><message_1>語言設置成功</message_1><message_2>按</message_2><message_3>這裡</message_3><message_4>查看已更新的語言設置。</message_4><message_5>抱歉，無法更新語言設置。</message_5><ses_err>抱歉，您未登錄或者會話已過期。</ses_err></update_language>
+<update_quotalist>
+	<title>金額管理</title><check_session>抱歉，您未登錄或者會話已過期。</check_session><db_err>資料庫連線失敗：</db_err><err_1>請填寫充值金額。</err_1><err_2>充值金額必須為數字。</err_2><err_3>請從下拉功能表清單中選取使用者 ID。</err_3><err_4>新金額設定檔已成功添加。</err_4><err_5>抱歉，無法添加金額設定檔。</err_5><err_6>所選金額配置檔案已成功更新。</err_6><err_7>抱歉，無法更新金額設定檔。</err_7><err_8>剩餘金額必須為數字。</err_8></update_quotalist>
+<upload_address_book>
+	<header>透過上傳的檔案預覽聯繫人：</header><no>編號</no><contact_name>聯繫人姓名</contact_name><mobile_number>聯繫人行動電話號碼</mobile_number><file_format>檔案格式</file_format><add>添加</add><cancel>取消</cancel><alert_1>檔無效</alert_1><alert_2>無法移動上載檔案</alert_2><alert_3> 個已成功添加！</alert_3><alert_4>確定要取消通過檔上載添加聯繫人嗎？所有已上載的記錄將被刪除！</alert_4><correct>正確</correct><wrong>錯誤</wrong></upload_address_book>
+<upload_broadcast_sms>
+	<title>通過檔上載預覽 SMS</title><no>編號</no><mobile_number>行動電話號碼</mobile_number>
+	<sms_text>SMS 文字</sms_text><file_format>檔格式</file_format><priority>優先順序</priority><schedule_time>排定時間</schedule_time><correct>正確</correct><wrong>錯誤</wrong>
+	<alert_1> 已成功發出。</alert_1><alert_2> 已成功進入佇列。</alert_2><alert_3>確定要取消通過檔上載發送 SMS 嗎？所有已上載的記錄將被刪除！</alert_3>
+	<err_1>檔無效</err_1><err_2>無法移動上載檔案</err_2><send>傳送</send><cancel>取消</cancel>
+</upload_broadcast_sms>
+<upload_unsub_mobile>
+	<title>退订手机上传</title><alert_1>退订号码已成功添加</alert_1><alert_2>有 </alert_2><alert_3> 行格式错误</alert_3><alert_4> 退订移动已经存在</alert_4>
+	<err_1>无效的文件</err_1><err_2>无法移动上传文件</err_2>
+</upload_unsub_mobile>
+<user_account>
+	<access_status>访问状态</access_status>
+	<transfer_setting>传输设置自</transfer_setting>
+	<username>使用者名</username>
+	<dept>部門</dept>
+	<datasrc>用戶數據源</datasrc>
+	<create_new>建立新使用者帳戶</create_new>
+	<download_new>從LDAP伺服器下載用戶</download_new>
+	<delete_checked>刪除所選使用者帳戶</delete_checked>
+	<empty_str>清空所有使用者</empty_str>
+	<user_acc_name>用戶名</user_acc_name>
+	<user_pwd>用戶密碼</user_pwd>
+	<user_pwd_cfm>確認用戶密碼</user_pwd_cfm>
+	<user_mobile>用戶手機號碼</user_mobile>
+	<user_dept>部門</user_dept>
+	<user_role>用户角色</user_role>
+	<min_8>至少要有12字元並包含小字母，大字母，數字，符號兩項或以上，並且不能與用戶名相同</min_8>
+	<username_min_8>用户名至少要有8字符</username_min_8>
+	<pwdstr>密級</pwdstr>
+	<pwdstrinvalid>密碼太短或包含空格</pwdstrinvalid>
+	<pwdstrweak>弱</pwdstrweak>
+	<pwdstrfair>中等</pwdstrfair>
+	<pwdstrbetter>強</pwdstrbetter>
+	<pwdstrbest>很強</pwdstrbest>
+	<must_match>必須匹配上面的密碼</must_match>
+	<numbers_only>僅限數字&lt;br&gt;請輸入國際格式行動電話號碼&lt;br&gt;例如：對於新加坡，+65xxxxxxxx，『+65為國家碼』</numbers_only>
+	<user_role_not_specify>未指定使用者角色</user_role_not_specify>
+	<no_dept>無可用部門</no_dept>
+	<select_ldap>選擇LDAP伺服器</select_ldap>
+	<search_data_src>選擇資料來源:</search_data_src>
+	<add_new>添加新使用者帳戶：</add_new>
+	<edit_acc>編輯現有使用者帳戶</edit_acc>
+	<title>使用者帳戶管理</title>
+	<list_user>使用者帳戶清單</list_user>
+	<new_name>新使用者帳戶名：</new_name>
+	<new_pw>新使用者密碼：</new_pw>
+	<cfm_pw>重新確認使用者密碼：</cfm_pw>
+	<new_mno>新使用者行動電話號碼：</new_mno>
+	<dept_new>新使用者的部門：</dept_new>
+	<role_new>新使用者的使用者角色：</role_new>
+	<list_access>存取權清單</list_access>
+	<name>使用者帳戶名：</name>
+	<pw>變更使用者密碼：</pw>
+	<change_mno>更使用者行動電話號碼：</change_mno>
+	<dept_curr>使用者的部門：</dept_curr>
+	<role_curr>使用者的使用者角色：</role_curr>
+	<alert_1>請勿將使用者帳戶名留空！</alert_1>
+	<alert_2>使用者密碼必須至少為 8 個字元且為字母數字式字元！</alert_2>
+	<alert_3>輸入的 2 個密碼不一致！請重新檢查</alert_3>
+	<alert_4>請僅為聯繫人行動電話號碼輸入（+國家碼後跟號碼）或（國家碼後跟號碼）！</alert_4>
+	<alert_5>未選取部門！請確保已將使用者指定給部門！</alert_5>
+	<alert_6>未選取使用者帳戶！</alert_6>
+	<alert_7>確定要刪除所選使用者嗎？此操作無法撤銷 – 刪除的使用者將從系統中永久移除！</alert_7>
+	<alert_8>確定要清空所有使用者嗎�此為不可撤銷操作 – 刪除的使用者將從系統中永久移除！</alert_8>
+	<l_profile_id_desc>您必須先添加LDAP服務器或啟用與之同步。</l_profile_id_desc>
+	<user_email>電子郵件</user_email>
+	<access_start>訪問開始</access_start>
+	<access_end>訪問結束</access_end>
+	<no_user_type>請選擇</no_user_type>
+	<user_type>用戶類型</user_type>
+	<user_type_admin>管理員</user_type_admin>
+	<user_type_bu>BU</user_type_bu>
+	<user_type_user>用戶</user_type_user>
+	<sessiontimeout>時域超時</sessiontimeout>
+	<lockoutthreshold>鎖定閾值</lockoutthreshold>
+	<pwdexpiry>密碼到期</pwdexpiry>
+	<pwdchglogon>下次登錄時更改密碼</pwdchglogon>
+	<minutes>分鐘</minutes>
+	<invalidattempt>失敗次數</invalidattempt>
+	<days>天</days>
+</user_account>
+<user_department>
+	<mim_route>MIM路線</mim_route>
+	<no>编号</no>
+	<description>描述</description>
+	<mim_type> MIME类型</mim_type>
+	<mim_channel>MIM 頻道</mim_channel>
+	<title>部門管理</title><add_new>添加新部門：</add_new>
+	<edit>編輯現有部門</edit>
+	<create_new>建立新部門</create_new><list_dept>部門清單</list_dept><dept>部門</dept><created_by>建立者</created_by>
+	<delete>選中以刪除</delete><delete_checked>刪除所選部門</delete_checked><empty_str>清空所有部門</empty_str>
+	<new_dept>新部門名稱：</new_dept><add>添加</add><cancel>取消</cancel><alert_1>請勿將部門名稱留空！</alert_1><alert_2>未選取部門！</alert_2>
+	<alert_3>確定要刪除所選部門嗎？此為不可撤銷操作 – 刪除的部門及其使用者將從系統中永久移除！</alert_3>
+	<alert_4>確定要清空所有部門嗎？刪除的部門下的所有使用者帳戶也將從系統中被刪除！此為不可撤銷操作 – 刪除的部門及使用者帳戶將從系統中永久移除！</alert_4>
+	<alert_5>更新部門失敗。</alert_5>
+</user_department>
+<user_management>
+	<title>使用者管理</title><msg_1>抱歉，您不具有對使用者管理下的任何功能的存取許可權。</msg_1><msg_2>資料庫錯誤</msg_2><msg_3>系统错误 – 在表“system_functions”中无法找到ID</msg_3>
+	<msg_4></msg_4>
+</user_management>
+<user_role>
+	<title>使用者角色管理</title>
+	<add_new>添加新使用者角色：</add_new><create_new>建立新使用者角色</create_new><list_role>使用者角色清單</list_role>
+	<userrole>使用者角色</userrole><dept>部門</dept><delete>選中以刪除</delete><delete_checked>刪除所選使用者角色</delete_checked>
+	<empty_str>清空所有使用者角色</empty_str><all_dept>所有部門</all_dept><new_role>新使用者角色名稱：</new_role><dept_new>新使用者角色的部門：</dept_new>
+	<list_access>新使用者角色的存取權清單</list_access><add>添加</add><cancel>取消</cancel><edit_role>編輯現有使用者角色</edit_role><role_curr>使用者角色名稱：</role_curr>
+	<dept_curr>使用者角色的部門：</dept_curr><save>儲存</save><access_all_dept>可存取所有部門</access_all_dept><alert_1>請勿將使用者角色名稱留空！</alert_1>
+	<alert_2>未選取使用者角色！</alert_2><alert_3>確定要刪除所選使用者角色嗎？此為不可撤銷操作 – 刪除的使用者角色將從系統中永久移除！</alert_3>
+	<alert_4>確定要清空所有使用者角色嗎？此為不可撤銷操作 – 刪除的使用者角色將從系統中永久移除！</alert_4>
+</user_role>
+<campaign_rdb>
+	<desc>Description</desc>
+	<sent_dtm>Sent Date/Time</sent_dtm>
+	<mobile_number>Mobile Number</mobile_number>
+	<outgoing>Outgoing Message</outgoing>
+	<cmpg_name>Profile Name</cmpg_name>
+	<rcv_dtm>Received Date/Time</rcv_dtm>
+	<rsp_msg>Response Message</rsp_msg>
+	<mtch_key>Matched Keyword</mtch_key>
+	<flag>Call Flag</flag>
+	<call_dtm>Call Date/Time</call_dtm>
+	<done_by>Call Done By</done_by>
+	<empty_str>Empty</empty_str>
+	<cmpg_tmpl>Message Template</cmpg_tmpl>
+	<target_db>Target Database</target_db>
+	<created>Created</created>
+	<modified>Modified</modified>
+	<connection>Connection</connection>
+	<host_profile>Host Profile</host_profile>
+	<host_srvr>Host Server</host_srvr>
+	<update>Update Call Flag</update>
+	<profile_name>Profile Name</profile_name>
+	<profile_desc>Profile Description</profile_desc>
+	<profile_desc_dtl>Description of SMS Routine Profile</profile_desc_dtl>
+	<mail_merge_tmpl>Template for Mail Merge SMS</mail_merge_tmpl>
+	<mail_merge_tmpl_desc><![CDATA[Use variable &lt;data_[column_number]&gt; to replace the column value retrieved from SQL Profile. For example:&#013;<i><b>select mobile,name,message from reminder_table</b></i>&#013;&#013;<b>&lt;data_1&gt; = Value in 'name' column &#013;&lt;data_2&gt; = Value in 'message' column</b>&#013;&#013;** Please note that &lt;data_0&gt; is reserved for mobile number to receive SMS]]></mail_merge_tmpl_desc>
+	<pullout_adv_days>Advance days to pull</pullout_adv_days>
+	<in_exp_days>Expiry for Incoming Message</in_exp_days>
+	<in_exp_days_dtl>This configuration will be used for keyword matching.</in_exp_days_dtl>
+	<no_of_cols>Number of columns</no_of_cols>
+	<sql_query_dtl><![CDATA[Use the special variable xxDatexx to replace with the advance day to pull the record. Example:&#013;<i><b>select patient_name,patient_mobile from patient_record where appt_date = xxDatexx</b></i>]]>
+	</sql_query_dtl>
+	<db_profile>Database Profile</db_profile>
+	<schedule_time>Scheduling Time</schedule_time>
+	<camp_daily_report>Daily Report</camp_daily_report>
+	<camp_monthly_report>Monthly Report</camp_monthly_report>
+	<camp_report_desc>One Email per line</camp_report_desc>
+	<db_conf_id>Database Configuration ID</db_conf_id>
+	<db_conf_id_desc>Unique ID of Database Configuration. If this is a MSSQL Configuration, this name will be used when establishing connection.</db_conf_id_desc>
+	<rdb_desc>Database Description</rdb_desc>
+	<rdb_desc_dtl>Description of Database Server</rdb_desc_dtl>
+	<rdb_host>Database Host</rdb_host>
+	<rdb_port>Database Port</rdb_port>
+	<rdb_port_desc>Default port: Oracle: 1521  | MSSQL: 1433  | PostgreSQL: 5432  | MySQL: 3306</rdb_port_desc>
+	<rdb_type>Database Type</rdb_type>
+	<rdb_sid>SID</rdb_sid>
+	<rdb_tds>Version</rdb_tds>
+	<rdb_target_db_desc><![CDATA[Database to be used.&#013;	- MSSQL - Leave blank if default database to be used.&#013;- Oracle - Set to the database that is tied to the SID given.]]></rdb_target_db_desc>
+	<rdb_username>Username</rdb_username>
+	<rdb_password>Password</rdb_password>
+	<chk_password>Re-enter Password</chk_password>
+	<add_rdb>Add New Remote Database</add_rdb>
+	<edit_rdb>Edit Existing Remote Database</edit_rdb>
+	<reply_query>Reply Message</reply_query>
+	<reply_query_desc>
+		<![CDATA[These messages are applicable if the keyword is set to retrieve information from any Database (as set in SQL Query String).
+		If there is any matched record found, the Matched message will be returned; otherwise the Unmatched will be sent back.
+		Mail-merged feature is applicable to both messages.&#013;&#013;
+		To enable mail-merge reply message, that is based on the SQL query (xxFIELD_xx), simply define the following variable in the message.
+		&#013;&#013;Eg. &#013;&#013;Hi xxFIELD_1xx, your score is xxFIELD_3xx</b></i>]]>
+	</reply_query_desc>
+	<resp_query>Database Query</resp_query>
+	<resp_query_desc_1>This is the Database to connect and retrieve the result with the specified SQL query in the text box. The system will then merge the SMS content into the query condition if specified.</resp_query_desc_1>
+	<resp_query_desc_2>
+		<![CDATA[SMS Query Condition: Eg. me myid myanswer
+		<ul><li>me - This is the keyword (index 0)</li><li>myid - This is the FIRST content (index 1)</li><li>myanswer - This is the SECOND content (index 2)</li></ul>
+		To select a record based on the id, the SQL query should be set as following:&#013;
+		<i><b>Select score from mytable where id='xxFIELD_1xx';</b></i>&#013;&#013;
+		To update the answer with user mobile number and received date(yyyy/mm/dd hh:mm:ss), the SQL query should be as following:&#013;
+		<i><b>Update mytable set answer='xxFIELD_2xx', mobile_number='xxMOBILExx', received_date='xxRECEIVED_DATExx' where id='xxFIELD_1xx';</b></i>]]>
+	</resp_query_desc_2>
+	<remove>Remove</remove>
+	<no_camp>No Routine SMS</no_camp>
+	<no_db>No Remote Database</no_db>
+	<matched>Matched</matched>
+	<unmatched>Unmatched</unmatched>
+	<enable_remotedb>Enable Query Remote Database</enable_remotedb>
+	<keyword_target_db>Target Database</keyword_target_db>
+	<keyword_target_db_desc><![CDATA[The target database is different from the default database of the selected host.&#013;<b>Only applicable to MSSQL only.</b>]]></keyword_target_db_desc>
+	<remotedb_server>Remote Server</remotedb_server>
+	<sql_query>SQL Query String</sql_query>
+	<port>Port</port>
+</campaign_rdb>
+<report>
+	<reportt>報告</reportt>
+	<users>用戶</users>
+	<user>用戶</user>
+	<dept>部門</dept>
+	<quota>SMS Quota</quota>
+	<delivered>SMS Delivered</delivered>
+	<undelivered>SMS Undelivered</undelivered>
+	<campaignname>活動名稱</campaignname>
+	<autorefresh>短信配額自動刷新</autorefresh>
+	<totalsent>發送的短信總數</totalsent>
+	<total>總數</total>
+	<totaluser>總數用戶</totaluser>
+	<loading>加載數據。請稍候</loading>
+	<unlimited>無限配額</unlimited>
+	<quotadisabled>不允許充值</quotadisabled>
+	<summary>總結</summary>
+	<viewalldept>View All Departments Report</viewalldept>
+	<viewusers>View Users Report</viewusers>
+	<viewreport>View User Report</viewreport>
+	<date_time>日期和時間</date_time>
+	<mobile_number>手機號碼</mobile_number>
+	<message>訊息</message>
+	<action>行動</action>
+	<status>狀態</status>
+	<totalsms>短信總數</totalsms>
+	<keyword>關鍵詞</keyword>
+	<department>部門</department>
+	<listincoming>收到消息列表</listincoming>
+	<listmsg>消息列表</listmsg>
+</report>
+<conversation>
+	<conversation>對話</conversation>
+	<refresh>刷新</refresh>
+	<assign_to>分配給</assign_to>
+	<user>用戶</user>
+	<add_note>添加筆記</add_note>
+	<cancel>取消</cancel>
+	<processing>處理中</processing>
+	<save_to_addr_book>保存到通訊錄</save_to_addr_book>
+	<contact_name>聯繫人姓名</contact_name>
+	<mobile_number>手機號碼</mobile_number>
+	<numbers_only>僅數字</numbers_only>
+	<modem_label>調製解調器標籤</modem_label>
+	<none>無</none>
+	<modem_desc>調製解調器說明</modem_desc>
+	<list_add_group>列表添加組</list_add_group>
+	<search_msg>搜尋訊息</search_msg>
+</conversation>
+<maintenance_report>
+	<log_maintenance>日誌維護</log_maintenance>
+	<usage_report>使用情況報告</usage_report>
+	<conversation_log_maintenance>會話日誌維護</conversation_log_maintenance>
+	<delete_chat_history_after>之後刪除聊天記錄</delete_chat_history_after>
+	<days>天</days>
+	<conversation_report_updated>會話報告已更新</conversation_report_updated>
+	<descr1>系統將根據此處設置的持續時間保留對話歷史記錄。 設置為“ 0”天將在系統中無限期保留歷史記錄。</descr1>
+	<report_schedule>報告時間表</report_schedule>
+	<type>類型</type>
+	<time_name>時間</time_name>
+	<descr2>"會話使用情況"報告將包含"會話歷史記錄"報告。 可用選項：</descr2>
+	<descr3>禁用：這將禁用使用情況報告。</descr3>
+	<descr4>每天：該報告將每天生成。</descr4>
+	<descr5>每週：該報告將在每個星期一生成。</descr5>
+	<descr6>每月：該報告將在每月的第一天生成。</descr6>
+	<email_usage_report>電子郵件使用情況報告</email_usage_report>
+	<descr7>這將設置將接收"會話使用情況報告"的電子郵件地址。</descr7>
+</maintenance_report>
+<campaign_mgnt>
+	<failed_list_campaign>檢索活動数据失败。</failed_list_campaign>
+	<failed_create_campaign>创建活動失败。</failed_create_campaign>
+	<failed_edit_campaign>修改活動失败。</failed_edit_campaign>
+	<failed_delete_campaign>刪除活動失敗。</failed_delete_campaign>
+	<new_campaign>新活動</new_campaign>
+	<edit_campaign>編輯活動</edit_campaign>
+	<name>名稱</name>
+	<type>類型</type>
+	<broadcast>廣播</broadcast>
+	<interactive>互動</interactive>
+	<status>狀態</status>
+	<active>活躍</active>
+	<pause>暫停</pause>
+	<cancel>取消</cancel>
+	<campaign_start_date>開始日期</campaign_start_date>
+	<campaign_end_date>結束日期</campaign_end_date>
+	<confirm_delete>確認刪除？</confirm_delete>
+	<info>信息</info>
+	<campaign>活動</campaign>
+	<no_campaign>請選擇</no_campaign>
+	<callerid>呼叫者ID </callerid>
+	<no_callerid>沒有來電顯示</no_callerid>
+	<keyword>關鍵詞</keyword>
+	<cby>創建者</cby>
+	<department>部門</department>
+	<duplicated_campaign_name>活动名称重复</duplicated_campaign_name>
+</campaign_mgnt>
+<file_upload_status>
+	<file_name>文件名</file_name>
+	<upload_dtm>上傳日期</upload_dtm>
+	<process_status>進程狀態</process_status>
+	<process_dtm>處理日期</process_dtm>
+	<total_row>總記錄</total_row>
+	<current_row>當前記錄</current_row>
+	<invalid_row>無效記錄</invalid_row>
+	<valid_row>有效記錄</valid_row>
+	<end_process_dtm>完成日期</end_process_dtm>
+	<failed_list_file>失敗的列表文件</failed_list_file>
+	<process_status_1>新建</process_status_1>
+	<process_status_2>正在處理</process_status_2>
+	<process_status_3>已完成</process_status_3>
+	<mobile_numb>手机号码</mobile_numb>
+	<message>消息</message>
+	<confirm_send>發送</confirm_send>
+	<back>返回</back>
+	<valid_mobile>有效手機號碼</valid_mobile>
+	<invalid_mobile>無效手機號碼</invalid_mobile>
+	<error_msg>狀態</error_msg>
+	<invalid_code_msg_0>有效</invalid_code_msg_0>
+	<invalid_code_msg_1>重複的手機號碼</invalid_code_msg_1>
+	<invalid_code_msg_2>無效手機號碼</invalid_code_msg_2>
+	<invalid_code_msg_3>取消訂閱列表</invalid_code_msg_3>
+	<invalid_code_msg_4>無效的前綴</invalid_code_msg_4>
+	<invalid_code_msg_5>格式無效</invalid_code_msg_5>
+	<invalid_code_msg_6>訊息過長</invalid_code_msg_6>
+	<msg1>確認刪除嗎？</msg1>
+	<failed_delete_data>無法刪除此行。</failed_delete_data>
+	<total_sms>短信總數</total_sms>
+	<total_sms_valid>短信總數有效</total_sms_valid>
+	<total_sms_invalid>短信總數無效</total_sms_invalid>
+	<total_sms_to_send>要發送的短信總數</total_sms_to_send>
+	<quota_left>配額</quota_left>
+	<callerid>呼叫者ID </callerid>
+	<cfm_send_msg1>確認發送短信嗎？</cfm_send_msg1>
+	<process_send_sms_failed>進程發送短信失敗。可能是活動已暫停。</process_send_sms_failed>
+	<processing_send_sms>正在處理髮送短信</processing_send_sms>
+	<send_sms_status>發送短信狀態</send_sms_status>
+	<send_sms_status_0>否</send_sms_status_0>
+	<send_sms_status_1>正在處理</send_sms_status_1>
+	<send_sms_status_2>已完成</send_sms_status_2>
+	<cfm_send>確認發送</cfm_send>
+	<insufficient_quota>配額不足</insufficient_quota>
+	<cfm_send_0>否</cfm_send_0>
+	<cfm_send_1>是</cfm_send_1>
+	<dtm>日期</dtm>
+	<all_status>狀態</all_status>
+	<info>信息</info>
+	<reserved_quota>預留配額</reserved_quota>
+	<total_quota>需要配額</total_quota>
+	<failed_list_bot>列表MIM失败</failed_list_bot>
+	<mim_bot>MIM bot</mim_bot>
+	<no_bot>沒有 MIM</no_bot>
+	<tpl_params>参数</tpl_params>
+	<mim_image1>圖片/文件 (仅适用于MIM)</mim_image1>
+	<campaign_name>廣告系列名稱</campaign_name>
+	<campaign_status>廣告活動狀態</campaign_status>
+	<send_mode>發送模式</send_mode>
+	<image>Image</image>
+	<total_mim>Total MIM</total_mim>
+	<total_mim_valid>Total MIM Valid</total_mim_valid>
+	<mim_doc>文件</mim_doc>
+	<mim_image>圖片</mim_image>
+	<mim_file_type>MIM文件类型</mim_file_type>
+	<no_file>没有文件</no_file>
+</file_upload_status>
+<user_transfer>
+	<from_userid>发件人</from_userid>
+	<to_userid>收件人</to_userid>
+	<transfer>发送</transfer>
+	<no_user>没有用户</no_user>
+</user_transfer>
+<shortended_url>
+	<full_url>完整URL</full_url>
+	<generate>生成</generate>
+	<copy_link>复制链接</copy_link>
+	<short_link>网址缩短</short_link>
+	<reset_btn>重启</reset_btn>
+</shortended_url>
+<setting>
+	<title>設置</title>
+	<accthreshold>帳戶鎖定閾值</accthreshold>
+	<pwdexpiry>密碼有效期</pwdexpiry>
+	<sessiontime>時域超時</sessiontime>
+	<save>保存</save>
+	<reset>重設</reset>
+	<days>天</days>
+	<minutes>分鐘</minutes>
+	<times>次數</times>
+	<accsetting>賬戶設置</accsetting>
+	<alert_1>所有設置已成功應用於所有用戶。</alert_1>
+</setting>
+</CB>
