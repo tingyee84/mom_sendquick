@@ -254,6 +254,8 @@ HTML;
         die("Invalid Command");
 }
 ?>
+<script src="js/header_js.php"></script>
+<!-- 
 <script>
 // check url 
 var urlParams = new URLSearchParams(window.location.search);
@@ -278,4 +280,4 @@ $("#side-nav a.nav-first-level").each(function() {
 	});
 });
 
-$("#when_conversation_btn_was_clicked").on("click",function(event){event.preventDefault();Cookies.remove('id');window.location="conversation.php"});</script>
+$("#when_conversation_btn_was_clicked").on("click",function(event){event.preventDefault();Cookies.remove('id');window.location="conversation.php"});</script> -->
