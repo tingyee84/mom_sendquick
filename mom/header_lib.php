@@ -254,7 +254,7 @@ HTML;
         die("Invalid Command");
 }
 ?>
-<script src="js/header_js.php"></script>
+<script src="js/header_lib_js.php"></script>
 <!-- 
 <script>
 // check url 
