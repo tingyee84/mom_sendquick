@@ -245,6 +245,12 @@
 		</div>
 		<?php include('footnote.php'); ?>
 	</div>
-	<?php include("address_book_js.php");?>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/dataTables.buttons.min.js"></script>
+	<script src="js/buttons.html5.min.js"></script>
+	<script language="javascript" src="js/txvalidator.js"></script>
+	<script language="javascript" src="js/txcommon.js"></script>
+	<script type="application/javascript" src="address_book_js.php"></script>
 </body>
 </html>

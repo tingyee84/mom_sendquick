@@ -530,6 +530,6 @@
 
 	<script src="js/autosize.min.js"></script>
 	<script src="js/bootstrap-datepicker.min.js"></script>
-	<script nonce="<%=nonce%>" type="text/javascript" src="send_sms_js.php"></script>
+	<script src="send_sms_js.php"></script>
 </body>
 </html>
