@@ -168,6 +168,6 @@
         <script src="js/jszip.min.js"></script>
         <script src="js/buttons.html5.min.js"></script>
         <script src="js/moment.min.js" type="text/javascript"></script>
-        <script src="report_api_js.php"></script>
+        <script src="report_api_js.php?view=<?php echo $_GET["view"]; ?>"></script>
     </body>
 </html>

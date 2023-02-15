@@ -3,6 +3,11 @@ header("Content-type:text/javascript");
 include_once('./lib/commonFunc.php');
 $page_mode = '800'; // Ty's Comment: can't really understand what does it for  
 $chk_mode = 68;  // when mom
+if (isset($_GET["view"])) {
+	if ($_GET["view"] == "dept") { // when BU view
+		$chk_mode = 71; 
+	}
+}
 include_once('checkAccess.php');
 ?>
 $('#from, #to, #from_mim, #to_mim').datepicker({
