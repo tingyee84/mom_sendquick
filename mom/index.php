@@ -63,7 +63,7 @@ $xml_all_rights = $xml->all_rights;
 				<p><img src="images/sendQuickMessaging.png" alt="SendQuick Messaging Portal"></p>
 			</div>
 			<div id="error" class="alert alert-danger alert-dismissable text-center" style="display:none;">
-				<h4 id="err_msg" style="display: inline-block; margin-top:8px" class="text-danger"></h4>
+				<h4 id="err_msg" class="text-danger d-block mt-2"></h4>
 				<button type="button" class="btn-close" aria-label="Close" style="float:right;margin-top:8px"></button>
 			</div>
 			<div class="login-panel"><br>
@@ -167,7 +167,9 @@ if (!is_string($result) && count($result[0]) > 0) {
 		</div>
 	</div>
 
-	<script>
+	<!-- <script type="application/x-httpd-php" src="js/index_js.php"></script> -->
+	<script src="js/index_js.php" defer></script>
+	<!-- <script>
 	function verification() {
 		let result = 0;
 		let re0 = new RegExp ("[a-z]+");
@@ -347,6 +349,7 @@ if (!is_string($result) && count($result[0]) > 0) {
 		}, 1000);
 	}
 	
-	</script>
+	</script> -->
+
 </body>
 </html>
