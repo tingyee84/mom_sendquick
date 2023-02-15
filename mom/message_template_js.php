@@ -1,5 +1,7 @@
 <?php
 header("Content-type:text/javascript");
+require_once('lib/commonFunc.php');
+$x = GetLanguage("message_template",$lang);
 ?>
 var table = $('#tbl_tmpl').DataTable({
 	autoWidth: false,

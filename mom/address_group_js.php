@@ -1,5 +1,7 @@
 <?php
 header("Content-type:text/javascript");
+require_once('lib/commonFunc.php');
+$x = GetLanguage("address_group",$lang);
 ?>
 var table = $('#tblgroup').DataTable({
 	deferRender: false,

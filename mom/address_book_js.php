@@ -1,5 +1,7 @@
 <?php
 header("Content-type:text/javascript");
+require_once('lib/commonFunc.php');
+$x = GetLanguage("address_book",$lang);
 ?>
 $("#example_upload_file").on("click",function () {
 	

@@ -1,5 +1,7 @@
 <?php
 header("Content-type:text/javascript");
+require_once('lib/commonFunc.php');
+$x = GetLanguage("global_address_book",$lang);
 ?>
 // $('[data-toggle="tooltip"]').tooltip();
 var table = $('#address').DataTable({
