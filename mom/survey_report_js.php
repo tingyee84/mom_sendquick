@@ -1,11 +1,6 @@
-<script src="js/bootstrap-datepicker.min.js"></script>
-<script src="js/pdfmake.min.js"></script>
-<script src="js/vfs_fonts.js.php" defer></script><?php // defer means to let all pages rendered finished then begin load ?>
-<script src="js/dataTables.buttons.min.js"></script>
-<script src="js/buttons.html5.min.js"></script>
-
-<script src="js/moment.min.js" type="text/javascript"></script>
-<script nonce="<?php echo session_id();?>">
+<?php header("Content-type:text/javascript");
+include_once("./lib/commonFunc.php");
+?>
 $('#from, #to').val(moment().format('DD/MM/YYYY'));
 $('#from, #to').datepicker({
 	format: 'dd/mm/yyyy',
@@ -156,4 +151,3 @@ $('#from, #to').on("changeDate",function(ev){
 <?php } // end list of campaign
 }
 ?>
-</script>
