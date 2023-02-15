@@ -69,7 +69,7 @@ END;
 		if (in_array('47',$access_arr)) {
 			$display_unsub_menu = <<< END
 			<a href="#" class="nav-link nav-first-level"><i class="fa fa-ban fa-fw"></i> {$xml->unsub_list}<span class="fa arrow"></span></a>
-			<div class="nav-submenu" style="display:none">
+			<div class="nav-submenu">
 				<a href="unsubscribe_list.php" class="nav-link">{$xml->unsub_mobile}</a>
 				<a href="unsubscribe_keyword.php" class="nav-link">{$xml->unsub_kw}</a>
 			</div>
@@ -94,7 +94,7 @@ END;
 		if (in_array('45',$access_arr)) {
 			$display_sys_menu = <<< END
 			<a href="#" class="nav-link nav-first-level"><i class="fa fa-wrench fa-fw"></i> {$xml->system_config}<span class="fa arrow"></span></a>
-			<div class="nav-submenu" style="display:none">
+			<div class="nav-submenu">
 			<a href="modemconfig.php" class="nav-link">{$xml->modem_conf}</a>
 			<a href="sysconfig.php" class="nav-link">{$xml->time_config}</a>
 			<a href="ldap_mgnt.php" class="nav-link">{$xml->ldap_mgnt}</a>
@@ -107,7 +107,7 @@ END;
 		if (in_array('58',$access_arr)) {
 			$display_campaign_menu = <<< END
 			<a href="#" class="nav-link nav-first-level"><i class="fa fa-bullhorn fa-fw"></i> {$xml->campaign_mgnt}<span class="fa arrow"></span></a>
-			<div class="nav-submenu" style="display:none">
+			<div class="nav-submenu">
 				<a href="campaign.php" class="nav-link" >{$xml->campaign}</a>
 			</div>
 END;
@@ -139,7 +139,7 @@ END;
 		if(in_array('59',$access_arr) || in_array('61',$access_arr) || in_array('62',$access_arr) || in_array('60',$access_arr) || in_array('67',$access_arr)) {
 			$display_report_menu = <<< END
 			<a class="nav-link nav-first-level" href="#"><i class="fa fa-clipboard fa-fw"></i> {$xml->report}<span class="fa arrow"></span></a>
-			<div class="nav-submenu" style="display:none">
+			<div class="nav-submenu">
 END;
 			if (in_array('67',$access_arr))
 				$display_report_menu .= '<a class="nav-link" href="survey_report.php">'.$xml->survey_report.'</a></li>';
@@ -196,8 +196,8 @@ END;
 
 		<a href="#" class="nav-link nav-first-level" style="display:{$display_add_menu}"><i class="fa fa-phone fa-fw"></i> {$xml->address_book}<span class="fa arrow"></span></a>
 			<div class="nav-submenu">
-				<a style="display:{$display_pab}" class="nav-link"  href="address_book.php">{$xml->address_book}</a>
-				<a style="display:{$display_pag}"  class="nav-link"  href="address_group.php"> {$xml->address_group}</a>
+				<a class="nav-link {$display_pab}"  href="address_book.php">{$xml->address_book}</a>
+				<a style="display:{}"  class="nav-link"  href="address_group.php"> {$xml->address_group}</a>
 				<a style="display:{$display_gab}" class="nav-link"  href="global_address_book.php"> {$xml->global_address_book}</a>
 				<a style="display:{$display_gag}" class="nav-link"  href="global_address_group.php"> {$xml->global_address_group}</a>
 			</div>
@@ -254,7 +254,6 @@ HTML;
         die("Invalid Command");
 }
 ?>
-<script src="js/header_lib_js.php"></script>
 <!-- 
 <script>
 // check url 
