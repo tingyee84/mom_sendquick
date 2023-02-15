@@ -168,6 +168,10 @@
         <script src="js/jszip.min.js"></script>
         <script src="js/buttons.html5.min.js"></script>
         <script src="js/moment.min.js" type="text/javascript"></script>
-        <script src="report_api_js.php?view=<?php echo $_GET["view"]; ?>"></script>
+        <script src="report_api_js.php?view=<?php echo $_GET["view"];
+            echo isset($_GET["datefrom"]) ? "&datefrom=".$_GET["datefrom"]: "";
+            echo isset($_GET["dateto"]) ? "&dateto=".$_GET["dateto"]: "";
+            echo isset($_GET["dept"]) ? "&dept=".$_GET["dept"]: "";
+        ?>"></script>
     </body>
 </html>
