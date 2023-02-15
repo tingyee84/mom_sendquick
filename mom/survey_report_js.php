@@ -1,5 +1,8 @@
 <?php header("Content-type:text/javascript");
 include_once("./lib/commonFunc.php");
+$page_mode = '800'; // Ty's Comment: can't really understand what does it for  
+$chk_mode = 67;
+include('checkAccess.php');
 ?>
 $('#from, #to').val(moment().format('DD/MM/YYYY'));
 $('#from, #to').datepicker({
