@@ -3,11 +3,8 @@
  * TODO:
  * 1. When choose mim template, character is no limit, then
  **/
-
-?><script src="js/autosize.min.js"></script>
-<script src="js/bootstrap-datepicker.min.js"></script>
-<script nonce="<?php echo session_id();?>">
-
+header("Content-type:text/javascript");
+?>
 function pushMsg(xdata) {
 	var result;
 	$.ajax({
@@ -1170,5 +1167,3 @@ loadlist('#campaign_id','campaign_lib.php?mode=select','campaign_id','campaign_n
 loadlist('#bot_id','broadcast_sms_status_lib.php?mode=select_bot','bot_id','bot_name');
 ShowTplParamDiv();
 ShowMIMBotDiv( '' );
-
-</script>
