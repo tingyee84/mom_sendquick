@@ -1,0 +1,1471 @@
+<?xml version="1.0"?>
+<CU>
+<common>
+	<add>添加</add>
+	<save>保存</save>
+	<reset>重置</reset>
+	<cancel>取消</cancel>
+	<enable>启用</enable>
+	<disable>禁用</disable>
+	<none>None</none>
+	<sys_message>System Message:</sys_message>
+	<err_accessdenied>User have not login. Access denied.</err_accessdenied>
+	<err_noaccess>You do not have permission to access this page. &lt;br&gt; Please refer to your System Administrator.</err_noaccess>
+	<err_unknown>Unknown request</err_unknown>
+	<err_completeform>Sorry, please complete the form</err_completeform>
+	<err_invalidinput>Invalid input</err_invalidinput>
+	<err_syserror>系统错误</err_syserror>
+	<ascii>English (ASCII)</ascii>
+	<utf8>Non-English (UTF-8)</utf8>
+	<upload>上传</upload>
+	<download>下载</download>
+	<hourly>Hourly</hourly>
+	<daily>每天</daily>
+	<weekly>每周</weekly>
+	<monthly>每月</monthly>
+	<add_new_record>添加新记录</add_new_record>
+	<delete>删除</delete>
+	<no_cond>No Condition</no_cond>
+	<contains>包含</contains>
+	<not_contain>不包含</not_contain>
+	<is>是</is>
+	<is_not>不是</is_not>
+	<start_with>Starts With</start_with>
+	<not_start_with>Does Not Start With</not_start_with>
+	<end_with>Ends With</end_with>
+	<not_end_with>Does Not End With</not_end_with>
+	<list_num>编号</list_num>
+	<confirm_delete>Confirm Delete</confirm_delete>
+	<yes>是</yes>
+	<no>编号</no>
+	<select>选择</select>
+	<all>所有</all>
+	<submit>登录</submit>
+	<change_lang>语言换成</change_lang>
+	<check_conn>查看连接中，请稍等。。。</check_conn>
+	<processing>正在处理 . . .</processing>
+	<export>导出</export>
+	<unlimited>无限</unlimited>
+</common>
+<button>
+	<lang_en>英文</lang_en>
+	<lang_cb>中文(繁)</lang_cb>
+	<lang_cu>中文(简)</lang_cu>
+	<logout>退出</logout>
+	<cancel>取消</cancel>
+	<copyright>版权所有</copyright>
+	<bottom>TalariaX Pte Ltd，新加坡。保留所有权利</bottom>
+	<confirm_logout>确定登出吗？</confirm_logout>
+	<confirm_logout_msg>您将要登出系统。请确定此操作。</confirm_logout_msg>
+	<logout_msg>你已经成功登出了。</logout_msg>
+	<quota_aval>可用金额</quota_aval>
+	<unlimited>无限</unlimited>
+	<welcome>欢迎</welcome>
+</button>
+<menu>
+	<shortended_url>Shortended URL</shortended_url>
+	<user_transfer>用户转移</user_transfer>
+	<user_mgnt>用户管理</user_mgnt>
+	<user_acc_mgnt>用户帐户管理</user_acc_mgnt>
+	<user_role_mgnt>用户角色管理</user_role_mgnt>
+	<department_mgnt>部门管理</department_mgnt>
+	<access_log>访问日志</access_log>
+	<address_book>地址簿</address_book>
+	<address_group>地址群组</address_group>
+	<global_address_book>公共地址簿</global_address_book>
+	<global_address_group>公共地址群组</global_address_group>
+	<msg_tmpl>消息模板</msg_tmpl>
+	<global_msg_tmpl>公共消息模板</global_msg_tmpl>
+	<mim_msg_tmpl>MIM消息模板</mim_msg_tmpl>
+	<send_msg>发送 信息</send_msg>
+	<send_sms>发送 SMS</send_sms>
+	<send_sms_upload>通过上传的文件发送 SMS</send_sms_upload>
+	<send_sms_upload_status>文件上傳狀態</send_sms_upload_status>
+	<broadcast_mim>广播 MIM</broadcast_mim>
+	<schedule_msg>定时消息</schedule_msg>
+	<schedule_sms>定时 SMS</schedule_sms>
+	<schedule_mim>定时 MIM</schedule_mim>
+	<common_inbox>通用收件箱</common_inbox>
+	<logs_mgnt>收件箱/日志管理</logs_mgnt>
+	<inbox>收件箱</inbox>
+	<global_inbox>公共收件箱</global_inbox>
+	<sent_log>已发送日志</sent_log>
+	<global_sent>公共已发送日志</global_sent>
+	<unsent_log>未发送日志</unsent_log>
+	<global_unsent_log>公共未发送日志</global_unsent_log>
+	<queue_log>队列日志</queue_log>
+	<global_queue_log>公共队列日志</global_queue_log>
+	<broadcast_log>广播日志</broadcast_log>
+	<email_log>电子邮件日志</email_log>
+	<unsub_list>取消订阅列表</unsub_list>
+	<unsub_mobile>退订手机号码</unsub_mobile>
+	<unsub_kw>退订关鍵字</unsub_kw>
+	<quota_mgnt>金额管理</quota_mgnt>
+	<keyword_mgnt>密码管理</keyword_mgnt>
+	<system_config>系统配置</system_config>
+	<ldap_mgnt>ＬＤＡＰ服务器管理</ldap_mgnt>
+	<modem_conf>调制解调器配置</modem_conf>
+	<web_logo>上传图像头</web_logo>
+	<time_config>SMS 时间配置</time_config>
+	<sms_rdb>通过远程数据库发送短信</sms_rdb>
+	<sms_routine>发送常规短信</sms_routine>
+	<remotedb_set>远程数据库设置</remotedb_set>
+	<resp_summary>回应摘要</resp_summary>
+	<sql_tmpl>SQL模板</sql_tmpl>
+	<conversation>对话</conversation>
+	<maintenance_report>维护与报告</maintenance_report>
+	<campaign>活动</campaign>
+	<campaign_mgnt>活动管理</campaign_mgnt>
+	<report>报告</report>
+	<preport>View Report</preport>
+	<alldeptsreport>All Depts Report</alldeptsreport>
+	<deptreport>Dept Report</deptreport>
+	<file_upload_status>文件上传状态</file_upload_status>
+	<mim_msg_tmpl> MIM消息模板</mim_msg_tmpl>
+	<incident_report>Incident Report</incident_report>
+	<global_mim_msg_tmpl>全局MIM消息模板</global_mim_msg_tmpl>
+	<setting>设置</setting>
+</menu>
+<access_log>
+	<title>访问日志</title>
+	<no>编号</no>
+	<login>登录日期和时间</login>
+	<username>用户名</username>
+	<remoteip>远程 IP 地址</remoteip>
+	<agent>用户代理</agent>
+	<date_from>开始日期</date_from><date_to>截止日期</date_to>
+</access_log>
+<add_keyword>
+	<title>添加 SMS 关键字</title>
+	<header>添加新 SMS 关键字</header>
+	<keyword>关键字</keyword>
+	<keyword_desc>关键字为 SMS 消息的第一个词。系统将基于指定的关键字对收到的 SMS 进行路由。关键字“EM”为保留关键字。关键字“xDEFAULTx”为默认关键字。（最多 15 个字符） </keyword_desc>
+	<keyword_description>关键字描述</keyword_description>
+	<unsubscribe_keyword>取消订阅关键字</unsubscribe_keyword>
+	<email>电子邮件</email>
+	<email_desc>系统将消息路由（基于关键字）至这些电子邮件地址。设为“NA”以将其禁用。</email_desc>
+	<redirect_mno>重定向手机号码</redirect_mno>
+	<redirect_mno_desc>收到的 SMS 的副本将被转发到此手机号码。设为“NA”以将其禁用。</redirect_mno_desc>
+	<url>URL</url>
+	<url_desc>系统将消息路由（基于关键字）至此 URL（通过 HTTP Post）。设为“NA”以将其禁用。</url_desc>
+	<xml_url>XML URL</xml_url>
+	<xml_url_desc>系统将消息路由（基于关键字）至此 URL（通过 HTTP + POX Post）。设为“NA”以将其禁用。</xml_url_desc>
+	<soap_url>SOAP URL</soap_url>
+	<soap_url_desc>系统将消息路由（基于关键字）至此 URL（通过 HTTP + SOAP Post）。设为“NA”以将其禁用。</soap_url_desc>
+	<soap_service>Service Name</soap_service>
+	<json_url>JSON URL</json_url>
+	<json_url_desc>系统将消息路由（基于关键字）至此 URL（通过 HTTP + JSON Post）。设为“NA”以将其禁用。</json_url_desc>
+	<auto_msg>自动回复消息</auto_msg>
+	<auto_msg_desc>请选择以启用对发件人的自动回复消息。</auto_msg_desc>
+	<standard>标准（静态）</standard>
+	<standard_desc>自动回复消息。（最多 160 个字符）</standard_desc>
+	<char_left>剩余字符数</char_left>
+	<email_brochure>电子邮件手册</email_brochure>
+	<email_brochure_desc>电子邮件手册功能允许服务器自动向 SMS 发件人（如果已指定电子邮件地址）发送电子邮件。请选择以激活此服务。</email_brochure_desc>
+	<reply_email_address>回复电子邮件地址</reply_email_address>
+	<reply_email_address_desc>这将是自动电子邮件功能向用户发送电子邮件手册时使用的 Reply-To 电子邮件地址。</reply_email_address_desc>
+	<email_subject>电子邮件主题</email_subject>
+	<email_subject_desc>向用户发送的电子邮件中的主题事项。</email_subject_desc>
+	<email_content>电子邮件内容</email_content>
+	<email_content_desc>这是向用户发送的电子邮件的介绍性信息。</email_content_desc>
+	<file_upload>文件上传</file_upload>
+	<file_upload_desc>请选择要附加在电子邮件中的文件。请将文件上传至服务器。</file_upload_desc>
+	<create>创建并保存</create>
+	<clear>清除</clear>
+	<cancel>取消</cancel>
+	<alert_1>关键字不能为空！</alert_1>
+	<alert_2>关键字最大长度为 15 个字符！</alert_2>
+	<alert_3>自动回复消息最大长度为 160 个字符！</alert_3>
+	<alert_4>系统中已存在此关键字！</alert_4>
+	<alert_5>抱歉，您超过了 160 个字符的最大限制</alert_5>
+	<senderchkenb>挑选以检查发件人的手机</senderchkenb>
+	<senderchklst>手机发件人清单</senderchklst>
+	<senderchklst_desc1>所有服务约束是限制在单单列出的手机号码。</senderchklst_desc1>
+	<senderchklst_desc2>每一个手机号码会输入在另一个录入。</senderchklst_desc2>
+	<senderchklst_desc3>所有的手机号码，必须选项在国际移动格式。</senderchklst_desc3>
+	<senderchklst_desc4>例子。</senderchklst_desc4>
+	<senderchklst_desc5>+6512345678</senderchklst_desc5>
+	<senderchklst_desc6>+60161234567</senderchklst_desc6>
+	<modem_imei>调制解调器IMEI号码</modem_imei>
+	<modem_imei_desc>这会将系统设置为仅将关键字与特定的调制解调器匹配。\ n在新行中输入每个IMEI号。</modem_imei_desc>
+</add_keyword>
+<address_book>
+	<email>電子郵件</email>
+	<title>个人地址簿</title>
+	<add_new>添加新个人地址簿</add_new>
+	<create_new>创建新个人联系人</create_new>
+	<add_upload>通过上传的文件添加联系人</add_upload>
+	<upload_button>上传联系</upload_button>
+	<csv>上传的文件必须为 CSV 格式</csv>
+	<upload_file>上传文件</upload_file>
+	<list_contact>个人联系人列表</list_contact>
+	<no>编号</no>
+	<contact_name>联系人姓名</contact_name>
+	<mobile_number>手机号码</mobile_number>
+	<group_list>群组列表</group_list>
+	<delete>选中以删除</delete>
+	<delete_checked>删除所选联系人</delete_checked>
+	<move_to_grp>移至群组</move_to_grp>
+	<empty_str>清空所有联系人</empty_str>
+	<new_contact>新联系人姓名：</new_contact>
+	<new_mno>新联系人手机号码：</new_mno>
+	<!-- <numbers_only>仅限数字&lt;br&gt;请输入国际格式手机号码&lt;br&gt;例如：对于新加坡，+65xxxxxxxx，“+65为国家码”  </numbers_only> -->
+	<numbers_only>仅限数字&#013;请输入国际格式手机号码&#013;例如：对于新加坡，+65xxxxxxxx，“+65为国家码”  </numbers_only>
+	<modem_label>调制解调器标签</modem_label>
+	<list_add_group>地址群组列表</list_add_group>
+	<edit_contact>编辑现有个人联系人</edit_contact>
+	<curr_contact>联系人姓名：</curr_contact>
+	<curr_mno>更改手机号码：</curr_mno>
+	<alert_1>请勿将联系人姓名留空！不要使用特殊字符（单引号除外）！</alert_1>
+	<alert_2>请仅对联系人手机号码输入（+国家码后跟号码）或（国家码后跟号码）！</alert_2>
+	<alert_3>请勿将联系人姓名留空！</alert_3>
+	<alert_4>未选择联系人！</alert_4>
+	<alert_5>确定要删除所选联系人吗？此操作无法>撤销 – 删除的联系人将从系统中永久移除！</alert_5>
+	<alert_6>请指定要上传的文件！</alert_6>
+	<alert_7>要上传的文件不是正确的文件格式！</alert_7>
+	<alert_8>确定要清空所有联系人吗？此操作无法撤销 – 删除的联系人>将从系统中永久移除！</alert_8>
+	<alert_9>Personal Contact(s) Successfully Added!</alert_9>
+	<alert_10>Confirm To Cancel Add Contact(s) By File Upload? All Records Uploaded Will Be Deleted!</alert_10>
+	<err>未找到任何个人地址簿组！</err>
+	<preview>Preview Contact(s) By File Upload</preview>
+	<file_format>文件格式</file_format>
+</address_book>
+<address_group>
+	<title>个人地址群组</title>
+	<add_new>添加新个人地址群组：</add_new><create_new>创建个人地址群组</create_new>
+	<list_group>个人地址群组列表</list_group><group_name>群组名称</group_name><delete>选中以删除</delete>
+	<contact_name>联系人姓名</contact_name>
+	<mobile_number>手机号码</mobile_number>
+	<put_contact>选联系人至新个人群组</put_contact>
+	<delete_checked>删除所选联系人</delete_checked><empty_str>清空所有联系人</empty_str>
+	<new_group_name>新群组名称：</new_group_name><add>添加</add><cancel>取消</cancel><alert_1>请勿将群组名称留空！</alert_1><alert_2>未选择地址群组！</alert_2>
+	<alert_3>确定要删除所选地址群组吗？此操作无法撤销 – 删除的地址群组将从系统中永久移除！</alert_3><alert_4>确定要清空所有地址群组吗？此为不可撤销操作 – 删除的地址群组将从系统中永久移除！</alert_4>
+</address_group>
+<broadcast_sms>
+	<title>通过上传的文件发送 SMS</title>
+	<file_format>文件格式：</file_format>
+	<file_format_1>逗号分隔 (.csv, .txt)</file_format_1>
+	<file_format_2>制表符分隔 (.csv, .txt)</file_format_2>
+	<char_set>字符集选择：</char_set>
+	<contents_upload>已上传文件的内容：</contents_upload>
+	<contents_upload_1>手机号码</contents_upload_1>
+	<contents_upload_2>手机号码和数据字段</contents_upload_2>
+	<contents_upload_3>手机号码和消息文本</contents_upload_3>
+	<numbers_only>仅限数字 - 请输入国际格式手机号码 &lt;br&gt;例如：仅限数字对于新加坡，+65xxxxxxxx，“+65为国家码” </numbers_only>
+	<specify_file>请指定要上传的文件：</specify_file>
+	<schedulingsms>计划 SMS：</schedulingsms>
+	<date>日期：</date>
+	<date_format>yyyy-mm-dd</date_format>
+	<time>时间：</time>
+	<send>发送</send>
+	<priority>优先级：</priority>
+	<default_str>默认</default_str>
+	<enter_text>在下面输入消息文本：</enter_text>
+	<mail_merge>邮件合并变量为</mail_merge>
+	<select_msgtemplate>从消息模板中选择</select_msgtemplate>
+	<characters>字符串：</characters>
+	<msgcounts>消息计数： 0 /</msgcounts>
+	<alert_1>此 SMS 为空白消息！</alert_1>
+	<alert_2>请指定要上传的文件！</alert_2>
+	<alert_3>要上传的文件不是正确的文件格式！</alert_3>
+	<alert_4>请选择一个计划发送 SMS 的日期！</alert_4>
+	<alert_5>选择了无效的日期！请重新选择</alert_5>
+	<alert_6>当前时间为</alert_6>
+	<alert_7>请选择计划发送 SMS 的有效时间！</alert_7>
+	<alert_8> SMS已成功排队！</alert_8>
+	<alert_9> SMS超过了最大长度</alert_9>
+	<alert_10>字符！</alert_10>
+	<alert_11>退订号码</alert_11>
+	<alert_12>文件已上传。 请在上传状态下查看处理状态</alert_12>
+	<alert_13>上传文件失败。 请稍后再试</alert_13>
+	<upload_file_txt>允许的文件：仅csv，xls和xlsx。档案大小上限：5MB。</upload_file_txt>
+	<mim_image1_txt>允许的文件：仅png和jpeg。档案大小上限：5MB。</mim_image1_txt>
+</broadcast_sms>
+<button>
+	<welcome>欢迎</welcome><logout>退出</logout><quota_aval>可用金额：</quota_aval><usermgnt>用户管理</usermgnt><addressbook>地址簿</addressbook><msgtemplate>消息模板</msgtemplate>
+	<sendsms>发送 SMS</sendsms><scheduledsms>计划 SMS</scheduledsms><commoninbox>通用收件箱</commoninbox><logsmgnt>收件箱/日志管理</logsmgnt><unsublist>取消订阅列表</unsublist>
+	<quotamgnt>金额管理</quotamgnt><keywordmgnt>关键字管理</keywordmgnt><sysconfig>系统配置</sysconfig>
+	<languagesetup>语言设置</languagesetup><changepassword>更改密码</changepassword><unlimited>无限</unlimited><httplog>HTTP 日志</httplog>
+</button>
+<change_password>
+	<title>更改个人资料</title><header>更改个人密码和手机号码</header><username>用户名</username><mobile>用户手机号码</mobile><numbers_only>(仅限数字)</numbers_only>
+	<old_pass>输入旧密码</old_pass><new_pass>输入新密码</new_pass><minimum>(最少8个字符)</minimum><cfm_pass>重新确认新密码</cfm_pass><must_match>(必须匹配上面的新密码)</must_match>
+	<save>保存</save><cancel>取消</cancel><alert_1>请对用户手机号码仅输入数字！</alert_1><alert_2>新密码长度必须至少为8个字符！</alert_2>
+	<alert_3>输入的新密码与确认密码不一致！请重新检查！</alert_3><alert_4>输入的旧密码不正确！请重新检查！</alert_4><processing>正在处理数据...</processing>
+</change_password>
+<check_user_access>
+	<msg_1>抱歉，您未登录或者会话已过期。</msg_1><msg_2>抱歉，您没有查看此页的访问权限</msg_2><msg_3>无效的部门用户!</msg_3>
+</check_user_access>
+<common_inbox>
+	<title>通用收件箱</title><unmatched_keyword>不匹配的关键字</unmatched_keyword>
+	<mobile_number>手机号码</mobile_number><date_time>日期和时间</date_time>
+	<empty_str>清空通用收件箱</empty_str><alert_1>未选择收件箱日志！</alert_1>
+	<alert_2>确定要删除所选收件箱日志吗？此为不可撤销操作 – 删除的收件箱日志将从系统中永久移除！</alert_2><alert_3>确定要清空通用收件箱吗？此为不可撤销操作 – 删除的收件箱日志将从系统中永久移除！</alert_3>
+</common_inbox>
+<edit_keyword>
+	<title>编辑 SMS 关键字</title> <header>编辑现有 SMS 关键字</header> <keyword>关键字</keyword>
+	<keyword_desc>关键字为 SMS 消息的第一个词。系统将基于指定的关键字对收到的 SMS 进行路由。关键字“EM”为保留关键字。关键字“xDEFAULTx”为默认关键字。（最多 15 个字符） </keyword_desc>
+	<keyword_description>关键字描述</keyword_description> <unsubscribe_keyword>取消订阅关键字</unsubscribe_keyword> <email>电子邮件</email>
+	<email_desc>系统将消息路由（基于关键字）至这些电子邮件地址。设为“NA”以将其禁用。</email_desc> <redirect_mno>重定向手机号码</redirect_mno>
+	<redirect_mno_desc>收到的 SMS 的副本将被转发到此手机号码。设为“NA”以将其禁用。</redirect_mno_desc>
+	<url>URL</url> <url_desc>系统将消息路由（基于关键字）至此 URL（通过 HTTP Post）。设为“NA”以将其禁用。</url_desc> <xml_url>XML URL</xml_url>
+	<xml_url_desc>系统将消息路由（基于关键字）至此 URL（通过 HTTP + POX Post）。设为“NA”以将其禁用。</xml_url_desc> <soap_url>SOAP URL</soap_url>
+	<soap_url_desc>系统将消息路由（基于关键字）至此 URL（通过 HTTP + SOAP Post）。设为“NA”以将其禁用。</soap_url_desc> <soap_service>Service Name</soap_service>
+	<json_url>JSON URL</json_url> <json_url_desc>系统将消息路由（基于关键字）至此 URL（通过 HTTP + JSON Post）。设为“NA”以将其禁用。</json_url_desc> <auto_msg>自动回复消息</auto_msg>
+	<auto_msg_desc>请选择以启用对发件人的自动回复消息。</auto_msg_desc> <standard>标准（静态）</standard>
+	<standard_desc>自动回复消息。（最多 160 个字符）</standard_desc> <char_left>剩余字符数</char_left> <email_brochure>电子邮件手册</email_brochure>
+	<email_brochure_desc>电子邮件手册功能允许服务器自动向 SMS 发件人（如果已指定电子邮件地址）发送电子邮件。请选择以激活此服务。</email_brochure_desc>
+	<reply_email_address>回复电子邮件地址</reply_email_address> <reply_email_address_desc>这将是自动电子邮件功能向用户发送电子邮件手册时使用的 Reply-To 电子邮件地址。</reply_email_address_desc>
+	<email_subject>电子邮件主题</email_subject> <email_subject_desc>向用户发送的电子邮件中的主题事项。</email_subject_desc> <email_content>电子邮件内容</email_content>
+	<email_content_desc>这是向用户发送的电子邮件的介绍性信息。</email_content_desc> <file_upload>文件上传</file_upload>
+	<file_upload_desc>请选择要附加在电子邮件中的文件。请将文件上传至服务器。</file_upload_desc>
+	<file_upload_note>注意：新上传的文件将覆盖当前文件。</file_upload_note> <uploaded_file>已上传的文件：</uploaded_file>
+	<alert_1>系统错误 – 未设置关键字 ID！</alert_1> <alert_2>自动回复消息最大长度为 160 个字符！</alert_2> <senderchkenb>挑选以检查发件人的手机</senderchkenb>
+	<senderchklst>手机发件人清单</senderchklst> <senderchklst_desc1>所有服务约束是限制在单单列出的手机号码。</senderchklst_desc1>
+	<senderchklst_desc2>每一个手机号码会输入在另一个录入。</senderchklst_desc2>
+	<senderchklst_desc3>所有的手机号码，必须选项在国际移动格式。</senderchklst_desc3> <senderchklst_desc4>例子。</senderchklst_desc4> <senderchklst_desc5>+6512345678</senderchklst_desc5>
+	<senderchklst_desc6>+60161234567</senderchklst_desc6>
+	<modem_imei>Modem IMEI Number</modem_imei>
+	<modem_imei_desc>This will set the system to match the keyword to a specific modem only.\nEnter each IMEI number in a new line.</modem_imei_desc>
+</edit_keyword>
+<error><title>错误</title><click>单击</click><here>此处</here><back>返回</back><str_or>或</str_or><to></to><login>转到登录页</login><op_err>错误!</op_err><usermgnt>用户管理</usermgnt>
+<addressbook>地址簿</addressbook><msgtemplate>消息模板</msgtemplate><sendsms>发送 SMS</sendsms><scheduledsms>计划 SMS</scheduledsms><commoninbox>通用收件箱</commoninbox>
+	<logsmgnt>收件箱/日志管理</logsmgnt><unsublist>取消订阅列表 </unsublist><quotamgnt>金额管理</quotamgnt><keywordmgnt>关键字管理</keywordmgnt><sysconfig>系统配置</sysconfig>
+	<languagesetup>语言设置</languagesetup><changepassword>更改密码</changepassword><httplog>HTTP 日志</httplog><report>报告</report>
+</error>
+<execute_alert>
+	<title>金额警报配置</title><check_session>抱歉，您未登录或者会话已过期。</check_session><add_quota_config>金额警报配置（通过电子邮件）</add_quota_config>
+	<save>警报配置文件已成功保存。&lt;br&gt;单击</save><here>此处</here><to_see>查看已更新的警报配置。</to_see><err_1>无法写入文件 (autogenerate_report.xml)</err_1></execute_alert>
+<execute_sysconfig><title>SMS 时间配置</title><alert_1>无法写入文件 (autogenerate_report.xml)</alert_1><alert_2>sms 时间配置文件已成功保存。</alert_2></execute_sysconfig>
+<f_system_functions>
+	<user_transfer>用户转移</user_transfer>
+	<shortened_url>网址缩短</shortened_url>
+	<department_administrator>部门管理员</department_administrator><user_management>用户管理</user_management><global_address_book>公共地址簿</global_address_book>
+	<personal_address_book>个人地址簿</personal_address_book><global_message_template>公共消息模板</global_message_template>
+	<personal_message_template>个人消息模板</personal_message_template>
+	<send_sms>发送 SMS</send_sms>
+	<send_sms_upload_status>文件上传状态</send_sms_upload_status>
+	<common_inbox>通用收件箱</common_inbox><personal_inbox>个人收件箱</personal_inbox><personal_sent_log>个人已发送日志</personal_sent_log>
+	<personal_unsent_log>个人未发送日志</personal_unsent_log><personal_queue_log>个人队列日志</personal_queue_log><export_personal_inboxlogs>导出个人收件箱/日志</export_personal_inboxlogs>
+	<delete_personal_inboxlogs>删除个人收件箱/日志</delete_personal_inboxlogs>
+	<global_inbox>公共收件箱</global_inbox><global_sent_log>公共已发送日志</global_sent_log><global_unsent_log>公共未发送日志</global_unsent_log>
+	<global_queue_log>公共队列日志</global_queue_log><export_global_inboxlogs>导出公共收件箱/日志</export_global_inboxlogs>
+	<delete_global_inboxlogs>删除公共收件箱/日志</delete_global_inboxlogs><edit_global_address_book>编辑公共地址簿</edit_global_address_book>
+	<edit_global_message_template>编辑公共消息模板</edit_global_message_template><logout>Logout</logout><create_user_account>创建用户帐户</create_user_account>
+	<edit_user_account>编辑用户帐户</edit_user_account><create_user_role>创建用户角色</create_user_role><edit_user_role>编辑用户角色</edit_user_role>
+	<create_department>创建部门</create_department>
+	<edit_department>编辑部门</edit_department><access_log>访问日志</access_log><unsubscribe_list>取消订阅列表</unsubscribe_list><quota_management>金额管理</quota_management>
+	<keyword_management>密码管理</keyword_management><system_configuration>系统配置</system_configuration><language_setup>语言设置</language_setup>
+	<change_personal_password>更改个人密码</change_personal_password><http_log>HTTP 日志</http_log>
+	<mim_message_template>MIM消息模板</mim_message_template>
+	<campaign>活动</campaign>
+	<p_report>查看个人报告</p_report>
+	<dept_report>查看部门报告</dept_report>
+	<users_report>查看用户报告</users_report>
+	<incident_report>事件报告</incident_report>
+	<global_mim_message_template>全局MIM消息模板</global_mim_message_template>
+</f_system_functions>
+<footnote>
+	<copyright>版权所有</copyright>
+	<talariax>TalariaX Pte Ltd，新加坡。保留所有权利</talariax>
+</footnote>
+<get_contacts>
+	<email>电子邮件</email>
+	<title_addressbook>从地址簿中选择</title_addressbook>
+	<contact_name>联系人姓名</contact_name>
+	<mobile_number>手机号码</mobile_number>
+	<title_addressbook_global>公共联系人地址簿</title_addressbook_global>
+	<department>部门</department>
+	<title_personal_group>联系人群组</title_personal_group>
+	<group_name>群组名称</group_name>
+	<contacts_name>联系人姓名</contacts_name>
+	<title_global_group>公共联系人群组</title_global_group>
+	<system_admin>系统管理员</system_admin>
+	<db_err>数据库错误</db_err>
+	<contacts>个人联系人</contacts>
+	<global_contacts>公共联系人</global_contacts>
+	<group>个人联系人群组</group>
+	<global_group>公共联系人群组</global_group>
+	<choosetype_1>两者（电子邮件和手机号码）<![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;]]></choosetype_1>
+	<choosetype_2>手机号码</choosetype_2>
+	<choosetype_3>电子邮件</choosetype_3>
+</get_contacts>
+<get_global_template>
+	<title>公共消息模板</title><select_msgtemplate>请从下面选择 SMS 的消息模板：</select_msgtemplate>
+	<select>选择</select><cancel>取消</cancel><empty_str>公共消息模板列表为空</empty_str>
+</get_global_template>
+<get_template>
+	<title>个人消息模板</title>
+	<select_msgtemplate>请从下面选择 SMS 的消息模板：</select_msgtemplate>
+	<empty_str>消息模板列表为空</empty_str>
+	<db_err>数据库错误</db_err>
+	<msg_template>消息模板</msg_template>
+	<global_msg_template>公共消息模板</global_msg_template>
+	<mim_msg_template>MIM消息模板</mim_msg_template>
+	<global_mim_msg_template>公共MIM消息模板</global_mim_msg_template>
+</get_template>
+<global_address_book>
+	<email>电子邮件</email>
+	<title>公共地址簿</title>
+	<add_new>添加新公共地址簿：</add_new>
+	<create_new>创建新公共联系人</create_new>
+	<add_upload>通过上传的文件添加联系人</add_upload>
+	<csv>上传的文件必须为 CSV 格式</csv>
+	<upload_file>上传文件</upload_file>
+	<upload_button>上传联系</upload_button>
+	<list_contact>公共联系人列表</list_contact>
+	<contact_name>联系人姓名</contact_name>
+	<mobile_number>手机号码</mobile_number>
+	<group_list>群组列表</group_list>
+	<department>部门</department>
+	<all_departments>所有部门</all_departments>
+	<delete>选中以删除</delete>
+	<delete_checked>删除所选联系人</delete_checked>
+	<empty_str>清空所有联系人</empty_str>
+	<new_contact>新联系人姓名</new_contact>
+	<new_mno>新联系人手机号码</new_mno>
+	<!-- <numbers_only>仅限数字&lt;br&gt;请输入国际格式手机号码&lt;br&gt;例如：对于新加坡，+65xxxxxxxx，“+65为国家码”</numbers_only> -->
+	<numbers_only>仅限数字&#013;请输入国际格式手机号码&#013;例如：对于新加坡，+65xxxxxxxx，“+65为国家码”</numbers_only>
+	<list_add_group>地址群组列表</list_add_group>
+	<edit_contact>编辑现有公��联系人</edit_contact>
+	<curr_contact>联系人姓名：</curr_contact>
+	<curr_mno>更改手机号码：</curr_mno>
+	<alert_1>请勿将联系人姓名留空！</alert_1>
+	<alert_2>请仅对联系人手机号码输入（+国家码后跟号码）或（国家码后跟号码）��</alert_2>
+	<alert_3>未选择联系人！</alert_3>
+	<alert_4>确定要删除所选联系人吗？此操作无法撤销 – 删除的联系人将从系统中永久移除！</alert_4>
+	<alert_5>确定要清空所有联系人吗？此操作无法撤销 – 删除的联系人将从系统中永久移除！</alert_5>
+	<alert_6>请指定要上传的文件！</alert_6>
+	<alert_7>要上传的文件不是正确的文件格式！</alert_7>
+	<err>未找到任何公共地址簿组！</err>
+	<modem_label>调制解调器标签</modem_label>
+	<modem_desc>所选的调制解调器会被用于向这个手机号发送信息。选择\\"无\\"，如果你不想把手机号绑定到该调制解调器上。</modem_desc>
+	<download_contact>从LDAP服务器中下载联系人</download_contact>
+	<download_new>从LDAP服务器中下载联系人</download_new>
+	<select_ldap>选择LDAP服务器</select_ldap>
+	<l_profile_id_desc>您必须先添加LDAP服务器或启用与之同步。</l_profile_id_desc>
+</global_address_book>
+<global_address_group>
+	<ad_grp_loc>AD組的位置</ad_grp_loc>
+	<select_ldap> LDAP服务器</select_ldap>
+	<download_new>下载LDAP组</download_new>
+	<contact_name>联系人姓名</contact_name>
+	<mobile_number>手机号码</mobile_number>
+	<put_contact>选联系人至新公共地址群组</put_contact>
+	<lp_grp>LDAP组</lp_grp>
+	<title>公共地址群组</title><add_new>添加新公共地址群组：</add_new><create_new>创建新公共群组</create_new><list_group>公共地址群组列表</list_group><no>编号</no><group_name>群组名称</group_name><department>部门</department><all_departments>所有部门</all_departments><delete>选中以删除</delete>
+	<delete_checked>删除所选联系人</delete_checked><empty_str>清空所有联系人</empty_str><new_group_name>新群组名称：</new_group_name><add>添加</add><cancel>取消</cancel><alert_1>请勿将群组名称留空！</alert_1><alert_2>未选择地址群组！</alert_2><alert_3>确定要删除所选地址群组吗？此操作无法撤销 – 删除的地址群组将从系统中永久移除！</alert_3><alert_4>确定要清空所有地址群组吗？此为不可撤销操作 – 删除的地址群组将从系统中永久移除！</alert_4>
+</global_address_group>
+<global_inbox>
+	<title>公共收件箱</title><keyword>关键字</keyword><date_from>开始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy) </date_format><export>将公共收件箱导出至 CSV 文件</export><no>编号</no><mobile_number>手机号码</mobile_number><department>部门</department><date_time>日期和时间</date_time>
+	<message_text>消息文本</message_text><delete>选中以删除</delete><delete_checked>删除所选收件箱日志</delete_checked><empty_str>清空公共收件箱</empty_str><alert_1>请仅在搜索手机号码中输入数字</alert_1><alert_2>日期范围无效！请选中“日期选择”！</alert_2><alert_3>未选择收件箱日志！</alert_3><alert_4>确定要删除所选收件箱日志吗？此为不可撤销操作 – 删除的收件箱日志将从系统中永久移除！</alert_4><alert_5>确定要清空所有公共收件箱日志吗？此为不可撤销操作 – 删除的收件箱日志将从系统中永久移除！</alert_5><system_admin>系统管理员</system_admin>
+</global_inbox>
+<global_message_template>
+	<new_tpl_name_text>键入下面的标题</new_tpl_name_text>
+	<template_name>标题</template_name>
+	<title>公共消息模板</title>
+	<add_new>添加新公共消息模板：</add_new>
+	<create_new>创建新公共消息模板</create_new>
+	<list_template>公共消息模板列表</list_template>
+	<msg_template>消息模板</msg_template>
+	<department>部门</department>
+	<all_departments>所有部门</all_departments>
+	<empty_str>清空所有消息模板</empty_str>
+	<new_msg_text>在下面键入消息文本：</new_msg_text>
+	<edit_template>编辑现有公共消息模板</edit_template>
+	<curr_msg_text>编辑下面的消息文本：</curr_msg_text>
+	<alert_1>请勿将消息文本留空！</alert_1>
+	<alert_2>未选择消息模板！</alert_2>
+	<alert_3>确定要删除所选公共消息模板吗？此为不可撤销操作 – 删除的公共消息模板将从系统中永久移除！</alert_3>
+	<alert_4>确定要清空所有公共消息模板吗？此为不可撤销操作 – 删除的公共消息模板将从系统中永久移除！</alert_4>
+	<alert_5>Please Specify A File To Be Uploaded!</alert_5>
+	<alert_6>Confirm To Cancel Add Message(s) By File Upload? All Records Uploaded Will Be Deleted!</alert_6>
+	<alert_7>Global Message(s) Successfully Added!</alert_7>
+	<export>Export Global Message Template(s) To CSV File</export>
+	<add_upload>Add Global Message(s) By File Upload :</add_upload>
+	<upload_file>Upload File</upload_file>
+	<preview>Preview Contact(s) By File Upload</preview>
+	<file_format>File Format</file_format>
+</global_message_template>
+<global_queue_log>
+	<title>公共队列日志</title><date_from>开始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy)</date_format><export>将公共队列日志导出至 CSV 文件</export><mobile_number>手机号码</mobile_number><department>部门</department><system_admin>系统管理员</system_admin><date_time>日期和时间</date_time>
+	<message_text>消息文本</message_text><status>状态</status><delete>选中以删除</delete><delete_checked>删除所选队列日志</delete_checked><empty_str>清空公共队列日志</empty_str><alert_1>请仅在搜索手机号码中输入数字</alert_1><alert_2>日期范围无效！请选中“日期选择”！</alert_2><alert_3>未选择队列日志！</alert_3><alert_4>确定要删除所选队列日志吗？此为不可撤销操作 – 删除的队列日志将从系统中永久移除！</alert_4><alert_5>确定要清空所有公共队列日志吗？此为不可撤销操作 – 删除的队列日志将从系统中永久移除！</alert_5>
+</global_queue_log>
+<global_sent_log>
+	<empty_email_log>空电子邮件日志</empty_email_log>
+	<from>发件人</from>
+	<to>接受者</to>
+	<subject>主题</subject>
+	<alert_4>确认要删除选定的电子邮件日志？ 这是不可逆的操作-删除的电子邮件日志将永久从系统中删除！</alert_4>
+	<alert_5>是否确认清空所有电子邮件日志？ 这是不可逆的操作-删除的电子邮件日志将被永久从系统中删除</alert_5>
+	<comment>注释</comment>
+	<recipient>接受者</recipient>
+	<campaignname>活动名称</campaignname>
+	<title>公共已发送日志</title><department>部门</department><date_from>开始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy)</date_format><export>将公共已发送日志导出至 CSV 文件</export><no>编号</no><mobile_number>手机号码</mobile_number><sender>发件人</sender>
+	<system_admin>系统管理员</system_admin><date_time>日期和时间</date_time><message_text>消息文本</message_text><status>状态</status><totalsms>SMS 总数</totalsms><delete>选中以删除</delete><delete_checked>删除所选已发送日志</delete_checked><empty_str>清空公共已发送日志</empty_str><alert_1>请仅在搜索手机号码中输入数字</alert_1><alert_2>日期范围无效！请选中“日期选择”！</alert_2><alert_3>未选择已发送日志！</alert_3><alert_4>确定要删除所选已发送日志吗？此为不可撤销操作 – 删除的已发送日志将从系统中永久移除！</alert_4>
+	<alert_5>确定要清空所有公共已发送日志吗？此操作无法撤销 – 删除的已发送日志将从系统中永久移除！</alert_5>
+</global_sent_log>
+<global_unsent_log>
+	<title>公共未发送日志</title><date_from>开始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy)</date_format><export>将公共未发送日志导出至 CSV 文件</export><mobile_number>手机号码</mobile_number><department>部门</department><system_admin>系统管理员</system_admin><date_time>日期和时间</date_time>
+	<message_text>消息文本</message_text><status>状态</status>
+	<resend>重新发送</resend><delete>选中以删除</delete><delete_checked>删除所选未发送日志</delete_checked><empty_str>清空公共未发送日志</empty_str><alert_1>请仅在搜索手机号码中输入数字</alert_1><alert_2>日期范围无效！请选中“日期选择”！</alert_2><alert_3>未选择未发送日志！</alert_3><alert_4>确定要删除所选未发送日志吗？此为不可撤销操作 – 删除的未发送日志将从系统中永久移除！</alert_4><alert_5>确定要清空所有公共未发送日志吗？此为不可撤销操作 – 删除的未发送日志将从系统中永久移除！</alert_5>
+</global_unsent_log>
+<inbox>
+	<title>个人收件箱</title><date_from>开始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy) </date_format><export>将个人收件箱导出至 CSV 文件</export><mobile_number>手机号码</mobile_number><date_time>日期和时间</date_time><message_text>消息文本</message_text><delete>选中以删除</delete>
+	<delete_checked>删除所选收件箱日志</delete_checked><empty_str>清空收件箱</empty_str><alert_1>请仅在搜索手机号码中输入数字</alert_1><alert_2>日期范围无效！请选中“日期选择”！</alert_2><alert_3>未选择收件箱日志！</alert_3><alert_4>确定要删除所选收件箱日志吗？此为不可撤销操作 – 删除的收件箱日志将从系统中永久移除！</alert_4><alert_5>确定要清空所有收件箱日志吗？此为不可撤销操作 – 删除的收件箱日志将从系统中永久移除！</alert_5>
+</inbox>
+<index><talariax>登录到您的帐户 </talariax><header>用户登录</header><user>用户</user><password>密码</password><submit>登录</submit><reset>重置</reset><admin_login>管理员登录</admin_login><copyright>版权所有</copyright><all_rights>TalariaX Pte Ltd，新加坡。保留所有权利</all_rights></index>
+<keyword_management>
+	<title>密码管理</title>
+	<header>SMS 关键字列表</header>
+	<keyword>关键字</keyword>
+	<description>描述</description>
+	<email>电子邮件</email>
+	<mobile_number>手机</mobile_number>
+	<url>网址</url>
+	<empty_str>清空所有关键字</empty_str>
+	<alert_1>未选择关键字！</alert_1>
+	<alert_2>确定要删除所选关键字吗？此操作无法撤销 – 删除的关键字将从系统中永久移除！</alert_2>
+	<alert_3>确定要清空所有关键字吗？此为不可撤销操作 – 删除的关键字将从系统中永久移除！</alert_3>
+	<senderchksms>查看短信发送者</senderchksms>
+	<senderchksmsy>是</senderchksmsy>
+	<senderchksmsn>不是</senderchksmsn>
+	<modem_imei>调制解调器IMEI</modem_imei>
+	<from>从</from>
+	<department>部門</department>
+</keyword_management>
+<language_setup><header>语言设置</header><select>请选择一种语言作为在系统中显示的默认语言</select><english>英文</english><chinese_utf8>中文-UTF8</chinese_utf8><chinese_big5>中文-BIG5</chinese_big5><korean>韩文</korean><thai>泰文</thai><save>保存</save><reset>重置</reset><ses_err>抱歉，您未登录或者会话已过期。</ses_err></language_setup>
+<ldap_add>
+	<server_mgnt>ＬＤＡＰ服务器管理</server_mgnt>
+	<title>添加新的ＬＤＡＰ服务器</title>
+	<name>名字</name>
+	<name_desc>ＬＤＡＰ服务器的专属名字</name_desc>
+	<desc>描述</desc>
+	<server1>服务器１:</server1>
+	<server1_desc>主要ＬＤＡＰ服务器ＩＰ和端口号。ＬＤＡＰ默认端口：３８９</server1_desc>
+	<server2>服务器２ :</server2>
+	<server2_desc>第二ＬＤＡＰ服务器ＩＰ和端口号。ＬＤＡＰ默认端口：３８９</server2_desc>
+	<port>端口</port>
+	<type>种类</type>
+	<service_bind>服务账号Bind DN:</service_bind>
+	<test_service>测试服务账号</test_service>
+	<account_passwd>服务账号密码 :</account_passwd>
+	<login_mode>登录模式 :</login_mode>
+	<lm_help_title>登录ＩＤ种类，在ＬＤＡＰ服务器内检查以下属性</lm_help_title>
+	<lm_help_note>注意：如果在ｓｅｎｄＱｕｉｃｋ系统内有已下载的用户，登录模式不能改变</lm_help_note>
+	<mobile_attr>对于手机号码的LDAP名字属性</mobile_attr>
+	<mobile_desc>如果留白，默认LDAP属性可变。 </mobile_desc>
+	<basedn>Base DN :</basedn>
+	<basedn_desc>用户列表的地址的基础DN</basedn_desc>
+	<search_scope>搜索范围</search_scope>
+	<scope_sub_desc>对以下整个树状图和目标程序库进行搜索</scope_sub_desc>
+	<scope_base_desc>仅搜索目标程序库</scope_base_desc>
+	<scope_one_desc>立即搜索目标程序库下方的条目</scope_one_desc>
+	<filter>额外LDAP过滤字符串</filter>
+	<filter_desc>输入额外LDAP过滤字符串</filter_desc>
+	<filter_default>默认为空</filter_default>
+	<filter_help>比如，允许所有用户在VPN用户群,</filter_help>
+	<sync>自动同步设定</sync>
+	<frequency>频率</frequency>
+	<time>时间</time>
+	<sync_with>与XXX同步</sync_with>
+	<user_list>用户列表</user_list>
+	<addr_book>全球地址簿</addr_book>
+	<never>从不</never>
+	<daily>每天</daily>
+	<dept_new>新用户部门</dept_new>
+	<dept_contact>新联系人部门</dept_contact>
+	<role_new>新用户角色</role_new>
+	<no_department>没有部门</no_department>
+	<success_msg1>LDAP 服务器</success_msg1>
+	<success_msg2>已成功添加</success_msg2>
+	<mail_attr>電子郵件属性</mail_attr>
+	<mail_desc>如果您保留空白，则默认LDAP属性将为mail</mail_desc>
+	<login_mode>登录模式和联系人姓名</login_mode>
+	<basedn_desc>用户或组列表的位置的基本DN。</basedn_desc>
+	<groups_desc>它将下载所有组并将组创建到全局地址簿中并将成员添加到其中。</groups_desc>
+	<group_download>下载广告组和成员</group_download>
+	<domain_name>域名</domain_name>
+	<email>电子邮件</email>
+	<login_id>登录ID</login_id>
+	<display_name>显示名称</display_name>
+	<ad_attr>AD 属性</ad_attr>
+	<ldap_attr>LDAP 属性</ldap_attr>
+	<name_in_outlook>在Outlook中命名</name_in_outlook>
+	<search_scope>搜索范围</search_scope>
+	<search_scope_sub>搜索下面的整个树，包括基础对象。</search_scope_sub>
+	<search_scope_base>仅搜索基础对象。</search_scope_base>
+	<search_scope_one>搜索紧靠基础对象下方的条目。</search_scope_one>
+</ldap_add>
+<ldap_edit>
+	<search_scope_sub>搜索下面的整个树，包括基础对象。</search_scope_sub>
+	<search_scope_base>仅搜索基础对象。</search_scope_base>
+	<search_scope_one>搜索紧靠基础对象下方的条目。</search_scope_one>
+	<search_scope>搜索范围</search_scope>
+	<name_in_outlook>在Outlook中命名</name_in_outlook>
+	<ldap_attr>LDAP 属性</ldap_attr>
+	<ad_attr>AD 属性</ad_attr>
+	<display_name>显示名称</display_name>
+	<email>电子邮件</email>
+	<domain_name>域名</domain_name>
+	<login_mode>登录模式和联系人姓名</login_mode>
+	<basedn_desc>用户或组列表的位置的基本DN。</basedn_desc>
+	<groups_desc>它将下载所有组并将组创建到全局地址簿中并将成员添加到其中。</groups_desc>
+	<group_download>下载广告组和成员</group_download>
+	<mail_desc>如果您保留空白，则默认LDAP属性将为mail</mail_desc>
+	<mail_attr>電子郵件属性</mail_attr>
+	<server_mgnt>ＬＤＡＰ服务器管理</server_mgnt>
+	<title>Edit Ldap Server</title>
+	<name>名字</name>
+	<name_desc>ＬＤＡＰ服务器的专属名字 </name_desc>
+	<desc>描述</desc>
+	<server1>服务器１ :</server1>
+	<server1_desc>主要ＬＤＡＰ服务器ＩＰ和端口号。ＬＤＡＰ默认端口：３８９</server1_desc>
+	<server2>服务器２ :</server2>
+	<server2_desc>第二ＬＤＡＰ服务器ＩＰ和端口号。ＬＤＡＰ默认端口：３８９</server2_desc>
+	<port>端口</port>
+	<type>种类</type>
+	<service_bind>服务账号Bind DN:</service_bind>
+	<test_service>测试服务账号</test_service>
+	<account_passwd>服务账号密码 :</account_passwd>
+	<login_mode>登录模式 :</login_mode>
+	<lm_help_title>登录ＩＤ种类，在ＬＤＡＰ服务器内检查以下属性</lm_help_title>
+	<lm_help_note>注意：如果在ｓｅｎｄＱｕｉｃｋ系统内有已下载的用户，登录模式不能改变</lm_help_note>
+	<mobile_attr>对于手机号码的LDAP名字属性</mobile_attr>
+	<mobile_desc>如果留白，默认LDAP属性可变。 </mobile_desc>
+	<basedn>Base DN :</basedn>
+	<basedn_desc>用户列表的地址的基础DN</basedn_desc>
+	<search_scope>搜索范围</search_scope>
+	<scope_sub_desc>对以下整个树状图和目标程序库进行搜索</scope_sub_desc>
+	<scope_base_desc>仅搜索目标程序库</scope_base_desc>
+	<scope_one_desc>S立即搜索目标程序库下方的条目</scope_one_desc>
+	<filter>额外LDAP过滤字符串:</filter>
+	<filter_desc>输入额外LDAP过滤字符串</filter_desc>
+	<filter_default>默认为空</filter_default>
+	<filter_help>比如，允许所有用户在VPN用户群,</filter_help>
+	<sync>自动同步设定</sync>
+	<frequency>频率</frequency>
+	<time>时间</time>
+	<sync_with>与XXX同步</sync_with>
+	<user_list>用户列表</user_list>
+	<addr_book>全球地址簿</addr_book>
+	<never>从不</never>
+	<daily>每天</daily>
+	<dept_new>新用户部门</dept_new>
+	<dept_contact>新联系人部门</dept_contact>
+	<role_new>新用户角色</role_new>
+	<no_department>没有部门</no_department>
+	<success_msg1>LDAP 服务器</success_msg1>
+	<success_msg2>已成功添加</success_msg2>
+</ldap_edit>
+<ldap_mgnt>
+	<no>编号</no>
+	<sync_info>同步信息</sync_info>
+	<dlgrp>下载组</dlgrp>
+	<new_ldap_server>创建新的 LDAP 服务器</new_ldap_server>
+	<name>名字</name>
+	<description>描述</description>
+	<server>服务器</server>
+	<login_mode>登录模式</login_mode>
+	<attr_name>LDAP 名字属性</attr_name>
+	<basedn>Base DN</basedn>
+	<scope>搜索范围</scope>
+	<server_empty>ＬＤＡＰ服务器列表为空</server_empty>
+	<select_all>选择所有</select_all>
+	<delete>删除所选ＬＤＡＰ服务器</delete>
+	<alert_1>没有账户被选中！</alert_1>
+	<alert_2>确定删除所选的资料吗？删除不可逆－所选的用户和资料会从系统中永久删除</alert_2>
+	<processing>处理中...</processing>
+	<err_msg>删除所选资料失败</err_msg>
+	<success_msg>成功删除资料</success_msg>
+</ldap_mgnt>
+<lib><db_err>数据库错误</db_err><user>用户</user><checkUser_msg1>和密码已验证。</checkUser_msg1><getUserPassword_msg1>不存在。</getUserPassword_msg1><getUserDepartment_msg1>系统错误 – 在表“user_list”中无法找到用户</getUserDepartment_msg1><getUserDepartment_msg2></getUserDepartment_msg2><changeUserDetails_msg1>对用户资料的更改未更新到表“user_list”中</changeUserDetails_msg1><changeUserDetails_msg2>用户详细资料已成功更新!</changeUserDetails_msg2><changeUserDetails_msg3>多个用户资料已更新到表“user_list”中</changeUserDetails_msg3><doSQLcmd_msg1> -- 表未更新</doSQLcmd_msg1><updateTotal_msg1>ID</updateTotal_msg1><updateTotal_msg2>未找到在表</updateTotal_msg2><pageNumbering_msg1>页:</pageNumbering_msg1></lib>
+<lib_address_book><db_err>数据库错误</db_err><listAddressBook_msg1>未找到任何地址簿联系人！</listAddressBook_msg1><contact>联系人</contact><addAddressBook_msg1>已存在个人地址簿中</addAddressBook_msg1><addAddressBook_msg2>已成功添加至个人地址簿！</addAddressBook_msg2><addAddressBook_msg3>添加不成功！</addAddressBook_msg3><editAddressBook_msg1>系统错误 – 在表“address_book”中无法找到联系人 ID</editAddressBook_msg1><editAddressBook_msg2></editAddressBook_msg2><saveAddressBook_msg1>对联系人</saveAddressBook_msg1><saveAddressBook_msg2>所作的更改已成功保存！</saveAddressBook_msg2><saveAddressBook_msg3>所作的更改不成功！!</saveAddressBook_msg3><deleteAddressBook_msg1>联系人删除不成功！</deleteAddressBook_msg1><deleteAddressBook_msg2>删除所选联系人的操作已成功完成！</deleteAddressBook_msg2>
+	<deleteAddressBook_msg3>联系人的删除操作已成功完成！\n</deleteAddressBook_msg3><emptyAddressBook_msg1>个联系人已从系统中被成功删除！</emptyAddressBook_msg1><listGlobalBook_msg1>未找到任何公共地址簿联系人！</listGlobalBook_msg1><addGlobalBook_msg1>已存在公共地址簿中</addGlobalBook_msg1><addGlobalBook_msg2>已成功添加至公共地址簿！</addGlobalBook_msg2><addGlobalBook_msg3>添加不成功！</addGlobalBook_msg3><editGlobalBook_msg1>系统错误 – 在表“address_book”中无法找到联系人 ID</editGlobalBook_msg1><editGlobalBook_msg2></editGlobalBook_msg2><saveGlobalBook_msg1>对联系人</saveGlobalBook_msg1><saveGlobalBook_msg2>所作的更改已成功保存！</saveGlobalBook_msg2><saveGlobalBook_msg3>所作的更改不成功！</saveGlobalBook_msg3><listContacts_msg1>没有可用预览！</listContacts_msg1>
+</lib_address_book>
+<lib_address_group><db_err>数据库错误</db_err><listAddressGroup_msg1>未找到任何地址群组！</listAddressGroup_msg1><group>群组</group><addAddressGroup_msg1>已存在个人地址群组中</addAddressGroup_msg1><addAddressGroup_msg2>已成功添加至个人地址簿！</addAddressGroup_msg2><addAddressGroup_msg3>添加不成功！</addAddressGroup_msg3><deleteAddressGroup_msg1>地址群组删除不成功！</deleteAddressGroup_msg1><deleteAddressGroup_msg2>删除所选地址群组的操作已成功！</deleteAddressGroup_msg2><deleteAddressGroup_msg3>地址群组的删除操作已成功完成！\n</deleteAddressGroup_msg3><emptyAddressGroup_msg1>个地址群组已从系统中被成功删除！</emptyAddressGroup_msg1><listGlobalGroup_msg1>未找到任何公共地址群组！</listGlobalGroup_msg1><address_group>地址群组</address_group><addGlobalGroup_msg1>已存在公共地址群组中</addGlobalGroup_msg1><addGlobalGroup_msg2>已成功添加至公共地址群组！</addGlobalGroup_msg2>
+	<addGlobalGroup_msg3>添加不成功！</addGlobalGroup_msg3>
+</lib_address_group>
+<lib_common_inbox><db_err>数据库错误</db_err><listCommonInbox_msg1>通用收件箱为空！</listCommonInbox_msg1><deleteCommonInbox_msg1>收件箱日志删除不成功！</deleteCommonInbox_msg1><deleteCommonInbox_msg2>删除所选收件箱日志的操作已成功完成！</deleteCommonInbox_msg2><deleteCommonInbox_msg3>收件箱日志的操作已成功完成！\n</deleteCommonInbox_msg3><emptyCommonInbox_msg1>通用收件箱已成功清空！</emptyCommonInbox_msg1></lib_common_inbox>
+<lib_http_log>
+	<db_err>数据库错误</db_err><listLog_msg1>已发送日志为空！</listLog_msg1><listLog_msg2>队列日志为空！</listLog_msg2>
+	<deleteLog_http_msg1>HTTP 日志删除不成功！</deleteLog_http_msg1><deleteLog_http_msg2>删除所选 HTTP 日志的操作已成功完成！</deleteLog_http_msg2><deleteLog_http_msg3>HTTP 日志的删除操作已成功完成！\n</deleteLog_http_msg3><deleteLog_scheduled_msg1>HTTP 计划日志删除不成功！</deleteLog_scheduled_msg1><deleteLog_scheduled_msg2>删除所选 HTTP 计划日志的操作已成功完成！</deleteLog_scheduled_msg2><deleteLog_scheduled_msg3>HTTP 计划日志的删除操作已成功完成！\n</deleteLog_scheduled_msg3><emptyLog_msg1>条 HTTP 日志已从系统中被成功删除！</emptyLog_msg1>
+	<emptyLog_msg2>条 HTTP 计划日志已从系统中被成功删除！</emptyLog_msg2><no>编号</no><date_time>日期和时间</date_time>
+	<mobile_number>手机号码</mobile_number><message_text>消息文本</message_text><status>状态</status>
+	<message_from>消息来源</message_from><modem_label>调制解调器标签</modem_label>
+</lib_http_log>
+<lib_ldap>
+	<db_err>数据库错误</db_err>
+	<err_msg1>没有找到 LDAP 服务器资料</err_msg1>
+	<err_msg2>对不起，LDAP 连接失败</err_msg2>
+	<err_msg3>不能绑定远端服务器.... </err_msg3>
+	<info_msg1>没有用户从活动目录中被下载 </info_msg1>
+	<info_msg2>N没有在活动目录中找到新用户 </info_msg2>
+	<info_msg3>没有联系人从活动目录中被下载 </info_msg3>
+	<info_msg4>没有在活动目录中找到新的联系人 </info_msg4>
+	<outof>从中</outof><diul>下载到用户列表 </diul>
+	<diab>下载到全球地址簿 </diab>
+	<alreadyhas>user(s) already exist in the user list.</alreadyhas>
+	<nomobile_ab>在LDAP服务器中，用户没有手机号码</nomobile_ab>
+	<alreadyhas_ab>该用户已经存在于全球地址簿 </alreadyhas_ab>
+	<err_msg4>请选择LDAP服务器</err_msg4>
+</lib_ldap>
+<lib_logs_management>
+	<db_err>数据库错误</db_err><listInbox_msg1>收件箱为空</listInbox_msg1>
+	<deleteInbox_msg1>收件箱日志删除不成功！</deleteInbox_msg1>
+	<deleteInbox_msg2>删除所选收件箱日志的操作已成功完成！</deleteInbox_msg2>
+	<deleteInbox_msg3>收件箱日志的删除操作已成功完成！\n</deleteInbox_msg3>
+	<emptyInbox_msg1>条收件箱日志已从系统中被成功删除！</emptyInbox_msg1>
+	<listGlobalInbox_msg1>公共收件箱为空！</listGlobalInbox_msg1>
+	<deleteGlobalInbox_msg1>公共收件箱日志删除不成功！</deleteGlobalInbox_msg1>
+	<deleteGlobalInbox_msg2>删除所选公共收件箱日志的操作已成功完成！</deleteGlobalInbox_msg2>
+	<deleteGlobalInbox_msg3>公共收件箱日志的删除操作已成功完成！\n</deleteGlobalInbox_msg3>
+	<emptyGlobalInbox_msg1>条公共收件箱日志已从系统中被成功删除！</emptyGlobalInbox_msg1>
+	<sent_log>已发送日志</sent_log>
+	<unsent_log>未发送日志</unsent_log><queue_log>队列日志</queue_log>
+	<global_sent_log>公共已发送日志</global_sent_log>
+	<global_unsent_log>公共未发送日志</global_unsent_log>
+	<global_queue_log>公共队列日志</global_queue_log>
+	<listLog_msg1>已发送日志为空！</listLog_msg1>
+	<listLog_msg2>未发送日志为空！</listLog_msg2>
+	<listLog_msg3>队列日志为空！</listLog_msg3>
+	<deleteLog_sent_msg1>已发送日志删除不成功！</deleteLog_sent_msg1>
+	<deleteLog_sent_msg2>所选已发送日志删除已成功完成！</deleteLog_sent_msg2>
+	<deleteLog_sent_msg3>已发送日志删除已成功完成！\n</deleteLog_sent_msg3>
+	<deleteLog_unsent_msg1>未发送日志删除不成功！</deleteLog_unsent_msg1>
+	<deleteLog_unsent_msg2>所选未发送日志删除已成功完成！</deleteLog_unsent_msg2>
+	<deleteLog_unsent_msg3>未发送日志删除已成功完成！\n</deleteLog_unsent_msg3>
+	<deleteLog_queue_msg1>队列日志删除不成功！</deleteLog_queue_msg1>
+	<deleteLog_queue_msg2>所选队列日志删除已成功完成！</deleteLog_queue_msg2>
+	<deleteLog_queue_msg3>队列日志删除已成功完成！\n</deleteLog_queue_msg3>
+	<emptyLog_msg1>条已发送日志已从系统中永久移除！</emptyLog_msg1>
+	<emptyLog_msg2>条未发送日志已从系统中永久移除！</emptyLog_msg2>
+	<emptyLog_msg3>条队列日志已从系统中永久移除！</emptyLog_msg3>
+	<listGlobalLog_msg1>公共已发送日志为空！</listGlobalLog_msg1>
+	<listGlobalLog_msg2>公共未发送日志为空！</listGlobalLog_msg2>
+	<listGlobalLog_msg3>公共队列日志为空！</listGlobalLog_msg3>
+	<deleteGlobalLog_sent_msg1>公共已发送日志删除不成功！</deleteGlobalLog_sent_msg1>
+	<deleteGlobalLog_sent_msg2>所选公共已发送日志删除已成功完成！</deleteGlobalLog_sent_msg2>
+	<deleteGlobalLog_sent_msg3>公共已发送日志删除已成功完成！\n</deleteGlobalLog_sent_msg3>
+	<deleteGlobalLog_unsent_msg1>公共未发送日志删除不成功！</deleteGlobalLog_unsent_msg1>
+	<deleteGlobalLog_unsent_msg2>所选公共未发送日志删除已成功完成！</deleteGlobalLog_unsent_msg2>
+	<deleteGlobalLog_unsent_msg3>公共未发送日志删除已成功完成！\n</deleteGlobalLog_unsent_msg3>
+	<deleteGlobalLog_queue_msg1>公共队列日志删除不成功！</deleteGlobalLog_queue_msg1>
+	<deleteGlobalLog_queue_msg2>所选公共队列日志删除已成功完成！</deleteGlobalLog_queue_msg2>
+	<deleteGlobalLog_queue_msg3>公共队列日志删除已成功完成！\n</deleteGlobalLog_queue_msg3>
+	<emptyGlobalLog_msg1>条公共已发送日志已从系统中永久移除！</emptyGlobalLog_msg1>
+	<emptyGlobalLog_msg2>条公共未发送日志已从系统中永久移除！</emptyGlobalLog_msg2>
+	<emptyGlobalLog_msg3>条公共队列日志已从系统中永久移除！</emptyGlobalLog_msg3>
+	<exportCSVFile_msg1>无法打开文件</exportCSVFile_msg1>
+	<listScheduled_msg1>没有计划的 SMS！</listScheduled_msg1>
+	<deleteScheduled_msg1>计划的 SMS 删除不成功！</deleteScheduled_msg1>
+	<deleteScheduled_msg2>所选计划的 SMS 已成功删除！</deleteScheduled_msg2>
+	<deleteScheduled_msg3>计划的 SMS 的删除操作已成功完成！\n</deleteScheduled_msg3>
+	<emptyScheduled_msg1>条计划的 SMS 已从系统中被成功删除！</emptyScheduled_msg1>
+	<no>编号</no><date_time>日期和时间</date_time>
+	<mobile_number>手机号码</mobile_number>
+	<message_text>消息文本</message_text>
+	<keyword>关键字</keyword>
+	<department>部门</department>
+	<status>状态</status>
+	<totalSMS>SMS 总数</totalSMS>
+	<sender>发件人</sender>
+</lib_logs_management>
+<lib_message_template><db_err>数据库错误</db_err><listMessageTemplate_msg1>未找到任何消息模板！</listMessageTemplate_msg1>
+<addMessageTemplate_msg1>消息模板已创建成功！</addMessageTemplate_msg1><addMessageTemplate_msg2>消息模板创建不成功！</addMessageTemplate_msg2><editMessageTemplate_msg1>系统错误 – 在表“message_template”中无法找到消息模板 ID</editMessageTemplate_msg1><editMessageTemplate_msg2></editMessageTemplate_msg2><saveMessageTemplate_msg1>对消息模板所作的更改已成功保存！</saveMessageTemplate_msg1><saveMessageTemplate_msg2>对消息模板所作的更改不成功！!</saveMessageTemplate_msg2><deleteMessageTemplate_msg1>消息模板删除不成功！</deleteMessageTemplate_msg1><deleteMessageTemplate_msg2>删除所选消息模板的操作已成功完成！</deleteMessageTemplate_msg2><deleteMessageTemplate_msg3>消息模板的删除操作已成功完成！\n</deleteMessageTemplate_msg3><emptyMessageTemplate_msg1>个消息模板已从系统中被成功删除！</emptyMessageTemplate_msg1></lib_message_template>
+<lib_send_sms>
+	<db_err>数据库错误</db_err>
+	<sendSMS_msg1>您没有足够金额可用于发送 SMS。您的某些 SMS 可能会被拒绝。</sendSMS_msg1>
+	<sendSMS_msg2>条 SMS 未成功发送！</sendSMS_msg2>
+	<sendScheduledSMS_msg1>条计划的 SMS 未成功进入队列！</sendScheduledSMS_msg1>
+	<sendAutomatedSMS_msg1>无法发送 SMS</sendAutomatedSMS_msg1>
+	<retrieveContacts_msg1>系统错误 – 在表“address_book”中无法找到联系人 ID</retrieveContacts_msg1>
+	<retrieveContacts_msg2></retrieveContacts_msg2>
+	<listContacts_msg1>个人地址簿为空！</listContacts_msg1>
+	<retrieveGroup_msg1>系统错误 – 在表“address_group”中无法找到群组 ID</retrieveGroup_msg1>
+	<retrieveGroup_msg2></retrieveGroup_msg2>
+	<listGlobalContacts_msg1>公共地址簿为空！</listGlobalContacts_msg1>
+	<listGroup_msg1>个人群组列表为空！</listGroup_msg1>
+	<listGlobalGroup_msg1>公共群组列表为空！</listGlobalGroup_msg1>
+	<retrieveTemplate_msg1>系统错误 – 在表“message_template”中无法找到模板 ID</retrieveTemplate_msg1>
+	<retrieveTemplate_msg2></retrieveTemplate_msg2>
+	<listBroadCast_msg1>无可用预览！已上传文件的文件格式错误。请检查！</listBroadCast_msg1>
+	<msg_tmp>消息模板列表是空的</msg_tmp>
+</lib_send_sms>
+<lib_unsubscribe><db_err>数据库错误</db_err><listUnsubscribe_msg1>取消订阅者列表为空！</listUnsubscribe_msg1><deleteUnsubscribe_msg1>取消订阅者删除不成功！</deleteUnsubscribe_msg1><deleteUnsubscribe_msg2>删除所选取消订阅者的操作已成功完成！</deleteUnsubscribe_msg2><deleteUnsubscribe_msg3>取消订阅者的删除操作已成功完成！</deleteUnsubscribe_msg3><emptyUnsubscribe_msg1>取消订阅者列表已成功清空！</emptyUnsubscribe_msg1><keywordexist>退订关鍵字已經存在</keywordexist><keywordadded>成功添加退订关鍵字</keywordadded><keywordfailed>新退订关鍵字添加失敗!</keywordfailed><keywordempty>退订关鍵字列表是空的!</keywordempty><responseupdate>退订响应成功更新!</responseupdate><responsefailed>退订响应更新失敗!</responsefailed><delkeywordfail>刪除退订关鍵字不成功</delkeywordfail><delkeywordsuccess>选择退订关鍵字刪除成功完成!</delkeywordsuccess>
+	<delkeywordmsg1>退订关鍵字刪除成功完成!</delkeywordmsg1><delkeywordmsg2>退订关鍵字刪除不成功!</delkeywordmsg2><unsubadded>退订移動成功添加!</unsubadded><unsubexist>退订移動已經存在</unsubexist><unsubfailed>新退订添加失敗!</unsubfailed></lib_unsubscribe>
+<lib_user_management><getDepartmentList_msg1>系统错误 – 对于用户</getDepartmentList_msg1><getDepartmentList_msg2>，没有部门可供选择。请联系系统管理员以确保部门列表在系统中可用</getDepartmentList_msg2><getAccessRightsList_msg1>严重系统错误 – 未找到访问权限列表。\n 请立即联系系统管理员！</getAccessRightsList_msg1><retrieveAccessRights_msg1>系统错误 – 未找到用户角色的 ID</retrieveAccessRights_msg1><db_err>数据库错误</db_err><retrieveAccessRights_msg2>系统错误 – 未找到用户角色的访问权限</retrieveAccessRights_msg2><getDepartmentAccess_msg1>严重系统错误 – 未找到部门访问权限列表。\n 请立即联系系统管理员！</getDepartmentAccess_msg1><getUserRoleList_msg1>系统错误 -- 对于用户</getUserRoleList_msg1><getUserRoleList_msg2>，没有用户角色可供选择。请联系系统管理员以确保用户角色列表在系统中可用</getUserRoleList_msg2><listUserAccount_msg1>未找到任何用户帐户！</listUserAccount_msg1><addUserAccount_msg1>用户</addUserAccount_msg1><already_exist>已存在系统中！</already_exist><addUserAccount_msg2>用户帐户</addUserAccount_msg2><success_created>已创建成功！</success_created>
+	<unsuccess_created>创建不成功！</unsuccess_created><editUserAccount_msg1>系统错误 – 在表“user_list”中无法找到用户 ID</editUserAccount_msg1><editUserAccount_msg2></editUserAccount_msg2><saveUserAccount_msg1>在表“user_list”中未找到用户 ID</saveUserAccount_msg1><saveUserAccount_msg2></saveUserAccount_msg2><saveUserAccount_msg3>对用户帐户</saveUserAccount_msg3><success_save>所作的更改已成功保存！</success_save><unsuccess>所作的更改不成功！</unsuccess><deleteUserAccount_msg1>用户删除不成功！</deleteUserAccount_msg1><deleteUserAccount_msg2>删除所选用户的操作已成功完成！</deleteUserAccount_msg2><deleteUserAccount_msg3>用户已成功删除！\n</deleteUserAccount_msg3><emptyUserAccount_msg1>个用户帐户已从系统中被成功删除！</emptyUserAccount_msg1><listUserRole_msg1>未找到任何用户角色！</listUserRole_msg1><addUserRole_msg1>用户角色</addUserRole_msg1>
+	<editUserRole_msg1>系统错误 – 在表“user_role_list”中无法找到角色 ID</editUserRole_msg1><editUserRole_msg2></editUserRole_msg2><saveUserRole_msg1>对用户角色</saveUserRole_msg1><saveUserRole_msg2>所作的更改已成功保存！\n请注意，在此用户角色下的现有用户将不会受此更改影响</saveUserRole_msg2><deleteUserRole_msg1>用户角色删除不成功！</deleteUserRole_msg1><deleteUserRole_msg2>删除所选用户角色的操作已成功完成！</deleteUserRole_msg2><deleteUserRole_msg3>用户角色已成功删除！\n</deleteUserRole_msg3><emptyUserRole_msg1>个用户帐户已从系统中被成功删除！</emptyUserRole_msg1><listDepartment_msg1>未找到部门！</listDepartment_msg1><addDepartment_msg1>部门</addDepartment_msg1><deleteDepartment_msg1>部门删除不成功！</deleteDepartment_msg1><deleteDepartment_msg2>删除所选部门的操作已成功完成！</deleteDepartment_msg2><deleteDepartment_msg3> 部门的删除操作已成功完成！\n</deleteDepartment_msg3><emptyDepartment_msg1>操作被拒绝！仅允许系统管理员从系统删除/清空部门！</emptyDepartment_msg1>
+	<emptyDepartment_msg2>个部门已从系统中被成功删除！</emptyDepartment_msg2><getAccessLog_msg1>未找到任何访问日志！</getAccessLog_msg1></lib_user_management>
+<logout><title>退出确认</title><user>用户</user><yes>是</yes><no>否</no><message_1>已成功退出系统</message_1><message_2>--- 确定要退出吗？</message_2></logout>
+<mim_message_template>
+	<new_tpl_name_text>键入下面的标题</new_tpl_name_text>
+	<title>MIM消息模板</title>
+	<add_new>添加新消息模板：</add_new>
+	<create_new>创建新消息模板</create_new>
+	<list_template>消息模板列表</list_template>
+	<msg_template>消息模板</msg_template>
+	<empty_str>清空所有消息模板</empty_str>
+	<new_msg_text>在下面键入消息文本：</new_msg_text>
+	<edit_template>编辑现有消息模板</edit_template>
+	<curr_msg_text>编辑下面的消息文本：</curr_msg_text>
+	<alert_1>请勿将消息文本留空！</alert_1>
+	<alert_2>未选择消息模板！</alert_2>
+	<alert_3>确定要删除所选消息模板吗？此为不可撤销操作 – 删除的消息模板将从系统中永久移除！</alert_3>
+	<alert_4>确定要清空消息模板吗？此为不可撤销操作 – 删除的消息模板将从系统中永久移除！</alert_4>
+	<alert_5>Please Specify A File To Be Uploaded!</alert_5>
+	<alert_6>Confirm To Cancel Add Message(s) By File Upload? All Records Uploaded Will Be Deleted!</alert_6>
+	<alert_7>Personal Message(s) Successfully Added!</alert_7>
+	<export>Export Message Template(s) To CSV File</export>
+	<add_upload>Add Message(s) By File Upload :</add_upload>
+	<upload_file>Upload File</upload_file>
+	<preview>Preview Message(s) By File Upload</preview>
+	<file_format>文件格式</file_format>
+	<mim_tpl_id>模板ID</mim_tpl_id>
+	<department>部门</department>
+	<template_name>标题</template_name>
+</mim_message_template>
+<message_template>
+	<template_name>标题</template_name>
+	<title>个人消息模板</title>
+	<add_new>添加新消息模板：</add_new>
+	<create_new>创建新消息模板</create_new>
+	<list_template>消息模板列表</list_template>
+	<msg_template>消息模板</msg_template>
+	<empty_str>清空所有消息模板</empty_str>
+	<new_msg_text>在下面键入消息文本：</new_msg_text>
+	<edit_template>编辑现有消息模板</edit_template>
+	<curr_msg_text>编辑下面的消息文本：</curr_msg_text>
+	<alert_1>请勿将消息文本留空！</alert_1>
+	<alert_2>未选择消息模板！</alert_2>
+	<alert_3>确定要删除所选消息模板吗？此为不可撤销操作 – 删除的消息模板将从系统中永久移除！</alert_3>
+	<alert_4>确定要清空消息模板吗？此为不可撤销操作 – 删除的消息模板将从系统中永久移除！</alert_4>
+	<alert_5>Please Specify A File To Be Uploaded!</alert_5>
+	<alert_6>Confirm To Cancel Add Message(s) By File Upload? All Records Uploaded Will Be Deleted!</alert_6>
+	<alert_7>Personal Message(s) Successfully Added!</alert_7>
+	<export>Export Message Template(s) To CSV File</export>
+	<add_upload>Add Message(s) By File Upload :</add_upload>
+	<upload_file>Upload File</upload_file>
+	<preview>Preview Message(s) By File Upload</preview>
+	<file_format>文件格式</file_format>
+</message_template>
+<new_http_log><title>HTTP 已发送日志</title><date_from>开始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy)</date_format><export>将 HTTP 已发送日志导出至 CSV 文件</export><mobile_number>手机号码</mobile_number><date_time>日期和时间</date_time><message_text>消息文本</message_text><status>状态</status>
+	<message_from>消息来源</message_from><modem_label>调制解调器标签</modem_label><delete>选中以删除</delete><delete_checked>删除所选已发送日志</delete_checked><empty_str>清空已发送日志</empty_str><alert_1>请仅在搜索手机号码中输入数字</alert_1><alert_2>日期范围无效！请选中“日期选择”！</alert_2><alert_3>未选择已发送日志！</alert_3><alert_4>确定要删除所选已发送日志吗？此为不可撤销操作 – 删除的已发送日志将从系统中永久移除！</alert_4><alert_5>确定要清空所有已发送日志吗？此为不可撤销操作 – 删除的已发送日志将从系统中永久移除！</alert_5><http_log>HTTP 日志</http_log><http_schedule_log>HTTP 计划日志</http_schedule_log>
+</new_http_log>
+<new_http_queuelog><title>HTTP 计划日志</title><date_from>开始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy)</date_format><export>将 HTTP 计划日志导出至 CSV 文件</export><mobile_number>手机号码</mobile_number><date_time>日期和时间</date_time><message_text>消息文本</message_text><status>状态</status>
+	<message_from>消息来源</message_from><modem_label>调制解调器标签</modem_label><delete>选中以删除</delete><delete_checked>删除所选计划日志</delete_checked><empty_str>清空计划日志</empty_str><alert_1>请仅在搜索手机号码中输入数字</alert_1><alert_2>日期范围无效！请选中“日期选择”！</alert_2><alert_3>未选择计划日志！</alert_3><alert_4>确定要删除所选计划日志吗？此为不可撤销操作 – 删除的计划日志将从系统中永久移除！</alert_4><alert_5>确定要清空所有计划日志吗？此为不可撤销操作 – 删除的计划日志将从系统中永久移除！</alert_5><http_log>HTTP 日志</http_log><http_schedule_log>HTTP 计划日志</http_schedule_log>
+</new_http_queuelog>
+<queue_log><title>个人队列日志</title><date_from>开始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy) </date_format><export>将个人队列日志导出至 CSV 文件</export><mobile_number>手机号码</mobile_number><date_time>日期和时间</date_time><message_text>消息文本</message_text><status>状态</status>
+	<delete>选中以删除</delete><delete_checked>删除所选队列日志</delete_checked><empty_str>清空队列日志</empty_str><alert_1>请仅在搜索手机号码中输入数字</alert_1><alert_2>日期范围无效！请选中“日期选择”！</alert_2><alert_3>未选择队列日志！</alert_3><alert_4>确定要删除所选队列日志吗？此为不可撤销操作 – 删除的队列日志将从系统中永久移除！</alert_4><alert_5>确定要清空所有队列日志吗？此为不可撤销操作 – 删除的队列日志将从系统中永久移除！</alert_5></queue_log>
+<quota_mnt>
+	<add_quota_profile>添加金额配置文件</add_quota_profile>
+	<edit_quota_profile>编辑新金额配置文件</edit_quota_profile>
+	<userid>用户ID</userid>
+	<quota_left>剩余金额</quota_left>
+	<auto_topup>自动充值</auto_topup>
+	<topup_value>充值额</topup_value>
+	<last_topup>最后充值日期（自动充值）</last_topup>
+	<next_topup>下一次充值日期（自动充值）</next_topup>
+	<update_dtm>已更新配置文件 DTM</update_dtm>
+	<update_by>配置文件更新者</update_by>
+	<enable_unlimited>启用无限金额</enable_unlimited>
+	<quota_alert_config>金额警报配置</quota_alert_config>
+	<add_quota_config>金额警报配置（通过电子邮件）</add_quota_config>
+	<alert_status>警报状态</alert_status>
+	<alert_email>警报电子邮件</alert_email>
+	<alert_email_desc>**仅允许一个电子邮件发送警报。**</alert_email_desc>
+	<credit_alert>余额警报</credit_alert>
+	<alert_3>Confirm To Delete Selected Quota Profile(s)? This Is A Irreversible Action - Deleted Quota Profile(s) Will Be Permanently Removed From The System!</alert_3>
+	<addQuotaProfile_msg1>金额配置文件已存在。</addQuotaProfile_msg1>
+	<dept_quota_left>部门剩余</dept_quota_left>
+	<addQuotaProfile_msg2>部门剩余不足</addQuotaProfile_msg2>
+	<QuotaProfile_msg1>添加余额</QuotaProfile_msg1>
+	<QuotaProfile_msg2>余额</QuotaProfile_msg2>
+</quota_mnt>
+<save_keyword><msg_1>系统错误 – 关键字ID没有设置保存！</msg_1><msg_2>系统错误 – 关键字没有设定模式</msg_2><msg_3>电子邮件手册已被激活，但没有文件上传！</msg_3><msg_4>上传失败 - 文件为空</msg_4><msg_5>上传失败 -</msg_5><msg_6>请取消选中电子邮件手册或重新选择要上传的文件</msg_6><msg_7>上传的文件名应以ASCII文本格式！</msg_7><alert_1>新关键字</alert_1><alert_2>已成功添加！</alert_2><alert_3>对关键字</alert_3><alert_4>所作的更改已成功保存！</alert_4></save_keyword>
+<scheduled_sms>
+	<send_type>发送类型</send_type>
+	<title>计划的 SMS</title><no>编号</no><mobile_number>手机号码</mobile_number><message_text>消息文本</message_text><scheduled_date>计划日期和时间</scheduled_date><priority_status>优先级状态</priority_status><delete>选中以删除</delete><delete_checked>删除所选 SMS</delete_checked><empty_str>清空计划的 SMS</empty_str><alert_1>未选择 SMS！</alert_1>
+	<alert_2>确定要删除所选 SMS 吗？此为不可撤销操作 – 删除的 SMS 将从系统中永久移除！</alert_2><alert_3>确定要清空所有计划的 SMS 吗？此为不可撤销操作 – 删除的 SMS 将从系统中永久移除！</alert_3></scheduled_sms>
+<send_sms>
+	<subject>题目</subject>
+	<image>图片</image>
+	<text>文本</text>
+	<scheduling_message>调度消息</scheduling_message>
+	<descr2>选择要上传的图像</descr2>
+	<content_type>内容类型</content_type>
+	<descr1>选择广播消息的收件人</descr1>
+	<header>发送 SMS</header>
+	<file_upload>通过上传的文件发送 SMS</file_upload>
+	<mno_1>在文本框中输入手机号码</mno_1>
+	<mno_2>（用新行隔开每个条目）</mno_2>
+	<mno_3>仅限数字 - 请输入国际格式手机号码</mno_3>
+	<mno_4>例如：对于新加坡，+65xxxxxxxx，“+65为国家码” </mno_4>
+	<select_addressbook>从地址簿中选择</select_addressbook>
+	<char_set>字符集选择：</char_set>
+	<message>在文本框红输入消息文本</message>
+	<select_msgtemplate>从消息模板中选择</select_msgtemplate>
+	<characters>字符串：</characters>
+	<msgcounts>消息计数： </msgcounts>
+	<prioritysms>优先级 SMS： </prioritysms>
+	<schedulingsms>计划 SMS： </schedulingsms>
+	<yes>是</yes>
+	<date>日期：</date>
+	<date_format>yyyy-mm-dd</date_format>
+	<time>时间：</time>
+	<send>发送</send>
+	<cancel>取消</cancel>
+	<alert_1>未输入手机号码！请重新检查！</alert_1>
+	<alert_2>请选择一个计划发送 SMS 的日期！</alert_2>
+	<alert_3>选择了无效的日期！请重新选择</alert_3>
+	<alert_4>当前时间为</alert_4>
+	<alert_5>请选择计划发送 SMS 的有效时间！</alert_5>
+	<alert_6>此 SMS 为空白消息！</alert_6>
+	<alert_7> SMS 已成功发出。</alert_7>
+	<alert_8> SMS 已成功进入队列。</alert_8>
+	<alert_9>SMS 超过了字符数</alert_9>
+	<alert_10>最大长度！</alert_10>
+	<alert_11> Unsubscribe Number(s)</alert_11>
+	<select_sqltemplate>Select From SQL Template</select_sqltemplate>
+	<sql_tmpl_dtl><![CDATA[Use the standard SQL script format to get the data from external database. Example:<br>
+		 <i><b>SELECT Handphone,Name,AppointmentDateTime FROM tbl_AppointmentScheduling</b></i>]]>
+	</sql_tmpl_dtl>
+	<send_mode>发送模式</send_mode>
+	<email_address>电子邮件地址</email_address>
+	<email_subject>电子邮件主题</email_subject>
+	<send_mode_sms>短信</send_mode_sms>
+	<send_mode_email>电子邮件</send_mode_email>
+	<send_mode_mim>MIM</send_mode_mim>
+	<email_1>电子邮件地址</email_1>
+	<email_2>电子邮件主题</email_2>
+	<email_3>从地址发送电子邮件</email_3>
+	<alert_12>SMS &amp; MIM 已成功进入队列</alert_12>
+	<alert_13>MIM 已成功进入队列</alert_13>
+</send_sms>
+<sent_log>
+	<title>个人已发送日志</title>
+	<campaignname>活动名称</campaignname><date_from>开始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy) </date_format><export>将个人已发送日志导出至 CSV 文件</export><no>编号</no><mobile_number>手机号码</mobile_number><date_time>日期和时间</date_time><message_text>消息文本</message_text><status>状态</status>
+	<totalsms>SMS 总数</totalsms><delete>选中以删除</delete><delete_checked> 删除所选已发送日志</delete_checked><empty_str>清空已发送日志</empty_str><alert_1>请仅在搜索手机号码中输入数字</alert_1><alert_2>日期范围无效！请选中“日期选择”！</alert_2><alert_3>未选择已发送日志！</alert_3><alert_4>确定要删除所选已发送日志吗？此为不可撤销操作 – 删除的已发送日志将从系统中永久移除！</alert_4><alert_5>确定要清空所有已发送日志吗？此为不可撤销操作 – 删除的已发送日志将从系统中永久移除！</alert_5></sent_log>
+<success>
+	<title>操作成功</title><click>单击</click><here>此处</here><back>返回</back><str_or>或</str_or><to></to><op_success>操作成功！</op_success><usermgnt>用户管理</usermgnt><addressbook>地址簿</addressbook><msgtemplate>消息模板</msgtemplate><sendsms>发送 SMS</sendsms><scheduledsms>计划 SMS</scheduledsms><commoninbox>通用收件箱</commoninbox><logsmgnt>收件箱/日志管理</logsmgnt>
+	<unsublist>取消订阅列表</unsublist><quotamgnt>金额管理</quotamgnt><keywordmgnt>关键字管理</keywordmgnt><sysconfig>系统配置</sysconfig><languagesetup>语言设置</languagesetup><changepassword>更改密码</changepassword><httplog>HTTP 日志</httplog>
+</success>
+<sysconfig>
+	<title>SMS Time Configuration</title>
+	<modem_config>Modem Configuration</modem_config>
+	<web_logo>Web Interface Logo</web_logo>
+	<ldap_server_mgnt>ＬＤＡＰ服务器管理</ldap_server_mgnt>
+	<sysconfig_desc>此选项允许用户设置发送 SMS 的星期，开始和截止时间。默认情况下，不应用任何控制。要控制 SMS 发送时间，只需要单地选择星期和时间范围。</sysconfig_desc>
+	<enable>启用 :</enable>
+	<mon>星期一 :</mon>
+	<tue>星期二 :</tue>
+	<wed>星期三 :</wed>
+	<thu>星期四 :</thu>
+	<fri>星期五 :</fri>
+	<sat>星期六 :</sat>
+	<sun>星期日 :</sun>
+	<start>开始 :</start>
+	<end>截止 :</end>
+	<hour>小时</hour>
+	<min>分钟</min>
+	<submit>提交</submit>
+	<reset>重置</reset>
+	<upload_image>上传图像头</upload_image>
+	<upload_image_from>上传图像：</upload_image_from>
+	<image_allow_1>允许的图像格式:（gif、jpeg、jpg、png、bmp）</image_allow_1>
+	<image_allow_2>所有图像将可转换为（170 x 40 像素）</image_allow_2>
+	<latest_image>最后的图像：</latest_image>
+	<delete_image>删除此图像</delete_image>
+	<latest_upload>最后上传：</latest_upload>
+	<by>由</by>
+	<upload>上传</upload>
+	<alert_1>抱歉，文件不存在。</alert_1>
+	<alert_2>错误的文件扩展名</alert_2>
+	<alert_3>无法写入文件 (image_header.xml)</alert_3>
+	<alert_4>文件</alert_4>
+	<alert_5>已上传</alert_5>
+	<alert_6>上传文件时发生错误，请重试！</alert_6>
+	<alert_7>请选择要上传的文件</alert_7>
+	<alert_8>Confirm Remove Image File?</alert_8>
+	<alert_9>Modem Configuration Saved Successfully!</alert_9>
+	<alert_10>Confirm To Remove Modem Setting?</alert_10>
+	<alert_11>sms 时间配置文件已成功保存。</alert_11>
+	<modem_config_title>部门调制解调器配置列表</modem_config_title>
+	<department>部门</department>
+	<modem_label>调制解调器标签</modem_label>
+	<created_by>被创建</created_by>
+	<created_dtm>创建DTM</created_dtm>
+	<updated_by>被更新</updated_by>
+	<updated_dtm>更新DTM</updated_dtm>
+	<nomodem_desc>所有部门没有专属的调制解调器</nomodem_desc>
+	<title_add>加入各部门调制解调器路由选择设置</title_add>
+	<title_edit>编辑各部门调制解调器路由选择设置</title_edit>
+</sysconfig>
+<unsent_log>
+	<title>个人未发送日志</title><date_from>开始日期</date_from><date_to>截止日期</date_to><date_format>(dd-mm-yyyy)</date_format><export>将个人未发送日志导出至 CSV 文件</export><no>编号</no><mobile_number>手机号码</mobile_number><date_time>日期和时间</date_time><message_text>消息文本</message_text><status>状态</status>
+	<empty_str>清空未发送日志</empty_str>
+	<resend>重新发送</resend><alert_1>请仅在搜索手机号码中输入数字</alert_1><alert_2>日期范围无效！请选中“日期选择”！</alert_2><alert_3>未选择未发送日志！</alert_3><alert_4>确定要删除所选未发送日志吗？此为不可撤销操作 – 删除的未发送日志将从系统中永久移除！</alert_4><alert_5>确定要清空所有未发送日志吗？此为不可撤销操作 – 删除的未发送日志将从系统中永久移除！</alert_5>
+</unsent_log>
+<unsubscribe_list>
+	<button1>新退订关鍵字</button1>
+	<button2>查看退订关鍵詞列表</button2>
+	<button3>保存設置</button3>
+	<button4>复位</button4>
+	<button5>刪除选中的关鍵字</button5>
+	<button6>返回退订列表</button6>
+	<button7>加</button7>
+	<button8>取消</button8>
+	<button9>刪除选中的关鍵字</button9>
+	<button10>取消</button10>
+	<respmsgtitle1>退订响应消息</respmsgtitle1>
+	<respmsgtitle2>退订响应回复(簡訊回給用戶):</respmsgtitle2>
+	<respmsgtitle3>這將是接收到的簡訊發送回給發件人，如果系統使用的关鍵字是從退订关鍵字列表匹配</respmsgtitle3>
+	<keywordtitle>退订关鍵字列表</keywordtitle>
+	<unsub_keyword>退订关鍵字</unsub_keyword>
+	<created_by>创建者</created_by>
+	<createtitle1>创建新退订关鍵字</createtitle1>
+	<createtitle2>退订关鍵字</createtitle2>
+	<createtitle3>关鍵字是短信的第一個字。系統将路线传入的短信退订列表。</createtitle3>
+	<upload_header>上传退订手机号码</upload_header>
+	<title>取消订阅列表</title>
+	<header>取消订阅者列表</header>
+	<no>编号</no>
+	<mobile_number>手机号码</mobile_number>
+	<date_time>日期和时间</date_time>
+	<delete>选中以删除</delete>
+	<delete_checked>删除所选取消订阅者</delete_checked>
+	<empty_str>清空所有取消订阅者</empty_str>
+	<alert_1>未选择取消订阅者！</alert_1>
+	<alert_2>确定要删除所选取消订阅者吗？此为不可撤销操作 – 删除的取消订阅者将从系统中永久移除！</alert_2>
+	<alert_3>确定要清空所有取消订阅者吗？此为不可撤销操作 – 删除的取消订阅者将从系统中永久移除！</alert_3>
+	<keyword_alert1>未选择关鍵字</keyword_alert1>
+	<keyword_alert2>確認刪除选定的关鍵字？這是一個不可逆轉的行動 - 刪除关鍵字將被永久刪除從系統中!</keyword_alert2>
+	<keyword_blank>不允许空白关键字</keyword_blank>
+	<createtitle4>创建新退订手机号码</createtitle4>
+	<createtitle5>退订手机号码</createtitle5>
+	<alert_4>请指定要上的传文件</alert_4>
+	<alert_5>要上传的文件的文件格式不正確</alert_5>
+	<source>来源</source>
+	<uploadtitle>请指定要上传的文件（CSV或TXT擴展名）：</uploadtitle>
+	<add>添加退订手机</add>
+	<upload>Upload</upload>
+	<mobile_blank>您沒有输入电话号码</mobile_blank>
+	<mobile_illegal>电话号码中含有非法字符</mobile_illegal>
+	<resp_btn>响应</resp_btn>
+	<responseupdate>Unsubscribe Response Successfully Updated!</responseupdate>
+</unsubscribe_list>
+<update_language><header>语言设置</header><message_1>语言设置成功</message_1><message_2>单击</message_2><message_3>此处</message_3><message_4>查看已更新的语言设置。</message_4><message_5>抱歉，无法更新语言设置。</message_5><ses_err>抱歉，您未登录或者会话已过期。</ses_err></update_language>
+<update_quotalist><title>金额管理</title><check_session>抱歉，您未登录或者会话已过期。</check_session><db_err>数据库连接失败：</db_err><err_1>请填写充值金额。</err_1><err_2>充值金额必须为数字。</err_2><err_3>请从下拉菜单列表中选择用户 ID。</err_3><err_4>新金额配置文件已成功添加。</err_4><err_5>抱歉，无法添加金额配置文件。</err_5><err_6>所选金额配置文件已成功更新。</err_6><err_7>抱歉，无法更新金额配置文件。</err_7><err_8>剩余金额必须为数字。</err_8></update_quotalist>
+<upload_address_book><header>通过上传的文件预览联系人： </header><no>编号</no><contact_name>联系人姓名</contact_name><mobile_number>联系人手机号码</mobile_number><file_format>文件格式</file_format><add>添加</add><cancel>取消</cancel><alert_1>文件无效</alert_1><alert_2>无法移动上传文件</alert_2><alert_3>个已成功添加！</alert_3><alert_4>确定要取消通过文件上传添加联系人吗？所有已上传的记录将被删除！</alert_4>
+	<correct>正确</correct><wrong>错误</wrong></upload_address_book>
+<upload_broadcast_sms><title>通过文件上传预览 SMS </title><no>编号</no><mobile_number>手机号码</mobile_number><sms_text>SMS 文本</sms_text><file_format>文件格式</file_format><priority>优先级</priority><schedule_time>计划的时间</schedule_time><correct>正确</correct><wrong>错误</wrong><alert_1> 已成功发出!</alert_1><alert_2> 已成功进入队列!</alert_2><alert_3>确定要取消通过文件上传发送 SMS 吗？所有已上传的记录将被删除！</alert_3>
+	<err_1>文件无效</err_1><err_2>无法移动上传文件</err_2><send>发送</send><cancel>取消</cancel></upload_broadcast_sms>
+<upload_unsub_mobile><title>退订手机上传</title><alert_1>退订号码已成功添加</alert_1><alert_2>有 </alert_2><alert_3> 行格式錯誤</alert_3><alert_4> 退订移動已經存在</alert_4><err_1>無效的文件</err_1><err_2>無法移動上传文件</err_2></upload_unsub_mobile>
+<user_account>
+	<access_status>访问状态</access_status>
+	<transfer_setting>傳輸設置自</transfer_setting>
+	<username>用户名</username>
+	<dept>部门</dept>
+	<datasrc>用户数据源</datasrc>
+	<create_new>创建新用户帐户</create_new>
+	<download_new>从LDAP服务器下载用户</download_new>
+	<delete_checked>删除所选用户帐户</delete_checked>
+	<empty_str>清空所有用户</empty_str>
+	<user_acc_name>用户名</user_acc_name>
+	<user_pwd>用户密码</user_pwd>
+	<user_pwd_cfm>确认用户密码</user_pwd_cfm>
+	<user_mobile>用户手机号码</user_mobile>
+	<user_dept>部门</user_dept>
+	<user_role>用户角色</user_role>
+	<min_8>至少要有12字符并包含小字母，大字母，数字，符号两项或以上，并且不能与用户名相同</min_8>
+	<username_min_8>用户名至少要有8字符</username_min_8>
+	<pwdstr>密级</pwdstr>
+	<pwdstrinvalid>密码太短或包含空格</pwdstrinvalid>
+	<pwdstrweak>弱</pwdstrweak>
+	<pwdstrfair>中等</pwdstrfair>
+	<pwdstrbetter>强</pwdstrbetter>
+	<pwdstrbest>很强</pwdstrbest>
+	<must_match>必须匹配上面的密码</must_match>
+	<numbers_only>仅限数字&lt;br&gt;请输入国际格式手机号码&lt;br&gt;例如：对于新加坡，+65xxxxxxxx，“+65为国家码”</numbers_only>
+	<user_role_not_specify>未指定用户角色</user_role_not_specify>
+	<no_dept>无可用部门</no_dept>
+	<delete>选中以删除</delete>
+	<new_name>新用户帐户名：</new_name>
+	<new_pw>新用户密码：</new_pw>
+	<cfm_pw>重新确认用户密码：</cfm_pw>
+	<new_mno>新用户手机号码：</new_mno>
+	<dept_new>新用户的部门：</dept_new>
+	<role_new>新用户的用户角色：</role_new>
+	<list_access>访问权列表</list_access>
+	<add>添加</add><cancel>取消</cancel>
+	<edit_acc>编辑现有用户帐户</edit_acc>
+	<title>用户帐户管理</title>
+	<add_new>添加新用户帐户：</add_new>
+	<create_new>创建新用户帐户</create_new>
+	<list_user>用户帐户列表</list_user>
+	<name>用户帐户名：</name>
+	<pw>更改用户密码：</pw>
+	<change_mno>更改用户手机号码：</change_mno>
+	<dept_curr>用户的部门：</dept_curr>
+	<role_curr>用户的用户角色：</role_curr>
+	<save>保存</save>
+	<alert_1>请勿将用户帐户名留空！</alert_1>
+	<alert_2>用户密码必须至少为12个字符且为字母数字式字符！</alert_2>
+	<alert_3>输入的 2 个密码不一致！请重新检查</alert_3>
+	<alert_4>请仅为联系人手机号码输入（+国家码后跟号码）或（国家码后跟号码）！</alert_4>
+	<alert_5>未选择部门！请确保已将用户指定给部门！</alert_5>
+	<alert_6>未选择用户帐户！</alert_6>
+	<alert_7>确定要删除所选用户吗？此操作无法撤销 – 删除的用户将从系统中永久移除！</alert_7>
+	<alert_8>确定要清空所有用户吗？此操作无法撤销 – 删除的用户将从系统中永久移除！</alert_8>
+	<search_data_src>选择数据来源:</search_data_src>
+	<select_ldap>选择LDAP服务器</select_ldap>
+	<l_profile_id_desc>您必须先添加LDAP服务器或启用与之同步。</l_profile_id_desc>
+	<user_email>电子邮件</user_email>
+	<access_start>访问开始</access_start>
+	<access_end>访问结束</access_end>
+	<user_type>用户类型</user_type>
+	<no_user_type>请选择</no_user_type>
+	<user_type_admin>管理员</user_type_admin>
+	<user_type_bu>BU</user_type_bu>
+	<user_type_user>用户</user_type_user>
+	<sessiontimeout>时域超时</sessiontimeout>
+	<lockoutthreshold>锁定阈值</lockoutthreshold>
+	<pwdexpiry>密码到期</pwdexpiry>
+	<pwdchglogon>下次登录时更改密码</pwdchglogon>
+	<minutes>分钟</minutes>
+	<invalidattempt>失败次数</invalidattempt>
+	<days>天</days>
+</user_account>
+<user_department>
+	<mim_route>MIM路线</mim_route>
+	<no>编号</no> 
+	<description>描述</description> 
+	<mim_type> MIME類型</mim_type>
+	<mim_channel>MIM 频道</mim_channel>
+	<title>部门管理</title>
+	<add_new>添加新部门：</add_new>
+	<edit>编辑现有部门</edit>
+	<create_new>创建新部门</create_new>
+	<list_dept>部门列表</list_dept>
+	<no>编号</no>
+	<dept>部门</dept>
+	<created_by>创建者</created_by>
+	<delete>选中以删除</delete>
+	<delete_checked>删除所选部门</delete_checked>
+	<empty_str>清空所有部门</empty_str>
+	<new_dept>新部门名称：</new_dept>
+	<add>添加</add>
+	<cancel>取消</cancel>
+	<alert_1>请勿将部门名称留空！</alert_1>
+	<alert_2>未选择部门！</alert_2>
+	<alert_3>确定要删除所选部门吗？此为不可撤销操作 – 删除的部门及其用户将从系统中永久移除！</alert_3>
+	<alert_4>确定要清空所有部门吗？删除的部门下的所有用户帐户也将从系统中被删除！此为不可撤销操作 – 删除的部门及用户帐户将从系统中永久移除！</alert_4>
+	<alert_5>更新部门失败。</alert_5>
+</user_department>
+<user_management><title>用户管理</title><msg_1>抱歉，您不具有对用户管理下面的任何功能的访问权限。</msg_1>
+	<msg_2>数据库错误</msg_2>
+	<msg_3>系统错误 – 在表“system_functions”中无法找到ID</msg_3>
+	<msg_4></msg_4>
+</user_management>
+<user_role>
+	<title>用户角色管理</title>
+	<add_new>添加新用户角色：</add_new>
+	<create_new>创建新用户角色</create_new>
+	<list_role>用户角色列表</list_role>
+	<no>编号</no>
+	<userrole>用户角色</userrole>
+	<dept>部门</dept>
+	<delete>选中以删除 </delete>
+	<delete_checked>删除所选用户角色</delete_checked>
+	<empty_str>清空所有用户角色</empty_str>
+	<all_dept>所有部门</all_dept>
+	<new_role>新用户角色名称：</new_role>
+	<dept_new>新用户角色的部门：</dept_new>
+	<list_access>新用户角色的访问权列表</list_access>
+	<add>添加</add>
+	<cancel>取消</cancel>
+	<edit_role>编辑现有用户角色</edit_role>
+	<role_curr>用户角色名称：</role_curr>
+	<dept_curr>用户角色的部门：</dept_curr>
+	<save>保存</save>
+	<access_all_dept>可访问所有部门</access_all_dept>
+	<alert_1>请勿将用户角色名称留空！</alert_1>
+	<alert_2>未选择用户角色！</alert_2>
+	<alert_3>确定要删除所选用户角色吗？此操作无法撤销 – 删除的用户角色将从系统中永久移除！</alert_3>
+	<alert_4>确定要清空所有用户角色吗？此操作无法撤销 – 删除的用户角色将从系统中永久移除！</alert_4>
+</user_role>
+<campaign_rdb>
+	<desc>Description</desc>
+	<sent_dtm>Sent Date/Time</sent_dtm>
+	<mobile_number>Mobile Number</mobile_number>
+	<outgoing>Outgoing Message</outgoing>
+	<cmpg_name>Profile Name</cmpg_name>
+	<rcv_dtm>Received Date/Time</rcv_dtm>
+	<rsp_msg>Response Message</rsp_msg>
+	<mtch_key>Matched Keyword</mtch_key>
+	<flag>Call Flag</flag>
+	<call_dtm>Call Date/Time</call_dtm>
+	<done_by>Call Done By</done_by>
+	<empty_str>Empty</empty_str>
+	<cmpg_tmpl>Message Template</cmpg_tmpl>
+	<target_db>Target Database</target_db>
+	<created>Created</created>
+	<modified>Modified</modified>
+	<connection>Connection</connection>
+	<host_profile>Host Profile</host_profile>
+	<host_srvr>Host Server</host_srvr>
+	<update>Update Call Flag</update>
+	<profile_name>Profile Name</profile_name>
+	<profile_desc>Profile Description</profile_desc>
+	<profile_desc_dtl>Description of SMS Routine Profile</profile_desc_dtl>
+	<mail_merge_tmpl>Template for Mail Merge SMS</mail_merge_tmpl>
+	<mail_merge_tmpl_desc><![CDATA[Use variable &lt;data_[column_number]&gt; to replace the column value retrieved from SQL Profile. For example:<br><i><b>select mobile,name,message from reminder_table</b></i><br><br><b>&lt;data_1&gt; = Value in 'name' column <br>&lt;data_2&gt; = Value in 'message' column</b><br><br>** Please note that &lt;data_0&gt; is reserved for mobile number to receive SMS]]></mail_merge_tmpl_desc>
+	<pullout_adv_days>Advance days to pull</pullout_adv_days>
+	<in_exp_days>Expiry for Incoming Message</in_exp_days>
+	<in_exp_days_dtl>This configuration will be used for keyword matching.</in_exp_days_dtl>
+	<no_of_cols>Number of columns</no_of_cols>
+	<sql_query_dtl><![CDATA[Use the special variable xxDatexx to replace with the advance day to pull the record. Example:<br><i><b>select patient_name,patient_mobile from patient_record where appt_date = xxDatexx</b></i>]]>
+	</sql_query_dtl>
+	<db_profile>Database Profile</db_profile>
+	<schedule_time>Scheduling Time</schedule_time>
+	<camp_daily_report>Daily Report</camp_daily_report>
+	<camp_monthly_report>Monthly Report</camp_monthly_report>
+	<camp_report_desc>One Email per line</camp_report_desc>
+	<db_conf_id>Database Configuration ID</db_conf_id>
+	<db_conf_id_desc>Unique ID of Database Configuration. If this is a MSSQL Configuration, this name will be used when establishing connection.</db_conf_id_desc>
+	<rdb_desc>Database Description</rdb_desc>
+	<rdb_desc_dtl>Description of Database Server</rdb_desc_dtl>
+	<rdb_host>Database Host</rdb_host>
+	<rdb_port>Database Port</rdb_port>
+	<rdb_port_desc>Default port: Oracle: 1521  | MSSQL: 1433  | PostgreSQL: 5432  | MySQL: 3306</rdb_port_desc>
+	<rdb_type>Database Type</rdb_type>
+	<rdb_sid>SID</rdb_sid>
+	<rdb_tds>Version</rdb_tds>
+	<rdb_target_db_desc><![CDATA[Database to be used.<br>	- MSSQL - Leave blank if default database to be used.<br>- Oracle - Set to the database that is tied to the SID given.]]></rdb_target_db_desc>
+	<rdb_username>Username</rdb_username>
+	<rdb_password>Password</rdb_password>
+	<chk_password>Re-enter Password</chk_password>
+	<add_rdb>Add New Remote Database</add_rdb>
+	<edit_rdb>Edit Existing Remote Database</edit_rdb>
+	<reply_query>Reply Message</reply_query>
+	<reply_query_desc>
+		<![CDATA[These messages are applicable if the keyword is set to retrieve information from any Database (as set in SQL Query String).
+		If there is any matched record found, the Matched message will be returned; otherwise the Unmatched will be sent back.
+		Mail-merged feature is applicable to both messages.<br><br>
+		To enable mail-merge reply message, that is based on the SQL query (xxFIELD_xx), simply define the following variable in the message.
+		<br><br>Eg. <i><b>Hi xxFIELD_1xx, your score is xxFIELD_3xx</b></i>]]>
+	</reply_query_desc>
+	<resp_query>Database Query</resp_query>
+	<resp_query_desc_1>This is the Database to connect and retrieve the result with the specified SQL query in the text box. The system will then merge the SMS content into the query condition if specified.</resp_query_desc_1>
+	<resp_query_desc_2>
+		<![CDATA[SMS Query Condition: Eg. me myid myanswer
+		<ul><li>me - This is the keyword (index 0)</li><li>myid - This is the FIRST content (index 1)</li><li>myanswer - This is the SECOND content (index 2)</li></ul>
+		To select a record based on the id, the SQL query should be set as following:<br>
+		<i><b>Select score from mytable where id='xxFIELD_1xx';</b></i><br><br>
+		To update the answer with user mobile number and received date(yyyy/mm/dd hh:mm:ss), the SQL query should be as following:<br>
+		<i><b>Update mytable set answer='xxFIELD_2xx', mobile_number='xxMOBILExx', received_date='xxRECEIVED_DATExx' where id='xxFIELD_1xx';</b></i>]]>
+	</resp_query_desc_2>
+	<remove>Remove</remove>
+	<no_camp>No Routine SMS</no_camp>
+	<no_db>No Remote Database</no_db>
+	<matched>Matched</matched>
+	<unmatched>Unmatched</unmatched>
+	<enable_remotedb>Enable Query Remote Database</enable_remotedb>
+	<keyword_target_db>Target Database</keyword_target_db>
+	<keyword_target_db_desc><![CDATA[The target database is different from the default database of the selected host.<br><b>Only applicable to MSSQL only.</b>]]></keyword_target_db_desc>
+	<remotedb_server>Remote Server</remotedb_server>
+	<sql_query>SQL Query String</sql_query>
+	<port>Port</port>
+</campaign_rdb>
+<report>
+	<reportt>报告</reportt>
+	<users>用户</users>
+	<user>用户</user>
+	<dept>部门</dept>
+	<quota>SMS Quota</quota>
+	<delivered>SMS Delivered</delivered>
+	<undelivered>SMS Undelivered</undelivered>
+	<campaignname>Campaign Name</campaignname>
+	<autorefresh>短信配额自动刷新</autorefresh>
+	<totalsent>发送的短信总数</totalsent>
+	<total>总</total>
+	<totaluser>总用户</totaluser>
+	<loading>加载数据。请稍候</loading>
+	<unlimited>无限配额</unlimited>
+	<summary>总结</summary>
+	<quotadisabled>不允许充值</quotadisabled>
+	<viewalldept>View All Departments Report</viewalldept>
+	<viewusers>View Users Report</viewusers>
+	<viewreport>View User Report</viewreport>
+	<date_time>日期和时间</date_time>
+	<mobile_number>手机号码</mobile_number>
+	<message>讯息</message>
+	<action>行动</action>
+	<status>状态</status>
+	<totalsms>短信总数</totalsms>
+	<keyword>关键词</keyword>
+	<department>部门</department>
+	<listincoming>收到列表</listincoming>
+	<listmsg>消息列表</listmsg>
+</report>
+<conversation>
+	<conversation>对话</conversation>
+	<refresh>刷新</refresh>
+	<assign_to>分配给</assign_to>
+	<user>用户</user>
+	<add_note>添加笔记</add_note>
+	<cancel>取消</cancel>
+	<processing>处理中</processing>
+	<save_to_addr_book>保存到通讯录</save_to_addr_book>
+	<contact_name>联系人姓名</contact_name>
+	<mobile_number>手机号码</mobile_number>
+	<numbers_only>仅数字</numbers_only>
+	<modem_label>调制解调器标签</modem_label>
+	<none>无</none>
+	<modem_desc>调制解调器说明</modem_desc>
+	<list_add_group>列表添加组</list_add_group>
+	<search_msg>搜寻讯息</search_msg>
+</conversation>
+<maintenance_report>
+	<log_maintenance>日志维护</log_maintenance>
+	<usage_report>使用情况报告</usage_report>
+	<conversation_log_maintenance>会话日志维护</conversation_log_maintenance>
+	<delete_chat_history_after>之后删除聊天记录</delete_chat_history_after>
+	<days>天</days>
+	<conversation_report_updated>会话报告已更新</conversation_report_updated>
+	<descr1>系统将根据此处设置的持续时间保留对话历史记录。 设置为“ 0”天将在系统中无限期保留历史记录。</descr1>
+	<report_schedule>报告时间表</report_schedule>
+	<type>类型</type>
+	<time_name>时间</time_name>
+	<descr2>"会话使用情况"报告将包含"会话历史记录"报告。可用选项：</descr2>
+	<descr3>禁用：这将禁用使用情况报告。 </descr3>
+	<descr4>每天：该报告将每天生成。 </descr4>
+	<descr5>每周：该报告将在每个星期一生成。 </descr5>
+	<descr6>每月：该报告将在每月的第一天生成。 </descr6>
+	<email_usage_report>电子邮件使用情况报告</email_usage_report>
+	<descr7>这将设置将接收"会话使用情况报告"的电子邮件地址。</descr7>
+</maintenance_report>
+<campaign_mgnt>
+	<failed_list_campaign>检索活动数据失败。</failed_list_campaign>
+	<failed_create_campaign>创建活动失败。</failed_create_campaign>
+	<failed_edit_campaign>修改活动失败。</failed_edit_campaign>
+	<failed_delete_campaign>删除活动失败。</failed_delete_campaign>
+	<new_campaign>新活动</new_campaign>
+	<edit_campaign>编辑活动</edit_campaign>
+	<name>名称</name>
+	<type>类型</type>
+	<broadcast>广播</broadcast>
+	<interactive>互动</interactive>
+	<status>状态</status>
+	<active>活跃</active>
+	<pause>暂停</pause>
+	<cancel>取消</cancel>
+	<campaign_start_date>开始日期</campaign_start_date>
+	<campaign_end_date>结束日期</campaign_end_date>
+	<confirm_delete>确认删除？</confirm_delete>
+	<info>信息</info>
+	<campaign>活动</campaign>
+	<no_campaign>请选择</no_campaign>
+	<callerid>呼叫者ID </callerid>
+	<no_callerid>没有来电显示</no_callerid>
+	<keyword>关键词</keyword>
+	<cby>创建者</cby>
+	<department>部门</department>
+	<duplicated_campaign_name>活动名称重复</duplicated_campaign_name>
+</campaign_mgnt>
+<file_upload_status>
+	<file_name>文件名</file_name>
+	<upload_dtm>上传日期</upload_dtm>
+	<process_status>进程状态</process_status>
+	<process_dtm>处理日期</process_dtm>
+	<total_row>总记录</total_row>
+	<current_row>当前记录</current_row>
+	<invalid_row>无效记录</invalid_row>
+	<valid_row>有效记录</valid_row>
+	<end_process_dtm>完成日期</end_process_dtm>
+	<failed_list_file>失败的列表文件</failed_list_file>
+	<process_status_1>新建</process_status_1>
+	<process_status_2>正在处理</process_status_2>
+	<process_status_3>已完成</process_status_3>
+	<mobile_numb>手机号码</mobile_numb>
+	<message>消息</message>
+	<confirm_send>发送</confirm_send>
+	<back>返回</back>
+	<valid_mobile>有效手机号码</valid_mobile>
+	<invalid_mobile>无效手机号码</invalid_mobile>
+	<error_msg>状态</error_msg>
+	<invalid_code_msg_0>有效</invalid_code_msg_0>
+	<invalid_code_msg_1>重复的手机号码</invalid_code_msg_1>
+	<invalid_code_msg_2>无效的手机号码</invalid_code_msg_2>
+	<invalid_code_msg_3>取消订阅列表</invalid_code_msg_3>
+	<invalid_code_msg_4>无效的前缀</invalid_code_msg_4>
+	<invalid_code_msg_5>格式无效</invalid_code_msg_5>
+	<invalid_code_msg_6>讯息过长</invalid_code_msg_6>
+	<msg1>确认删除吗？</msg1>
+	<failed_delete_data>无法删除此行。</failed_delete_data>
+	<total_sms>短信总数</total_sms>
+	<total_sms_valid>短信总数有效</total_sms_valid>
+	<total_sms_invalid>短信总数无效</total_sms_invalid>
+	<total_sms_to_send>要发送的短信总数</total_sms_to_send>
+	<quota_left>配额</quota_left>
+	<callerid>呼叫者ID </callerid>
+	<cfm_send_msg1>确认发送短信吗？</cfm_send_msg1>
+	<process_send_sms_failed>进程发送短信失败。可能是活动已暂停。</process_send_sms_failed>
+	<processing_send_sms>正在处理发送短信</processing_send_sms>
+	<send_sms_status>发送短信状态</send_sms_status>
+	<send_sms_status_0>否</send_sms_status_0>
+	<send_sms_status_1>正在处理</send_sms_status_1>
+	<send_sms_status_2>已完成</send_sms_status_2>
+	<cfm_send>确认发送</cfm_send>
+	<insufficient_quota>配额不足</insufficient_quota>
+	<cfm_send_0>否</cfm_send_0>
+	<cfm_send_1>是</cfm_send_1>
+	<dtm>日期</dtm>
+	<all_status>状态</all_status>
+	<info>信息</info>
+	<reserved_quota>预留配额</reserved_quota>
+	<quota_required>需要配额</quota_required>
+	<failed_list_bot>列表MIM失敗</failed_list_bot>
+	<mim_bot>MIM bot</mim_bot>
+	<no_bot>没有MIM</no_bot>
+	<tpl_params>參數</tpl_params>
+	<mim_image1>图片/文件 (仅适用于MIM)</mim_image1>
+	<campaign_name>广告系列名称</campaign_name>
+	<campaign_status>广告活动状态</campaign_status>
+	<send_mode>发送模式</send_mode>
+	<image>Image</image>
+	<total_mim>Total MIM</total_mim>
+	<total_mim_valid>Total MIM Valid</total_mim_valid>
+	<mim_doc>文件</mim_doc>
+	<mim_image>图片</mim_image>
+	<mim_file_type>MIM文件类型</mim_file_type>
+	<no_file>没有文件</no_file>
+</file_upload_status>
+<user_transfer>
+	<from_userid>发件人</from_userid>
+	<to_userid>收件人</to_userid>
+	<transfer>发送</transfer>
+	<no_user>没有用户</no_user>
+</user_transfer>
+<shortended_url>
+	<full_url>完整URL </full_url>
+	<generate>生成</generate>
+	<copy_link>复制链接</copy_link>
+	<short_link>网址缩短</short_link>
+	<reset_btn>重启</reset_btn>
+</shortended_url>
+<setting>
+	<title>设置</title>
+	<accthreshold>帐户锁定阈值</accthreshold>
+	<pwdexpiry>密码有效期</pwdexpiry>
+	<sessiontime>时域超时</sessiontime>
+	<save>保存</save>
+	<reset>重设</reset>
+	<days>天</days>
+	<minutes>分钟</minutes>
+	<times>次数</times>
+	<accsetting>账户设置</accsetting>
+	<alert_1>所有设置已成功应用于所有用户。</alert_1>
+</setting>
+</CU>

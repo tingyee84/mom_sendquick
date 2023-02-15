@@ -1,0 +1,24 @@
+.img-sqoope {
+  content: url("../images/sqoope.png");
+}
+.img-fb {
+  content: url("../images/icon_messenger@3x.png");
+}
+.img-line {
+  content: url("../images/icon_line@3x.png");
+}
+.img-telegram {
+  content: url("../images/icon_telegram@3x.png");
+}
+.img-text {
+  content: url("../images/icon_text@3x.png");
+}
+.img-viber {
+  content: url("../images/icon_viber@3x.png");
+}
+.img-wechat {
+  content: url("../images/icon_wechat@3x.png");
+}
+.img-livechat {
+  content: url("../images/convo-icon.png");
+}

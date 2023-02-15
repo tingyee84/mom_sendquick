@@ -1,0 +1,86 @@
+<?php
+ini_set('session.save_handler','files');
+require_once('./lib/class.cluster.php');
+require_once('./lib/class.session.php');
+require_once('./lib/db_sync.php');
+require_once('./lib/db_webapp.php');
+require_once('./lib/db_spool.php');
+require_once('./lib/db_sq.php');
+require_once('./lib/db_log.php');
+
+$isSecure = false;
+if (isset($_SERVER['HTTPS']) && !empty($_SERVER['HTTPS']) && $_SERVER['HTTPS']!='off') {
+	$isSecure = true;
+} else if (!empty($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https' || !empty($_SERVER['HTTP_X_FORWARDED_SSL']) && $_SERVER['HTTP_X_FORWARDED_SSL'] !='off') {
+	$isSecure = true;
+} else if (isset($_SERVER['HTTP_X_SSLREQ_HEADER']) && $_SERVER['HTTP_X_SSLREQ_HEADER'] == 'Stunnel-HAProxy') {
+	$isSecure = true;
+}
+
+session_set_save_handler(new EncryptedSessionHandler('Shinjitsu wa Itsumo Hitotsu'),true);
+// session_set_cookie_params(10800,'/mom2/',null,$isSecure,true);
+// ini_set('session.gc_maxlifetime', 10800);
+session_start();
+ 
+$permitted_chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ123456789';
+  
+function generate_string($input, $strength = 6) {
+    $input_length = strlen($input);
+    $random_string = '';
+    for($i = 0; $i < $strength; $i++) {
+        $random_character = $input[mt_rand(0, $input_length - 1)];
+        $random_string .= $random_character;
+    }
+  
+    return $random_string;
+}
+ 
+$image = imagecreatetruecolor(200, 50);
+ 
+imageantialias($image, true);
+ 
+$colors = [];
+ 
+$red = rand(125, 175);
+$green = rand(125, 175);
+$blue = rand(125, 175);
+ 
+for($i = 0; $i < 5; $i++) {
+  $colors[] = imagecolorallocate($image, $red - 20*$i, $green - 20*$i, $blue - 20*$i);
+}
+ 
+imagefill($image, 0, 0, $colors[0]);
+ 
+for($i = 0; $i < 10; $i++) {
+  imagesetthickness($image, rand(2, 10));
+  $line_color = $colors[rand(1, 4)];
+  if ($i % 2 == 0)
+    imagerectangle($image, rand(-10, 190), rand(-10, 10), rand(-10, 190), rand(40, 60), $line_color);
+  else 
+    imagefilledellipse($image, rand(-10,190), rand(-10,40), rand(10,30),rand(10,30),$line_color);
+}
+ 
+$black = imagecolorallocate($image, 0, 0, 0);
+$white = imagecolorallocate($image, 255, 255, 255);
+$textcolors = [$black, $white];
+ 
+// $fonts = [dirname(__FILE__).'\fonts\Acme.ttf', dirname(__FILE__).'\fonts\Ubuntu.ttf', dirname(__FILE__).'\fonts\Merriweather.ttf', dirname(__FILE__).'\fonts\PlayfairDisplay.ttf'];
+$fonts = ["PlayfairDisplay-Regular","Acme-Regular"];
+ 
+$string_length = 6;
+$captcha_string = generate_string($permitted_chars, $string_length);
+ 
+$_SESSION['captcha_text'] = $captcha_string;
+$_SESSION['captcha_time'] = time();
+ 
+for($i = 0; $i < $string_length; $i++) {
+  $letter_space = 170/$string_length;
+  $initial = 15;
+   
+  imagettftext($image, 24, rand(-15, 15), $initial + $i*$letter_space, rand(25, 45), $textcolors[rand(0, 1)], "./fonts/".$fonts[array_rand($fonts)].".ttf", $captcha_string[$i]);
+}
+ 
+header('Content-type: image/png');
+imagepng($image);
+imagedestroy($image);
+?>
