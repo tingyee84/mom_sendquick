@@ -88,6 +88,6 @@
         <script src="js/buttons.html5.min.js"></script>
 
         <script src="js/moment.min.js" type="text/javascript"></script>
-        <script src="survey_report_js.php"></script>
+        <script src="survey_report_js.php?pageview=<?php echo $_GET["pageview"]; ?>"></script>
     </body>
 </html>
