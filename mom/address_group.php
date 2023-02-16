@@ -5,7 +5,7 @@
 	include('header.php');
 	include('checkAccess.php');
 ?>
-		<div class="page-header" style="padding-top:10px">
+		<div class="page-header" class = "page-header">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><?php echo $xml->address_book;?></li>
@@ -57,7 +57,7 @@
 									<div class="modal-body">
 										<div class="row">
 											<div class="col-md-10">
-												<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2" role="alert" style="display:none">
+												<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 msgstatusbar" role="alert">
 													<span id="msgstatustext">A</span>	
 													<button type="button" class="btn-close" id="msgstatusbar_close" aria-label="Close"></button>											
 												</div>
