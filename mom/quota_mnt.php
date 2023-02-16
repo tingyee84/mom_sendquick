@@ -242,6 +242,7 @@
 		</div>
 		<?php include('footnote.php');?>
 	</div>
-	<?php include('quota_mnt_js.php');?>
+	<script language="javascript" src="js/txvalidator.js"></script>
+	<script type="application/javascript" src="quota_mnt_js.php"></script>
 </body>
 </html>
