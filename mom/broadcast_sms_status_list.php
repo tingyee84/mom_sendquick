@@ -5,6 +5,8 @@
 	include('checkAccess.php');
 	$id = $_GET['id'];
 ?>
+	<link href="css/style1.css" rel="stylesheet">
+
 		<div class="page-header">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
@@ -43,7 +45,7 @@
 							
 							<div class="col-md-10">
 					
-								<div style = "padding-bottom:10px;">
+								<div class = "div-bottom-10">
 								
 									<ul class="nav nav-tabs">
 										<li class="nav-item">
@@ -65,10 +67,10 @@
 							
 						</div>
 						
-						<div class="table-responsive" style = "overflow-x:hidden;margin-top:20px;">
+						<div class="table-responsive table-responsive3">
 							
 							<!--
-							<div style = "padding-bottom:10px;">
+							<div class = "div-bottom-10">
 								<button id="valid_mobile_btn" type="submit" class="btn btn-success btn-sm"><?php echo $x->valid_mobile;?></button>
 								<button id="invalid_mobile_btn" type="submit" class="btn btn-danger btn-sm"><?php echo $x->invalid_mobile;?></button>
 								<button id="cfm_send" type="submit" class="btn btn-primary btn-sm"><?php echo $x->confirm_send;?></button>
@@ -78,7 +80,7 @@
 
 							<div class="row" id = "total_sms_div"></div>
 					
-							<table class="table table-striped table-bordered table-condensed dataTable" id="upload_file_status" style = "width:100%;">
+							<table class="table table-striped table-bordered table-condensed dataTable upload_table" id="upload_file_status">
 								<thead>
 									<tr>
 										<th><?php echo $xml_common->no;?></th>
@@ -117,7 +119,7 @@
 						<div class="modal-body" id = "btn_close_modal_info">
 
 							
-							<div id="confirmContent" style="font-weight: normal;"></div>
+							<div id="confirmContent" class = "confirmContent"></div>
 						</div>
 						<div class="modal-footer bg-warning text-center" id="footer_modal">
 							<button type="button" class="btn btn-primary btn_yes_confirm">Yes</button>
