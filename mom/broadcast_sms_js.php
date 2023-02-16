@@ -1,6 +1,12 @@
-<script src="js/autosize.min.js"></script>
-<script src="js/bootstrap-datepicker.min.js"></script>
-<script nonce="<?php echo session_id();?>">
+<?php
+header("Content-type:text/javascript");
+require_once('lib/commonFunc.php');
+$x = GetLanguage("broadcast_sms",$lang);
+$x2 = GetLanguage("menu",$lang); 
+$x3 = GetLanguage("campaign_mgnt",$lang); 
+$x4 = GetLanguage("send_sms",$lang); 
+$x5 = GetLanguage("file_upload_status",$lang); 
+?>
 $( document ).ready(function() {
 	$("#mimtext_div").hide();
 	$( "#msg_template_li" ).click(function() {
@@ -675,4 +681,4 @@ function checkUnicodeChar(msg) {
 loadlist2('#campaign_id','campaign_lib.php?mode=select','campaign_id','campaign_name');
 loadlist2('#callerid','broadcast_sms_lib.php?mode=select_callerid','callerid','label');
 loadlist2('#bot_id','broadcast_sms_status_lib.php?mode=select_bot','bot_id','bot_name');
-</script>
+

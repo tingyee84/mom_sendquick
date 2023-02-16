@@ -1,7 +1,8 @@
-<script nonce="<?php echo session_id();?>" src="js/bootstrap-datepicker.min.js"></script>
-<script nonce="<?php echo session_id();?>" src="js/bootstrap_confirm_dialog.js"></script>
-
-<script nonce="<?php echo session_id();?>">
+<?php
+header("Content-type:text/javascript");
+require_once('lib/commonFunc.php');
+$x = GetLanguage("file_upload_status",$lang);
+?>
 $( document ).ready(function() {
 	//document.getElementById("valid_mobile_btn").style.color = "black";
 	//document.getElementById("invalid_mobile_btn").style.color = "white";
@@ -224,5 +225,3 @@ updateCfmSend();
 $('.close').click(function() {
 	$('#status').addClass('hidden');
 });
-
-</script>

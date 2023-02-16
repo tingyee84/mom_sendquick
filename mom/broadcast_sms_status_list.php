@@ -129,6 +129,8 @@
 		</div>
 		<?php include('footnote.php'); ?>
 	</div>
-	<?php include("broadcast_sms_status_list_js.php");?>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/bootstrap_confirm_dialog.js"></script>
+	<script type="application/javascript" src="broadcast_sms_status_list_js.php"></script>
 </body>
 </html>

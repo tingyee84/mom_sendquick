@@ -406,6 +406,9 @@
 		</div>
 		<?php include('footnote.php');?>
 	</div>
-	<?php include('broadcast_sms_js.php');?>
+	
+	<script src="js/autosize.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script type="application/javascript" src="broadcast_sms_js.php"></script>
 </body>
 </html>

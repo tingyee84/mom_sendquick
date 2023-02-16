@@ -69,6 +69,7 @@
 		</div>
 		<?php include('footnote.php'); ?>
 	</div>
-	<?php include("broadcast_sms_status_js.php");?>
+	<script nonce="<?php echo session_id();?>" src="js/bootstrap-datepicker.min.js"></script>
+	<script type="application/javascript" src="broadcast_sms_status_js.php"></script>
 </body>
 </html>

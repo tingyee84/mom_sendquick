@@ -1,5 +1,8 @@
-<script nonce="<?php echo session_id();?>" src="js/bootstrap-datepicker.min.js"></script>
-<script nonce="<?php echo session_id();?>">
+<?php
+header("Content-type:text/javascript");
+require_once('lib/commonFunc.php');
+$x = GetLanguage("file_upload_status",$lang); 
+?>
 $('#date_from, #date_to').datepicker({format: 'dd-mm-yyyy'});
 $('#date_from').val( '<?php echo date( "d-m-Y", ( time() - ( 60 * 60 * 24 ) ) )?>');
 $('#date_to').val( '<?php echo date( "d-m-Y", time() )?>');
@@ -100,5 +103,4 @@ $("#date_from, #date_to").change(function(){
 	//alert(url);
 	table.ajax.url( url ).load();
 
-}); 
-</script>
+});
