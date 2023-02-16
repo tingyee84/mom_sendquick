@@ -9,7 +9,7 @@
 ?>
 	<link href="css/style1.css" rel="stylesheet">
 
-		<div class="page-header">
+		<div class="page-header page-header2">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><?php echo $xml->address_book;?></li>

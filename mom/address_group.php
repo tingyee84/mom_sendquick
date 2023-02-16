@@ -5,7 +5,9 @@
 	include('header.php');
 	include('checkAccess.php');
 ?>
-		<div class="page-header" class = "page-header">
+	<link href="css/style1.css" rel="stylesheet">
+	
+		<div class="page-header page-header2">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><?php echo $xml->address_book;?></li>
