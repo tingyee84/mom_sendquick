@@ -129,8 +129,22 @@
 		</div>
 		<?php include('footnote.php'); ?>
 	</div>
+	<?php
+	$get_list = "";
+	foreach( $_GET as $get_name => $get_value ){
+		if( $get_list == "" ){
+			$get_list = $get_name . "=" . $get_value;
+		}else{
+			$get_list = $get_list . "&" . $get_name . "=" . $get_value;
+		}
+	}
+
+	if($get_list != ""){
+		$get_list = "?" . $get_list;
+	}
+	?>
 	<script src="js/bootstrap-datepicker.min.js"></script>
 	<script src="js/bootstrap_confirm_dialog.js"></script>
-	<script type="application/javascript" src="broadcast_sms_status_list_js.php"></script>
+	<script type="application/javascript" src="broadcast_sms_status_list_js.php<?php echo $get_list;?>"></script>
 </body>
 </html>

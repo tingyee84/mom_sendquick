@@ -2,6 +2,7 @@
 header("Content-type:text/javascript");
 require_once('lib/commonFunc.php');
 $x = GetLanguage("file_upload_status",$lang);
+$id = $_GET['id'];
 ?>
 $( document ).ready(function() {
 	//document.getElementById("valid_mobile_btn").style.color = "black";
