@@ -6,7 +6,9 @@
 	$x = GetLanguage("quota_mnt",$lang);
 
 ?>
-		<div class="page-header" style="padding-top:10px">
+	<link href="css/style1.css" rel="stylesheet">
+
+		<div class="page-header page-header2">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item active" aria-current="page"><?php echo $xml->quota_mgnt;?></li>
@@ -17,8 +19,8 @@
 		<div class="page-content">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
-					<div class="panel-body table-responsive" style = "overflow-x:hidden;">
-						<table class="table table-striped table-bordered table-condensed dataTable" id="quota" style = "100%">
+					<div class="panel-body table-responsive table-responsive2">
+						<table class="table table-striped table-bordered table-condensed dataTable upload_table" id="quota">
 							<thead>
 								<tr>
 									<th><?php echo $x->userid;?></th>
@@ -76,7 +78,7 @@
 							</table>
 							<div class="row">
 									<div class="col-md-10">
-										<div id="all_quota_msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2" role="alert" style="display:none">
+										<div id="all_quota_msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 msgstatusbar" role="alert">
 											<span id="all_quota_msgstatustext">A</span>	
 											<button type="button" class="btn-close" id="all_quota_msgstatusbar_close" aria-label="Close"></button>											
 										</div>
@@ -99,7 +101,7 @@
 							<div class="modal-body">
 								<div class="row">
 									<div class="col-md-10">
-										<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2" role="alert" style="display:none">
+										<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 msgstatusbar" role="alert">
 											<span id="msgstatustext">A</span>	
 											<button type="button" class="btn-close" id="msgstatusbar_close" aria-label="Close"></button>											
 										</div>
@@ -107,7 +109,7 @@
 								</div>
 								<div id="user_div" class="row hidden">
 									<div class="col-md-4 offset-md-1">
-										<label for="userid" class="control-label"><?php echo $x->userid;?> <span style="color:red">*</span></label>
+										<label for="userid" class="control-label"><?php echo $x->userid;?> <span class = "contact_cls">*</span></label>
 									</div>
 									<div class="col-md-6">
 										<p><select id="userid" name="userid"></select></p>
@@ -190,7 +192,7 @@
 							<div class="modal-body">
 								<div class="row">
 									<div class="col-md-10">
-										<div id="alert_msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2" role="alert" style="display:none">
+										<div id="alert_msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 msgstatusbar" role="alert">
 											<span id="alert_msgstatustext">A</span>	
 											<button type="button" class="btn-close" id="alert_msgstatusbar_close" aria-label="Close"></button>											
 										</div>
