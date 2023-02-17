@@ -44,13 +44,7 @@
 		</div>
 		<?php include('footnote.php'); ?>
 	</div>
-	<script nonce="<?php echo session_id();?>">
-	$('#logout').click(function(){
-		window.location = 'logout.php?yes';
-	});
-	$('#cancel').click(function() {
-		history.back(1);
-	});
-	</script>
+	
+	<script src="logout_js.php"></script>
 </body>
 </html>
