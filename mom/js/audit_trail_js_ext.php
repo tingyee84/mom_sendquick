@@ -25,7 +25,6 @@ var table = $('#audittrail').DataTable({
 	ajax:{type: 'POST',
 		url: 'audit_trail_lib.php',
 		data: function () { 
-			console.log("return");
 			return $('#auditTrailForm').serialize(); 
 		}
 	}

@@ -530,8 +530,24 @@
 	</div>
 	<?php //include('send_sms_js.php'); ?>
 
+	<!-- <script src="js/autosize.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="send_sms_js.php"></script> -->
+
+	
+
 	<script src="js/autosize.min.js"></script>
 	<script src="js/bootstrap-datepicker.min.js"></script>
-	<script src="send_sms_js.php"></script>
+	<?php 
+	if (isset($_POST["msgid"])) {
+	?>
+	<script src="js/send_sms_js_ext.php?msgid=<?php echo $_POST['msgid']; ?>"></script>
+	<?php 
+	}else{
+	?>
+	<script src="js/send_sms_js_ext.php?mobile_numb=<?php echo $_GET['mobile_numb']; ?>"></script>
+	<?php 
+	}
+	?>
 </body>
 </html>
