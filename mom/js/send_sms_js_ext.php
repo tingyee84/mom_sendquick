@@ -7,6 +7,11 @@ $access_arr = explode(",",trim($_SESSION['access_string']));
 ?>
 
 function pushMsg(xdata) {
+
+	$('#output').html("sending.....");
+	$("#status").addClass("alert-info");
+	$('#status').removeClass('hidden');
+
 	var result;
 	$.ajax({
 		type: "POST",
@@ -441,10 +446,10 @@ $( document ).ready(function() {
 	
 	$('#sendForm').on('submit', function(e) {
 	
-		console.log("Anchor Test");
-		$('#output').html("sending.....");
-		$("#status").addClass("alert-info");
-		$('#status').removeClass('hidden');
+		//console.log("Anchor Test");
+		//$('#output').html("sending.....");
+		//$("#status").addClass("alert-info");
+		//$('#status').removeClass('hidden');
 		
 		document.getElementById("submit").disabled = true;
 		
@@ -597,7 +602,8 @@ $( document ).ready(function() {
 				data.append('smstext', encodeURIComponent(smstext));
 				pushMsg(data);
 			} else {
-				console.log("Require SMS TEXT");
+				alert('Message Text is required field.');
+				//console.log("Require SMS TEXT");
 				$("smstext").focus();
 			}
 		} else if (sendtype == "mim") {
@@ -607,17 +613,25 @@ $( document ).ready(function() {
 				data.append('smstext', encodeURIComponent(mimtext));
 				pushMsg(data);
 			} else {
-				console.log("Require MIM TEXT");
+				alert('Message Text is required field.');
+				//console.log("Require MIM TEXT");
 				$("#mimtext").focus();
 			}
 		} else if (sendtype == "sms_mim") {
 			if (smstext == "") {
-				console.log("sms required!");
+				alert('Message Text is required field.');
+				//console.log("sms required!");
 				$("#smstext").focus();
 			} else if (mimtext == "") {
-				console.log("mim required!");
+				alert('Message Text is required field.');
+				//console.log("mim required!");
 				$("#mimtext").focus();
 			} else {
+
+				$('#output').html("sending.....");
+				$("#status").addClass("alert-info");
+				$('#status').removeClass('hidden');
+
 				// TODO: optimisation is required for ajaxing two type of msg. also go unify one with above so easily maintain the code. use function and return boolean
 				// update: currently stuck at this section.
 				// individual can
