@@ -163,7 +163,7 @@
         </div>
         <script src="js/bootstrap-datepicker.min.js"></script>
         <script src="js/pdfmake.min.js"></script>
-        <script src="js/vfs_fonts.js.php" defer></script><?php // defer means to let all pages rendered finished then begin load ?>
+        <script src="js/vfs_fonts.js"></script><?php // defer means to let all pages rendered finished then begin load ?>
         <script src="js/dataTables.buttons.min.js?"></script>
         <script src="js/jszip.min.js"></script>
         <script src="js/buttons.html5.min.js"></script>

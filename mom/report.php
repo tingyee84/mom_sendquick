@@ -13,6 +13,7 @@
 	$page_title = 'Report';
 	include('header.php');
 	include('checkAccess.php');
+    
     $x = GetLanguage("report",$lang);
     if (!isset($_SESSION["report_datefrom"]) || strtolower($_SESSION["report_datefrom"]) == "invalid date") {
         $_SESSION["report_datefrom"] = date("d/m/Y");
@@ -47,9 +48,9 @@
                             <table>
                             <tr>
                             <td><b><?php echo $xml_common->date_from; ?></b>&nbsp;</td>
-                            <td><input id="datefrom" type="text" class="form-control input-sm" size="10" data-provide="datepicker"  style="cursor:pointer"></td>
+                            <td><input id="datefrom" type="text" class="form-control input-sm" size="10" data-provide="datepicker"></td>
                             <td><b><?php echo $xml_common->date_to; ?></b>&nbsp;</td>
-                            <td><input id="dateto" type="text" class="form-control input-sm" size="10" data-provide="datepicker"  style="cursor:pointer">
+                            <td><input id="dateto" type="text" class="form-control input-sm" size="10" data-provide="datepicker">
                             </td>
                             </tr>
                             </table>
@@ -280,6 +281,16 @@
             </div>
             <?php include('footnote.php'); ?>
         </div>
-        <?php include ('report_js.php'); ?>
+        <script src="js/bootstrap-datepicker.min.js"></script>
+        <script src="js/pdfmake_0.2.7.min.js"></script>
+        <script src="js/vfs_fonts.js"></script><?php // defer means to let all pages rendered finished then begin load ?>
+        <script src="js/dataTables.buttons.min.js?"></script>
+
+        <script src="js/buttons.html5.min.js"></script>
+        <script src="js/moment.min.js" type="text/javascript"></script>
+        <script src="report_js.php?view=<?php echo $_GET["view"];
+        echo !empty($_GET["user"]) ? "&user=".$_GET["user"]: "";
+        echo !empty($_GET["dept"]) ? "&dept=".$_GET["dept"]: "";
+        ?>" defer></script>
     </body>
 </html>
