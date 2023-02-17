@@ -15,19 +15,19 @@ function verification() {
 	result += re3.test($("#password").val()) ? 1 : 0;
 
 	if ($("#username").val().length >= 8) {
-		$("#check0").html("<i style='color:green' class='fa fa-check'></i>");
+		$("#check0").html("<i class='fa fa-check text-success'></i>");
 	} else {
-		$("#check0").html("<i style='color:red' class='fa fa-remove'></i>");
+		$("#check0").html("<i class='fa fa-remove text-danger'></i>");
 	}
 	if ($("#password").val().length >= 11 && result >= 2) {
-		$("#check1").html("<i style='color:green' class='fa fa-check'></i>");
+		$("#check1").html("<i class='fa fa-check text-success'></i>");
 	} else {
-		$("#check1").html("<i style='color:red' class='fa fa-remove'></i>");
+		$("#check1").html("<i class='fa fa-remove text-danger'></i>");
 	}
 	if ($("#userCaptchaInput").val().length >= 6) {
-		$("#check2").html("<i style='color:green' class='fa fa-check'></i>");
+		$("#check2").html("<i class='fa fa-check text-success'></i>");
 	} else {
-		$("#check2").html("<i style='color:red' class='fa fa-remove'></i>");
+		$("#check2").html("<i class='fa fa-remove text-danger'></i>");
 	}
 	if ($("#username").val().length < 8 || $("#password").val().length < 11 || $("#userCaptchaInput").val().length < 6 || result < 2) {
 		$("#btn_login").attr("disabled",true);
