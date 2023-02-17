@@ -105,7 +105,7 @@ if (isset($_POST["sessiontime"])) {
                             <div class="row m-3">
                                 <div id="msgstatusbar" class="alert alert-dismissible show fade col-md-4 offset-md-4" role="alert">
                                     <span id="msgstatustext">A</span>
-                                    <button type="button" class="btn-close" id="msgstatusbar_close" aria-label="Close"></button>
+                                    <button type="button" class="btn float-end p-0" id="msgstatusbar_close" aria-label="Close"><i class="fa fa-times"></i></button>
                                 </div>
                             </div>
                         </div>
