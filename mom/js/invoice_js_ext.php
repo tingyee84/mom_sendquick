@@ -1,6 +1,6 @@
 <?php 
 header("Content-type:text/javascript");
-// include_once("../lib/commonFunc.php");
+include_once("../lib/commonFunc.php");
 ?>
 
 <?php
