@@ -6,6 +6,7 @@
 	include('checkAccess.php');
     $x = GetLanguage("report",$lang);
 ?>
+            <link href="css/assmi.css" rel="stylesheet">
 			<div class="page-header">
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
@@ -51,7 +52,7 @@
             <canvas id="userChart" width="768px"></canvas>
             <button id="export_u_chart_pdf" class="btn btn-secondary btn-sm">Export to PDF</button>
         </div>
-        <div id="1atable" class="d-none">
+        <div id="1atable" class="display-none-assmi">
             <h3>Top 10 User</h3>
             <table class="table" id="tbl_user">
             <thead>
