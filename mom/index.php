@@ -54,7 +54,7 @@ $xml_all_rights = $xml->all_rights;
 					$xml = simplexml_load_file('/home/msg/conf/image_header.xml');
 					$__image = $xml->image;
 					if($__image!='' && file_exists("images/$__image")){
-						echo "<img src=\"images/$__image\" style=\"max-height:100px\">";
+						echo "<img src=\"images/$__image\" class=\"definedimgheight\">";
 					}else{
 						echo "<img src=\"images/TalariaX-Logo.png\" alt=\"TalariaX\">";
 					}
