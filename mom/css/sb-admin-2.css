@@ -448,3 +448,6 @@ table.desctable td{
 .change_pwd_cls{
     color:currentColor;
 }
+.dnone {
+    display:none;
+}
