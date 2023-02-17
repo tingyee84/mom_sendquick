@@ -6,7 +6,8 @@
 	$x = GetLanguage("unsubscribe_list",$lang);
 	$msgstr = GetLanguage("lib_unsubscribe",$lang);
 ?>
-		<div class="page-header" style="padding-top:10px">
+		<link href="css/assmi.css" rel="stylesheet">
+		<div class="page-header padding-top-10">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><?php echo $xml->unsub_list;?></li>
@@ -56,7 +57,7 @@
 									<div class="modal-body">
 										<div class="row">
 												<div class="col-md-10">
-													<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2" role="alert" style="display:none">															
+													<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 d-none" role="alert">															
 														<span id="msgstatustext">A</span>	
 														<button type="button" class="btn-close" id="msgstatusbar_close" aria-label="Close"></button>										
 													</div>
@@ -64,7 +65,7 @@
 										</div>
 										<div class="row">
 											<div class="col-md-4 offset-md-1">
-												<label for="keyword" class="control-label"><?php echo $x->createtitle2;?> <span style="color:red">*</span></label>
+												<label for="keyword" class="control-label"><?php echo $x->createtitle2;?> <span class="color-red">*</span></label>
 											</div>
 											<div class="col-md-6">
 												<input class="form-control input-sm" type="text" name="keyword" id="keyword" maxlength="15" required>
@@ -97,7 +98,7 @@
 									<div class="modal-body">
 										<div class="row">
 												<div class="col-md-10">
-													<div id="resp_msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2" role="alert" style="display:none">
+													<div id="resp_msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 d-none" role="alert">
 														<span id="resp_msgstatustext">A</span>	
 														<button type="button" class="btn-close" id="resp_msgstatusbar_close" aria-label="Close"></button>											
 													</div>

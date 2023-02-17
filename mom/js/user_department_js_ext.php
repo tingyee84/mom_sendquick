@@ -1,7 +1,10 @@
-<script language="javascript" src="js/txvalidator.js"></script>
-<script language="javascript" src="js/txcommon.js"></script>
-<script src="js/user_department_js_ext.php" defer></script>
-<!-- <script nonce="<?php //echo session_id();?>">
+<?php 
+header("Content-type:text/javascript");
+include_once("../lib/commonFunc.php");
+$x = GetLanguage("user_department",$lang); 
+$x2 = GetLanguage("quota_mnt",$lang);
+?>
+
 var table = $('#dept').DataTable({
 	deferRender: true,
 	stateSave: true,
@@ -125,7 +128,7 @@ $('#myDept').on('hidden.bs.modal', function () {
 //Clear Modal End
 $('#delete').on('click', function(e)
 {
-	if(confirm('<?php //echo $x->alert_3; ?>')) {
+	if(confirm('<?php echo $x->alert_3; ?>')) {
 		$('input[type=checkbox]').each(function() {
 			if (this.checked && this.value!='on') {
 				$.post('user_department_lib.php?mode=deleteDepartment', { id: this.value }, function(data) {
@@ -138,7 +141,7 @@ $('#delete').on('click', function(e)
 });
 $('#truncate').on('click', function(e)
 {
-    if(confirm('<?php //echo $x->alert_4;?>')) {
+    if(confirm('<?php echo $x->alert_4;?>')) {
 		$.post('user_department_lib.php?mode=emptyDepartment', function(data) {
 			if(data!='') {
 				alert(data);
@@ -174,7 +177,7 @@ $('#myDept').on('show.bs.modal', function(e)
 	$( "#quota_left_remark" ).text( "Quota Left: N/A" );
 	
 	if(typeof id === "undefined") {
-		modal.find('#header').html('<?php //echo $x->create_new; ?>');
+		modal.find('#header').html('<?php echo $x->create_new; ?>');
 		modal.find('#mode').val('addDepartment');
 		modal.find('#department').prop('readonly', false);
 		
@@ -198,7 +201,7 @@ $('#myDept').on('show.bs.modal', function(e)
 			{
 				console.log( val );
 				modal.find('#id').val(id);
-				modal.find('#header').html('<?php //echo $x->edit; ?>');
+				modal.find('#header').html('<?php echo $x->edit; ?>');
 				modal.find('#mode').val('saveDepartment');
 				modal.find('#department').val(val.department);
 				modal.find('#department').prop('readonly', true);
@@ -238,5 +241,3 @@ $('#myDept').on('show.bs.modal', function(e)
 		});
 	}
 });
-
-</script> -->

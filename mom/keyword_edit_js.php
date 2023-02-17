@@ -1,6 +1,7 @@
 <script language="javascript" src="js/txvalidator.js"></script>
 <script language="javascript" src="js/txcommon.js"></script>
-<script nonce="<?php echo session_id();?>">
+<script src="js/keyword_edit_js_ext.php?keyword=<?php echo $_GET['keyword']; ?>"></script>
+<!-- <script nonce="<?php //echo session_id();?>">
 
 loadlist('#api_name','api_list_lib.php?mode=listApplications','serviceid','name');
 var serviceId = "";
@@ -8,18 +9,18 @@ var serviceId = "";
 $.ajax({
 	cache: false,
 	url: 'keyword_lib.php',
-	data:{mode:'readKeyword2',keyword:'<?php echo $_GET['keyword'];?>'},
+	data:{mode:'readKeyword2',keyword:'<?php //echo $_GET['keyword'];?>'},
 	type:'POST',
 	dataType:'json',
 	success: function(val){
-		var userid = '<?php echo $_SESSION['userid']?>';
+		var userid = '<?php //echo $_SESSION['userid']?>';
 
 		console.log("userid: " + userid);
 
 		if(userid == "useradmin" || userid == "momadmin"){
 
 		}else{
-			var department = '<?php echo $_SESSION['department']?>';
+			var department = '<?php //echo $_SESSION['department']?>';
 
 			if( val[0].department != department ){
 				window.location = 'keyword_management.php'
@@ -91,10 +92,10 @@ $('form#edit_keyword').submit(function(){
 					$("#msgstatusbar").show();	
 				}	
 				else{
-					//alert('<?php echo $x->success_msg; ?>');
+					//alert('<?php //echo $x->success_msg; ?>');
 					$("#msgstatusbar").removeClass("alert-warning");
 					$("#msgstatusbar").addClass("alert-success");
-					$("#msgstatustext").html('<?php echo $x->success_msg; ?>');
+					$("#msgstatustext").html('<?php //echo $x->success_msg; ?>');
 					$("#msgstatusbar").show();
 					$(location).attr('href','keyword_management.php');
 				}
@@ -163,10 +164,10 @@ $('form#edit_api_keyword').submit(function(){
 					$("#msgstatusbar").show();	
 				}
 				else{
-					//alert('<?php echo $x->success_msg; ?>');
+					//alert('<?php //echo $x->success_msg; ?>');
 					$("#msgstatusbar").removeClass("alert-warning");
 					$("#msgstatusbar").addClass("alert-success");
-					$("#msgstatustext").html('<?php echo $x->success_msg; ?>');
+					$("#msgstatustext").html('<?php //echo $x->success_msg; ?>');
 					$("#msgstatusbar").show();
 					$(location).attr('href','keyword_management.php');
 				}
@@ -247,4 +248,4 @@ function loadlist(selobj, url, val, name)
 
 // load application names
 
-</script>
+</script> -->

@@ -1,0 +1,68 @@
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+.padding-right-10 {
+    padding-right: 10px;
+}
+
+.margin-top-6 {
+    margin-top: 6px;
+}
+
+.color-red {
+    color:red;
+}
+
+.color-green {
+    color:green;
+}
+
+.color-grey {
+    color:grey;
+}
+
+.color-blue {
+    color:blue;
+}
+
+.border-none {
+    border: none;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.table-custom-overflow {
+    overflow-y: auto;
+    height: 100px;
+}
+
+.custom-overflowx-hidden {
+    overflow-x: hidden;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.font-weight-normal {
+    font-weight: normal;
+}
+
+.min-width-05 {
+    min-width: 0.5em;
+}
+
+.width-600px {
+    width: 600px;
+}

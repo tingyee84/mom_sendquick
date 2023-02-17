@@ -64,7 +64,8 @@
 	
 	//die;
 ?>
-		<div class="page-header" style="padding-top:10px">
+		<link href="css/assmi.css" rel="stylesheet">
+		<div class="page-header padding-top-10">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<!-- <li class="breadcrumb-item active" aria-current="page"><?php //echo $xml->shortended_url?></li> -->
@@ -92,7 +93,7 @@
 							?>
 							<div class="row">
 								<div class="col-lg-4">
-									<font style="color:red; text-align:left;"><?php echo $error_msg;?></font>
+									<font class="color-red text-align-left"><?php echo $error_msg;?></font>
 								</div>
 							</div>
 							<hr/>
@@ -151,7 +152,8 @@
 			</div>
 		</div>
 		<script language="javascript" src="js/txvalidator.js"></script>
-		<script nonce="<?php echo session_id();?>">
+		<script src="js/shortended_url_js.js"></script>
+		<!-- <script nonce="<?php //echo session_id();?>">
 		$( '#reset_btn' ).on("click", function() {
 			$( '#full_url, #short_url' ).val('');
 		});
@@ -194,7 +196,7 @@
 			}
 
 		} 
-		</script>
+		</script> -->
 		<?php include('footnote.php'); ?>
 	</div>
 	<?php //include('send_sms_js.php'); ?>

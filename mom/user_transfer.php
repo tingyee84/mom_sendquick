@@ -79,7 +79,8 @@
 	
 	//die;
 ?>
-		<div class="page-header" style="padding-top:10px">
+		<link href="css/assmi.css" rel="stylesheet">
+		<div class="page-header padding-top-10">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><?php echo $xml->user_mgnt;?></li>
@@ -108,7 +109,7 @@
 							<div class="row">
 								<div class="col-lg-2"><label class="control-label"></label></div>
 								<div class="col-lg-2">
-									<font style = "color:red;"><?php echo $error_msg;?></font>
+									<font class="color-red"><?php echo $error_msg;?></font>
 								</div>
 							</div>
 							<hr/>
@@ -122,7 +123,7 @@
 							<div class="row">
 								<div class="col-lg-2"><label class="control-label"></label></div>
 								<div class="col-lg-2">
-									<font style = "color:blue;"><?php echo $msg;?></font>
+									<font class="color-blue"><?php echo $msg;?></font>
 								</div>
 							</div>
 							<hr/>
@@ -187,7 +188,7 @@
 					<div class="modal-content">
 						<div class="modal-body">
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="btn_close_modal_info"><span aria-hidden="true">&times;	</span></button>
-							<div id="confirmContent" style="font-weight: normal;"></div>
+							<div id="confirmContent font-weight-normal"></div>
 						</div>
 						<div class="modal-footer bg-warning text-center" id="footer_modal">
 							<button type="button" class="btn btn-primary btn_yes_confirm">Yes</button>

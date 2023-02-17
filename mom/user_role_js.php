@@ -1,6 +1,7 @@
 <script language="javascript" src="js/txvalidator.js"></script>
 <script language="javascript" src="js/txcommon.js"></script>
-<script nonce="<?php echo session_id();?>">
+<script src="js/user_role_js_ext.php" defer></script>
+<!-- <script nonce="<?php //echo session_id();?>">
 var table = $('#role').DataTable({
 	deferRender: true,
 	stateSave: true,
@@ -52,7 +53,7 @@ $('#myRole').on('show.bs.modal', function(e)
 	$("#myRole_header").show();
 	var modal = $(this), id = $(e.relatedTarget).data('id');
 	if(typeof id === "undefined") {
-		modal.find('#header').html('<?php echo $x->create_new; ?>');
+		modal.find('#header').html('<?php //echo $x->create_new; ?>');
 		modal.find('#mode').val('addUserRole');
 		modal.find('#department').val(0);
 	} else {
@@ -64,7 +65,7 @@ $('#myRole').on('show.bs.modal', function(e)
 			dataType:'json',
 			success: function(val)
 			{
-				modal.find('#header').html('<?php echo $x->edit_role; ?>');
+				modal.find('#header').html('<?php //echo $x->edit_role; ?>');
 				modal.find('#mode').val('saveUserRole');
 				modal.find('#id').val(id);
 				modal.find('#user_role').val(val.user_role);
@@ -150,7 +151,7 @@ $('#myRole').on('hidden.bs.modal', function () {
 //Added by Wafie @ 25/11/2016
 $('#delete').on('click', function(e)
 {
-	if(confirm('<?php echo $x->alert_3; ?>')) {
+	if(confirm('<?php //echo $x->alert_3; ?>')) {
 		$('input[type=checkbox]').each(function() {
 			if (this.checked) {
 				$.post('user_role_lib.php?mode=deleteUserRole', { id: this.value }, function(data) {
@@ -163,7 +164,7 @@ $('#delete').on('click', function(e)
 });
 $('#truncate').on('click', function(e)
 {
-    if(confirm('<?php echo $x->alert_4;?>')) {
+    if(confirm('<?php //echo $x->alert_4;?>')) {
 		$.post('user_role_lib.php?mode=emptyUserRole');
 		table.ajax.reload();
 	}
@@ -239,4 +240,4 @@ function loadlist(selobj,url,val,name)
 		});
 	});
 }
-</script>
+</script> -->

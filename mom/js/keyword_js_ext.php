@@ -1,5 +1,9 @@
-<script src="js/keyword_js_ext.php" defer></script>
-<!-- <script nonce="<?php //echo session_id();?>">
+<?php 
+header("Content-type:text/javascript");
+include_once("../lib/commonFunc.php");
+$x = GetLanguage("keyword_management",$lang); 
+?>
+
 var table = $('#keyword').DataTable({
 	deferRender: true,
 	ajax:{type:'POST',url:'keyword_lib.php',data:{mode:'listKeyword2'}},
@@ -52,7 +56,7 @@ $('#create_api').on("click",function(){
 });
 $('#delete').on('click', function(e)
 {
-	if(confirm('<?php //echo $x->alert_2; ?>')) {
+	if(confirm('<?php echo $x->alert_2; ?>')) {
 		$('input[type=checkbox]').each(function() {     
 			if (this.checked && this.value!='on') {
 				$.post('keyword_lib.php',{mode:'deleteKeyword',keyword:this.value}, function(data) {
@@ -65,10 +69,9 @@ $('#delete').on('click', function(e)
 });
 $('#truncate').on('click', function(e)
 {
-	if(confirm('<?php //echo $x->alert_3; ?>')) {
+	if(confirm('<?php echo $x->alert_3; ?>')) {
 		$.post('keyword_lib.php',{mode:'emptyKeyword'},function(data) {
 			table.ajax.reload();
 		});
 	}
 });
-</script> -->

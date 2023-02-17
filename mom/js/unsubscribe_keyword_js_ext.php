@@ -1,7 +1,9 @@
-<script language="javascript" src="js/txvalidator.js"></script>
-<script language="javascript" src="js/txcommon.js"></script>
-<script src="js/unsubscribe_keyword_js_ext.php"></script>
-<!-- <script nonce="<?php //echo session_id();?>">
+<?php 
+header("Content-type:text/javascript");
+include_once("../lib/commonFunc.php");
+$x = GetLanguage("unsubscribe_list",$lang);
+?>
+
 var table =  $('#unsub_keyword').DataTable({
   	autoWidth: false,
 	deferRender: true,
@@ -84,7 +86,7 @@ $('#myCreate').on('hidden.bs.modal', function () {
 	$(this).find('form').trigger('reset');
 });
 $('#delete').on('click', function(e) {
-	if(confirm('<?php //echo $x->alert_2;?>')) {
+	if(confirm('<?php echo $x->alert_2;?>')) {
 		$('input[type=checkbox]').each(function() {     
 			if (this.checked && this.value!='on') {
 				$.post('unsubscribe_lib.php',{mode:'deleteKeyword',id:this.value},function() {
@@ -96,7 +98,7 @@ $('#delete').on('click', function(e) {
 	}
 });
 $('#truncate').on('click', function(e) {
-	if(confirm('<?php //echo $x->alert_3;?>')) {
+	if(confirm('<?php echo $x->alert_3;?>')) {
 		$.post('unsubscribe_lib.php',{mode:'emptyKeyword'},function() {
 			table.ajax.reload();
 		});
@@ -164,4 +166,3 @@ $('#unsub_resp').on('change keyup', function(e){
 		$('#unsub_resp').removeClass("is-invalid");
 	}
 });
-</script> -->

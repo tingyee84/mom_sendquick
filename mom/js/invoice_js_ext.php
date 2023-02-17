@@ -1,6 +1,7 @@
-<script src="js/moment.min.js" type="text/javascript"></script>
-<script src="js/invoice_js_ext.php"></script>
-<!-- <script nonce="<?php //echo session_id();?>">
+<?php 
+header("Content-type:text/javascript");
+// include_once("../lib/commonFunc.php");
+?>
 
 <?php
 if(isUserAdmin($_SESSION["userid"])) { ?>
@@ -33,7 +34,7 @@ function getInvoice() {
     $.ajax({
         cache: false,
         url: 'invoice_lib.php',
-        data:'mode=getMonth&dept=<?php //echo $_SESSION["department"]; ?>',
+        data:'mode=getMonth&dept=<?php echo $_SESSION["department"]; ?>',
         type:'GET',
         success:function(data) {
             $("#tbl_invoice tbody").html(data);
@@ -42,4 +43,3 @@ function getInvoice() {
 }
 getInvoice();
 <?php } ?>
-</script> -->

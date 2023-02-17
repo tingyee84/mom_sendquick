@@ -5,7 +5,8 @@
 	include('header.php');
 	include('checkAccess.php');
 ?>
-		<div class="page-header" style="padding-top:10px">
+        <link href="css/assmi.css" rel="stylesheet">
+		<div class="page-header padding-top-10">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><?php echo $xml->audit_trail; ?></li>
@@ -18,9 +19,9 @@
         <div class="page-content">
             <div class="col-lg-12">
                 <div class="panel panel-default">
-                    <div class="panel-body table-responsive" style = "overflow-x:hidden;">
+                    <div class="panel-body table-responsive custom-overflowx-hidden">
 						<form id="auditTrailForm" name="auditTrailForm" method="post">
-                        <table style="border:none">
+                        <table class="border-none">
 						<tr>
 							<td><?php echo $x->search_from;?></td>
 							<td><input class="form-control input-sm" type="text" id="from" name="from" size="10" required/></td>
@@ -33,7 +34,7 @@
 						</form>
 						<br>
 						
-						<table class="table table-striped table-bordered table-sm dataTable" style = "width:100%;" id="audittrail">
+						<table class="table table-striped table-bordered table-sm dataTable width-100" id="audittrail">
                 
                             <thead>
                                 <tr>

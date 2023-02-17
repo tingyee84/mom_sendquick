@@ -1,6 +1,7 @@
 <!-- <script src="js/moment.min.js"></script> -->
+<script src="js/audit_trail_js_ext.php"></script>
 
-<script nonce="<?php echo session_id();?>">
+<!-- <script nonce="<?php //echo session_id();?>">
 $('#from').val(moment().format('DD/MM/YYYY'));
 $('#to').val(moment().format('DD/MM/YYYY'));
 $('#from, #to').datepicker({format: 'dd/mm/yyyy'});
@@ -29,13 +30,13 @@ var table = $('#audittrail').DataTable({
 
 new $.fn.dataTable.Buttons( table, {
     // buttons: [
-	// 	{extend:'csv', text: '<?php echo $xml_common->save;?> CSV', filename:'Audit'}, 
-	// 	{extend:'excel', text: '<?php echo $xml_common->save;?> Excel', filename:'Audit'}
+	// 	{extend:'csv', text: '<?php //echo $xml_common->save;?> CSV', filename:'Audit'}, 
+	// 	{extend:'excel', text: '<?php //echo $xml_common->save;?> Excel', filename:'Audit'}
 	// ]
 	buttons: [
 		{
 			extend:'csv', 
-			text: '<i class="fa fa-file-text-o"></i> <?php echo $xml_common->save.' CSV'; ?>',
+			text: '<i class="fa fa-file-text-o"></i> <?php //echo $xml_common->save.' CSV'; ?>',
 			filename:'Audit',
 			init: function(api,node,config){
 				$(node).removeClass("dt-button buttons-csv buttons-html5");
@@ -44,7 +45,7 @@ new $.fn.dataTable.Buttons( table, {
 		}, 
 		{
 			extend:'excel', 
-			text: '<i class="fa fa-file-excel-o"></i> <?php echo $xml_common->save.' Excel'; ?>',
+			text: '<i class="fa fa-file-excel-o"></i> <?php //echo $xml_common->save.' Excel'; ?>',
 			filename:'Audit',
 			init: function(api,node,config) {
 				$(node).removeClass("dt-button buttons-csv buttons-html5");
@@ -67,4 +68,4 @@ $.fn.dataTable.ext.errMode = 'none';
 table.on('error.dt', function (e,settings,techNote,message) {
 	alert(message);
 });
-</script>
+</script> -->

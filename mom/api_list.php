@@ -6,7 +6,8 @@
 	include('checkAccess.php');
 	$x = GetLanguage("api_list",$lang);
 ?>
-		<div class="page-header" style="padding-top:10px">
+        <link href="css/assmi.css" rel="stylesheet">
+		<div class="page-header padding-top-10">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item active" aria-current="page"><?php echo "Application Management";?></li>
@@ -18,7 +19,7 @@
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <div class="alert fade show" id="alert-top" style="display:none" role="alert">
+                        <div class="alert fade show d-none" id="alert-top" role="alert">
                             <span id="alert-msg"></span>
                             <button type="button" class="close" aria-label="Close" id="alert-close">
                                 <span aria-hidden="true">&times;</span>
@@ -68,7 +69,7 @@
                                     <div class="modal-body">
                                         <div class="row">
 												<div class="col-md-10">
-													<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2" role="alert" style="display:none">
+													<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 d-none" role="alert">
 														<span id="msgstatustext">A</span>	
 														<button type="button" class="btn-close" id="msgstatusbar_close" aria-label="Close"></button>											
 													</div>
@@ -76,7 +77,7 @@
 										</div>
                                         <div class="row">
                                             <div class="col-md-3 offset-md-1">
-                                                <label for="api_name" class="control-label"><?php echo $x->api_name;?> <span style="color:red">*</span></label>
+                                                <label for="api_name" class="control-label"><?php echo $x->api_name;?> <span class="color-red">*</span></label>
                                             </div>
                                             <div class="col-md-6">
                                                 <input class="form-control input-sm" type="text" name="api_name" id="api_name" required>
@@ -87,7 +88,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-3 offset-md-1">
-                                                <label for="api_agencyid" class="control-label"><?php echo $x->api_agencyid;?> <span style="color:red">*</span></label>
+                                                <label for="api_agencyid" class="control-label"><?php echo $x->api_agencyid;?> <span class="color-red">*</span></label>
                                             </div>
                                             <div class="col-md-6">
                                                 <input class="form-control input-sm" type="text" name="api_agencyid" id="api_agencyid" required>
@@ -98,7 +99,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-3 offset-md-1">
-                                                <label for="api_serviceid" class="control-label"><?php echo $x->api_serviceid;?> <span style="color:red">*</span></label>
+                                                <label for="api_serviceid" class="control-label"><?php echo $x->api_serviceid;?> <span class="color-red">*</span></label>
                                             </div>
                                             <div class="col-md-6">
                                                 <input class="form-control input-sm" type="text" name="api_serviceid" id="api_serviceid" required>
@@ -120,7 +121,7 @@
                                         <!-- for password need to do additional checking -->
                                         <div class="row hidden" id="password_div" >
                                             <div class="col-md-3 offset-md-1">
-                                                <label for="api_password" class="control-label"><?php echo $x->api_password;?> <span style="color:red">*</span></label>
+                                                <label for="api_password" class="control-label"><?php echo $x->api_password;?> <span class="color-red">*</span></label>
                                             </div>
                                             <div class="col-md-6">
                                                 <input class="form-control input-sm" type="password" name="api_password" id="api_password">
@@ -131,7 +132,7 @@
                                         </div>
                                         <div class="row hidden" id="reenter_password_div">
                                             <div class="col-md-3 offset-md-1">
-                                                <label for="api_reenter_password" class="control-label"><?php echo $x->api_reenter_password;?> <span style="color:red">*</span></label>
+                                                <label for="api_reenter_password" class="control-label"><?php echo $x->api_reenter_password;?> <span class="color-red">*</span></label>
                                             </div>
                                             <div class="col-md-6">
                                                 <p><input class="form-control input-sm" type="password" name="api_reenter_password" id="api_reenter_password"></p>
@@ -139,7 +140,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-3 offset-md-1">
-                                                <label for="api_clientid" class="control-label"><?php echo $x->api_clientid;?> <span style="color:red">*</span></label>
+                                                <label for="api_clientid" class="control-label"><?php echo $x->api_clientid;?> <span class="color-red">*</span></label>
                                             </div>
                                             <div class="col-md-6">
                                                 <input class="form-control input-sm" type="text" name="api_clientid" id="api_clientid" required>
@@ -150,7 +151,7 @@
                                         </div>
                                         <div class="row" id="access_token_div">
                                             <div class="col-md-3 offset-md-1">
-                                                <label for="api_access_token" class="control-label"><?php echo $x->api_access_token;?> <span style="color:red">*</span></label>
+                                                <label for="api_access_token" class="control-label"><?php echo $x->api_access_token;?> <span class="color-red">*</span></label>
                                             </div>
                                             <div class="col-md-6">
                                                 <p><input class="form-control input-sm" type="text" name="api_access_token" id="api_access_token"></p>
@@ -159,7 +160,7 @@
                                         <div class="row">
                                             <div class="col-md-3 offset-md-1">
                                                 <!-- <label for="api_statusurl" class="control-label"><?php echo $x->api_statusurl;?> <span style="color:red">*</span></label> -->
-                                                <label for="api_statusurl" class="control-label"><?php echo "Application URL";?> <span style="color:red">*</span></label>
+                                                <label for="api_statusurl" class="control-label"><?php echo "Application URL";?> <span class="color-red">*</span></label>
                                             </div>
                                             <div class="col-md-6">
                                                 <input class="form-control input-sm" type="text" name="api_statusurl" id="api_statusurl" required>
@@ -212,7 +213,7 @@
                                         </div> -->
                                         <div class="row">
                                             <div class="col-md-3 offset-md-1">
-                                                <label for="api_quota" class="control-label"><?php echo $x->api_quota;?> <span style="color:red">*</span></label>
+                                                <label for="api_quota" class="control-label"><?php echo $x->api_quota;?> <span class="color-red">*</span></label>
                                             </div>
                                             <div class="col-md-6">
                                                 <input class="form-control input-sm" type="text" name="api_quota" id="api_quota" required>

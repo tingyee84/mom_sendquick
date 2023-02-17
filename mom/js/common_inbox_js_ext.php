@@ -1,12 +1,11 @@
-<script src="js/moment.min.js"></script>
-<script src="js/bootstrap-datepicker.min.js"></script>
-<script src="js/datetime-moment.js"></script>
-<script src="js/dataTables.buttons.min.js"></script>
-<script src="js/buttons.html5.min.js"></script>
-<script src="js/common_inbox_js_ext.php" defer></script>
-<!-- <script nonce="<?php //echo session_id();?>">
-var strdelete = '<?php //echo $x->alert_2;?>';
-var stralert = '<?php //echo $x->alert_3; ?>';	
+<?php 
+header("Content-type:text/javascript");
+include_once("../lib/commonFunc.php");
+$x = GetLanguage("common_inbox",$lang);
+?>
+
+var strdelete = '<?php echo $x->alert_2;?>';
+var stralert = '<?php echo $x->alert_3; ?>';	
 $('#from').val(moment().format('DD/MM/YYYY'));
 $('#to').val(moment().format('DD/MM/YYYY'));
 $('#from, #to').datepicker({format: 'dd/mm/yyyy'});
@@ -42,10 +41,10 @@ new $.fn.dataTable.Buttons( table, {
 	buttons: [
 		{
 			extend:'csv',
-			text: '<i class="fa fa-file-text-o"></i> <?php //echo $xml_common->export.' CSV'; ?>',
+			text: '<i class="fa fa-file-text-o"></i> <?php echo $xml_common->export.' CSV'; ?>',
 			exportOptions: {columns: ':visible'},
 			filename: function() {
-				return toCallDate('<?php //echo $_SESSION['userid']; ?>_Common_',new Date());
+				return toCallDate('<?php echo $_SESSION['userid']; ?>_Common_',new Date());
 			},
 			init: function(api,node,config){
 				$(node).removeClass("dt-button buttons-csv buttons-html5");
@@ -53,10 +52,10 @@ new $.fn.dataTable.Buttons( table, {
 			}},
 		{
 			extend:'excel',
-			text: '<i class="fa fa-file-excel-o"></i> <?php //echo $xml_common->export.' Excel'; ?>',
+			text: '<i class="fa fa-file-excel-o"></i> <?php echo $xml_common->export.' Excel'; ?>',
 			exportOptions: {columns: ':visible'},
 			filename: function() {
-				return toCallDate('<?php //echo $_SESSION['userid']; ?>_Common_',new Date());
+				return toCallDate('<?php echo $_SESSION['userid']; ?>_Common_',new Date());
 			},
 			init: function(api,node,config) {
 				$(node).removeClass("dt-button buttons-csv buttons-html5");
@@ -64,7 +63,7 @@ new $.fn.dataTable.Buttons( table, {
 			}}
 	]
 } );
-var filename = '<?php //echo $_SESSION['userid']; ?>_Common_'+toCallDate(new Date());
+var filename = '<?php echo $_SESSION['userid']; ?>_Common_'+toCallDate(new Date());
 
 table.buttons().container().appendTo('#export');
 $('#from, #to').on('changeDate', function() {
@@ -94,4 +93,3 @@ $('#truncate').on('click', function(e) {
 		});
 	}
 });
-</script> -->
