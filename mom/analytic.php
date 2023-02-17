@@ -51,7 +51,7 @@
             <canvas id="userChart" width="768px"></canvas>
             <button id="export_u_chart_pdf" class="btn btn-secondary btn-sm">Export to PDF</button>
         </div>
-        <div id="1atable" style="display:none">
+        <div id="1atable" class="d-none">
             <h3>Top 10 User</h3>
             <table class="table" id="tbl_user">
             <thead>

@@ -4,7 +4,8 @@
 <script src="js/html2canvas.js"></script>
 <script src="js/html2pdf.bundle.min.js"></script>
 <script src="js/moment.min.js"></script>
-<script nonce="<?php echo session_id();?>">
+<script src="js/analytic_js_ext.php"></script>
+<!-- <script nonce="<?php echo session_id();?>">
 "use strict"
 <?php
 // FIXME need to add EXCEL for table
@@ -374,4 +375,4 @@ var d_chart = new Chart(document.getElementById('deptChart').getContext('2d'), {
         }
     });
     <?php } ?>
-</script>
+</script> -->
