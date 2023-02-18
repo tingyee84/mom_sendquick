@@ -7,8 +7,9 @@
 	$x = GetLanguage("address_book",$lang);
 	//$x->email = 'Email';
 ?>
-		<div class="page-header" style="padding-top:10px">
-		<!-- <div class="page-header navbar navbar-light" style="margin-top:10px; background-color: #e9ecef;"> -->
+	<link href="css/style1.css" rel="stylesheet">
+
+		<div class="page-header page-header2">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><?php echo $xml->address_book;?></li>
@@ -63,7 +64,7 @@
 									<div class="modal-body">
 										<div class="row">
 											<div class="col-md-10">
-												<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2" role="alert" style="display:none">
+												<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 msgstatusbar" role="alert">
 													<span id="msgstatustext">A</span>	
 													<button type="button" class="btn-close" id="msgstatusbar_close" aria-label="Close"></button>											
 												</div>
@@ -71,7 +72,7 @@
 										</div>	
 										<div class="row">
 											<div class="col-md-3 offset-md-1">
-												<label for="contact" class="control-label"><?php echo $x->contact_name;?> <span style="color:red">*</span></label>
+												<label for="contact" class="control-label"><?php echo $x->contact_name;?> <span class = "contact_cls">*</span></label>
 											</div>
 											<div class="col-md-6">
 												<input class="form-control input-sm" type="text" name="contact" id="contact" maxlength="30" required>
@@ -82,7 +83,7 @@
 										</div>
 										<div class="row">
 											<div class="col-md-3 offset-md-1">
-												<label for="mobile" class="control-label"><?php echo $x->mobile_number;?> <span style="color:red">*</span></label>
+												<label for="mobile" class="control-label"><?php echo $x->mobile_number;?> <span class = "contact_cls">*</span></label>
 											</div>
 											<div class="col-md-4">
 												<input class="form-control input-sm" type="text" name="mobile" id="mobile" pattern="\+?\d+" required>
@@ -97,7 +98,7 @@
 										
 										<div class="row">
 											<div class="col-md-3 offset-md-1">
-												<label for="email" class="control-label"><?php echo $x->email;?> <span style="color:red">*</span></label>
+												<label for="email" class="control-label"><?php echo $x->email;?> <span class = "contact_cls">*</span></label>
 											</div>
 											<div class="col-md-4">
 												<input class="form-control input-sm" type="text" name="email" id="email" required>
@@ -217,7 +218,7 @@
 									</div>
 									<form id="upload_view" name="upload_view" method="post">
 										<div class="modal-body">
-											<table class="table table-striped table-bordered table-hover table-sm" id="upload_table" style="width: 100%;">
+											<table class="table table-striped table-bordered table-hover table-sm upload_table" id="upload_table">
 												<thead>
 													<tr>
 														<th><?php echo $x->no;?></th>
@@ -245,6 +246,12 @@
 		</div>
 		<?php include('footnote.php'); ?>
 	</div>
-	<?php include("address_book_js.php");?>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/dataTables.buttons.min.js"></script>
+	<script src="js/buttons.html5.min.js"></script>
+	<script language="javascript" src="js/txvalidator.js"></script>
+	<script language="javascript" src="js/txcommon.js"></script>
+	<script type="application/javascript" src="address_book_js.php"></script>
 </body>
 </html>

@@ -1,8 +1,8 @@
-<script language="javascript" src="js/txvalidator.js"></script>
-<script language="javascript" src="js/txcommon.js"></script>
-<script nonce="<?php echo session_id();?>" src="js/bootstrap-datepicker.min.js"></script>
-<script nonce="<?php echo session_id();?>">
-
+<?php
+header("Content-type:text/javascript");
+require_once('lib/commonFunc.php');
+$x = GetLanguage("campaign_mgnt",$lang);
+?>
 $("#campaign_start_date, #campaign_end_date").datepicker( {format: 'dd-mm-yyyy',todayHighlight:'TRUE'} ).on('show.bs.modal', function(event) {
     // prevent datepicker from firing bootstrap modal "show.bs.modal"
     event.stopPropagation();
@@ -248,4 +248,4 @@ function KeywordList( campaign_id ){
 	})
 		
 }
-</script>
+

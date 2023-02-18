@@ -1,5 +1,8 @@
-<script language="javascript" src="js/txvalidator.js"></script>
-<script nonce="<?php echo session_id();?>">
+<?php
+header("Content-type:text/javascript");
+require_once('lib/commonFunc.php');
+$x = GetLanguage("quota_mnt",$lang);
+?>
 loadUser();
 var table = $('#quota').DataTable({
 	autoWidth: false,
@@ -291,4 +294,3 @@ $('#myAlert').on('hidden.bs.modal', function () {
 $("button.btn-close").on("click",function(event) {
     $(this).parent().hide();
 });
-</script>

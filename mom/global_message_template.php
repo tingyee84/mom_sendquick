@@ -5,7 +5,9 @@
 	include('checkAccess.php');
 	$x = GetLanguage("global_message_template",$lang);
 ?>
-		<div class="page-header" style="padding-top:10px">
+	<link href="css/style1.css" rel="stylesheet">
+	
+		<div class="page-header page-header2">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><?php echo $xml->msg_tmpl;?></li>
@@ -61,7 +63,7 @@
 					<div class="modal-body">
 						<div class="row">
 								<div class="col-md-10">
-									<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2" role="alert" style="display:none">
+									<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 msgstatusbar" role="alert">
 										<span id="msgstatustext">A</span>	
 										<button type="button" class="btn-close" id="msgstatusbar_close" aria-label="Close"></button>											
 									</div>
@@ -176,6 +178,9 @@
 		<!-- Modal End -->
 		<?php include('footnote.php'); ?>
 	</div>
-	<?php include('global_message_template_js.php'); ?>
+	<script src="js/dataTables.buttons.min.js"></script>
+	<script src="js/buttons.html5.min.js"></script>
+	<script language="javascript" src="js/txvalidator.js"></script>
+	<script src="global_message_template_js.php"></script>
 </body>
 </html>

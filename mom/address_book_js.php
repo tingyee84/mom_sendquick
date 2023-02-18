@@ -1,10 +1,8 @@
-<script src="js/bootstrap-datepicker.min.js"></script>
-<script src="js/moment.min.js"></script>
-<script src="js/dataTables.buttons.min.js"></script>
-<script src="js/buttons.html5.min.js"></script>
-<script language="javascript" src="js/txvalidator.js"></script>
-<script language="javascript" src="js/txcommon.js"></script>
-<script nonce="<?php echo session_id();?>">
+<?php
+header("Content-type:text/javascript");
+require_once('lib/commonFunc.php');
+$x = GetLanguage("address_book",$lang);
+?>
 $("#example_upload_file").on("click",function () {
 	
 	window.open('file/addressbook_upload_same.csv');   
@@ -333,4 +331,4 @@ function loadcheck(chkobj,url,val,name)
 loadlist('#modem','lib_modem.php?mode=listModem','modem_label','modem_label');
 loadcheck('#grouplist','address_book_lib.php?mode=getAddressGroup','group_id','group_name');
 loadcheck('#grouplist2','address_book_lib.php?mode=getAddressGroup');
-</script>
+

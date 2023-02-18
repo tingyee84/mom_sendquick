@@ -4,7 +4,8 @@
 <script src="js/buttons.html5.min.js"></script>
 <script src="js/txvalidator.js"></script>
 <script src="js/txcommon.js"></script>
-<script nonce="<?php echo session_id();?>">
+<script src="js/user_account_js_ext.php"></script>
+<!-- <script nonce="<?php //echo session_id();?>">
 $("#access_start, #access_end").datepicker( {
 	format: 'dd-mm-yyyy',
 	todayHighlight:'TRUE',
@@ -106,15 +107,15 @@ $('#myUser').on('show.bs.modal', function(e)
 	var modal = $(this), id = $(e.relatedTarget).data('id');
 	if(typeof id === "undefined") {
 		
-		modal.find('#header').html('<?php echo $x->create_new; ?>');
+		modal.find('#header').html('<?php //echo $x->create_new; ?>');
 		modal.find('#mode').val('addUserAccount');
 		modal.find('#username').prop('disabled', false);
 		$("input:checkbox").prop('checked', false);
 		modal.find("#pwd_chgonfirst").prop("checked", 1);
-		modal.find('#access_start, #access_end').val('<?php echo date("d-m-Y")?>');
+		modal.find('#access_start, #access_end').val('<?php //echo date("d-m-Y")?>');
 	} else {
 
-		modal.find('#header').html('<?php echo $x->edit_acc; ?>');
+		modal.find('#header').html('<?php //echo $x->edit_acc; ?>');
 		modal.find('#mode').val('saveUserAccount');
 		$.ajax({
 			cache: false,
@@ -256,7 +257,7 @@ $('#myUser').on('submit', function(e)
 });
 $('#delete').on('click', function(e)
 {
-    if(confirm('<?php echo $x->alert_7; ?>')) {
+    if(confirm('<?php //echo $x->alert_7; ?>')) {
 		$('input[type=checkbox]').each(function() {
 			if (this.checked && this.value!='on') {
 				$.post('user_account_lib.php?mode=deleteUserAccount', { id: this.value }, function(data) {
@@ -270,7 +271,7 @@ $('#delete').on('click', function(e)
 });
 $('#truncate').on('click', function(e)
 {
-    if(confirm('<?php echo $x->alert_8; ?>')) {
+    if(confirm('<?php //echo $x->alert_8; ?>')) {
 		$.post('user_account_lib.php?mode=emptyUserAccount');
 		table.ajax.reload();
 	}
@@ -370,7 +371,7 @@ function pwdpatterncheck(pwdstr) {
 	patterns[3] = new RegExp ("[!-/:-@\[-`{-~]+");
 	let re0 = new RegExp ("^[^\ ]{12,}$");
 
-	if (re0.test(pwdstr) == true && pwdstr != "<?php echo $_SESSION['userid']; ?>")
+	if (re0.test(pwdstr) == true && pwdstr != "<?php //echo $_SESSION['userid']; ?>")
 		for (let i = 0 ; i < patterns.length ; i++) 
 			result += patterns[i].test(pwdstr) ? 1 : 0;
 
@@ -423,10 +424,10 @@ new $.fn.dataTable.Buttons( table, {
 	buttons: [
 		{
 			extend:'csv',
-			text: '<i class="fa fa-file-text-o"></i> <?php echo $xml_common->export.' CSV'; ?>',
+			text: '<i class="fa fa-file-text-o"></i> <?php //echo $xml_common->export.' CSV'; ?>',
 			exportOptions: {columns: ':visible'},
 			filename: function() {
-				return toCallDate('<?php echo $_SESSION['userid']; ?>_UserAccount_',new Date());
+				return toCallDate('<?php //echo $_SESSION['userid']; ?>_UserAccount_',new Date());
 			},
 			init: function(api,node,config){
 				$(node).removeClass("dt-button buttons-csv buttons-html5");
@@ -434,10 +435,10 @@ new $.fn.dataTable.Buttons( table, {
 			}},
 		{
 			extend:'excel',
-			text: '<i class="fa fa-file-excel-o"></i> <?php echo $xml_common->export.' Excel'; ?>',
+			text: '<i class="fa fa-file-excel-o"></i> <?php //echo $xml_common->export.' Excel'; ?>',
 			exportOptions: {columns: ':visible'},
 			filename: function() {
-				return toCallDate('<?php echo $_SESSION['userid']; ?>_UserAccount_',new Date());
+				return toCallDate('<?php //echo $_SESSION['userid']; ?>_UserAccount_',new Date());
 			},
 			init: function(api,node,config) {
 				$(node).removeClass("dt-button buttons-csv buttons-html5");
@@ -445,7 +446,7 @@ new $.fn.dataTable.Buttons( table, {
 			}}
 	]
 } );
-var filename = '<?php echo $_SESSION['userid']; ?>_UserAccount_'+toCallDate(new Date());
+var filename = '<?php //echo $_SESSION['userid']; ?>_UserAccount_'+toCallDate(new Date());
 table.buttons().container().appendTo('#export');
 
 $("button.btn-close").on("click",function(event) {
@@ -516,4 +517,4 @@ function checkChangePwd(newPwd, confirmPwd)
 	return status;	
 }
 
-</script>
+</script> -->

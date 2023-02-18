@@ -5,6 +5,8 @@
 	include('checkAccess.php');
 	
 ?>
+	<link href="css/style1.css" rel="stylesheet">
+
 		<div class="page-header">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
@@ -20,14 +22,14 @@
 			<div class="col-lg-12">
 				<div class="panel panel-default">
 					<div class="panel-body">
-						<div class="table-responsive" style = "overflow-x:hidden;">
+						<div class="table-responsive table-responsive2">
 							
-							<div style = "padding-bottom:10px;">
+							<div class = "table-responsive-div">
 								Date From&nbsp;&nbsp;<input type = "text" name = "date_from" id = "date_from" value = "">
 								Date To&nbsp;&nbsp;<input type = "text" name = "date_to" id = "date_to" value = "">
 							</div>
 							
-							<table class="table table-striped table-bordered table-condensed dataTable" id="upload_file_status" style = "width:100%">
+							<table class="table table-striped table-bordered table-condensed dataTable upload_table" id="upload_file_status">
 								<thead>
 									<tr>
 										<th><?php echo $x->file_name;?></th>
@@ -69,6 +71,7 @@
 		</div>
 		<?php include('footnote.php'); ?>
 	</div>
-	<?php include("broadcast_sms_status_js.php");?>
+	<script nonce="<?php echo session_id();?>" src="js/bootstrap-datepicker.min.js"></script>
+	<script type="application/javascript" src="broadcast_sms_status_js.php"></script>
 </body>
 </html>

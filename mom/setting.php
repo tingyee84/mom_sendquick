@@ -86,7 +86,7 @@ if (isset($_POST["sessiontime"])) {
                                 <div class="row">
                                     <div class="form-group col-md-4 offset-md-4">
                                         <div class="row">
-                                            <div class="col-md-4"><label for="formControlRange"><?php echo $x->accthreshold; ?><?php echo txvalidator("1234",TX_INTEGER); ?></label>
+                                            <div class="col-md-4"><label for="formControlRange"><?php echo $x->accthreshold; ?><?php // echo txvalidator("1234",TX_INTEGER); ?></label>
                                             </div>
                                             <div class="col-auto"><input type="number" id="accthresholdval" class="form-control input-sm" size=5 min=5 max=15 value=10>
                                             </div>
@@ -103,9 +103,9 @@ if (isset($_POST["sessiontime"])) {
                                 </div>
                             </form>
                             <div class="row m-3">
-                                <div id="msgstatusbar" class="alert alert-dismissible show fade col-md-4 offset-md-4" role="alert" style="display:none">
+                                <div id="msgstatusbar" class="alert alert-dismissible show fade col-md-4 offset-md-4" role="alert">
                                     <span id="msgstatustext">A</span>
-                                    <button type="button" class="btn-close" id="msgstatusbar_close" aria-label="Close"></button>
+                                    <button type="button" class="btn float-end p-0" id="msgstatusbar_close" aria-label="Close"><i class="fa fa-times"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -115,91 +115,6 @@ if (isset($_POST["sessiontime"])) {
             </div> <!-- End of Page-content" -->
     </body>
 <script language="javascript" src="js/txvalidator.js"></script>
-<script>
-if (typeof txvalidator === 'function') {
-    console.log("Okay");
-} else {
-    console.log("Not okay");
-}
-$("button.btn-close").on("click",function(event) {
-    $(this).parent().hide();
-});
-$("input[name='sessiontime']").on("input",function() {
-    $("#sessiontimeval").val($(this).val());
-});
-
-$("#sessiontimeval").on("change",function() {
-    $("input[name='sessiontime']").val($(this).val());
-});
-
-$("input[name='pwdexpiry']").on("input",function() {
-    $("#pwdexpiryval").val($(this).val());
-});
-
-$("#pwdexpiryval").on("change",function() {
-    $("input[name='pwdexpiry']").val($(this).val());
-});
-
-$("input[name='accthreshold']").on("input",function() {
-    $("#accthresholdval").val($(this).val());
-});
-$("#accthresholdval").on("change",function() {
-    $("input[name='accthreshold']").val($(this).val());
-});
-function reset() {
-<?php
-$res = getSQLresult($dbconn,"SELECT * FROM setting WHERE variable IN ('sessiontime','pwdexpiry','accthreshold')");
-if (is_string($res)) {
-    // error
-} else {
-    foreach($res as $row) {
-        echo "\n\t$(\"input[name='{$row["variable"]}']\").val({$row["value"]});";
-        echo "\n\t$(\"#{$row["variable"]}val\").val({$row["value"]});";
-    }
-}
-?>
-}
-reset();
-$("#btnreset").on("click",function(event){
-    reset();
-});
-$("#form-setting").submit(function(event) {
-    event.preventDefault();
-    $("#msgstatusbar").hide();
-    $("#msgstatusbar").removeClass("alert-success alert-warning");
-    if (!txvalidator($("#sessiontimeval").val(),"TX_INTEGER")) {
-        $("#msgstatusbar").addClass("alert-warning");
-        $("#msgstatustext").html("Invalid Input. Please insert integer only.");
-        $("#msgstatusbar").show();
-        $("#sessiontimeval").focus();
-    } else if (!txvalidator($("#pwdexpiryval").val(),"TX_INTEGER")) {
-        $("#msgstatusbar").addClass("alert-warning");
-        $("#msgstatustext").html("Invalid Input. Please insert integer only.");
-        $("#msgstatusbar").show();
-        $("#pwdexpiryval").focus();
-    } else if (!txvalidator($("#accthresholdval").val(),"TX_INTEGER")) {
-        $("#msgstatusbar").addClass("alert-warning");
-        $("#msgstatustext").html("Invalid Input. Please insert integer only.");
-        $("#msgstatusbar").show();
-        $("#accthresholdval").focus();
-    } else {
-        $.ajax({
-            type: "POST",
-            url: "setting.php",
-            data: $("#form-setting").serialize(),
-            dataType: "json",
-            success: function(data) {
-                if(data["statuscode"] === 1) {
-                    $("#msgstatusbar").addClass("alert-success");
-                } else {
-                    $("#msgstatusbar").addClass("alert-warning");
-                }
-                $("#msgstatustext").html(data["statusmsg"]);
-                $("#msgstatusbar").show();
-            }
-        });
-    }
-});
-</script>
+<script src="setting_js.php"></script>
 </html>
 <?php } ?>

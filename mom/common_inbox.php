@@ -5,7 +5,8 @@
 	include('checkAccess.php');
 	$x = GetLanguage("common_inbox",$lang);
 ?>
-		<div class="page-header" style="padding-top:10px">
+		<link href="css/assmi.css" rel="stylesheet">
+		<div class="page-header padding-top-10">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item active" aria-current="page"><?php echo $xml->common_inbox;?></li>
@@ -18,7 +19,7 @@
 				<div class="panel panel-default">
 					<div class="panel-body table-responsive">
 						<form id="inboxForm" name="inboxForm">
-						<table style="border:none">
+						<table class="border-none" >
 							<tr>
 								<td><b><?php echo $xml_common->date_from;?></b>&nbsp;</td>
 								<td><input class="form-control input-sm" type="text" id="from" name="from" size="10" required/></td>

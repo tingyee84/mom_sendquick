@@ -1,8 +1,8 @@
-<script src="js/dataTables.buttons.min.js"></script>
-<script src="js/buttons.html5.min.js"></script>
-<script language="javascript" src="js/txvalidator.js"></script>
-<script language="javascript" src="js/txcommon.js"></script>
-<script nonce="<?php echo session_id();?>">
+<?php
+header("Content-type:text/javascript");
+require_once('lib/commonFunc.php');
+$x = GetLanguage("global_address_group",$lang);
+?>
 var ctable = $('#contactlist').DataTable({
 	deferRender: false,
 	autoWidth: false,
@@ -292,7 +292,3 @@ function grpsync(grpid)
 {
 	console.log("grpid:"+grpid);
 }
-
-
-
-</script>

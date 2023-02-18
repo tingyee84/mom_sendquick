@@ -531,12 +531,12 @@ function getAccessRightsList($lang, $user_type = '')
 												</tr>
 												<tr>
 													<td class=\"text-center\">
-														<div id=\"div_" .$function_id. "_td\" style=\"display:none\">
+														<div id=\"div_" .$function_id. "_td\" class=\"d-none\">
 															&nbsp;
 														</div>
 													</td>
 													<td colspan=\"2\" class=\"text-center\">
-														<div id=\"div_" .$function_id. "\" style=\"display:none\">
+														<div id=\"div_" .$function_id. "\" class=\"d-none\">
 															<table border=\"0\" width=\"100%\">
 											" .getDepartmentAccess($function_id,$lang). "
 															</table>
@@ -560,12 +560,12 @@ function getAccessRightsList($lang, $user_type = '')
 												</tr>
 												<tr>
 													<td class=\"text-center\">
-														<div id=\"div_" .$function_id. "_td\" style=\"display:none\">
+														<div id=\"div_" .$function_id. "_td\" class=\"d-none\">
 															&nbsp;
 														</div>
 													</td>
 													<td colspan=\"2\" class=\"text-center\">
-														<div id=\"div_" .$function_id. "\" style=\"display:none\">
+														<div id=\"div_" .$function_id. "\" class=\"d-none\">
 															<table border=\"0\" width=\"100%\">
 											" .getDepartmentAccess($function_id,$lang). "
 															</table>

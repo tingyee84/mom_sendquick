@@ -4,6 +4,8 @@
 	include('header.php');
 	include('checkAccess.php');
 ?>
+	<link href="css/style1.css" rel="stylesheet">
+
 		<!-- <div class="page-header">
 			<ol class="breadcrumb">
 				<li><?php echo $xml->send_sms;?></li>
@@ -28,7 +30,7 @@
 			  //$x->email_3 = "Email From Address";
 			
 		?>
-		<!-- <div class="page-content" style="padding: 100px; border: 1px solid #000000;"> -->
+		
 		<div class="page-content">
 			<div class="col-md-12">
 				<div class="panel panel-default">
@@ -113,7 +115,7 @@
 							
 							<div class="row">
 								<div class="col-md-4">
-									<label class="control-label"><?php echo $x->mno_1; ?> <span style="color:red">*</span></label>
+									<label class="control-label"><?php echo $x->mno_1; ?> <span class = "contact_cls">*</span></label>
 									<p><input type="button" class="btn btn-primary btn-sm openadrbook" data-bs-toggle="modal" data-bs-target="#getContact" data-type="mobile" value="<?php echo $x->select_addressbook; ?>"></p>
 								</div>
 								<div class="col-md-4">
@@ -127,7 +129,7 @@
 								</div>
 							</div>
 						
-							<div id="email-block" style="display:none">
+							<div id="email-block" class = "msgstatusbar">
 							<hr>
 						
 							<div class="row" >
@@ -183,7 +185,7 @@
 						<div id="msg_sms">
 							<div class="row">
 								<div class="col-md-4">
-									<label class="control-label"><?php echo $x->message; ?> <span style="color:red">*</span></label>
+									<label class="control-label"><?php echo $x->message; ?> <span class = "contact_cls">*</span></label>
 									<p><input type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#getTemplate" data-templatetype="sms" value="<?php echo $x->select_msgtemplateforsms; ?>"></p>
 								</div>
 								<div class="col-md-4">
@@ -199,7 +201,7 @@
 						<div id="msg_mim">
 							<div class="row">
 								<div class="col-md-4">
-									<label class="control-label"><?php echo $x->message; ?> <span style="color:red">*</span></label>
+									<label class="control-label"><?php echo $x->message; ?> <span class = "contact_cls">*</span></label>
 									<p>
 										<input type="button" class="btn btn-primary btn-sm mb-1" data-bs-toggle="modal" data-bs-target="#getTemplate" data-templatetype="mim" value="<?php echo $x->select_msgtemplateformim; ?>"><br>
 										<input type="button" class="btn btn-secondary btn-sm mb-1" value="<?php echo $x->remove_msgtemplate; ?>" id="btn_clear_tpl"></p>
@@ -340,7 +342,7 @@
 								<button class="nav-link tab_button" id="tab4" data-bs-toggle="pill" data-bs-target="#global_groups" type="button" role="tab" aria-controls="global_groups" aria-selected="false"><?php echo $x1->global_group; ?></button>																
 							</li>
 						</ul>
-						<div class="tab-content" id="pills-tabContent" style="overflow:visible;">
+						<div class="tab-content tab-content_cls" id="pills-tabContent">
 							<br>
 							<div class="tab-pane fade show active" id="contacts" role="tabpanel" aria-labelledby="pills-contacts-tab">
 								<table class="table table-striped table-bordered table-sm" id="tblcontact">
@@ -457,7 +459,7 @@
 							</li>
 						</ul>
 											
-						<div id="myTabContent" class="tab-content" style="overflow:visible;">
+						<div id="myTabContent" class="tab-content tab-content_cls">
 							<br>
 							<div class="tab-pane fade show active" id="template" role="tabpanel" aria-labelledby="msg_template">
 								<div class="row">
@@ -511,8 +513,8 @@
 							
 						</div>
 						
-						<div class="tab-content" id = "tpl_info_1_div" style = "padding-top:10px;">
-							<textarea name = "tpl_info_1" id = "tpl_info_1" class = "form-control input-sm" style = "width:100%;height:50px;resize: none;border: none;" readonly></textarea>
+						<div class="tab-content tab-content2" id = "tpl_info_1_div">
+							<textarea name = "tpl_info_1" id = "tpl_info_1" class = "form-control input-sm tpl_info_1_cls" readonly></textarea>
 						</div>
 						
 					</div>
@@ -526,6 +528,26 @@
 
 		<?php include('footnote.php'); ?>
 	</div>
-	<?php include('send_sms_js.php'); ?>
+	<?php //include('send_sms_js.php'); ?>
+
+	<!-- <script src="js/autosize.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="send_sms_js.php"></script> -->
+
+	
+
+	<script src="js/autosize.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<?php 
+	if (isset($_POST["msgid"])) {
+	?>
+	<script src="js/send_sms_js_ext.php?msgid=<?php echo $_POST['msgid']; ?>"></script>
+	<?php 
+	}else{
+	?>
+	<script src="js/send_sms_js_ext.php?mobile_numb=<?php echo $_GET['mobile_numb']; ?>"></script>
+	<?php 
+	}
+	?>
 </body>
 </html>

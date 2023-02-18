@@ -1,11 +1,17 @@
-<script src="js/bootstrap-datepicker.min.js"></script>
-<script src="js/pdfmake.min.js"></script>
-<script src="js/vfs_fonts.js.php" defer></script><?php // defer means to let all pages rendered finished then begin load ?>
-<script src="js/dataTables.buttons.min.js?"></script>
-
-<script src="js/buttons.html5.min.js"></script>
-<script src="js/moment.min.js" type="text/javascript"></script>
-<script nonce="<?php echo session_id();?>">
+<?php 
+header("Content-type:text/javascript");
+include_once("./lib/commonFunc.php");
+$chk_mode = 59;
+if (isset($_GET["view"])) {
+	if ($_GET["view"] == "alldepts" ) { // MOMAdmin view all depts
+		$chk_mode = 61;
+	} else if ($_GET["view"] == "users") { // BU Admin view all users
+		$chk_mode = 62;
+	}
+}
+$page_mode = '800'; // Ty's Comment: can't really understand what does it for  
+include('checkAccess.php');
+?>
 $('#datefrom').val(moment('<?php echo $_SESSION["report_datefrom"]; ?>','DD/MM/YYYY').format('DD/MM/YYYY'));
 $('#dateto').val(moment('<?php echo $_SESSION["report_dateto"]; ?>','DD/MM/YYYY').format('DD/MM/YYYY'));
 $('#datefrom, #dateto').datepicker({
@@ -564,4 +570,3 @@ produceSummary_mim();
 END;
 	}
 ?>
-</script>

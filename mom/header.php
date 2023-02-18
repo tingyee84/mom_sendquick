@@ -85,7 +85,7 @@ if( $UserType == "admin" ){
 				<h4 class="sidebar-search"><b>
 				<?php
 				if (in_array('8',$access_arr)) {
-					echo '<a href="change_password.php" style="color:currentColor;" title="Change Password"><i class="fa fa-unlock-alt"></i> '.ucwords(@$_SESSION['userid']) . ' (' . $display_UserType .')</a>';
+					echo '<a href="change_password.php" class = "change_pwd_cls" title="Change Password"><i class="fa fa-unlock-alt"></i> '.ucwords(@$_SESSION['userid']) . ' (' . $display_UserType .')</a>';
 				} else {
 					echo ucwords(@$_SESSION['userid']) . " (" . $display_UserType . ")";
 				}

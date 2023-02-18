@@ -4,7 +4,8 @@
 	include('header.php');
 	include('checkAccess.php');
 ?>
-		<div class="page-header" style="padding-top:10px">
+		<link href="css/assmi.css" rel="stylesheet">
+		<div class="page-header padding-top-10">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><?php echo $xml->user_mgnt;?></li>
@@ -19,7 +20,8 @@
 				<div class="panel panel-default">
 					<div class="panel-body table-responsive">
 						<form id="accessForm" name="accessForm" method="post">
-							<table style="border:none">
+							<!-- <table style="border:none"> -->
+							<table class="border-none">
 							<tr>
 								<td><strong><?php echo $x->date_from;?></strong>&nbsp;</td>
 								<td><input class="form-control input-sm" type="text" id="from" name="from" size="10" required/></td>
@@ -49,7 +51,8 @@
 	</div>
 	<script src="js/moment.min.js"></script>
 	<script src="js/bootstrap-datepicker.min.js"></script>
-	<script nonce="<?php echo session_id();?>">
+	<script src="js/access_log_js.js"></script>
+	<!-- <script nonce="<?php //echo session_id();?>">
 	$("#from").val(moment().format('DD/MM/YYYY'));
 	$("#to").val(moment().format('DD/MM/YYYY'));
 	$('#from, #to').datepicker({format: 'dd/mm/yyyy'});
@@ -72,6 +75,6 @@
 		$('#from, #to').datepicker('hide');
 		table.ajax.reload();
 	});
-	</script>
+	</script> -->
 </body>
 </html>

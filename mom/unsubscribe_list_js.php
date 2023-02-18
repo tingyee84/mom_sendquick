@@ -3,7 +3,8 @@
 <script src="js/dataTables.buttons.min.js"></script>
 <script src="js/buttons.html5.min.js"></script>
 <script language="javascript" src="js/txvalidator.js"></script>
-<script nonce="<?php echo session_id();?>">
+<script src="js/unsubscribe_list_js_ext.php"></script>
+<!-- <script nonce="<?php //echo session_id();?>">
 $("#unsub_file").change(function () {
 	var fileExtension = ['csv', 'txt'];
 	if ($.inArray($(this).val().split('.').pop().toLowerCase(), fileExtension) == -1) {
@@ -57,21 +58,21 @@ $('#unsubscribe').on( 'draw.dt', function () {
 var date = $.now();
 new $.fn.dataTable.Buttons( table, {
 	// buttons: [
-	// 	{extend:'csv', text: '<?php echo $xml_common->export.' CSV'; ?>', exportOptions: {columns: [ 0, 1, 2, 3]}, filename:'<?php echo $_SESSION['userid']; ?>_unsubscribe_list_'+date}
-	// 	//{extend:'excel', text: '<?php echo $xml_common->export.' Excel'; ?>', exportOptions: {columns: ':visible'}, filename:'<?php echo $_SESSION['userid']; ?>_unsubscribe_list_'+date}
+	// 	{extend:'csv', text: '<?php //echo $xml_common->export.' CSV'; ?>', exportOptions: {columns: [ 0, 1, 2, 3]}, filename:'<?php //echo $_SESSION['userid']; ?>_unsubscribe_list_'+date}
+	// 	//{extend:'excel', text: '<?php //echo $xml_common->export.' Excel'; ?>', exportOptions: {columns: ':visible'}, filename:'<?php //echo $_SESSION['userid']; ?>_unsubscribe_list_'+date}
 	// ]
 	buttons: [
 		{
 			extend:'csv', 
-			text: '<i class="fa fa-file-text-o"></i> <?php echo $xml_common->export.' CSV'; ?>', 
+			text: '<i class="fa fa-file-text-o"></i> <?php //echo $xml_common->export.' CSV'; ?>', 
 			exportOptions: {columns: [ 0, 1, 2, 3]}, 
-			filename:'<?php echo $_SESSION['userid']; ?>_unsubscribe_list_'+date,
+			filename:'<?php //echo $_SESSION['userid']; ?>_unsubscribe_list_'+date,
 			init: function(api,node,config){
 				$(node).removeClass("dt-button buttons-csv buttons-html5");
 				$(node).addClass("btn btn-secondary btn-sm");				
 			}
 		}
-		//{extend:'excel', text: '<?php echo $xml_common->export.' Excel'; ?>', exportOptions: {columns: ':visible'}, filename:'<?php echo $_SESSION['userid']; ?>_unsubscribe_list_'+date}
+		//{extend:'excel', text: '<?php //echo $xml_common->export.' Excel'; ?>', exportOptions: {columns: ':visible'}, filename:'<?php //echo $_SESSION['userid']; ?>_unsubscribe_list_'+date}
 	]
 } );
 table.buttons().container().appendTo('#export');
@@ -118,7 +119,7 @@ $('#myCreate').on('hidden.bs.modal', function () {
 	$(this).find('form').trigger('reset');
 });
 $('#delete').on('click', function(e) {
-	if(confirm('<?php echo $x->alert_2;?>')) {
+	if(confirm('<?php //echo $x->alert_2;?>')) {
 		$('input[type=checkbox]').each(function() {     
 			if (this.checked && this.value!='on') {
 				$.post('unsubscribe_lib.php',{mode:'deleteUnsubscribe',id:this.value},function() {
@@ -130,7 +131,7 @@ $('#delete').on('click', function(e) {
 	}
 });
 $('#truncate').on('click', function(e) {
-	if(confirm('<?php echo $x->alert_3;?>')) {
+	if(confirm('<?php //echo $x->alert_3;?>')) {
 		$.post('unsubscribe_lib.php',{mode:'emptyUnsubscribe'},function() {
 			table.ajax.reload();
 		});
@@ -147,16 +148,16 @@ $('#myUpload').submit(function() {
         processData: false,
         success: function(res){
 			if(res==0) {
-				alert('<?php echo $x->alert_4; ?>');
+				alert('<?php //echo $x->alert_4; ?>');
 			} 
 			else if(res==2){
-				alert('<?php echo $x->alert_5; ?>');
+				alert('<?php //echo $x->alert_5; ?>');
 			}
 			else if(res==3){
-				alert('<?php echo $msgstr->invalid_number; ?>');
+				alert('<?php //echo $msgstr->invalid_number; ?>');
 			}	
 			else if(res==4){				
-				alert('<?php echo $msgstr->unsubexist; ?>');
+				alert('<?php //echo $msgstr->unsubexist; ?>');
 			}			
 			else {
 				table.ajax.reload();
@@ -175,5 +176,5 @@ $('#number').on('change keyup', function(e){
 $("button.btn-close").on("click",function(event) {
     $(this).parent().hide();
 });
-</script>
+</script> -->
 

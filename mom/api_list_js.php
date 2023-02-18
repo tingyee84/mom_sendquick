@@ -4,7 +4,8 @@
 <script src="js/buttons.html5.min.js"></script>
 <script language="javascript" src="js/txvalidator.js"></script>
 <script language="javascript" src="js/txcommon.js"></script>
-<script nonce="<?php echo session_id();?>">
+<script src="js/api_list_js_ext.php"></script>
+<!-- <script nonce="<?php //echo session_id();?>">
 
 var changePwdVar = 0;
 
@@ -17,8 +18,8 @@ var table = $('#api_accts').DataTable({
 var date = $.now();
 new $.fn.dataTable.Buttons( table, {
 	buttons: [
-		{extend:'csv', text: '<?php echo $xml_common->export.' CSV'; ?>', exportOptions: {columns: ':visible'}, filename:'<?php echo $_SESSION['userid']; ?>_AddressBook_'+date},
-		{extend:'excel', text: '<?php echo $xml_common->export.' Excel'; ?>', exportOptions: {columns: ':visible'}, filename:'<?php echo $_SESSION['userid']; ?>_AddressBook_'+date}
+		{extend:'csv', text: '<?php //echo $xml_common->export.' CSV'; ?>', exportOptions: {columns: ':visible'}, filename:'<?php //echo $_SESSION['userid']; ?>_AddressBook_'+date},
+		{extend:'excel', text: '<?php //echo $xml_common->export.' Excel'; ?>', exportOptions: {columns: ':visible'}, filename:'<?php //echo $_SESSION['userid']; ?>_AddressBook_'+date}
 	]
 } );
 table.buttons().container().appendTo('#export');
@@ -32,8 +33,8 @@ $('#myApiAccts').on('show.bs.modal', function(e)
 	$("#myApiAccts_header").show();
 	var modal = $(this), id = $(e.relatedTarget).data('id');
 	if(typeof id === "undefined") {
-		// modal.find('#header').html('<?php echo $x->create_new; ?>');
-		modal.find('#header').html('<?php echo "Create New Application" ?>');
+		// modal.find('#header').html('<?php //echo $x->create_new; ?>');
+		modal.find('#header').html('<?php //echo "Create New Application" ?>');
 		modal.find('#mode').val('addApiAcct');
 		modal.find('#api_serviceid').prop('disabled', false);
 		modal.find('#api_clientid').prop('disabled', false);
@@ -90,8 +91,8 @@ $('#myApiAccts').on('show.bs.modal', function(e)
 			dataType:'json',
 			success: function(val)
 			{
-				// modal.find('#header').html('<?php echo $x->edit_contact; ?>');
-				modal.find('#header').html('<?php echo "Edit Application"; ?>');
+				// modal.find('#header').html('<?php //echo $x->edit_contact; ?>');
+				modal.find('#header').html('<?php //echo "Edit Application"; ?>');
 				modal.find('#id').val(id);
 				modal.find('#mode').val('saveApiAcct');
 				modal.find('#api_name').val(val.name);
@@ -376,8 +377,8 @@ $('#change_pwd').on('click', function(e){
 
 $('#delete').on('click', function(e)
 {
-	// if(confirm('<?php echo $x->alert_5; ?>')) {
-	if(confirm('<?php echo "Delete selected?" ?>')) {
+	// if(confirm('<?php //echo $x->alert_5; ?>')) {
+	if(confirm('<?php //echo "Delete selected?" ?>')) {
 		$('input[type=checkbox]').each(function() {
 			if (this.checked) {
 				var thisVal = this.value;
@@ -406,7 +407,7 @@ function pwdpatterncheck(pwdstr) {
 	patterns[3] = new RegExp ("[!-/:-@\[-`{-~]+");
 	let re0 = new RegExp ("^[^\ ]{12,}$");
 
-	if (re0.test(pwdstr) == true && pwdstr != "<?php echo $_SESSION['userid']; ?>")
+	if (re0.test(pwdstr) == true && pwdstr != "<?php //echo $_SESSION['userid']; ?>")
 		for (let i = 0 ; i < patterns.length ; i++) 
 			result += patterns[i].test(pwdstr) ? 1 : 0;
 
@@ -433,4 +434,4 @@ loadlist('#api_dept','api_list_lib.php?mode=listDepts','department_id','departme
 // loadlist('#api_appntype','api_list_lib.php?mode=listAppnTypes','','');
 
 
-</script>
+</script> -->

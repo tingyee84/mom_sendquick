@@ -57,6 +57,14 @@
             </div>
             <?php include('footnote.php'); ?>
         </div>
-        <?php include ('report_incoming_js.php'); ?>
+        <script src="js/bootstrap-datepicker.min.js" async></script>
+        <script src="js/pdfmake.min.js"></script>
+        <script src="js/vfs_fonts.js.php" defer></script>
+        <script src="js/dataTables.buttons.min.js?"></script>
+        <script src="js/jszip.min.js"></script>
+
+        <script src="js/buttons.html5.min.js"></script>
+        <script src="js/moment.min.js" type="text/javascript"></script>
+        <script src="report_incoming_js.php"></script>
     </body>
 </html>

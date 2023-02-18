@@ -1,7 +1,8 @@
-<script src="js/dataTables.buttons.min.js"></script>
-<script src="js/buttons.html5.min.js"></script>
-<script language="javascript" src="js/txvalidator.js"></script>
-<script nonce="<?php echo session_id();?>">
+<?php
+header("Content-type:text/javascript");
+require_once('lib/commonFunc.php');
+$x = GetLanguage("address_group",$lang);
+?>
 var table = $('#tblgroup').DataTable({
 	deferRender: false,
 	responsive: true,
@@ -179,4 +180,3 @@ $('#truncate').on('click', function(e)
 $("button.btn-close").on("click",function(event) {
     $(this).parent().hide();
 });
-</script>

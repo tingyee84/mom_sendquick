@@ -6,6 +6,7 @@
 	include('checkAccess.php');
 	$x = GetLanguage("add_keyword",$lang);
 ?>
+		<link href="css/assmi.css" rel="stylesheet">
 		<div id="page-header" class="page-header">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
@@ -21,7 +22,7 @@
 					<div class="panel-body">
 						<div class="row">
 								<div class="col-md-10">
-									<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2" role="alert" style="display:none">
+									<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 d-none" role="alert">
 										<span id="msgstatustext">A</span>	
 										<button type="button" class="btn-close" id="msgstatusbar_close" aria-label="Close"></button>											
 									</div>
@@ -31,7 +32,7 @@
 							<div class="row">
 								<div class="col-lg-2">
 									<label for="keyword" class="control-label"><?php echo $x->keyword; ?></label>
-									<span style="color:red">*</span>									
+									<span class="color-red">*</span>									
 								</div>
 								<div class="col-lg-4">
 									<input class="form-control input-sm" type="text" name="keyword" id="keyword" maxlength="15" required>
@@ -93,10 +94,10 @@
 							</div>
 							<hr>
 							
-							<div id="progress" class="row text-center" style="display:none">
+							<div id="progress" class="row text-center d-none">
 								<div class="col-md-4 offset-md-4">
 									<div class="progress">
-										<div id="bar" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="min-width:0.5em;">
+										<div id="bar" class="progress-bar progress-bar-striped active min-width-05" role="progressbar" aria-valuemin="0" aria-valuemax="100">
 											Processing ... <span id="percent"></span>
 										</div>
 									</div>

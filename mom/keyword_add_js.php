@@ -1,6 +1,7 @@
 <script language="javascript" src="js/txvalidator.js"></script>
 <script language="javascript" src="js/txcommon.js"></script>
-<script nonce="<?php echo session_id();?>">
+<script src="js/keyword_add_js_ext.php"></script>
+<!-- <script nonce="<?php //echo session_id();?>">
 
 $('form#add_keyword').submit(function(){	
 	if(!txvalidator($("#keyword").val(),"TX_STRING","-")){
@@ -48,10 +49,10 @@ $('form#add_keyword').submit(function(){
 					$("#msgstatusbar").show();												
 				}
 				else{
-					//alert('<?php echo $x->success_msg; ?>');
+					//alert('<?php //echo $x->success_msg; ?>');
 					$("#msgstatusbar").removeClass("alert-warning");
 					$("#msgstatusbar").addClass("alert-success");
-       				$("#msgstatustext").html('<?php echo $x->success_msg; ?>');
+       				$("#msgstatustext").html('<?php //echo $x->success_msg; ?>');
 					$("#msgstatusbar").show();					
 					$(location).attr('href','keyword_management.php');
 				}
@@ -133,10 +134,10 @@ $('form#add_api_keyword').submit(function(){
        				$("#msgstatustext").html(res.status);
 					$("#msgstatusbar").show();												
 				} else{
-					//alert('<?php echo $x->success_msg; ?>');
+					//alert('<?php //echo $x->success_msg; ?>');
 					$("#msgstatusbar").removeClass("alert-warning");
 					$("#msgstatusbar").addClass("alert-success");
-       				$("#msgstatustext").html('<?php echo $x->success_msg; ?>');
+       				$("#msgstatustext").html('<?php //echo $x->success_msg; ?>');
 					$("#msgstatusbar").show();
 					$(location).attr('href','keyword_management.php');
 				}
@@ -195,4 +196,4 @@ function loadlist(selobj,url,val,name)
 
 // load application names
 loadlist('#api_name','api_list_lib.php?mode=listApplications','serviceid','name');
-</script>
+</script> -->

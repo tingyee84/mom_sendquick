@@ -8,6 +8,8 @@
 	include('header.php');
 	include('checkAccess.php');
 ?>
+	<link href="css/style1.css" rel="stylesheet">
+
 		<div class="page-header">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
@@ -338,7 +340,7 @@
 								<button class="nav-link tab_button2" id="mim_template_b" data-bs-toggle="tab" data-bs-target="#global_mim_template" type="button" role="tab" aria-controls="global_mim_template" aria-selected="true"><?php echo $x2A->global_mim_msg_template; ?></button>								
 							</li>
 						</ul>
-						<div id="myTabContent" class="tab-content" id="broadcastSMSTabContent" style="overflow:visible;">
+						<div id="myTabContent" class="tab-content tab-content_cls" id="broadcastSMSTabContent">
 							<br>
 							<div class="tab-pane fade show active" id="template" role="tabpanel" aria-labelledby="msg_template_a">
 								<div class="row">
@@ -391,8 +393,8 @@
 							
 						</div>
 						
-						<div class="tab-content" id = "tpl_info_1_div" style = "padding-top:10px;">
-							<textarea name = "tpl_info_1" id = "tpl_info_1" class = "form-control input-sm" style = "width:100%;height:50px;resize: none;border: none;" readonly></textarea>
+						<div class="tab-content tab-content2" id = "tpl_info_1_div">
+							<textarea name = "tpl_info_1" id = "tpl_info_1" class = "form-control input-sm tpl_info_1" readonly></textarea>
 							<input type="hidden" id="tpl_mode" value="sms">
 						</div>
 						
@@ -406,6 +408,9 @@
 		</div>
 		<?php include('footnote.php');?>
 	</div>
-	<?php include('broadcast_sms_js.php');?>
+	
+	<script src="js/autosize.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script type="application/javascript" src="broadcast_sms_js.php"></script>
 </body>
 </html>

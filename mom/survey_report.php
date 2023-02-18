@@ -31,9 +31,9 @@
                             <table>
                             <tr>
                             <td><b>Search from</b>&nbsp;</td>
-                            <td><input id="from" type="text" class="form-control input-sm" size="10" data-provide="datepicker" readonly style="cursor:pointer"></td>
+                            <td><input id="from" type="text" class="form-control input-sm" size="10" data-provide="datepicker" readonly></td>
                             <td><b>To</b>&nbsp;</td>
-                            <td><input id="to" type="text" class="form-control input-sm" size="10" data-provide="datepicker" readonly style="cursor:pointer">
+                            <td><input id="to" type="text" class="form-control input-sm" size="10" data-provide="datepicker" readonly>
                             </td>
                             </tr>
                             </table>
@@ -54,7 +54,7 @@
                             </table>
                             <?php } else if (isset($_GET["pageview"]) && $_GET["pageview"] == "campaign") { ?>
                             <h3><?php echo $x->summary; ?></h3>
-                            <table id="tbl_summary" class="table table-bordered" style="width:500px">
+                            <table id="tbl_summary" class="table table-bordered">
                                 <tbody>
                                     <tr><th width="250px">Campaign Name</th><td id="campaignname"></td></tr>
                                     <tr><th>Total Message Sent Out</th><td id="campaignout"></td></tr>
@@ -81,6 +81,14 @@
             </div>
             <?php include('footnote.php'); ?>
         </div>
-        <?php include ('survey_report_js.php'); ?>
+        <script src="js/bootstrap-datepicker.min.js"></script>
+        <script src="js/pdfmake.min.js"></script>
+        <script src="js/vfs_fonts.js"></script><?php // defer means to let all pages rendered finished then begin load ?>
+        <script src="js/dataTables.buttons.min.js"></script>
+        <script src="js/buttons.html5.min.js"></script>
+
+        <script src="js/moment.min.js" type="text/javascript"></script>
+        <script src="survey_report_js.php?<?php
+        echo !empty($_GET["pageview"]) ? ("pageview=".$_GET["pageview"]) : ""; ?>" defer></script>
     </body>
 </html>

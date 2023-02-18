@@ -151,133 +151,16 @@ END;
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self';font-src 'self' https:;script-src 'self' 'unsafe-eval' 'unsafe-inline';style-src 'self' 'unsafe-inline';object-src 'none';img-src * data:">
         <title><?php echo "Forgot Password"; ?></title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/sb-admin-2.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/tychang.css" rel="stylesheet">
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/metisMenu.min.js"></script>
         <script src="js/sb-admin-2.js"></script>
-        <script nonce="<?php echo session_id(); ?>">
-$().ready(function(){
-    $("#thirdstep").hide();
-    $("#secondstep").hide();
-    $("#username").focus();
-    $("#alertbar").hide();
-    $("input[name='otp[]']").each(function(){
-        $(this).on('focusin',function(e) {
-            $(this).select();
-        });
-        $(this).on('input',function(e) {
-            if ($(this).next("input")[0]) {
-                $(this).next("input").focus();
-            } else {
-                $("#otp_submit").focus();
-            }
-        });
-    });
-    $("#otp_resend").on("click",function() {
-        $(this).attr("disabled",1);
-        $("#otpmode").val("2faresend");
-        $("#alertbar").hide();
-        $("input[name='otp[]']").val("");
-        $.ajax({
-            cache:!1,
-            url: "forgot_password.php",
-            method: "POST",
-            data: $(this).serialize(),
-            dataType: "json",
-            success: function(r) {
-                $("input[name='otp[]']")[0].focus();
-                waitThenActive();
-            }
-        });
-    });
-    $("#alertbar").find("button.close").on("click",function(){
-        $("#alertbar").hide();
-    });
-    $("#otp_verify").on('submit',function(e) {
-        $("#alertbar").hide();
-        $("#otp_submit").attr("disabled",1);
-        $("#otpmode").val("2faverify");
-        let temp = "";
-        $("input[name='otp[]']").each(function() {
-            temp += $(this).val();
-        });
-        $("input[name='otp']").val(temp);
-        $.ajax({
-            cache:!1,
-            url: "forgot_password.php",
-            method: "POST",
-            data: $(this).serialize(),
-            dataType: "json",
-            success: function(r) {
-                if (r.errcode == 201) {
-                    $("#thirdstep").find(".panel-body").html(r.errmsg);
-                    $("#thirdstep").slideDown();
-                    $("#secondstep").slideUp();
-                } else {
-                    alertbar(r.errmsg,"danger");
-                    $("input[name='otp[]']")[0].focus();    
-                    $("#otp_submit").removeAttr("disabled");
-                }
-            }
-        });
-        e.preventDefault();
-    });
-    $("#forgotpwd_form").on('submit',function(e) {
-        $("#alertbar").hide();
-        $("#btn_submit").attr("disabled",1);
-        $("input[name='otp[]']").val("");
-        $.ajax({
-            cache:!1,
-            url: "forgot_password.php",
-            method: "POST",
-            data: $(this).serialize(),
-            dataType: "json",
-            success: function(r) {
-                if (r.errcode == 205) {
-                    $("#censorednumber").html(r.errmsg);
-                    $("#firststep").slideUp();
-                    $("#secondstep").slideDown();
-
-                    $("#otpusername").val($("#username").val());
-                    $("#sessionid").val(r.sessionid);
-                    $("#sessionidtext").text(r.sessionid);
-                    $("input[name='otp[]']")[0].focus();
-                    waitThenActive();
-                } else {
-                    alertbar(r.errmsg,"danger");
-                    $("#otp_submit").removeAttr("disabled");
-                }
-            }
-        });
-        e.preventDefault();
-    });
-});
-function alertbar (msg,type) {
-    $("#alertbar").removeClass("alert-success alert-danger alert-warning alert-info");
-    $("#alertmsg").html(msg);
-    $("#alertbar").addClass("alert-"+type);
-    $("#alertbar").show();
-}
-
-var activetime = 0;
-function waitThenActive () {
-    activetime = 60;
-    $("#otp_resend").prop("disabled",true);
-    var timer = setInterval(() => {
-        if (activetime != 0) {
-            $("#otp_resend").html("Wait " + (activetime--) + "s");
-        } else {
-            $("#otp_resend").html("Resend Code");
-            $("#otp_resend").prop("disabled",false);
-            clearInterval(timer);
-        }
-    }, 1000);
-}
-</script>
+        <script src="forgot_password.js"></script>
     </head>
     <body background="images/background.jpg">
         <div class="container">
@@ -304,9 +187,9 @@ function waitThenActive () {
                         <p>We have sent you a SMS with OTP code to your mobile number for verification.</p>
                                 <p><b><span id='censorednumber'></span></b></span>
                                 <p>One Time Password:</p>
-                                <p><span id="sessionidtext" style="font-size:16px"></span><span style="font-size:16px">-</span>
+                                <p><span id="sessionidtext" class="fs-4"></span><span class="fs-4">-</span>
     <?php for ($i = 0 ; $i < 6 ; $i++) { ?>
-                                <input name="otp[]" type="text" maxlength="1" size="1" style="text-align: center;font-size: large;height: 35px;width: 35px;">
+                                <input name="otp[]" type="text" maxlength="1" size="1" class="otpnumberfield">
     <?php } ?>
                         </div>
 
@@ -317,24 +200,24 @@ function waitThenActive () {
                             <input type="hidden" name="mode" id="otpmode" value="2faverify"/>
                             <button class="btn btn-primary" type="submit" id="otp_submit">Submit</button><br>
                             <p>Didn't receive the OTP?</p>
-                            <button class="btn btn-danger" type="button" id="otp_resend">Wait 60s</button>
+                            <button class="btn btn-danger" type="submit" id="otp_resend">Wait 60s</button>
                         </form>
                     </div>
                     <div id="firststep" class="col-md-2 offset-md-5">
                         <form method="POST" name="forgotpwd_form" id="forgotpwd_form">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Enter your username</label>
-                                <input type="text" class="form-control" id="username" name="username" placeholder="Username" autocomplete="off">
+                                <input type="text" class="form-control mt-1" id="username" name="username" placeholder="Username" autocomplete="off">
                             </div>
                             <input type="hidden" name="mode" value="checkusername"/>
-                            <button id="btn_submit" type="submit" class="btn btn-primary btn-block">Send OTP to Verify</button>
+                            <button id="btn_submit" type="submit" class="btn btn-primary btn-block mt-1">Send OTP to Verify</button>
                         </form>
                     </div>
                 </div>
                 <div class="row text-center"><br>
-                        <div id="alertbar" class="alert alert-dismissible col-md-4 offset-md-4" role="alert">
-                            <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div id="alertbar" class="alert alert-dismissible col-md-4 offset-md-4 mt-2" role="alert">
                             <span id="alertmsg"></span>
+                            <button type="button" class="btn float-end pt-0" aria-label="Close"><i class="fa fa-time" aria-hidden="true"></i></span></button>
                         </div>
                 </div>
             <!-- </div> -->

@@ -1,7 +1,8 @@
-<script src="js/dataTables.buttons.min.js"></script>
-<script src="js/buttons.html5.min.js"></script>
-<script language="javascript" src="js/txvalidator.js"></script>
-<script nonce="<?php echo session_id();?>">
+<?php
+header("Content-type:text/javascript");
+require_once('lib/commonFunc.php');
+$x = GetLanguage("message_template",$lang);
+?>
 var table = $('#tbl_tmpl').DataTable({
 	autoWidth: false,
 	processing: true,
@@ -260,4 +261,4 @@ function checkUnicodeChar(msg) {
     }
     $('#charset').val(character_set);
 }
-</script>
+

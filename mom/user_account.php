@@ -12,14 +12,8 @@ while ($row = pg_fetch_array($rez)) {
 	$defaultval[$row["variable"]] = $row["value"];
 }
 ?>
-		<!-- <div class="page-header">
-			<ol class="breadcrumb">
-				<li><?php echo $xml->user_mgnt?></li>
-				<li class="active"><?php echo $xml->user_acc_mgnt?></li>
-			</ol>
-		</div> -->
-
-		<div class="page-header" style = "padding:10px;">
+		<link href="css/assmi.css" rel="stylesheet">
+		<div class="page-header padding-top-10">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li></li>
@@ -52,7 +46,7 @@ while ($row = pg_fetch_array($rez)) {
 				<div class="panel panel-default">
 					<div class="panel-body">
 						<div class="table-responsive">
-							<table class="table table-striped table-bordered table-condensed" id="account" style="width:100%">
+							<table class="table table-striped table-bordered table-condensed width-100" id="account">
 								<thead>
 									<tr>
 										<th><?php echo $x->username;?></th>
@@ -66,7 +60,7 @@ while ($row = pg_fetch_array($rez)) {
 								<tfoot>
 									<tr>
 										<td colspan="5">
-											<span class="pull-left" style = "padding-right:10px;">
+											<span class="pull-left padding-right-10">
 												<button id="create" type="submit" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#myUser"><?php echo $xml_common->add_new_record;?></button>
 											</span>
 											<div id="export"></div>
@@ -94,7 +88,7 @@ while ($row = pg_fetch_array($rez)) {
 									<div class="modal-body">
 										<div class="row">
 											<div class="col-md-10">
-												<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2" role="alert" style="display:none">
+												<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 d-none" role="alert">
 													<span id="msgstatustext">A</span>
 													<button type="button" class="btn-close" id="msgstatusbar_close" aria-label="Close"></button>																								
 												</div>
@@ -117,7 +111,7 @@ while ($row = pg_fetch_array($rez)) {
 											</div>
 											<div class="col-md-5">
 												<div class="input-group mb-3">
-														<span class="input-group-text" id="pwdresult"><i style="color:red" class="fa fa-remove"></i></span>
+														<span class="input-group-text" id="pwdresult"><i class="fa fa-remove color-red"></i></span>
 													<input id="new_password" type="password" name="new_password" class="form-control input-sm" aria-label="New Password" aria-describedby="pwdresult" maxlength="128">
 													<div id="invalid_new_password" class="invalid-feedback">
 														<?php echo $x->invalid_new_password; ?>
@@ -133,7 +127,7 @@ while ($row = pg_fetch_array($rez)) {
 											</div>
 											<div class="col-md-5">
 												<div class="input-group mb-3">
-														<span class="input-group-text" id="cfmpwdresult"><i style="color:red" class="fa fa-remove"></i></span>
+														<span class="input-group-text" id="cfmpwdresult"><i class="fa fa-remove color-red"></i></span>
 														<input id="confirmpwd" type="password" name="confirmpwd" class="form-control input-sm" aria-label="Confirm New Password" aria-describedby="cfmpwdresult" maxlength="128">
 														<div id="invalid_confirmpwd" class="invalid-feedback">
 															<?php echo $x->invalid_confirmpwd; ?>

@@ -6,7 +6,8 @@
 	include('checkAccess.php');
 	$x = GetLanguage("add_keyword",$lang);
 ?>
-		<div id="page-header" class="page-header" style="padding-top:10px">
+		<link href="css/assmi.css" rel="stylesheet">
+		<div id="page-header" class="page-header padding-top-10">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><a href="keyword_management.php"><?php echo $xml->keyword_mgnt; ?></a></li>
@@ -21,7 +22,7 @@
 					<div class="panel-body">
 						<div class="row">
 								<div class="col-md-10">
-									<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2" role="alert" style="display:none">
+									<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 d-none" role="alert">
 										<span id="msgstatustext">A</span>	
 										<button type="button" class="btn-close" id="msgstatusbar_close" aria-label="Close"></button>											
 									</div>
@@ -43,7 +44,7 @@
 							<div class="row">
 								<div class="col-lg-2">
 									<label for="keyword" class="control-label"><?php echo $x->keyword; ?></label>
-									<span style="color:red">*</span>
+									<span class="color-red">*</span>
 								</div>
 								<div class="col-lg-4">
 									<input class="form-control input-sm" type="text" name="keyword" id="keyword" maxlength="15" required>
@@ -68,7 +69,7 @@
                             <div class="row">
 								<div class="col-lg-2">
 									<label for="url" class="control-label"><?php echo "URL"; ?></label>
-									<span style="color:red">*</span>
+									<span class="color-red">*</span>
 								</div>
 								<div class="col-lg-4">
 									<input class="form-control input-sm" type="text" name="url" id="url" required>

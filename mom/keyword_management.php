@@ -6,6 +6,7 @@
 	include('checkAccess.php');
 	
 ?>
+		<link href="css/assmi.css" rel="stylesheet">
 		<div class="page-header">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
@@ -34,7 +35,7 @@
 							<tfoot>
 								<tr>
 									<td colspan="7">
-										<span style="float:left">
+										<span class="float-left">
 											<!-- <button id="create" type="submit" class="btn btn-primary btn-sm"><?php echo $xml_common->add_new_record;?></button> -->
 											<button id="create" type="submit" class="btn btn-primary btn-sm"><?php echo "Add Portal Keyword"; ?></button>
 											<?php 
@@ -46,7 +47,7 @@
 											?>
 											<!-- <button id="create_api" type="submit" class="btn btn-primary btn-sm"><?php echo "Add Application Keyword";?></button> -->
 										</span>
-										<span style="float:right">
+										<span class="float-right">
 											<!--<button id="truncate" type="submit" class="btn btn-warning btn-sm"><?php echo $x->empty_str;?></button>-->
 											<button id="delete" type="submit" class="btn btn-danger btn-sm"><?php echo $xml_common->delete;?></button>
 										</span>
