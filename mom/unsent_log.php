@@ -16,7 +16,8 @@
 		$export = 0;
 	}
 ?>
-		<div class="page-header" style="padding-top:10px">
+	<link href="css/logmgt.css" rel="stylesheet">
+		<div class="page-header lmdiv">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><?php echo $xml->logs_mgnt;?></li>
@@ -31,7 +32,7 @@
 					<div class="panel-body">
 						<div class="table-responsive">
 							<form id="unsentForm" name="unsentForm">
-								<table style="border:none">
+								<table class="lmtable">
 								<tr>
 									<td><b><?php echo $x->date_from;?></b>&nbsp;</td>
 									<td><input class="form-control input-sm" type="text" id="from" name="from" size="10" required/></td>
@@ -75,6 +76,12 @@
 		</div>
 		<?php include('footnote.php'); ?>
 	</div>
-	<?php include('unsent_log_js.php'); ?>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/dataTables.buttons.min.js"></script>
+	<script src="js/buttons.html5.min.js"></script>
+	<script src="js/datetime-moment.js"></script>
+	<input type="hidden" id="export_flag" name="export_flag" value="<?php echo $export;?>" />
+	<script src="unsent_log_js.php"></script>
 </body>
 </html>

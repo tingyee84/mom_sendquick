@@ -1,9 +1,9 @@
-<script src="js/bootstrap-datepicker.min.js"></script>
-<script src="js/moment.min.js"></script>
-<script src="js/dataTables.buttons.min.js"></script>
-<script src="js/buttons.html5.min.js"></script>
-<script src="js/datetime-moment.js"></script>
-<script nonce="<?php echo session_id();?>">
+<?php header("Content-type: text/javascript");
+require_once('lib/commonFunc.php');
+$xml_common = GetLanguage("common",$lang);
+$x = GetLanguage("global_inbox",$lang);
+?>
+
 $('#from').val(moment().format('DD/MM/YYYY'));
 $('#to').val(moment().format('DD/MM/YYYY'));
 $('#from, #to').datepicker({format: 'dd/mm/yyyy'});
@@ -114,7 +114,7 @@ $('#unsent').on( 'draw.dt', function () {
 
 // assmi
 
-<?php if ($export == "1") { ?>
+if ($('#export_flag').val() == "1") {
 	function toCallDate(filename,ndate) {
 		return  filename+moment(ndate).format("YYYY-MM-DD hhmmss");
 	}
@@ -146,7 +146,7 @@ new $.fn.dataTable.Buttons( table, {
 	]
 } );
 table.buttons().container().appendTo('#export');
-<?php } ?>
+}
 $('#from, #to').on('changeDate', function() {
 	$('#from, #to').datepicker('hide');
 	table.ajax.reload(resend_check);
@@ -175,4 +175,4 @@ $('#truncate').on('click', function(e) {
 		});
 	}
 });
-</script>
+

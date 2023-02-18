@@ -16,7 +16,8 @@
 		$export = 0;
 	}
 ?>
-		<div class="page-header" style="padding-top:10px">
+	<link href="css/logmgt.css" rel="stylesheet">
+		<div class="page-header lmdiv">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><?php echo $xml->logs_mgnt;?></li>
@@ -31,7 +32,7 @@
 					<div class="panel-body">
 						<div class="table-responsive">
 							<form id="sentForm" name="sentForm">
-								<table style="border:none">
+								<table class="lmtable">
 									<tr>
 										<td><b><?php echo $x->date_from;?></b>&nbsp;</td>
 										<td><input class="form-control input-sm" type="text" id="from" name="from" size="10" required/></td>
@@ -81,125 +82,7 @@
 	<script src="js/dataTables.buttons.min.js"></script>
 	<script src="js/buttons.html5.min.js"></script>
 	<script src="js/datetime-moment.js"></script>
-	<script nonce="<?php echo session_id();?>">
-	$('#from, #to').val(moment().format('DD/MM/YYYY'));
-	$('#from, #to').datepicker({format: 'dd/mm/yyyy'});
-	$.fn.dataTable.moment('DD/MM/YYYY HH:mm:ss');
-	var table =  $('#sent').DataTable({
-		autoWidth: false,
-		deferRender: true,
-		processing: true,
-		stateSave: true,
-		pageLength: 100,
-		ajax:{type: 'POST',
-			url: 'sent_log_lib.php',
-			data: function(){return $('#sentForm').serialize();}
-		},
-		columnDefs: [
-					{ 'orderable':false,'targets':6},
-					{ targets : [0,1], width : '140px'}
-				,{targets:4,render:function(data,type,row) {
-					if (data == "Y")
-						return "Sent";
-					else if (data == "R")
-						return "Delievered";
-					else
-						return "Undelivered";
-				}}]
-	});
-
-	// assmi
-
-	$("#all").change(function(){
-		$('input:checkbox.user_checkbox').prop('checked', $(this).prop("checked"));
-	});
-
-	$("#sent").on('change',"input[type='checkbox']",function(e){
-		if($(this).prop("checked") == false){
-			$('#all').prop('checked', false);
-		}
-	});
-
-	$("#sent").on('change',"input[type='checkbox']",function(e){
-		if(table.$('input[type="checkbox"]').filter(':checked').length == table.$('input[type="checkbox"]').length  ){
-			$('#all').prop('checked', true);
-		}
-
-		if($('.user_checkbox:checked').length == $('.user_checkbox').length && $('.user_checkbox').length != 0 ){
-			$('#all').prop('checked', true);
-		}
-	});
-
-	$('#sent').on( 'draw.dt', function () {
-		if($('.user_checkbox:checked').length == $('.user_checkbox').length && $('.user_checkbox').length != 0){
-			$('#all').prop('checked', true);
-		}else{
-			$('#all').prop('checked', false);
-		}
-	});
-	// assmi
-
-	<?php if ($export == "1") { ?>
-	function toCallDate(filename,ndate) {
-		return  filename+moment(ndate).format("YYYY-MM-DD hhmmss");
-	}
-	var date = $.now();
-	new $.fn.dataTable.Buttons( table, {
-		buttons: [
-		{
-			extend:'csv',
-			text: '<i class="fa fa-file-text-o"></i> <?php echo $xml_common->export.' CSV'; ?>',
-			exportOptions: {columns: ':visible'},
-			filename: function() {
-				return toCallDate('<?php echo $_SESSION['userid']; ?>_Sent_',new Date());
-			},
-			init: function(api,node,config){
-				$(node).removeClass("dt-button buttons-csv buttons-html5");
-				$(node).addClass("btn btn-secondary btn-sm");
-			}},
-		{
-			extend:'excel',
-			text: '<i class="fa fa-file-excel-o"></i> <?php echo $xml_common->export.' Excel'; ?>',
-			exportOptions: {columns: ':visible'},
-			filename: function() {
-				return toCallDate('<?php echo $_SESSION['userid']; ?>_Sent_',new Date());
-			},
-			init: function(api,node,config) {
-				$(node).removeClass("dt-button buttons-csv buttons-html5");
-				$(node).addClass("btn btn-success btn-sm");
-			}}
-		]		
-	} );
-	var filename = '<?php echo $_SESSION['userid']; ?>_Sent_'+toCallDate(new Date());
-	table.buttons().container().appendTo('#export');
-	<?php } ?>
-	$('#from, #to').on('changeDate', function() {
-		$('#from, #to').datepicker('hide');
-		table.ajax.reload();
-	});
-	$('#all').change(function () {
-		var cells = table.cells().nodes();
-		$(cells).find(':checkbox').prop('checked',$(this).is(':checked'));
-	});
-	$('#delete').on('click', function(e) {
-		if(confirm('<?php echo $x->alert_4; ?>')) {
-			$('input[type=checkbox]').each(function() {     
-				if (this.checked && this.value!='on') {
-					$.post('sent_log_lib.php',{mode:'delete',idx:this.value},function(data) {
-						table.ajax.reload();
-					});
-				}
-			});
-			$('#all').prop('checked',false);
-		}
-	});
-	$('#truncate').on('click', function(e) {
-		if(confirm('<?php echo $x->alert_5; ?>')) {
-			$.post('sent_log_lib.php',{mode:'emptyLog'},function(data) {
-				table.ajax.reload();
-			});
-		}
-	});
-	</script>
-</body>
+	<input type="hidden" id="export_flag" name="export_flag" value="<?php echo $export;?>" />
+	<script src="sent_log_js.php"></script>
+	</body>
 </html>

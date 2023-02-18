@@ -203,7 +203,7 @@ function delete_api($idx)
 		deleteSpoolDBLogs($get[0]['trackid'],$get[0]['mobile_numb']);
 		
 		//$sqlcmd = "DELETE from appn_outgoing_logs where id='".pg_escape_string($get[0]['id'])."'";
-		$sqlcmd = "UPDATE appn_outgoing_logs SET is_deleted = TRUE, modified_dtm = now() WHERE id='".pg_escape_string($get[0]['id'])."'";
+		$sqlcmd = "UPDATE appn_outgoing_logs SET is_deleted = TRUE, modified_dtm = now() WHERE id='".pg_escape_string($idx)."'";
 
 		$res = doSQLcmd($dbconn, $sqlcmd);
 		

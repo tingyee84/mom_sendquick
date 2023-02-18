@@ -16,7 +16,8 @@
 		$export = 0;
 	}
 ?>
-		<div class="page-header" style="padding-top:10px">
+	<link href="css/logmgt.css" rel="stylesheet">	
+		<div class="page-header lmdiv">
 			<nav aria-label="breadcrumb">
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><?php echo $xml->logs_mgnt;?></li>
@@ -31,7 +32,7 @@
 					<div class="panel-body">
 						<div class="table-responsive">
 							<form id="inboxForm" name="inboxForm">
-								<table style="border:none">
+								<table class="lmtable">
 								<tr>
 									<td><b><?php echo $x->date_from;?></b>&nbsp;</td>
 									<td><input class="form-control input-sm" type="text" id="from" name="from" size="10" required/></td>
@@ -40,7 +41,7 @@
 									<td><input class="form-control input-sm" type="text" id="to" name="to" size="10" required/></td>
 								</tr>
 								</table>
-								<input name="mode" type="hidden" value="listInbox"/>
+								<input name="mode" type="hidden" value="listInbox"/>								
 							</form>
 							<br>
 							<table class="table table-striped table-bordered table-condensed" id="inbox">
@@ -78,126 +79,7 @@
 	<script src="js/dataTables.buttons.min.js"></script>
 	<script src="js/buttons.html5.min.js"></script>
 	<script src="js/datetime-moment.js"></script>
-	<script nonce="<?php echo session_id();?>">
-	$('#from').val(moment().format('DD/MM/YYYY'));
-	$('#to').val(moment().format('DD/MM/YYYY'));
-	$('#from, #to').datepicker({format: 'dd/mm/yyyy'});
-	$.fn.dataTable.moment('DD/MM/YYYY HH:mm:ss');
-	var table =  $('#inbox').DataTable({
-		autoWidth: false,
-		deferRender: true,
-		processing: true,
-		stateSave: true,
-		pageLength: 100,
-		ajax:{type: 'POST',
-			url: 'inbox_lib.php',
-			data: function(){return $('#inboxForm').serialize();}
-		},
-		columns: [
-			{data:0,width:"125px"},
-			{data:1,width:"125px",render:function(data,type,row) {
-				if (type==='display')
-						return data+"<a href='send_sms.php?mobile_numb="+encodeURIComponent(data)+"'><i class='fa fa-comment' title='Reply'></i></a>";
-					else
-						return data;
-			}},
-			{data:2},
-			{data:3,orderable:false,width:"50px"}
-		]
-	});
-	<?php if ($export == "1") { ?>
-
-	function toCallDate(filename,ndate) {
-	return  filename+moment(ndate).format("YYYY-MM-DD hhmmss");
-	}
-	var date = $.now();	
-	new $.fn.dataTable.Buttons( table, {
-	buttons: [
-		{
-			extend:'csv',
-			text: '<i class="fa fa-file-text-o"></i> <?php echo $xml_common->export.' CSV'; ?>',
-			exportOptions: {columns: ':visible'},
-			filename: function() {
-				return toCallDate('<?php echo $_SESSION['userid']; ?>_Inbox_',new Date());
-			},
-			init: function(api,node,config){
-				$(node).removeClass("dt-button buttons-csv buttons-html5");
-				$(node).addClass("btn btn-secondary btn-sm");
-			}},
-		{
-			extend:'excel',
-			text: '<i class="fa fa-file-excel-o"></i> <?php echo $xml_common->export.' Excel'; ?>',
-			exportOptions: {columns: ':visible'},
-			filename: function() {
-				return toCallDate('<?php echo $_SESSION['userid']; ?>_Inbox_',new Date());
-			},
-			init: function(api,node,config) {
-				$(node).removeClass("dt-button buttons-csv buttons-html5");
-				$(node).addClass("btn btn-success btn-sm");
-			}}
-		]
-	} );
-	var filename = '<?php echo $_SESSION['userid']; ?>_Inbox_'+toCallDate(new Date());
-
-	table.buttons().container().appendTo('#export');
-	<?php } ?>
-	$('#from, #to').on('changeDate', function() {
-		$('#from, #to').datepicker('hide');
-		table.ajax.reload();
-	});
-	// assmi
-	// $('#all').change(function () {
-	// 	var cells = table.cells().nodes();
-	// 	$(cells).find(':checkbox').prop('checked',$(this).is(':checked'));
-	// });	
-	$("#all").change(function(){
-		$('input:checkbox.user_checkbox').prop('checked', $(this).prop("checked"));
-	});
-
-	$("#inbox").on('change',"input[type='checkbox']",function(e){
-		if($(this).prop("checked") == false){
-			$('#all').prop('checked', false);
-		}
-	});
-
-	$("#inbox").on('change',"input[type='checkbox']",function(e){
-		if(table.$('input[type="checkbox"]').filter(':checked').length == table.$('input[type="checkbox"]').length  ){
-			$('#all').prop('checked', true);
-		}
-
-		if($('.user_checkbox:checked').length == $('.user_checkbox').length && $('.user_checkbox').length != 0 ){
-			$('#all').prop('checked', true);
-		}
-	});
-
-	$('#inbox').on( 'draw.dt', function () {
-		if($('.user_checkbox:checked').length == $('.user_checkbox').length && $('.user_checkbox').length != 0){
-			$('#all').prop('checked', true);
-		}else{
-			$('#all').prop('checked', false);
-		}
-	});
-
-	// assmi
-	$('#delete').on('click', function(e) {
-		if(confirm('<?php echo $x->alert_4; ?>')) {
-			$('input[type=checkbox]').each(function() {     
-				if (this.checked && this.value!='on') {
-					$.post('inbox_lib.php',{mode:'delete',idx:this.value},function(data) {
-						table.ajax.reload();
-					});
-				}
-			});
-			$('#all').prop('checked',false);
-		}
-	});
-	$('#truncate').on('click', function(e) {
-		if(confirm('<?php echo $x->alert_5; ?>')) {
-			$.post('inbox_lib.php',{mode:'emptyInbox'},function(data) {
-				table.ajax.reload();
-			});
-		}
-	});
-	</script>
+	<input type="hidden" id="export_flag" name="export_flag" value="<?php echo $export;?>" />
+	<script src="inbox_js.php"></script>
 </body>
 </html>
