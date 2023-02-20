@@ -289,8 +289,10 @@
 			<div class="modal-dialog modal-lg" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">							
+						<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+							<i class="fa fa-times"></i>
 						</button>
+						
 						<h5 class="modal-title"><?php echo $x1->title;?></h5>
 					</div>
 					<div class="modal-body">
@@ -321,8 +323,9 @@
 					<div class="modal-header">
 						
 						<h5 class="modal-title"><?php echo $x2A->title; ?></h5>
-						
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+							<i class="fa fa-times"></i>
+						</button>
 						
 					</div>
 					<div class="modal-body">

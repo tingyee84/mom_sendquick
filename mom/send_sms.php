@@ -39,7 +39,10 @@
 						<div id="status" class="alert alert-dismissable alert-sm text-center hidden">
 							
 							<span id="output"></span>
-							<button aria-label="close" id="btn_status_close"></button>
+							<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close" id="btn_status_close">
+								<i class="fa fa-times"></i>
+							</button>
+
 						</div>
 						
 						<form id="sendForm" name="sendForm" enctype="multipart/form-data">
@@ -323,7 +326,8 @@
 						
 						<h5 class="modal-title"><?php echo $x1->title_addressbook; ?></h5>
 						
-						<button type="button" data-bs-dismiss="modal" aria-label="Close">							
+						<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+							<i class="fa fa-times"></i>
 						</button>
 						
 					</div>
@@ -438,9 +442,10 @@
 						
 						<h5 class="modal-title"><?php echo $x2A->title;?></h5>
 						
-						<button type="button" data-bs-dismiss="modal" aria-label="Close">							
+						<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+							<i class="fa fa-times"></i>
 						</button>
-						
+					
 					</div>
 					<div class="modal-body">
 						

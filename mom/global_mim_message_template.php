@@ -57,9 +57,10 @@
 				<div class="modal-content">
 					<div class="modal-header" id="myCreate_header">
 						<h5 class="modal-title" id="header">&nbsp;</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-							<!-- <span aria-hidden="true">&times;</span> -->
+						<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+							<i class="fa fa-times"></i>
 						</button>
+						
 					</div>
 					<form id="template_form" name="template_form">
 					<div class="modal-body">
@@ -67,7 +68,10 @@
 								<div class="col-md-10">
 									<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 msgstatusbar" role="alert">
 										<span id="msgstatustext">A</span>	
-										<button type="button" class="btn-close" id="msgstatusbar_close" aria-label="Close"></button>											
+										<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close" id="msgstatusbar_close">
+											<i class="fa fa-times"></i>
+										</button>
+																				
 									</div>
 								</div>											
 						</div>
@@ -136,9 +140,10 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<h4 class="modal-title"><?php echo $x->add_upload;?></h4>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-							<!-- <span aria-hidden="true">&times;</span> -->
+						<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+							<i class="fa fa-times"></i>
 						</button>
+						
 					</div>
 					<form id="upload_form" name="upload_form">
 					<div class="modal-body">
@@ -169,9 +174,10 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<h4 class="modal-title"><?php echo $x->preview;?></h4>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-							<!-- <span aria-hidden="true">&times;</span> -->
+						<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+							<i class="fa fa-times"></i>
 						</button>
+						
 					</div>
 					<form id="upload_view" name="upload_view">
 					<div class="modal-body table-responsive">
