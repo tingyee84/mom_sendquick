@@ -4,6 +4,214 @@ require_once('lib/commonFunc.php');
 switch ($_POST['mode']) {
 	case "getmenu":
 		$xml = GetLanguage("menu",$lang);
+		error_log("access string: " . trim($_SESSION['access_string']));
+		$access_arr = explode(",",trim($_SESSION['access_string']));
+		$temp = "<nav class=\"nav flex-column px-0\" id=\"side-nav\">";
+		// user management
+		if (count(array_intersect(array(2,26,27,28,29,30,31,32,69),$access_arr)) > 0) {
+			// allow submenu
+			$temp .= "<a href=\"#\" class=\"nav-link nav-first-level\" ><i class=\"fa fa-user fa-fw\"></i> {$xml->user_mgnt}<span class=\"fa arrow\"></span></a>";
+			$temp .= "<div class=\"nav-submenu\">";
+			if (count(array_intersect(array(26,27),$access_arr)))
+				$temp .= "<a class=\"nav-link\" href=\"user_account.php\"> {$xml->user_acc_mgnt}</a>";
+			if (count(array_intersect(array(28,29),$access_arr))) 
+				$temp .= "<a class=\"nav-link\" href=\"user_role.php\"> {$xml->user_role_mgnt}</a>";
+			if (count(array_intersect(array(30,31),$access_arr)))
+				$temp .= "<a class=\"nav-link\" href=\"user_department.php\"> {$xml->department_mgnt}</a>";
+			if (in_array(32,$access_arr))
+				$temp .= "<a class=\"nav-link\" href=\"access_log.php\"> {$xml->access_log}</a>";
+			if (in_array(69,$access_arr))
+				$temp .= "<a class=\"nav-link\" href=\"user_transfer.php\"> {$xml->user_transfer}</a>";
+			$temp .= "</div>";
+		}
+		// address book
+		if (count(array_intersect(array(3,4),$access_arr)) > 0) {
+			// allow submenu
+			$temp .= "<a href=\"#\" class=\"nav-link nav-first-level\" ><i class=\"fa fa-phone fa-fw\"></i> {$xml->address_book}<span class=\"fa arrow\"></span></a>";
+			$temp .= "<div class=\"nav-submenu\">";
+			if (in_array(4,$access_arr)) {
+				$temp .= "<a class=\"nav-link\" href=\"address_book.php\"> {$xml->address_book}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"address_group.php\"> {$xml->address_group}</a>";
+			}
+			if (in_array(3,$access_arr)) {
+				$temp .= "<a class=\"nav-link\" href=\"global_address_book.php\"> {$xml->global_address_book}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"global_address_group.php\"> {$xml->global_address_group}</a>";
+			}
+				
+
+			$temp .= "</div>";
+		}
+		// message template
+		if (count(array_intersect(array(5,63,66,6),$access_arr)) > 0) {
+			// allow submenu
+			$temp .= "<a href=\"#\" class=\"nav-link nav-first-level\" ><i class=\"fa fa-envelope fa-fw\"></i> {$xml->msg_tmpl}<span class=\"fa arrow\"></span></a>";
+			$temp .= "<div class=\"nav-submenu\">";
+			if (in_array(6,$access_arr))
+				$temp .= "<a class=\"nav-link\" href=\"message_template.php\"> {$xml->msg_tmpl}</a>";
+			if (in_array(5,$access_arr))
+				$temp .= "<a class=\"nav-link\" href=\"global_message_template.php\"> {$xml->global_msg_tmpl}</a>";
+			if (in_array(63,$access_arr))
+				$temp .= "<a class=\"nav-link\" href=\"mim_message_template.php\"> {$xml->mim_msg_tmpl}</a>";
+			if (in_array(66,$access_arr))
+				$temp .= "<a class=\"nav-link\" href=\"global_mim_message_template.php\"> {$xml->global_mim_msg_tmpl}</a>";
+
+			$temp .= "</div>";
+		}
+		// campaign menu
+		if (in_array(58,$access_arr)) {
+			$temp .= <<< TEMP
+			<a href="campaign.php" class="nav-link nav-first-level"><i class="fa fa-bullhorn fa-fw"></i> {$xml->campaign}</a>
+TEMP;
+		}
+		
+		// send sms
+		if (in_array(7,$access_arr)) {
+			$temp .= <<< TEMP
+			<a href="#" class="nav-link nav-first-level"><i class="fa fa-commenting-o fa-fw"></i> {$xml->send_msg}<span class="fa arrow"></span></a>
+			<div class="nav-submenu">
+				<a href="send_sms.php" class="nav-link">{$xml->send_sms}</a>
+				<a href="broadcast_sms.php" class="nav-link">{$xml->send_sms_upload}</a>
+				<a href="broadcast_sms_status.php" class="nav-link">{$xml->send_sms_upload_status}</a>
+			</div>
+
+			<a href="#" class="nav-link nav-first-level"><i class="fa fa-clock-o fa-fw"></i> {$xml->schedule_msg}<span class="fa arrow"></span></a>
+			<div class="nav-submenu">
+				<a href="scheduled_sms.php" class="nav-link">{$xml->schedule_msg}</a>
+			</div>
+TEMP;
+		}
+		// common inbox
+		if (in_array(7,$access_arr)) {
+			$temp .= <<< TEMP
+			<a href="common_inbox.php" class="nav-link nav-first-level"><i class="fa fa-inbox fa-fw"></i> {$xml->common_inbox}</a>
+TEMP;
+		}
+		// inbox management
+		if (count(array_intersect(array(11,12,13,14,17,18,19,20),$access_arr)) > 0) {
+			// allow submenu
+			$temp .= "<a href=\"#\" class=\"nav-link nav-first-level\" ><i class=\"fa fa-cubes fa-fw\"></i> {$xml->logs_mgnt}<span class=\"fa arrow\"></span></a>";
+			$temp .= "<div class=\"nav-submenu\">";
+			if (in_array(11,$access_arr))
+				$temp .= "<a class=\"nav-link\" href=\"inbox.php\"> {$xml->inbox}</a>";
+			if (in_array(17,$access_arr))
+				$temp .= "<a class=\"nav-link\" href=\"global_inbox.php\"> {$xml->global_inbox}</a>";
+			if (in_array(12,$access_arr))
+				$temp .= "<a class=\"nav-link\" href=\"sent_log.php\"> {$xml->sent_log}</a>";
+			if (in_array(18,$access_arr))
+				$temp .= "<a class=\"nav-link\" href=\"global_sent_log.php\"> {$xml->global_sent}</a>";
+			if (in_array(13,$access_arr))
+				$temp .= "<a class=\"nav-link\" href=\"unsent_log.php\"> {$xml->unsent_log}</a>";
+			if (in_array(19,$access_arr))
+				$temp .= "<a class=\"nav-link\" href=\"global_unsent_log.php\"> {$xml->global_unsent_log}</a>";
+			if (in_array(14,$access_arr))
+				$temp .= "<a class=\"nav-link\" href=\"queue_log.php\"> {$xml->queue_log}</a>";
+			if (in_array(20 ,$access_arr))
+				$temp .= "<a class=\"nav-link\" href=\"global_queue_log.php\"> {$xml->global_queue_log}</a>";
+
+			$temp .= "</div>";
+		}
+		// unsubscribe
+		if (in_array(47,$access_arr)) {
+			$temp .= <<< TEMP
+			<a href="#" class="nav-link nav-first-level"><i class="fa fa-ban fa-fw"></i> {$xml->unsub_list}<span class="fa arrow"></span></a>
+			<div class="nav-submenu">
+				<a href="unsubscribe_list.php" class="nav-link">{$xml->unsub_mobile}</a>
+				<a href="unsubscribe_keyword.php" class="nav-link">{$xml->unsub_kw}</a>
+			</div>
+TEMP;
+		}
+		// Quota Management
+		if (in_array(48,$access_arr)) {
+			$temp .= <<< TEMP
+			<a href="common_inbox.php" class="nav-link nav-first-level"><i class="fa fa-pie-chart fa-fw"></i> {$xml->quota_mgnt}</a>
+TEMP;
+		}
+		// Keyword Management
+		if (in_array('56',$access_arr)) {
+			$temp .= <<< TEMP
+			<a href="keyword_management.php" class="nav-link nav-first-level"><i class="fa fa-font fa-fw"></i> {$xml->keyword_mgnt}</a>
+TEMP;
+		}
+		// System Configuration
+		if (in_array('45',$access_arr)) {
+			$temp .= <<< TEMP
+			<a href="#" class="nav-link nav-first-level"><i class="fa fa-wrench fa-fw"></i> {$xml->system_config}<span class="fa arrow"></span></a>
+			<div class="nav-submenu">
+			<a href="modemconfig.php" class="nav-link">{$xml->modem_conf}</a>
+			<a href="sysconfig.php" class="nav-link">{$xml->time_config}</a>
+			<a href="ldap_mgnt.php" class="nav-link">{$xml->ldap_mgnt}</a>
+			<a href="weblogo.php" class="nav-link">{$xml->web_logo}</a>
+			</div>
+TEMP;
+		}
+		// api application
+		if (in_array('9',$access_arr)) {
+			$temp .= <<< TEMP
+			<a href="api_list.php" class="nav-link nav-first-level"><i class="fa fa-pie-chart fa-fw"></i> {$xml->application_mgnt}</a>
+TEMP;
+		}
+		// Audit Trail
+		if (in_array('65',$access_arr)) {
+			$temp .= <<< TEMP
+			<a href="audit_trail.php" class="nav-link nav-first-level"><i class="fa fa-font fa-fw"></i> {$xml->audit_trail}</a>
+TEMP;
+		}
+		// report menu
+		if (count(array_intersect(array(59,60,61,62,67,68,71),$access_arr)) > 0) {
+			$temp .= "<a href=\"#\" class=\"nav-link nav-first-level\" ><i class=\"fa fa-clipboard fa-fw\"></i> {$xml->report}<span class=\"fa arrow\"></span></a>";
+			$temp .= "<div class=\"nav-submenu\">";
+			if (in_array('67',$access_arr))
+				$temp .= '<a class="nav-link" href="survey_report.php">'.$xml->survey_report.'</a>';
+			if (in_array('60',$access_arr))
+				$temp .= '<a class="nav-link" href="report_incoming.php">'.$xml->incoming_report.'</a>';
+			if (in_array('68',$access_arr))
+				$temp .= '<a class="nav-link" href="report_api.php">'.$xml->api_global_report.'</a>';
+			else if (in_array('71',$access_arr))
+				$temp .= '<a class="nav-link" href="report_api.php?view=dept">'.$xml->api_report.'</a>';
+			if (in_array('59',$access_arr))
+				$temp .= '<a class="nav-link" href="report.php?view=user">'.$xml->preport.'</a>';
+			if (in_array('61',$access_arr))
+				$temp .= '<a class="nav-link" href="report.php?view=alldepts">'.$xml->alldeptsreport.'</a>';
+			if (in_array('62',$access_arr))
+				$temp .= '<a class="nav-link" href="report.php?view=users">'.$xml->deptreport.'</a>';
+			$temp .= "</div>";
+		}
+		// analytic
+		if (in_array('72',$access_arr)) {
+			$temp .= <<< TEMP
+			<a class="nav-link nav-first-level" href="analytic.php" id="link72"><i class="fa fa-bar-chart fa-fw"></i> Analytic</a>
+TEMP;
+		}
+		// invoice
+		if (in_array('73',$access_arr)) {
+			$temp .= <<< TEMP
+			<a class="nav-link nav-first-level" href="invoice.php"><i class="fa fa-dollar fa-fw"></i> Invoice</a>
+TEMP;
+		}
+		// shortener url
+		if (in_array('70',$access_arr)) {
+			$temp .= <<< TEMP
+			<a href="shortended_url.php" class="nav-link nav-first-level"><i class="fa fa-font fa-fw"></i> {$xml->shortended_url}</a>
+TEMP;
+		}
+		// setting
+		if (isUserAdmin($_SESSION["userid"])){
+			$temp .= <<< TEMP
+				<a class="nav-link nav-first-level" href="setting.php"><i class="fa fa-cog fa-fw"></i> {$xml->setting}</a>
+TEMP;
+			}
+		// incident report
+		if (in_array('64', $access_arr)) {
+			$temp .= <<< TEMP
+			<a class="nav-link nav-first-level" href="https://ice.nera.net/support" target = "_blank"><i class="fa fa-clipboard fa-fw"></i> {$xml->incident_report}</a>
+TEMP;
+		}
+		$temp .= "</nav>";
+		echo $temp;
+	break;
+	case "getmenu_backup":
+		// tychang: old menu. prefer not to use this 2023-02-20
+		$xml = GetLanguage("menu",$lang);
 	
 		error_log("access string: " . trim($_SESSION['access_string']));
 
@@ -40,7 +248,7 @@ switch ($_POST['mode']) {
 			</div>
 
 			<a href="#" class="nav-link nav-first-level"><i class="fa fa-clock-o fa-fw"></i> {$xml->schedule_msg}<span class="fa arrow"></span></a>
-			<div class="nav-submenu dnone" style="display:none">
+			<div class="nav-submenu">
 				<a href="scheduled_sms.php" class="nav-link">{$xml->schedule_msg}</a>
 			</div>
 END;
@@ -56,15 +264,15 @@ END;
 		$display_log_mgnt = (in_array('11',$access_arr) || in_array('12',$access_arr)
 							|| in_array('13',$access_arr) || in_array('14',$access_arr)
 							|| in_array('17',$access_arr) || in_array('18',$access_arr)
-							|| in_array('19',$access_arr) || in_array('20',$access_arr) ? 'block' : 'none');
-		$display_pinb = (in_array('11',$access_arr) ? 'block' : 'none');
-		$display_pslog = (in_array('12',$access_arr) ? 'block' : 'none');
-		$display_pulog = (in_array('13',$access_arr) ? 'block' : 'none');
-		$display_pqlog = (in_array('14',$access_arr) ? 'block' : 'none');
-		$display_ginb = (in_array('17',$access_arr) ? 'block' : 'none');
-		$display_gslog = (in_array('18',$access_arr) ? 'block' : 'none');
-		$display_gulog = (in_array('19',$access_arr) ? 'block' : 'none');
-		$display_gqlog = (in_array('20',$access_arr) ? 'block' : 'none');
+							|| in_array('19',$access_arr) || in_array('20',$access_arr) ? 'block' : 'dnone');
+		$display_pinb = (in_array('11',$access_arr) ? '' : 'dnone');
+		$display_pslog = (in_array('12',$access_arr) ? '' : 'dnone');
+		$display_pulog = (in_array('13',$access_arr) ? '' : 'dnone');
+		$display_pqlog = (in_array('14',$access_arr) ? '' : 'dnone');
+		$display_ginb = (in_array('17',$access_arr) ? '' : 'dnone');
+		$display_gslog = (in_array('18',$access_arr) ? '' : 'dnone');
+		$display_gulog = (in_array('19',$access_arr) ? '' : 'dnone');
+		$display_gqlog = (in_array('20',$access_arr) ? '' : 'dnone');
 		//Unsubscribe List
 		$display_unsub_menu = "";
 		if (in_array('47',$access_arr)) {
@@ -198,16 +406,16 @@ END;
 		<a href="#" class="nav-link nav-first-level" style="display:{$display_add_menu}"><i class="fa fa-phone fa-fw"></i> {$xml->address_book}<span class="fa arrow"></span></a>
 			<div class="nav-submenu">
 				<a class="nav-link {$display_pab}"  href="address_book.php">{$xml->address_book}</a>
-				<a style="display:{}"  class="nav-link"  href="address_group.php"> {$xml->address_group}</a>
-				<a style="display:{$display_gab}" class="nav-link"  href="global_address_book.php"> {$xml->global_address_book}</a>
-				<a style="display:{$display_gag}" class="nav-link"  href="global_address_group.php"> {$xml->global_address_group}</a>
+				<a class="nav-link {$display_pag}"  href="address_group.php"> {$xml->address_group}</a>
+				<a class="nav-link {$display_gab}"  href="global_address_book.php"> {$xml->global_address_book}</a>
+				<a class="nav-link {$display_gag}"  href="global_address_group.php"> {$xml->global_address_group}</a>
 			</div>
 		<a href="#" class="nav-link nav-first-level" style="display:{$display_tpl_menu}"><i class="fa fa-envelope fa-fw"></i> {$xml->msg_tmpl}<span class="fa arrow"></span></a>
 			<div class="nav-submenu">
-				<a style="display:{$display_pmt}" class="nav-link" href="message_template.php">{$xml->msg_tmpl}</a>
-				<a style="display:{$display_gmt}" class="nav-link" href="global_message_template.php">{$xml->global_msg_tmpl}</a>
-				<a style="display:{$display_mmt}" class="nav-link" href="mim_message_template.php">{$xml->mim_msg_tmpl}</a>
-				<a style="display:{$display_gmmt}" class="nav-link" href="global_mim_message_template.php">{$xml->global_mim_msg_tmpl}</a>
+				<a class="nav-link {$display_pmt}" href="message_template.php">{$xml->msg_tmpl}</a>
+				<a class="nav-link {$display_gmt}" href="global_message_template.php">{$xml->global_msg_tmpl}</a>
+				<a class="nav-link {$display_mmt}" href="mim_message_template.php">{$xml->mim_msg_tmpl}</a>
+				<a class="nav-link {$display_gmmt}" href="global_mim_message_template.php">{$xml->global_mim_msg_tmpl}</a>
 			</div>
 		
 		$display_campaign_menu
@@ -217,14 +425,14 @@ END;
 
 		<a href="#" class="nav-link nav-first-level" style="display:{$display_log_mgnt}"><i class="fa fa-cubes fa-fw"></i> {$xml->logs_mgnt}<span class="fa arrow"></span></a>
 		<div class="nav-submenu">
-		<a style="display:{$display_pinb}" href="inbox.php" class="nav-link">{$xml->inbox}</a>
-		<a style="display:{$display_ginb}" href="global_inbox.php" class="nav-link">{$xml->global_inbox}</a>
-		<a style="display:{$display_pslog}" href="sent_log.php" class="nav-link">{$xml->sent_log}</a>
-		<a style="display:{$display_gslog}" href="global_sent_log.php" class="nav-link">{$xml->global_sent}</a>
-		<a style="display:{$display_pulog}" href="unsent_log.php" class="nav-link">{$xml->unsent_log}</a>
-		<a style="display:{$display_gulog}" href="global_unsent_log.php" class="nav-link">{$xml->global_unsent_log}</a>
-		<a style="display:{$display_pqlog}" href="queue_log.php" class="nav-link">{$xml->queue_log}</a>
-		<a style="display:{$display_gqlog}" href="global_queue_log.php" class="nav-link">{$xml->global_queue_log}</a>
+		<a href="inbox.php" class="nav-link  {$display_pinb}">{$xml->inbox}</a>
+		<a href="global_inbox.php" class="nav-link {$display_ginb}">{$xml->global_inbox}</a>
+		<a href="sent_log.php" class="nav-link {$display_pslog}">{$xml->sent_log}</a>
+		<a href="global_sent_log.php" class="nav-link {$display_gslog}">{$xml->global_sent}</a>
+		<a href="unsent_log.php" class="nav-link {$display_pulog}">{$xml->unsent_log}</a>
+		<a href="global_unsent_log.php" class="nav-link {$display_gulog}">{$xml->global_unsent_log}</a>
+		<a href="queue_log.php" class="nav-link {$display_pqlog}">{$xml->queue_log}</a>
+		<a href="global_queue_log.php" class="nav-link {$display_gqlog}">{$xml->global_queue_log}</a>
 		</div>
 
 		$display_unsub_menu
@@ -255,29 +463,3 @@ HTML;
         die("Invalid Command");
 }
 ?>
-<!-- 
-<script>
-// check url 
-var urlParams = new URLSearchParams(window.location.search);
-var pn = window.location.pathname.substr(window.location.pathname.lastIndexOf("/")+1)+(urlParams.has("view")?"?view="+urlParams.get("view"):"");
-
-$("#side-nav a").each(function() {
-	if (pn == $(this).attr("href")) {
-		$(this).addClass("active");
-		if ($(this).parent().hasClass("nav-submenu")) {
-			$(this).parent().show();
-		}
-	}
-});
-$("#side-nav a.nav-first-level").each(function() {
-	$(this).on('click',function(evt) {
-		if ($(this).next().is(":visible") && $(this).next().hasClass("nav-submenu")) {
-			$(this).next().slideUp();
-		} else {
-			$(".nav-submenu:visible").slideUp();
-			$(this).next().slideDown();
-		}
-	});
-});
-
-$("#when_conversation_btn_was_clicked").on("click",function(event){event.preventDefault();Cookies.remove('id');window.location="conversation.php"});</script> -->
