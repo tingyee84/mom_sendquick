@@ -129,7 +129,7 @@ if (!is_string($result) && count($result[0]) > 0) {
 							</p>
 						</div>
 					</div>
-					<form id="otp_form" name="otp_form" method="post" autocomplete="off" style="display:none">
+					<form id="otp_form" name="otp_form" method="post" autocomplete="off">
 						<div class="row">
 							<div class="col-md-8 offset-md-2 text-center">
 								<input type="hidden" name="sessionid" id="sessionid" value=""/>

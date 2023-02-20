@@ -9,37 +9,38 @@ switch ($_POST['mode']) {
 
 		$access_arr = explode(",",trim($_SESSION['access_string']));
 		//User Management
-		$display_user = (in_array('2',$access_arr) ? '' : 'd-none');
-		$display_acct = (in_array('26',$access_arr) || in_array('27',$access_arr) ? '' : 'd-none');
-		$display_rol = (in_array('28',$access_arr) || in_array('29',$access_arr) ? '' : 'd-none');
-		$display_dpt = (in_array('30',$access_arr) || in_array('31',$access_arr) ? '' : 'd-none');
-		$display_log = (in_array('32',$access_arr) ? '' : 'd-none');
-		$display_transfer = (in_array('69',$access_arr) ? '' : 'd-none');
+		$display_user = (in_array('2',$access_arr) ? '' : 'dnone');
+		$display_acct = (in_array('26',$access_arr) || in_array('27',$access_arr) ? '' : 'dnone');
+		$display_rol = (in_array('28',$access_arr) || in_array('29',$access_arr) ? '' : 'dnone');
+		$display_dpt = (in_array('30',$access_arr) || in_array('31',$access_arr) ? '' : 'dnone');
+		$display_log = (in_array('32',$access_arr) ? '' : 'dnone');
+		$display_transfer = (in_array('69',$access_arr) ? '' : 'dnone');
 		//Address Book
-		$display_add_menu = (in_array('3',$access_arr) || in_array('4',$access_arr) ? '' : 'd-none');
-		$display_gab = (in_array('3',$access_arr) ? '' : 'd-none');
-		$display_gag = (in_array('3',$access_arr) ? '' : 'd-none');
-		$display_pab = (in_array('4',$access_arr) ? '' : 'd-none');
-		$display_pag = (in_array('4',$access_arr) ? '' : 'd-none');
+		$display_add_menu = (in_array('3',$access_arr) || in_array('4',$access_arr) ? '' : 'dnone');
+		$display_gab = (in_array('3',$access_arr) ? '' : 'dnone');
+		$display_gag = (in_array('3',$access_arr) ? '' : 'dnone');
+		$display_pab = (in_array('4',$access_arr) ? '' : 'dnone');
+		$display_pag = (in_array('4',$access_arr) ? '' : 'dnone');
 		//Message Template
-		$display_tpl_menu = (in_array('5',$access_arr) || in_array('6',$access_arr) ? '' : 'd-none');
-		$display_gmt = (in_array('5',$access_arr) ? '' : 'd-none');
-		$display_mmt = (in_array('63',$access_arr) ? '' : 'd-none');
-		$display_gmmt = (in_array('66',$access_arr) ? '' : 'd-none');
-		$display_pmt = (in_array('6',$access_arr) ? '' : 'd-none');
+		$display_tpl_menu = (in_array('5',$access_arr) || in_array('6',$access_arr) ? '' : 'dnone');
+		$display_gmt = (in_array('5',$access_arr) ? '' : 'dnone');
+		$display_mmt = (in_array('63',$access_arr) ? '' : 'dnone');
+		$display_gmmt = (in_array('66',$access_arr) ? '' : 'dnone');
+		$display_pmt = (in_array('6',$access_arr) ? '' : 'dnone');
 		//Send SMS
 		$display_sms_menu = "";
 		if (in_array('7',$access_arr)) {
+	
 			$display_sms_menu = <<< END
 			<a href="#" class="nav-link nav-first-level"><i class="fa fa-commenting-o fa-fw"></i> {$xml->send_msg}<span class="fa arrow"></span></a>
-			<div class="nav-submenu" style="display:none">
+			<div class="nav-submenu">
 				<a href="send_sms.php" class="nav-link">{$xml->send_sms}</a>
 				<a href="broadcast_sms.php" class="nav-link">{$xml->send_sms_upload}</a>
 				<a href="broadcast_sms_status.php" class="nav-link">{$xml->send_sms_upload_status}</a>
 			</div>
 
 			<a href="#" class="nav-link nav-first-level"><i class="fa fa-clock-o fa-fw"></i> {$xml->schedule_msg}<span class="fa arrow"></span></a>
-			<div class="nav-submenu" style="display:none">
+			<div class="nav-submenu dnone" style="display:none">
 				<a href="scheduled_sms.php" class="nav-link">{$xml->schedule_msg}</a>
 			</div>
 END;
@@ -162,7 +163,7 @@ END;
 		$display_analytic_menu = "";
 		if (in_array('72',$access_arr)) {
 			$display_analytic_menu = <<< END
-			<a class="nav-link nav-first-level" href="analytic.php"><i class="fa fa-bar-chart fa-fw"></i> Analytic</a>
+			<a class="nav-link nav-first-level" href="analytic.php" id="link72"><i class="fa fa-bar-chart fa-fw"></i> Analytic</a>
 END;
 		}
 		$display_invoice_menu = "";
