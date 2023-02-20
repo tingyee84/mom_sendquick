@@ -86,7 +86,7 @@ $('#myCreate').on('hidden.bs.modal', function () {
 	$(this).find('form').trigger('reset');
 });
 $('#delete').on('click', function(e) {
-	if(confirm('<?php echo $x->alert_2;?>')) {
+	if(confirm('<?php echo $x->keyword_alert2;?>')) {
 		$('input[type=checkbox]').each(function() {     
 			if (this.checked && this.value!='on') {
 				$.post('unsubscribe_lib.php',{mode:'deleteKeyword',id:this.value},function() {

@@ -22,7 +22,7 @@
 					<div class="panel-body">
 						<div class="row">
 								<div class="col-md-10">
-									<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 d-none" role="alert">
+									<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 display-none-assmi" role="alert">
 										<span id="msgstatustext">A</span>	
 										<button type="button" class="btn-close" id="msgstatusbar_close" aria-label="Close"></button>											
 									</div>
@@ -94,7 +94,7 @@
 							</div>
 							<hr>
 							
-							<div id="progress" class="row text-center d-none">
+							<div id="progress" class="row text-center display-none-assmi">
 								<div class="col-md-4 offset-md-4">
 									<div class="progress">
 										<div id="bar" class="progress-bar progress-bar-striped active min-width-05" role="progressbar" aria-valuemin="0" aria-valuemax="100">

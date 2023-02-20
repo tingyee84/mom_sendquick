@@ -19,7 +19,7 @@
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <div class="alert fade show d-none" id="alert-top" role="alert">
+                        <div class="alert fade show display-none-assmi" id="alert-top" role="alert">
                             <span id="alert-msg"></span>
                             <button type="button" class="close" aria-label="Close" id="alert-close">
                                 <span aria-hidden="true">&times;</span>
@@ -69,7 +69,7 @@
                                     <div class="modal-body">
                                         <div class="row">
 												<div class="col-md-10">
-													<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 d-none" role="alert">
+													<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 display-none-assmi" role="alert">
 														<span id="msgstatustext">A</span>	
 														<button type="button" class="btn-close" id="msgstatusbar_close" aria-label="Close"></button>											
 													</div>
