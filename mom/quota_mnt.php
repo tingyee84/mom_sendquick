@@ -80,7 +80,10 @@
 									<div class="col-md-10">
 										<div id="all_quota_msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 msgstatusbar" role="alert">
 											<span id="all_quota_msgstatustext">A</span>	
-											<button type="button" class="btn-close" id="all_quota_msgstatusbar_close" aria-label="Close"></button>											
+											<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close" id="all_quota_msgstatusbar_close">
+												<i class="fa fa-times"></i>
+											</button>
+																					
 										</div>
 									</div>											
 							</div>
@@ -93,9 +96,10 @@
 						<div class="modal-content">
 							<div class="modal-header" id="myQuota_header">
 								<h5 class="modal-title" id="header">&nbsp;</h5>
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-									<!-- <span aria-hidden="true">&times;</span> -->
+								<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+									<i class="fa fa-times"></i>
 								</button>
+								
 							</div>
 							<form id="quota_form" name="quota_form">
 							<div class="modal-body">
@@ -103,7 +107,10 @@
 									<div class="col-md-10">
 										<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 msgstatusbar" role="alert">
 											<span id="msgstatustext">A</span>	
-											<button type="button" class="btn-close" id="msgstatusbar_close" aria-label="Close"></button>											
+											<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close" id="msgstatusbar_close">
+												<i class="fa fa-times"></i>
+											</button>
+																				
 										</div>
 									</div>											
 								</div>
@@ -184,9 +191,10 @@
 						<div class="modal-content">
 							<div class="modal-header" id="myAlert_header">
 								<h5 class="modal-title"><?php echo $x->add_quota_config;?></h5>
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-									<!-- <span aria-hidden="true">&times;</span> -->
+								<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+									<i class="fa fa-times"></i>
 								</button>
+								
 							</div>
 							<form id="alert_form" name="alert_form">
 							<div class="modal-body">
@@ -194,7 +202,10 @@
 									<div class="col-md-10">
 										<div id="alert_msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 msgstatusbar" role="alert">
 											<span id="alert_msgstatustext">A</span>	
-											<button type="button" class="btn-close" id="alert_msgstatusbar_close" aria-label="Close"></button>											
+											<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close" id="alert_msgstatusbar_close">
+												<i class="fa fa-times"></i>
+											</button>
+																					
 										</div>
 									</div>											
 								</div>
