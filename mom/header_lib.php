@@ -81,7 +81,7 @@ TEMP;
 TEMP;
 		}
 		// common inbox
-		if (in_array(7,$access_arr)) {
+		if (in_array(10,$access_arr)) {
 			$temp .= <<< TEMP
 			<a href="common_inbox.php" class="nav-link nav-first-level"><i class="fa fa-inbox fa-fw"></i> {$xml->common_inbox}</a>
 TEMP;
