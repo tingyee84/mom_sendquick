@@ -49,8 +49,9 @@
 								<div class="modal-content">
 									<div class="modal-header" id="myCreate_header">
 										<h5 class="modal-title"><?php echo $x->createtitle1;?></h5>
-										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+										<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
 											<!-- <span aria-hidden="true">&times;</span> -->
+											<i class="fa fa-times"></i>
 										</button>
 									</div>
 									<form id="kwd_form" name="kwd_form">
@@ -90,8 +91,9 @@
 								<div class="modal-content">
 									<div class="modal-header" id="myResponse_header">
 										<h5 class="modal-title"><?php echo $x->respmsgtitle1;?></h5>
-										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+										<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
 											<!-- <span aria-hidden="true">&times;</span> -->
+											<i class="fa fa-times"></i>
 										</button>
 									</div>
 									<form id="response_form" name="response_form">

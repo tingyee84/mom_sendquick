@@ -82,7 +82,9 @@ while ($row = pg_fetch_array($rez)) {
 								<div class="modal-content">
 									<div class="modal-header" id="myUser_header">
 										<h5 class="modal-title" id="header"></h5>
-										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+											<i class="fa fa-times"></i>
+										</button>
 									</div>									
 									<form id="user_form" name="user_form" method="post" autocomplete="off">
 									<div class="modal-body">

@@ -54,8 +54,9 @@
 							<div class="modal-content">
 								<div class="modal-header" id="myCreate_header">
 									<h5 class="modal-title"><?php echo $x->createtitle4;?></h5>
-									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+									<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
 										<!-- <span aria-hidden="true">&times;</span> -->
+										<i class="fa fa-times"></i>
 									</button>
 								</div>
 								<form id="unsub_form" name="unsub_form">
@@ -94,8 +95,9 @@
 							<div class="modal-content">
 								<div class="modal-header">
 									<h5 class="modal-title"><?php echo $x->upload_header;?></h5>
-									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+									<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
 										<!-- <span aria-hidden="true">&times;</span> -->
+										<i class="fa fa-times"></i>
 									</button>
 								</div>
 								<form id="upload_form" name="upload_form">

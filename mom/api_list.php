@@ -61,8 +61,9 @@
                                 <div class="modal-content">
                                     <div class="modal-header" id="myApiAccts_header">
                                         <h4 class="modal-title" id="header">&nbsp;</h4>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                        <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
                                             <!-- <span aria-hidden="true">&times;</span> -->
+                                            <i class="fa fa-times"></i>
                                         </button>
                                     </div>
                                     <form id="api_acct_form" name="api_acct_form">

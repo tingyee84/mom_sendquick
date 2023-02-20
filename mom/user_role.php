@@ -50,7 +50,9 @@
 								<div class="modal-content">
 									<div class="modal-header" id="myRole_header">
 										<h4 class="modal-title" id="header"></h4>
-										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+											<i class="fa fa-times"></i>
+										</button>
 									</div>
 									<form id="role_form" name="role_form" method="post">
 									<div class="modal-body">
