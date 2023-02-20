@@ -28,18 +28,19 @@ $.post("<?php echo $header_lib?>",{mode:"getmenu"},function(e){$("#web_menu").ht
     $("#when_conversation_btn_was_clicked").on("click",function(event){event.preventDefault();Cookies.remove('id');window.location="conversation.php"});
     var urlParams = new URLSearchParams(window.location.search);
     var pn = window.location.pathname.substr(window.location.pathname.lastIndexOf("/")+1)+(urlParams.has("view")?"?view="+urlParams.get("view"):"");
+    if (pn == "keyword_api_add.php" || pn == "keyword_add.php") {
+        pn = "keyword_management.php";
+    }
     <?php // ,-1!==jQuery.inArray(document.location.pathname.match(/[^\/]+$/)[0],["keyword_add.php","keyword_edit.php"])&&$(".key_sub_menu").addClass("active")} ?>
+    $(".nav-submenu").hide();
 	$("#side-nav a").each(function() {
-        if (pn == $(this).attr("href")) {
-            $(this).addClass("active");
-            if ($(this).parent().hasClass("nav-submenu")) {
-                // $(this).parent().show();
+        if ($(this).attr("href") != "#") {
+            if (pn == $(this).attr("href")) {
+                $(this).addClass("active");
+                $("#"+$(this).data("submenu")).show();
+                return true;
             }
-        } else {
-            if ($(this).parent().hasClass("nav-submenu")) {
-                $(this).parent().addClass("dnone");
-            }
-        }
+        } 
     });
     $("#side-nav a.nav-first-level").each(function() {
         

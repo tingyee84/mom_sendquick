@@ -11,31 +11,31 @@ switch ($_POST['mode']) {
 		if (count(array_intersect(array(2,26,27,28,29,30,31,32,69),$access_arr)) > 0) {
 			// allow submenu
 			$temp .= "<a href=\"#\" class=\"nav-link nav-first-level\" ><i class=\"fa fa-user fa-fw\"></i> {$xml->user_mgnt}<span class=\"fa arrow\"></span></a>";
-			$temp .= "<div class=\"nav-submenu\">";
+			$temp .= "<div class=\"nav-submenu\" id=\"submenu1\">";
 			if (count(array_intersect(array(26,27),$access_arr)))
-				$temp .= "<a class=\"nav-link\" href=\"user_account.php\"> {$xml->user_acc_mgnt}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"user_account.php\" data-submenu=\"submenu1\"> {$xml->user_acc_mgnt}</a>";
 			if (count(array_intersect(array(28,29),$access_arr))) 
-				$temp .= "<a class=\"nav-link\" href=\"user_role.php\"> {$xml->user_role_mgnt}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"user_role.php\" data-submenu=\"submenu1\"> {$xml->user_role_mgnt}</a>";
 			if (count(array_intersect(array(30,31),$access_arr)))
-				$temp .= "<a class=\"nav-link\" href=\"user_department.php\"> {$xml->department_mgnt}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"user_department.php\" data-submenu=\"submenu1\"> {$xml->department_mgnt}</a>";
 			if (in_array(32,$access_arr))
-				$temp .= "<a class=\"nav-link\" href=\"access_log.php\"> {$xml->access_log}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"access_log.php\" data-submenu=\"submenu1\"> {$xml->access_log}</a>";
 			if (in_array(69,$access_arr))
-				$temp .= "<a class=\"nav-link\" href=\"user_transfer.php\"> {$xml->user_transfer}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"user_transfer.php\" data-submenu=\"submenu1\"> {$xml->user_transfer}</a>";
 			$temp .= "</div>";
 		}
 		// address book
 		if (count(array_intersect(array(3,4),$access_arr)) > 0) {
 			// allow submenu
 			$temp .= "<a href=\"#\" class=\"nav-link nav-first-level\" ><i class=\"fa fa-phone fa-fw\"></i> {$xml->address_book}<span class=\"fa arrow\"></span></a>";
-			$temp .= "<div class=\"nav-submenu\">";
+			$temp .= "<div class=\"nav-submenu\" id=\"submenu2\">";
 			if (in_array(4,$access_arr)) {
-				$temp .= "<a class=\"nav-link\" href=\"address_book.php\"> {$xml->address_book}</a>";
-				$temp .= "<a class=\"nav-link\" href=\"address_group.php\"> {$xml->address_group}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"address_book.php\" data-submenu=\"submenu2\"> {$xml->address_book}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"address_group.php\" data-submenu=\"submenu2\"> {$xml->address_group}</a>";
 			}
 			if (in_array(3,$access_arr)) {
-				$temp .= "<a class=\"nav-link\" href=\"global_address_book.php\"> {$xml->global_address_book}</a>";
-				$temp .= "<a class=\"nav-link\" href=\"global_address_group.php\"> {$xml->global_address_group}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"global_address_book.php\" data-submenu=\"submenu2\"> {$xml->global_address_book}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"global_address_group.php\" data-submenu=\"submenu2\"> {$xml->global_address_group}</a>";
 			}
 				
 
@@ -45,15 +45,15 @@ switch ($_POST['mode']) {
 		if (count(array_intersect(array(5,63,66,6),$access_arr)) > 0) {
 			// allow submenu
 			$temp .= "<a href=\"#\" class=\"nav-link nav-first-level\" ><i class=\"fa fa-envelope fa-fw\"></i> {$xml->msg_tmpl}<span class=\"fa arrow\"></span></a>";
-			$temp .= "<div class=\"nav-submenu\">";
+			$temp .= "<div class=\"nav-submenu\" id=\"submenu3\">";
 			if (in_array(6,$access_arr))
-				$temp .= "<a class=\"nav-link\" href=\"message_template.php\"> {$xml->msg_tmpl}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"message_template.php\" data-submenu=\"submenu3\"> {$xml->msg_tmpl}</a>";
 			if (in_array(5,$access_arr))
-				$temp .= "<a class=\"nav-link\" href=\"global_message_template.php\"> {$xml->global_msg_tmpl}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"global_message_template.php\" data-submenu=\"submenu3\"> {$xml->global_msg_tmpl}</a>";
 			if (in_array(63,$access_arr))
-				$temp .= "<a class=\"nav-link\" href=\"mim_message_template.php\"> {$xml->mim_msg_tmpl}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"mim_message_template.php\" data-submenu=\"submenu3\"> {$xml->mim_msg_tmpl}</a>";
 			if (in_array(66,$access_arr))
-				$temp .= "<a class=\"nav-link\" href=\"global_mim_message_template.php\"> {$xml->global_mim_msg_tmpl}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"global_mim_message_template.php\" data-submenu=\"submenu3\"> {$xml->global_mim_msg_tmpl}</a>";
 
 			$temp .= "</div>";
 		}
@@ -68,15 +68,15 @@ TEMP;
 		if (in_array(7,$access_arr)) {
 			$temp .= <<< TEMP
 			<a href="#" class="nav-link nav-first-level"><i class="fa fa-commenting-o fa-fw"></i> {$xml->send_msg}<span class="fa arrow"></span></a>
-			<div class="nav-submenu">
-				<a href="send_sms.php" class="nav-link">{$xml->send_sms}</a>
-				<a href="broadcast_sms.php" class="nav-link">{$xml->send_sms_upload}</a>
-				<a href="broadcast_sms_status.php" class="nav-link">{$xml->send_sms_upload_status}</a>
+			<div class="nav-submenu" data-submenu="submenu4">
+				<a href="send_sms.php" class="nav-link" data-submenu=\"submenu4\">{$xml->send_sms}</a>
+				<a href="broadcast_sms.php" class="nav-link" data-submenu=\"submenu4\">{$xml->send_sms_upload}</a>
+				<a href="broadcast_sms_status.php" class="nav-link" data-submenu=\"submenu4\">{$xml->send_sms_upload_status}</a>
 			</div>
 
 			<a href="#" class="nav-link nav-first-level"><i class="fa fa-clock-o fa-fw"></i> {$xml->schedule_msg}<span class="fa arrow"></span></a>
-			<div class="nav-submenu">
-				<a href="scheduled_sms.php" class="nav-link">{$xml->schedule_msg}</a>
+			<div class="nav-submenu" id=\"submenu5\">
+				<a href="scheduled_sms.php" class="nav-link" data-submenu=\"submenu5\">{$xml->schedule_msg}</a>
 			</div>
 TEMP;
 		}
@@ -90,23 +90,23 @@ TEMP;
 		if (count(array_intersect(array(11,12,13,14,17,18,19,20),$access_arr)) > 0) {
 			// allow submenu
 			$temp .= "<a href=\"#\" class=\"nav-link nav-first-level\" ><i class=\"fa fa-cubes fa-fw\"></i> {$xml->logs_mgnt}<span class=\"fa arrow\"></span></a>";
-			$temp .= "<div class=\"nav-submenu\">";
+			$temp .= "<div class=\"nav-submenu\" id=\"submenu6\">";
 			if (in_array(11,$access_arr))
-				$temp .= "<a class=\"nav-link\" href=\"inbox.php\"> {$xml->inbox}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"inbox.php\" data-submenu=\"submenu6\"> {$xml->inbox}</a>";
 			if (in_array(17,$access_arr))
-				$temp .= "<a class=\"nav-link\" href=\"global_inbox.php\"> {$xml->global_inbox}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"global_inbox.php\" data-submenu=\"submenu6\"> {$xml->global_inbox}</a>";
 			if (in_array(12,$access_arr))
-				$temp .= "<a class=\"nav-link\" href=\"sent_log.php\"> {$xml->sent_log}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"sent_log.php\" data-submenu=\"submenu6\"> {$xml->sent_log}</a>";
 			if (in_array(18,$access_arr))
-				$temp .= "<a class=\"nav-link\" href=\"global_sent_log.php\"> {$xml->global_sent}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"global_sent_log.php\" data-submenu=\"submenu6\"> {$xml->global_sent}</a>";
 			if (in_array(13,$access_arr))
-				$temp .= "<a class=\"nav-link\" href=\"unsent_log.php\"> {$xml->unsent_log}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"unsent_log.php\" data-submenu=\"submenu6\"> {$xml->unsent_log}</a>";
 			if (in_array(19,$access_arr))
-				$temp .= "<a class=\"nav-link\" href=\"global_unsent_log.php\"> {$xml->global_unsent_log}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"global_unsent_log.php\" data-submenu=\"submenu6\"> {$xml->global_unsent_log}</a>";
 			if (in_array(14,$access_arr))
-				$temp .= "<a class=\"nav-link\" href=\"queue_log.php\"> {$xml->queue_log}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"queue_log.php\" data-submenu=\"submenu6\"> {$xml->queue_log}</a>";
 			if (in_array(20 ,$access_arr))
-				$temp .= "<a class=\"nav-link\" href=\"global_queue_log.php\"> {$xml->global_queue_log}</a>";
+				$temp .= "<a class=\"nav-link\" href=\"global_queue_log.php\" data-submenu=\"submenu6\"> {$xml->global_queue_log}</a>";
 
 			$temp .= "</div>";
 		}
@@ -114,44 +114,44 @@ TEMP;
 		if (in_array(47,$access_arr)) {
 			$temp .= <<< TEMP
 			<a href="#" class="nav-link nav-first-level"><i class="fa fa-ban fa-fw"></i> {$xml->unsub_list}<span class="fa arrow"></span></a>
-			<div class="nav-submenu">
-				<a href="unsubscribe_list.php" class="nav-link">{$xml->unsub_mobile}</a>
-				<a href="unsubscribe_keyword.php" class="nav-link">{$xml->unsub_kw}</a>
+			<div class="nav-submenu" id=\"submenu7\">
+				<a href="unsubscribe_list.php" class="nav-link" data-submenu=\"submenu7\">{$xml->unsub_mobile}</a>
+				<a href="unsubscribe_keyword.php" class="nav-link"  data-submenu=\"submenu7\">{$xml->unsub_kw}</a>
 			</div>
 TEMP;
 		}
 		// Quota Management
 		if (in_array(48,$access_arr)) {
 			$temp .= <<< TEMP
-			<a href="common_inbox.php" class="nav-link nav-first-level"><i class="fa fa-pie-chart fa-fw"></i> {$xml->quota_mgnt}</a>
+			<a href="quota_mnt.php" class="nav-link nav-first-level"><i class="fa fa-pie-chart fa-fw"></i> {$xml->quota_mgnt}</a>
 TEMP;
 		}
 		// Keyword Management
-		if (in_array('56',$access_arr)) {
+		if (in_array(56,$access_arr)) {
 			$temp .= <<< TEMP
 			<a href="keyword_management.php" class="nav-link nav-first-level"><i class="fa fa-font fa-fw"></i> {$xml->keyword_mgnt}</a>
 TEMP;
 		}
 		// System Configuration
-		if (in_array('45',$access_arr)) {
+		if (in_array(45,$access_arr)) {
 			$temp .= <<< TEMP
 			<a href="#" class="nav-link nav-first-level"><i class="fa fa-wrench fa-fw"></i> {$xml->system_config}<span class="fa arrow"></span></a>
-			<div class="nav-submenu">
-			<a href="modemconfig.php" class="nav-link">{$xml->modem_conf}</a>
-			<a href="sysconfig.php" class="nav-link">{$xml->time_config}</a>
-			<a href="ldap_mgnt.php" class="nav-link">{$xml->ldap_mgnt}</a>
-			<a href="weblogo.php" class="nav-link">{$xml->web_logo}</a>
+			<div class="nav-submenu"  id=\"submenu8\">
+			<a href="modemconfig.php" class="nav-link" data-submenu=\"submenu8\">{$xml->modem_conf}</a>
+			<a href="sysconfig.php" class="nav-link" data-submenu=\"submenu8\">{$xml->time_config}</a>
+			<a href="ldap_mgnt.php" class="nav-link" data-submenu=\"submenu8\">{$xml->ldap_mgnt}</a>
+			<a href="weblogo.php" class="nav-link" data-submenu=\"submenu8\">{$xml->web_logo}</a>
 			</div>
 TEMP;
 		}
 		// api application
-		if (in_array('9',$access_arr)) {
+		if (in_array(9,$access_arr)) {
 			$temp .= <<< TEMP
 			<a href="api_list.php" class="nav-link nav-first-level"><i class="fa fa-pie-chart fa-fw"></i> {$xml->application_mgnt}</a>
 TEMP;
 		}
 		// Audit Trail
-		if (in_array('65',$access_arr)) {
+		if (in_array(65,$access_arr)) {
 			$temp .= <<< TEMP
 			<a href="audit_trail.php" class="nav-link nav-first-level"><i class="fa fa-font fa-fw"></i> {$xml->audit_trail}</a>
 TEMP;
@@ -159,37 +159,37 @@ TEMP;
 		// report menu
 		if (count(array_intersect(array(59,60,61,62,67,68,71),$access_arr)) > 0) {
 			$temp .= "<a href=\"#\" class=\"nav-link nav-first-level\" ><i class=\"fa fa-clipboard fa-fw\"></i> {$xml->report}<span class=\"fa arrow\"></span></a>";
-			$temp .= "<div class=\"nav-submenu\">";
-			if (in_array('67',$access_arr))
-				$temp .= '<a class="nav-link" href="survey_report.php">'.$xml->survey_report.'</a>';
-			if (in_array('60',$access_arr))
-				$temp .= '<a class="nav-link" href="report_incoming.php">'.$xml->incoming_report.'</a>';
-			if (in_array('68',$access_arr))
-				$temp .= '<a class="nav-link" href="report_api.php">'.$xml->api_global_report.'</a>';
-			else if (in_array('71',$access_arr))
-				$temp .= '<a class="nav-link" href="report_api.php?view=dept">'.$xml->api_report.'</a>';
-			if (in_array('59',$access_arr))
-				$temp .= '<a class="nav-link" href="report.php?view=user">'.$xml->preport.'</a>';
-			if (in_array('61',$access_arr))
-				$temp .= '<a class="nav-link" href="report.php?view=alldepts">'.$xml->alldeptsreport.'</a>';
-			if (in_array('62',$access_arr))
-				$temp .= '<a class="nav-link" href="report.php?view=users">'.$xml->deptreport.'</a>';
+			$temp .= "<div class=\"nav-submenu\" id=\"submenu9\">";
+			if (in_array(67,$access_arr))
+				$temp .= '<a class="nav-link" href="survey_report.php" data-submenu="submenu9">'.$xml->survey_report.'</a>';
+			if (in_array(60,$access_arr))
+				$temp .= '<a class="nav-link" href="report_incoming.php" data-submenu="submenu9">'.$xml->incoming_report.'</a>';
+			if (in_array(68,$access_arr))
+				$temp .= '<a class="nav-link" href="report_api.php" data-submenu="submenu9">'.$xml->api_global_report.'</a>';
+			else if (in_array(71,$access_arr))
+				$temp .= '<a class="nav-link" href="report_api.php?view=dept" data-submenu="submenu9">'.$xml->api_report.'</a>';
+			if (in_array(59,$access_arr))
+				$temp .= '<a class="nav-link" href="report.php?view=user" data-submenu="submenu9">'.$xml->preport.'</a>';
+			if (in_array(61,$access_arr))
+				$temp .= '<a class="nav-link" href="report.php?view=alldepts" data-submenu="submenu9">'.$xml->alldeptsreport.'</a>';
+			if (in_array(62,$access_arr))
+				$temp .= '<a class="nav-link" href="report.php?view=users" data-submenu="submenu9">'.$xml->deptreport.'</a>';
 			$temp .= "</div>";
 		}
 		// analytic
-		if (in_array('72',$access_arr)) {
+		if (in_array(72,$access_arr)) {
 			$temp .= <<< TEMP
 			<a class="nav-link nav-first-level" href="analytic.php" id="link72"><i class="fa fa-bar-chart fa-fw"></i> Analytic</a>
 TEMP;
 		}
 		// invoice
-		if (in_array('73',$access_arr)) {
+		if (in_array(73,$access_arr)) {
 			$temp .= <<< TEMP
 			<a class="nav-link nav-first-level" href="invoice.php"><i class="fa fa-dollar fa-fw"></i> Invoice</a>
 TEMP;
 		}
 		// shortener url
-		if (in_array('70',$access_arr)) {
+		if (in_array(70,$access_arr)) {
 			$temp .= <<< TEMP
 			<a href="shortended_url.php" class="nav-link nav-first-level"><i class="fa fa-font fa-fw"></i> {$xml->shortended_url}</a>
 TEMP;
@@ -201,7 +201,7 @@ TEMP;
 TEMP;
 			}
 		// incident report
-		if (in_array('64', $access_arr)) {
+		if (in_array(64, $access_arr)) {
 			$temp .= <<< TEMP
 			<a class="nav-link nav-first-level" href="https://ice.nera.net/support" target = "_blank"><i class="fa fa-clipboard fa-fw"></i> {$xml->incident_report}</a>
 TEMP;
