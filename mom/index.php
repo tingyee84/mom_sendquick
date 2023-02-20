@@ -64,7 +64,7 @@ $xml_all_rights = $xml->all_rights;
 				<p><img src="images/sendQuickMessaging.png" alt="SendQuick Messaging Portal"></p>
 			</div>
 			<div id="error" class="alert alert-danger alert-dismissable text-center dnone">
-				<h4 class="text-danger d-block mt-2"><span id="err_msg"></span><button type="button" role="button" class="btn-close float-end p-0" aria-label="Close"><i class="fa fa-times"></i></button></h4>
+				<h4 class="text-danger d-block mt-2"><span id="err_msg"></span><button type="button" role="button" class="btn float-end p-0" aria-label="Close"><i class="fa fa-times"></i></button></h4>
 				
 			</div>
 			<div class="login-panel"><br>
