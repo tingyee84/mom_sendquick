@@ -451,6 +451,10 @@ table.desctable td{
 .dnone {
     display:none;
 }
+.progress-bar-style {
+    min-width: 15px;
+    width: 100%;
+}
 .row{
     padding-top:10px;
 }
