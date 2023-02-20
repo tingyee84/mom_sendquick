@@ -75,7 +75,7 @@ blockip();
                     <br>
 				<div class="mx-auto" style="width:400px">Either Username, Password or Captcha is invalid. Please login again. - <?php echo $_SESSION["loginattempt"]; ?></div>
                 <br>
-                <center><button class="btn btn-primary" onclick="window.location='index.php'">Back to Login Page</button></center>
+                <center><a class="btn btn-primary" href="index.php">Back to Login Page</a></center>
                 <br>
 			</div>
 		</div>
