@@ -61,8 +61,8 @@
 								<div class="modal-content">
 									<div class="modal-header" id="myGroup_header">
 										<h4 class="modal-title"><?php echo $x->create_new; ?></h4>
-										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-											<!-- <span aria-hidden="true">&times;</span> -->
+										<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+											<i class="fa fa-times"></i>
 										</button>
 									</div>
 									<form id="group_form" name="group_form" method="post">
@@ -71,7 +71,10 @@
 											<div class="col-md-10">
 												<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 msgstatusbar" role="alert">
 													<span id="msgstatustext">A</span>	
-													<button type="button" class="btn-close" id="msgstatusbar_close" aria-label="Close"></button>											
+													<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close" id="msgstatusbar_close">
+														<i class="fa fa-times"></i>
+													</button>
+																							
 												</div>
 											</div>											
 										</div>
@@ -131,7 +134,10 @@
 			  <div class="modal-content">
 				<div class="modal-header">
 					<h4 class="modal-title">AD Download Status</h4>
-				  	<button type="button" class="btn-close" data-bs-dismiss="modal">&times;</button>
+					<button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+						<i class="fa fa-times"></i>
+					</button>
+				  	
 				</div>
 				<div class="modal-body">
 				  <p id="msgbox"></p>
