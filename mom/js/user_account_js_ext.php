@@ -2,6 +2,7 @@
 header("Content-type:text/javascript");
 include_once("../lib/commonFunc.php");
 $x = GetLanguage("user_account",$lang);
+$xml_common = GetLanguage("common",$lang);
 ?>
 
 <!-- <script nonce="<?php //echo session_id();?>"> -->

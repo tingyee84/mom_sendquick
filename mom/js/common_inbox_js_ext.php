@@ -2,6 +2,7 @@
 header("Content-type:text/javascript");
 include_once("../lib/commonFunc.php");
 $x = GetLanguage("common_inbox",$lang);
+$xml_common = GetLanguage("common",$lang);
 ?>
 
 var strdelete = '<?php echo $x->alert_2;?>';
