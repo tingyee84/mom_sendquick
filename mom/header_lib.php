@@ -68,15 +68,15 @@ TEMP;
 		if (in_array(7,$access_arr)) {
 			$temp .= <<< TEMP
 			<a href="#" class="nav-link nav-first-level"><i class="fa fa-commenting-o fa-fw"></i> {$xml->send_msg}<span class="fa arrow"></span></a>
-			<div class="nav-submenu" data-submenu="submenu4">
-				<a href="send_sms.php" class="nav-link" data-submenu=\"submenu4\">{$xml->send_sms}</a>
-				<a href="broadcast_sms.php" class="nav-link" data-submenu=\"submenu4\">{$xml->send_sms_upload}</a>
-				<a href="broadcast_sms_status.php" class="nav-link" data-submenu=\"submenu4\">{$xml->send_sms_upload_status}</a>
+			<div class="nav-submenu" id="submenu4">
+				<a href="send_sms.php" class="nav-link" data-submenu="submenu4">{$xml->send_sms}</a>
+				<a href="broadcast_sms.php" class="nav-link" data-submenu="submenu4">{$xml->send_sms_upload}</a>
+				<a href="broadcast_sms_status.php" class="nav-link" data-submenu="submenu4">{$xml->send_sms_upload_status}</a>
 			</div>
 
 			<a href="#" class="nav-link nav-first-level"><i class="fa fa-clock-o fa-fw"></i> {$xml->schedule_msg}<span class="fa arrow"></span></a>
-			<div class="nav-submenu" id=\"submenu5\">
-				<a href="scheduled_sms.php" class="nav-link" data-submenu=\"submenu5\">{$xml->schedule_msg}</a>
+			<div class="nav-submenu" id="submenu5">
+				<a href="scheduled_sms.php" class="nav-link" data-submenu="submenu5">{$xml->schedule_msg}</a>
 			</div>
 TEMP;
 		}
