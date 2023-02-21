@@ -207,7 +207,7 @@ if (in_array(59,$access) || in_array(61,$access) || in_array(62,$access)) {
                         $dateto = isset($_GET["dateto"]) ? dbSafe($_GET["dateto"]) : date("d/m/Y");
                         $range = sqldaterange($datefrom,$dateto);
 
-                        $topup = $row[5] == 1 ? "<i>".$x->unlimited."</i>" : ($row[4] == 3 ? "".$x->quotadisabled."" : ($row[3].($row[4] == "1" ? "<i>/Weekily</i>" : "<i>/Monthly</i>")));
+                        $topup = $row[5] == 1 ? "<i>".$x->unlimited."</i>" : ($row[4] == 3 ? "".$x->quotadisabled."" : ($row[3].($row[4] == "1" ? "<i>/Weekly</i>" : "<i>/Monthly</i>")));
                         $sqlcmd2 = "SELECT message_status,sum(cast(totalsms as integer)), case when length(mim_tpl_id) > 0 then 'hastpl' else 'notpl' END istplornot FROM outgoing_logs WHERE $range AND sent_by = '{$row[1]}' AND message_status IN ('Y','R','F','U')  AND bot_message_status_id > 0 AND is_deleted = FALSE GROUP BY 1,3";
                         $result2 = pg_query($dbconn,$sqlcmd2);
                     
@@ -271,7 +271,7 @@ if (in_array(59,$access) || in_array(61,$access) || in_array(62,$access)) {
                         $dateto = isset($_GET["dateto"]) ? dbSafe($_GET["dateto"]) : date("d/m/Y");
                         $range = sqldaterange($datefrom,$dateto);
 
-                        $topup = $row[5] == 1 ? "<i>".$x->unlimited."</i>" : ($row[4] == 3 ? "".$x->quotadisabled."" : ($row[3].($row[4] == "1" ? "<i>/Weekily</i>" : "<i>/Monthly</i>")));
+                        $topup = $row[5] == 1 ? "<i>".$x->unlimited."</i>" : ($row[4] == 3 ? "".$x->quotadisabled."" : ($row[3].($row[4] == "1" ? "<i>/Weekly</i>" : "<i>/Monthly</i>")));
                         $sqlcmd2 = "SELECT message_status,sum(cast(totalsms as integer)) FROM outgoing_logs WHERE $range AND sent_by = '{$row[1]}' AND message_status IN ('Y','R','F','U') AND bot_message_status_id = 0 AND is_deleted = FALSE GROUP BY 1";
                         $result2 = pg_query($dbconn,$sqlcmd2);
                     
@@ -458,7 +458,7 @@ if (in_array(59,$access) || in_array(61,$access) || in_array(62,$access)) {
                         $dateto = isset($_GET["dateto"]) ? dbSafe($_GET["dateto"]) : date("d/m/Y");
                         $range = sqldaterange($datefrom,$dateto);
 
-                        $topup = $row[5] == 1 ? "<i>".$x->unlimited."</i>" : ($row[4] == 3 ? "".$x->quotadisabled."" : ($row[3].($row[4] == "1" ? "<i>/Weekily</i>" : "<i>/Monthly</i>")));
+                        $topup = $row[5] == 1 ? "<i>".$x->unlimited."</i>" : ($row[4] == 3 ? "".$x->quotadisabled."" : ($row[3].($row[4] == "1" ? "<i>/Weekly</i>" : "<i>/Monthly</i>")));
                         $sqlcmd2 = "SELECT message_status,sum(cast(totalsms as integer)) FROM outgoing_logs WHERE $range AND sent_by = '{$row[1]}' AND message_status in ('Y','R','F','U') AND bot_message_status_id = 0 AND is_deleted = FALSE GROUP BY 1";
                         $result2 = pg_query($dbconn,$sqlcmd2);
 
@@ -527,7 +527,7 @@ if (in_array(59,$access) || in_array(61,$access) || in_array(62,$access)) {
                         $dateto = isset($_GET["dateto"]) ? dbSafe($_GET["dateto"]) : date("d/m/Y");
                         $range = sqldaterange($datefrom,$dateto);
 
-                        $topup = $row[5] == 1 ? "<i>".$x->unlimited."</i>" : ($row[4] == 3 ? "".$x->quotadisabled."" : ($row[3].($row[4] == "1" ? "<i>/Weekily</i>" : "<i>/Monthly</i>")));
+                        $topup = $row[5] == 1 ? "<i>".$x->unlimited."</i>" : ($row[4] == 3 ? "".$x->quotadisabled."" : ($row[3].($row[4] == "1" ? "<i>/Weekly</i>" : "<i>/Monthly</i>")));
                         $sqlcmd2 = "SELECT message_status,sum(cast(totalsms as integer)), case when length(mim_tpl_id) > 0 then 'hastpl' else 'notpl' END istplornot FROM outgoing_logs WHERE $range AND sent_by = '{$row[1]}' AND message_status in ('Y','R','F','U') AND bot_message_status_id > 0 AND is_deleted = FALSE GROUP BY 1,3";
                         $result2 = pg_query($dbconn,$sqlcmd2);
                         // SELECT message_status,sum(cast(totalsms as integer)), case when length(mim_tpl_id) > 0 then 'hastpl' else 'notpl' END istplornot FROM outgoing_logs WHERE message_status in ('Y','R','F') AND bot_message_status_id > 0 GROUP BY 1,3
