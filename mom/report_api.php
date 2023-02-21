@@ -99,7 +99,7 @@
                                 </div> <!-- mim tab -->
                                 <div class="tab-pane" id="mimpanel" role="tabpanel" aria-labelledby="mimtab">
                                     <form id="" name="">
-                                        <table style="border:none">
+                                        <table>
                                         <tr>
                                             <td><b><?php echo $xml_common->date_from;?></b>&nbsp;</td>
                                             <td><input class="form-control input-sm" type="text" id="from_mim" name="from" size="10" required/></td>
