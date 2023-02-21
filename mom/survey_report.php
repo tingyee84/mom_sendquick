@@ -9,6 +9,7 @@
     $x = GetLanguage("survey",$lang);
 
 ?>		
+    <link href="css/tychang.css" rel="stylesheet">
 			<div class="page-header">
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
@@ -54,7 +55,7 @@
                             </table>
                             <?php } else if (isset($_GET["pageview"]) && $_GET["pageview"] == "campaign") { ?>
                             <h3><?php echo $x->summary; ?></h3>
-                            <table id="tbl_summary" class="table table-bordered">
+                            <table id="tbl_summary" class="table table-bordered tabletight">
                                 <tbody>
                                     <tr><th width="250px">Campaign Name</th><td id="campaignname"></td></tr>
                                     <tr><th>Total Message Sent Out</th><td id="campaignout"></td></tr>
@@ -89,6 +90,7 @@
 
         <script src="js/moment.min.js" type="text/javascript"></script>
         <script src="survey_report_js.php?<?php
-        echo !empty($_GET["pageview"]) ? ("pageview=".$_GET["pageview"]) : ""; ?>" defer></script>
+        echo !empty($_GET["pageview"]) ? ("pageview=".$_GET["pageview"]) : "";
+        echo !empty($_GET["id"]) ? ("&id=".$_GET["id"]) : ""; ?>" defer></script>
     </body>
 </html>
