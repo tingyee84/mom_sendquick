@@ -56,7 +56,7 @@
 									</div>
 									<form id="role_form" name="role_form" method="post">
 									<div class="modal-body">
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-10">
 												<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 display-none-assmi" role="alert">
 													<span id="msgstatustext">A</span>		
@@ -64,7 +64,7 @@
 												</div>
 											</div>											
 										</div>	
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-2 offset-md-1">
 												<label for="user_role" class="control-label"><?php echo $x->userrole; ?></label>
 												<span class="color-red">*</span>
@@ -76,7 +76,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-2 offset-md-1">
 												<label for="department" class="control-label"><?php echo $x->dept;?></label>
 											</div>
@@ -88,7 +88,7 @@
 												</p>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-6 offset-md-3">
 												<table class="table table-condensed" id="access_list">
 												</table>

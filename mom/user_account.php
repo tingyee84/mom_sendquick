@@ -88,7 +88,7 @@ while ($row = pg_fetch_array($rez)) {
 									</div>									
 									<form id="user_form" name="user_form" method="post" autocomplete="off">
 									<div class="modal-body">
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-10">
 												<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 display-none-assmi" role="alert">
 													<span id="msgstatustext">A</span>
@@ -96,7 +96,7 @@ while ($row = pg_fetch_array($rez)) {
 												</div>
 											</div>											
 										</div>	
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-3 offset-md-1">
 												<label for="username" class="control-label"><?php echo $x->user_acc_name; ?></label>
 											</div>
@@ -107,7 +107,7 @@ while ($row = pg_fetch_array($rez)) {
 												</div>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-3 offset-md-1">
 												<label for="new_password" class="control-label"><?php echo $x->user_pwd; ?></label>
 											</div>
@@ -123,7 +123,7 @@ while ($row = pg_fetch_array($rez)) {
 											<div class="col-md-3"><a href="#" title="<?php echo $x->min_8; ?>"><i class="fa fa-2x fa-question-circle"></i></a>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-3 offset-md-1">
 												<label for="confirmpwd" class="control-label"><?php echo $x->user_pwd_cfm; ?></label>
 											</div>
@@ -140,7 +140,7 @@ while ($row = pg_fetch_array($rez)) {
 												<a href="#" data-toggle="tooltip" data-html="true" title="<?php echo $x->must_match; ?>"><i class="fa fa-2x fa-question-circle"></i></a>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-3 offset-md-1">
 												<label for="mobile_numb" class="control-label"><?php echo $x->user_mobile;?></label>
 											</div>
@@ -154,7 +154,7 @@ while ($row = pg_fetch_array($rez)) {
 												<a href="#" data-toggle="tooltip" data-html="true" title="<?php echo $x->numbers_only; ?>"><i class="fa fa-2x fa-question-circle"></i></a>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-3 offset-md-1">
 												<label for="email" class="control-label"><?php echo $x->user_email?></label>
 											</div>
@@ -165,7 +165,7 @@ while ($row = pg_fetch_array($rez)) {
 												</div>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-3 offset-md-1">
 												<label for="access_start" class="control-label"><?php echo $x->access_start?></label>
 											</div>
@@ -176,7 +176,7 @@ while ($row = pg_fetch_array($rez)) {
 												</div>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-3 offset-md-1">
 												<label for="access_end" class="control-label"><?php echo $x->access_end?></label>
 											</div>
@@ -187,7 +187,7 @@ while ($row = pg_fetch_array($rez)) {
 												</div>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-3 offset-md-1">
 												<label for="session_timeout" class="control-label"><?php echo $x->sessiontimeout; ?></label>
 											</div>
@@ -201,7 +201,7 @@ while ($row = pg_fetch_array($rez)) {
 											<?php echo $x->minutes; ?>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-3 offset-md-1">
 												<label for="pwd_threshold" class="control-label"><?php echo $x->lockoutthreshold; ?></label>
 											</div>
@@ -214,7 +214,7 @@ while ($row = pg_fetch_array($rez)) {
 											<div class="col-md-3"><?php echo $x->invalidattempt; ?></div>
 											<div class="col-md-3"><a href="#" data-toggle="tooltip" data-html="true" title="To disable lockout, set '0'"><i class="fa fa-2x fa-question-circle" ></i></a></div>
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-3 offset-md-1">
 												<label for="pwd_expire" class="control-label"><?php echo $x->pwdexpiry; ?></label>
 											</div>
@@ -228,7 +228,7 @@ while ($row = pg_fetch_array($rez)) {
 											</div>
 											<div class="col-md-3"><a href="#" data-toggle="tooltip" data-html="true" title="To disable password expiry, set to '0'"><i class="fa fa-2x fa-question-circle"></i></a></div>
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-3 offset-md-1">
 												<label for="pwd_chgonfirst" class="control-label"><?php echo $x->pwdchglogon; ?></label>
 											</div>
@@ -236,7 +236,7 @@ while ($row = pg_fetch_array($rez)) {
 												<input type="checkbox" value="y" name="pwd_chgonfirst" id="pwd_chgonfirst" />
 											</div>
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-3 offset-md-1">
 												<label for="access_end" class="control-label"><?php echo $x->user_type?></label>
 											</div>
@@ -251,7 +251,7 @@ while ($row = pg_fetch_array($rez)) {
 												</p>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-3 offset-md-1">
 												<label for="department" class="control-label"><?php echo $x->user_dept?></label>
 											</div>
@@ -263,7 +263,7 @@ while ($row = pg_fetch_array($rez)) {
 												</p>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-3 offset-md-1">
 												<label for="user_role" class="control-label"><?php echo $x->user_role;?></label>
 											</div>
@@ -275,7 +275,7 @@ while ($row = pg_fetch_array($rez)) {
 												</p>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-6 offset-md-4">
 												<table class="table table-condensed table-sm" id="access_list">
 												</table>

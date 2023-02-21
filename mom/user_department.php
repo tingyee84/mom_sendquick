@@ -60,7 +60,7 @@
 									</div>
 									<form id="department_form" name="department_form" method="post">
 									<div class="modal-body">
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-10">
 													<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 display-none-assmi" role="alert">
 														<span id="msgstatustext">A</span>	
@@ -68,7 +68,7 @@
 													</div>
 											</div>											
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-4 offset-md-1">
 												<label for="department" class="control-label"><?php echo $x->new_dept; ?></label>
 												<span class="color-red">*</span>
@@ -81,7 +81,7 @@
 											</div>
 										</div>
 										
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-4 offset-md-1">
 												<label for="enable_unlimited" class="control-label"><?php echo $x2->enable_unlimited;?></label>
 											</div>
@@ -89,7 +89,7 @@
 												<p><input type="checkbox" id="enable_unlimited" name="enable_unlimited" value="1"></p>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-4 offset-md-1">
 												<label for="quota_left" class="control-label"><?php echo $x2->quota_left;?></label>
 											</div>
@@ -106,7 +106,7 @@
 												</p>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-4 offset-md-1">
 												<label for="frequency" class="control-label"><?php echo $x2->auto_topup;?></label>
 											</div>
@@ -119,7 +119,7 @@
 											</div>
 										</div>
 										
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-4 offset-md-1">
 												<label for="topup_value" class="control-label"><?php echo $x2->topup_value;?></label>
 											</div>
@@ -131,7 +131,7 @@
 											</div>
 										</div>
 								
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-4 offset-md-1">
 												<label for="mimroute" class="control-label"><?php echo $x->mim_channel; ?></label>
 											</div>
