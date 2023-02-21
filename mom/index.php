@@ -64,7 +64,7 @@ $xml_all_rights = $xml->all_rights;
 				<p><img src="images/sendQuickMessaging.png" alt="SendQuick Messaging Portal"></p>
 			</div>
 			<div id="error" class="alert alert-danger alert-dismissable text-center dnone">
-				<h4 class="text-danger d-block mt-2"><span id="err_msg"></span><button type="button" role="button" class="btn float-end p-0" aria-label="Close"><i class="fa fa-times"></i></button></h4>
+				<h4 class="text-danger d-block mt-2"><span id="err_msg"></span><button type="button" id="btnalertclose" role="button" class="btn float-end p-0" aria-label="Close"><i class="fa fa-times"></i></button></h4>
 				
 			</div>
 			<div class="login-panel"><br>
@@ -81,7 +81,7 @@ if (!is_string($result) && count($result[0]) > 0) {
 ?>
 				
 				<p class="panel-title text-center">LOGIN TO YOUR ACCOUNT</p>
-				<div class="panel-body">
+				<div class="panel-body px-2">
 					<form id="login" name="login" method="post" autocomplete="off">
 						<div class="row">
 							<div class="col-lg-8 offset-lg-2">

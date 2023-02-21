@@ -40,7 +40,7 @@ function verification() {
 
 $(document).ready(function() {
 	$("#btn_login").attr("disabled",1);
-	$(".btn-close").on("click",function(evt) {
+	$("#btnalertclose").on("click",function(evt) {
 		$(".alert-dismissable").slideUp();
 	});
 	$("#username, #password, #userCaptchaInput").on("keyup",function() {
