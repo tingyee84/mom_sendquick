@@ -65,7 +65,7 @@
 									</div>
 									<form id="group_form" name="group_form" method="post">
 									<div class="modal-body">
-										<div class="row">
+										<div class="row  pt-2">
 											<div class="col-md-10">
 												<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 msgstatusbar" role="alert">
 													<span id="msgstatustext">A</span>	
@@ -76,7 +76,7 @@
 												</div>
 											</div>											
 										</div>
-										<div class="row">
+										<div class="row pt-2">
 											<div class="col-md-3 offset-md-1">
 												<label for="contact" class="control-label"><?php echo $x->contact_name;?> <span class = "contact_cls">*</span></label>
 											</div>
@@ -87,7 +87,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row  pt-2">
 											<div class="col-md-3 offset-md-1">
 												<label for="mobile" class="control-label"><?php echo $x->mobile_number;?> <span class = "contact_cls">*</span></label>
 											</div>
@@ -101,7 +101,7 @@
 												<a href="#" data-toggle="tooltip" data-html="true" title="<?php echo $x->numbers_only; ?>"><i class="fa fa-2x fa-question-circle"></i></a>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row  pt-2">
 											<div class="col-md-3 offset-md-1">
 												<label for="email" class="control-label"><?php echo $x->email;?> </label>
 											</div>
@@ -112,7 +112,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row  pt-2">
 											<div class="col-md-3 offset-md-1">
 												<label class="control-label"><?php echo $x->modem_label; ?></label>
 											</div>
@@ -125,7 +125,7 @@
 												<a href="#" data-toggle="tooltip" data-html="true" title="<?php echo $x->modem_desc; ?>"><i class="fa fa-2x fa-question-circle"></i></a>
 											</div>
 										</div>
-										<div class="row">
+										<div class="row  pt-2">
 											<div class="col-md-3 offset-md-1">
 												<label class="control-label"><?php echo $x->list_add_group; ?></label>
 											</div>
@@ -158,7 +158,7 @@
 									</div>
 									<form id="upload_form" name="upload_form">
 										<div class="modal-body">
-											<div class="row">
+											<div class="row  pt-2">
 												<div class="col-md-3 offset-md-1">
 													<label class="control-label"><?php echo $x->upload_file; ?></label>
 												</div>

@@ -60,7 +60,7 @@
 					</div>
 					<form id="template_form" name="template_form">
 					<div class="modal-body">
-						<div class="row">
+						<div class="row pt-2">
 								<div class="col-md-10">
 									<div id="msgstatusbar" class="alert alert-dismissible show fade col-md-20 offset-md-2 msgstatusbar" role="alert">										
 										<span id="msgstatustext">A</span>
@@ -68,12 +68,12 @@
 									</div>
 								</div>											
 						</div>
-						<div class="row">
+						<div class="row pt-2">
 							<div class="col-md-8 offset-md-2">
 								<label class="control-label"><?php echo $x->new_tpl_name_text;?></label>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row pt-2">
 							<div class="col-md-8 offset-md-2">
 								<input type = "text" name = "template_name" id = "template_name" class = "form-control input-sm" maxlength="30" required>
 								<div id="invalid_template_name" class="invalid-feedback">
@@ -82,12 +82,12 @@
 							</div>
 						</div>
 						
-						<div class="row">
+						<div class="row pt-2">
 							<div class="col-md-8 offset-md-2">
 								<label class="control-label"><?php echo $x->new_msg_text;?></label>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row pt-2">
 							<div class="col-md-8 offset-md-2">
 								<select name="charset" id="charset">
 									<option value="text"><?php echo $xml_common->ascii; ?></option>
@@ -122,7 +122,7 @@
 					</div>
 					<form id="upload_form" name="upload_form">
 					<div class="modal-body">
-						<div class="row">
+						<div class="row pt-2">
 							<div class="col-md-3 offset-md-1">
 								<label class="control-label"><?php echo $x->upload_file;?></label>
 							</div>
