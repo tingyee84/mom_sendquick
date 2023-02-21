@@ -283,7 +283,7 @@
             <?php include('footnote.php'); ?>
         </div>
         <script src="js/bootstrap-datepicker.min.js"></script>
-        <script src="js/pdfmake_0.2.7.min.js"></script>
+        <script src="js/pdfmake.min.js"></script>
         <script src="js/vfs_fonts.js"></script><?php // defer means to let all pages rendered finished then begin load ?>
         <script src="js/dataTables.buttons.min.js?"></script>
 
