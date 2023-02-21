@@ -9,6 +9,7 @@
     $x = GetLanguage("report",$lang);
 
 ?>
+    <link href="css/tychang.css" rel="stylesheet" />
 			<div class="page-header">
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
@@ -27,14 +28,14 @@
                             <table>
                             <tr>
                             <td><b>Search from</b>&nbsp;</td>
-                            <td><input id="datefrom" type="text" class="form-control input-sm" size="10" data-provide="datepicker" readonly style="cursor:pointer"></td>
+                            <td><input id="datefrom" type="text" class="form-control input-sm" size="10" data-provide="datepicker" readonly role="button"></td>
                             <td><b>To</b>&nbsp;</td>
-                            <td><input id="dateto" type="text" class="form-control input-sm" size="10" data-provide="datepicker" readonly style="cursor:pointer">
+                            <td><input id="dateto" type="text" class="form-control input-sm" size="10" data-provide="datepicker" readonly role="button">
                             </td>
                             </tr>
                             </table>
                             <h3><?php echo $x->summary; ?></h3>
-                            <table id="tbl_summary" class="table table-bordered" style="width:400px">
+                            <table id="tbl_summary" class="table table-bordered tabletight">
                                 <tbody>
                                 </tbody>
                             </table>
@@ -59,12 +60,12 @@
         </div>
         <script src="js/bootstrap-datepicker.min.js" async></script>
         <script src="js/pdfmake.min.js"></script>
-        <script src="js/vfs_fonts.js.php" defer></script>
-        <script src="js/dataTables.buttons.min.js?"></script>
+        <script src="js/vfs_fonts.js"></script>
+        <script src="js/dataTables.buttons.min.js"></script>
         <script src="js/jszip.min.js"></script>
 
         <script src="js/buttons.html5.min.js"></script>
         <script src="js/moment.min.js" type="text/javascript"></script>
-        <script src="report_incoming_js.php"></script>
+        <script src="report_incoming_js.php" defer></script>
     </body>
 </html>

@@ -7,3 +7,6 @@
 .definedimgheight{
     max-height:100px
 }
+.tabletight {
+    width: auto !important;
+}

@@ -21,6 +21,7 @@
     }
 
 ?>
+    <link href="css/tychang.css" rel="stylesheet" />
 			<div class="page-header">
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
@@ -94,7 +95,7 @@
 <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane show active" id="nav-smspanel" role="tabpanel" aria-labelledby="nav-sms-tab">
         <div class="row"><div class="col-md-6"><h3><span id="txtdeptname"></span><?php echo $x->summary; ?></h3></div></div>
-        <table id="tbl_summary" class="table table-bordered table-sm" style="width:450px"><tbody></tbody></table>
+        <table id="tbl_summary" class="table table-bordered table-sm tabletight"><tbody></tbody></table>
         <h3>List of Users</h3>
         <table id="tbl_users_list" class="table table-bordered table-striped table-sm" width="100%">
             <thead>
@@ -120,7 +121,7 @@
     </div>
     <div class="tab-pane" id="nav-mimpanel" role="tabpanel" aria-labelledby="nav-mim-tab">
         <div class="row"><div class="col-md-6"><h3><span id="txtdeptname_mim"></span><?php echo $x->summary; ?></h3></div></div>
-        <table id="tbl_summary_mim" class="table table-bordered table-sm" style="width:450px"><tbody></tbody></table>
+        <table id="tbl_summary_mim" class="table table-bordered table-sm"><tbody></tbody></table>
         <h3>List of Users</h3>
         <table id="tbl_users_list_mim" class="table table-bordered table-striped table-sm" width="100%">
             <thead>
@@ -159,7 +160,7 @@
 <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane show active" id="nav-smspanel" role="tabpanel" aria-labelledby="nav-sms-tab">
         <div class="row"><div class="col-md-6"><h3><?php echo $x->summary; ?></h3></div></div>
-        <table id="tbl_summary" class="table table-bordered table-sm" style="width:450px"><tbody></tbody></table>
+        <table id="tbl_summary" class="table table-bordered table-sm tabletight" width="450px"><tbody></tbody></table>
         <h3><?php echo $x->listmsg; ?></h3>
         <table id="tbl_msg_list" class="table table-bordered table-striped table-sm" width="100%">
             <thead>
@@ -185,9 +186,9 @@
     </div>
     <div class="tab-pane" id="nav-mimpanel" role="tabpanel" aria-labelledby="nav-mim-tab">
         <div class="row"><div class="col-md-6"><h3><?php echo $x->summary; ?></h3></div></div>
-        <table id="tbl_summary_mim" class="table table-bordered table-sm" style="width:450px"><tbody></tbody></table>
+        <table id="tbl_summary_mim" class="table table-bordered table-sm"width="450px"><tbody></tbody></table>
         <h3><?php echo $x->listmsg; ?></h3>
-        <table id="tbl_msg_list_mim" class="table table-bordered table-striped table-sm" width="100%">
+        <table id="tbl_msg_list_mim" class="table table-bordered table-striped table-sm">
             <thead>
                 <tr>
                     <th><?php echo $x->date_time; ?></th>
@@ -215,51 +216,51 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-3 offset-md-1"><b>Track ID</b></div>
                         <div class="col-md-7" id="trackid"></div>
                     </div>
-                    <hr style="border-top: 1px solid #AAA; width: 83%" align="center">
+                    <hr>
                     <div class="row">
                         <div class="col-md-3 offset-md-1"><b>Mobile Number</b></div>
                         <div class="col-md-7" id="recipient"></div>
                     </div>
-                    <hr style="border-top: 1px solid #AAA; width: 83%" align="center">
+                    <hr>
                     <div class="row">
                         <div class="col-md-3 offset-md-1"><b>Status</b></div>
                         <div class="col-md-7" id="status"></div>
                     </div>
-                    <hr style="border-top: 1px solid #AAA; width: 83%" align="center">
+                    <hr>
                     <div class="row">
                         <div class="col-md-3 offset-md-1"><b>Caller ID</b></div>
                         <div class="col-md-7" id="callerid"></div>
                     </div>
-                    <hr style="border-top: 1px solid #AAA; width: 83%" align="center">
+                    <hr>
                     <div class="row">
                         <div class="col-md-3 offset-md-1"><b>Message</b></div>
                         <div class="col-md-7" id="message"></div>
                     </div>
-                    <hr style="border-top: 1px solid #AAA; width: 83%" align="center">
+                    <hr>
                     <div class="row">
                         <div class="col-md-3 offset-md-1"><b>Date Sent</b></div>
                         <div class="col-md-7" id="sent_dtm"></div>
                     </div>
-                    <hr style="border-top: 1px solid #AAA; width: 83%" align="center">
+                    <hr>
                     <div class="row">
                         <div class="col-md-3 offset-md-1"><b>Date Completed</b></div>
                         <div class="col-md-7" id="completed_dtm"></div>
                     </div>
                     <span id="smsmimswitch">
-                    <hr style="border-top: 1px solid #AAA; width: 83%" align="center">
+                    <hr>
                     <div class="row">
                         <div class="col-md-3 offset-md-1"><b>Total SMS</b></div>
                         <div class="col-md-7" id="totalsms"></div>
                     </div>
                     </span>
-                    <hr style="border-top: 1px solid #AAA; width: 83%" align="center">
+                    <hr>
                     <div class="row">
                         <div class="col-md-3 offset-md-1"><b><?php echo $x->campaignname; ?></b></div>
                         <div class="col-md-7" id="campaign"></div>

@@ -299,7 +299,7 @@ jQuery.fn.dataTable.render.ellipsis = function ( cutoff, wordbreak, escapeHtml )
             shortened = esc( shortened );
         }
  
-        return '<span style="color:#444444" title="'+esc(d)+'">'+shortened+'&#8230;</span>';
+        return '<span title="'+esc(d)+'">'+shortened+'&#8230;</span>';
     };
 };
 
@@ -405,9 +405,9 @@ var table = $('#tbl_msg_list').DataTable({
 				if (type === "display") {
 					let attcy = "";
 					if (row["file_location"] != "") {
-						attcy = " <a title='View Image' target='_blank' href='"+row["file_location"]+"' class='btn btn-secondary btn-xs' style='font-size:12px'><i class='fa fa-paperclip'></i></a>";
+						attcy = " <a title='View Image' target='_blank' href='"+row["file_location"]+"' class='btn btn-secondary btn-xs' ><i class='fa fa-paperclip'></i></a>";
 					}
-					return "<button class='btn btn-secondary btn-xs btn-resend' style='font-size:12px' data='"+row["msgid"]+"'>Resend</button> <button class='btn btn-secondary btn-xs' style='font-size:12px' data-bs-toggle='modal' data-id='"+row["trackid"]+"' data-bs-target='#msgdetailmodal' title='Detail' style='cursor:pointer'><i class='fa fa-info-circle'></i></button>"+attcy;
+					return "<button class='btn btn-secondary btn-xs btn-resend'  data='"+row["msgid"]+"'>Resend</button> <button type='button' class='btn btn-secondary btn-xs' data-bs-toggle='modal' data-id='"+row["trackid"]+"' data-bs-target='#msgdetailmodal' title='Detail'><i class='fa fa-info-circle'></i></button>"+attcy;
 				} else
 					return data;
 			}

@@ -5,10 +5,8 @@ $page_mode = '800'; // Ty's Comment: can't really understand what does it for
 include('checkAccess.php');
 ?>
 $("#msgstatusbar").hide();
-if (typeof txvalidator === 'function') {
-    console.log("Okay");
-} else {
-    console.log("Not okay");
+if (typeof txvalidator !== 'function') {
+    alert("Missing Validator Function. Please check with Administrator.");
 }
 $("button.btn-close").on("click",function(event) {
     $(this).parent().hide();

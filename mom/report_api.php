@@ -42,7 +42,7 @@
                             <div class="tab-content clearfix">
 								<div class="tab-pane active" id="smspanel" role="tabpanel" aria-labelledby="smstab">
                                     <form id="deptlistForm" name="deptlistForm">
-                                        <table style="border:none">
+                                        <table>
                                         <tr>
                                             <td><b><?php echo $xml_common->date_from;?></b>&nbsp;</td>
                                             <td><input class="form-control input-sm" type="text" id="from" name="from" size="10" required/></td>
@@ -70,7 +70,7 @@
                                     </table>
 <?php } else if ($chk_mode == 71) { // if mom is viewing, auto hide this part first, else don't hide ?>
                                         <h3>Summary</h3>
-                                        <table id="tbl_summary" class="table table-bordered table-sm" style="width:450px">
+                                        <table id="tbl_summary" class="table table-bordered table-sm">
                                             <tbody>
                                             </tbody>
                                         </table>

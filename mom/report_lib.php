@@ -380,6 +380,10 @@ if (in_array(59,$access) || in_array(61,$access) || in_array(62,$access)) {
         case "d_summary":
             // if mom, then check if it is has 61
             // if bu check $_dept is same $dept
+            if ($dept == "0") {
+                echo "<td colspan='2'>admin. unable to generate.</td>";
+                break;
+            }
             $sqlcmd = "SELECT department_id,department_list.department, quota_left, count(userid) FROM department_list,user_list WHERE user_list.department = department_list.department_id";
             if (in_array(61,$access) && isset($_GET["dept"])) {
                 $sqlcmd .= " AND user_list.department = '".dbSafe($dept)."' GROUP BY 1";
