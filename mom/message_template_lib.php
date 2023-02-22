@@ -170,6 +170,45 @@ function addMessageTemplate($userid, $user_id, $text, $department, $template_nam
 	echo json_encode($data);
 }
 
+function addMessageTemplate_UPLOAD($userid, $user_id, $text, $department, $template_name)
+{
+	global $dbconn, $msgstr, $x;
+	$data = array();
+		
+	$addMessageTemplate_msg1 = (string)$msgstr->addMessageTemplate_msg1;
+	$addMessageTemplate_msg2 = (string)$msgstr->addMessageTemplate_msg2;
+	
+	if(!txvalidator($template_name,TX_STRING,"SPACE")){
+		$data['flag'] = 0;
+		$data['status'] = (string) $x->invalid_template_name;
+		$data['field'] = "template_name";
+		echo json_encode($data);
+		die;
+	}else if(!validateSize($x->new_tpl_name_text,$template_name,"NAME")){
+		$data['flag'] = 0;
+		$data['status'] = (string)getValidateSizeMsg();
+		$data['field'] = "template_name";
+		echo json_encode($data);
+		die;
+	}
+
+	$template_id = getSequenceID($dbconn,'message_template_template_id_seq');
+	$sqlcmd = "insert into message_template (template_id, template_text, department, user_id, created_by, template_name ) 
+				values ('".dbSafe($template_id)."','".dbSafe(trim($text))."','".dbSafe($department)."','".dbSafe($user_id)."','".dbSafe($userid)."', '".dbSafe($template_name)."')";
+	$row = doSQLcmd($dbconn, $sqlcmd);
+	
+	if(empty($row))
+	{
+		$data['flag'] = 2;
+		$data['status'] = $addMessageTemplate_msg2;
+	}else{
+		$data['flag'] = 1;	
+	}	
+	
+	// echo json_encode($data);
+	return json_encode($data);
+}
+
 function editMessageTemplate($id)
 {
 	global $dbconn, $msgstr, $xml_common;
@@ -278,6 +317,7 @@ function emptyMessageTemplate($userid)
 function listGlobalTemplate($userid)
 {
 	global $dbconn;
+	$UserType = getUserType( $userid );
 
 	if(isUserAdmin($userid))
 	{
@@ -372,8 +412,52 @@ function addGlobalTemplate($userid, $user_id, $text, $department, $template_name
 	}else{
 		$data['flag'] = 1;
 	}
+
+	$dataEncoded = json_encode($data);
+	error_log("dataEncoded: " . $dataEncoded);
 	
-	echo json_encode($data);
+	echo $dataEncoded;
+}
+
+function addGlobalTemplate_UPLOAD($userid, $user_id, $text, $department, $template_name)
+{
+	global $dbconn, $msgstr, $x;
+	$data = array();
+	$addMessageTemplate_msg1 = (string)$msgstr->addMessageTemplate_msg1;
+	$addMessageTemplate_msg2 = (string)$msgstr->addMessageTemplate_msg2;
+
+	if(!txvalidator($template_name,TX_STRING,"SPACE")){
+		$data['flag'] = 0;
+		$data['status'] = (string) $x->invalid_template_name;
+		$data['field'] = "template_name";
+		echo json_encode($data);
+		die;
+	}else if(!validateSize($x->new_tpl_name_text,$template_name,"NAME")){
+		$data['flag'] = 0;
+		$data['status'] = (string)getValidateSizeMsg();
+		$data['field'] = "template_name";
+		echo json_encode($data);
+		die;
+	}
+
+	$template_id = getSequenceID($dbconn,'message_template_template_id_seq');
+	$sqlcmd = "insert into message_template (template_id, access_type, template_text, department, user_id, created_by, template_name) 
+				values ('" .dbSafe($template_id). "','1','".dbSafe(trim($text))."','".dbSafe($department)."','".dbSafe($user_id)."','".dbSafe($userid)."', '".dbSafe($template_name)."')";
+	$row = doSQLcmd($dbconn, $sqlcmd);
+	
+	if(empty($row))
+	{
+		$data['flag'] = 2;
+		$data['status'] = $addMessageTemplate_msg2; //unsuccessful
+	}else{
+		$data['flag'] = 1;
+	}
+
+	$dataEncoded = json_encode($data);
+	error_log("dataEncoded2: " . $dataEncoded);
+	return $dataEncoded;
+	
+	// echo $dataEncoded;
 }
 
 function editGlobalTemplate($id)
@@ -517,6 +601,13 @@ function insertTemplate($userid, $uploadfile, $department, $access_type, $file, 
 		{
 			$i = $i +1;
 			$curr_arr = fgetcsv($file, 1024);
+
+			// test assmi
+			if (count($curr_arr) == 1 && $curr_arr[0] === null){
+				error_log("XXXX curr arr is empty. Continue to next record");
+				continue;
+			}
+			// test assmi
 			
 			$template_name = $curr_arr[0];
 			$template = $curr_arr[1];
@@ -641,14 +732,17 @@ function addTemplate($userid, $department, $id_of_user, $access_type)
 			$template_name = $row[$a]['template_name'];
 			
 			if($access_type == '0'){
-				addMessageTemplate($userid, $id_of_user, $template_text, $department, $template_name );
+				$dataFlag = addMessageTemplate_UPLOAD($userid, $id_of_user, $template_text, $department, $template_name );
 			}else{
-				addGlobalTemplate($userid, $id_of_user, $template_text, $department, $template_name);
+				// $dataFlag = addGlobalTemplate($userid, $id_of_user, $template_text, $department, $template_name);
+				$dataFlag = addGlobalTemplate_UPLOAD($userid, $id_of_user, $template_text, $department, $template_name);
 			}
 		
 			$deletesql = "delete from template_list where template_id='".dbSafe($id)."'";
 			$delete = doSQLcmd($dbconn, $deletesql);
 		}
+
+		echo $dataFlag;
 	}
 }
 

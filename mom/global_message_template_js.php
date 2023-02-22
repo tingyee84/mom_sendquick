@@ -2,6 +2,7 @@
 header("Content-type:text/javascript");
 require_once('lib/commonFunc.php');
 $x = GetLanguage("global_message_template",$lang);
+$xml_common = GetLanguage("common",$lang);
 ?>
 var table = $('#tbl_tmpl').DataTable({
 	autoWidth: false,
@@ -168,12 +169,17 @@ $('#preCancel').on('click', function(e){
 $('#prevUpload').on('submit', function(e)
 {
 	$.post('message_template_lib.php',$('#upload_view').serialize(),function(data) {
+		var dataFlag = data.flag; 
+		console.log("dataFlag: " + dataFlag);
 		if(data.flag != 1) {
+			console.log("1");
 			alert(data.status);
 		} else {
+			console.log("2");
 			table.ajax.reload();
 			$('#prevUpload').modal('hide');
 		}
+		console.log("3");
 	},"json");
 	e.preventDefault();
 });
