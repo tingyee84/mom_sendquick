@@ -1073,7 +1073,7 @@ class BaseBot
 								$sendAsTemplate = "0";
 								$priority = '5';
 
-								error_log("Datas: $datas, Token: ".$bot['campaignAccessToken']);
+								// error_log("Datas: $datas, Token: ".$bot['campaignAccessToken']);
 							
 								$WDC_result = $this->SendMsgViaWhatsappDC( $temp_conn2, $temp_conn, $datas, $bot['campaignAccessToken'], $bot_id, $autoreply_msg, $priority, $department, $label, $campagin_id, $sendAsTemplate, $cby, $bot_datas, $survey_outbox_id );
 								
