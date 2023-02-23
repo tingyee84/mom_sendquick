@@ -72,22 +72,6 @@ function produceSummary_mim() {
 	});
 }
 
-pdfMake.fonts = {
-	OpenSans : {
-		normal: 'OpenSans-Regular.ttf',
-		bold: 'OpenSans-Bold.ttf',
-		italics: 'OpenSans-Italic.ttf',
-		bolditalics: 'OpenSans-BoldItalic.ttf'
-    },
-    
-	Simsum : {
-		normal: 'SIMSUN-regular.ttf',
-		bold: 'SIMSUN-regular.ttf',
-		italics: 'SIMSUN-regular.ttf',
-		bolditalics: 'SIMSUN-regular.ttf'
-	}
-}
-
 var table = $('#tbl_msg_list').DataTable({
 	autoWidth: false,
 	deferRender: false,
@@ -154,7 +138,6 @@ new $.fn.dataTable.Buttons( table, {
 			extend:'pdf', text: '<i class="fa fa-file-pdf-o"></i> <?php echo $xml_common->export.' PDF'; ?>',
 			exportOptions: {orthogonal: "exportpdf" },
 			customize: function(doc) {
-				doc.defaultStyle.font = 'Simsum';
 			},
 			filename: function () {return returnFilename();},
 			init: function(api,node,config) {
@@ -232,7 +215,6 @@ new $.fn.dataTable.Buttons( table_mim, {
 			extend:'pdf', text: '<i class="fa fa-file-pdf-o"></i> <?php echo $xml_common->export.' PDF'; ?>',
 			exportOptions: {orthogonal: "exportpdf" },
 			customize: function(doc) {
-				doc.defaultStyle.font = 'Simsum';
 			},
 			filename: function () {return returnFilename_mim();},
 			init: function(api,node,config) {

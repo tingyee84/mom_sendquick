@@ -96,14 +96,7 @@ $('#from, #to').on("changeDate",function(ev){
 
 <?php } else { ?>
 
-pdfMake.fonts = {
-    OpenSans : {
-        normal: 'OpenSans-Regular.ttf',
-        bold: 'OpenSans-Bold.ttf',
-        italics: 'OpenSans-Italic.ttf',
-        bolditalics: 'OpenSans-BoldItalic.ttf'
-    }
-}
+
 var table = $('#tbl_campaign_list').DataTable({
     deferRender: false,
     stateSave: false,
@@ -141,7 +134,6 @@ new $.fn.dataTable.Buttons( table, {
 		},filename:function() {return returnFilename();},charset: 'utf-8'},
 		{extend:'pdf', text: '<i class="fa fa-file-pdf-o"></i> <?php echo $xml_common->export; ?> PDF', exportOptions: {orthogonal: "exportpdf" }, 
 		customize: function(doc) {
-			doc.defaultStyle.font = 'OpenSans';
 		},  init: function(api,node,config) {
 			$(node).removeClass("dt-button buttons-csv buttons-html5");
 			$(node).addClass("btn btn-danger btn-sm");
