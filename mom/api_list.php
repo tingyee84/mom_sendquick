@@ -46,7 +46,7 @@
                                         <td colspan="10">
                                             <span class="pull-left">
                                                 <button type="submit" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#myApiAccts"><?php echo $xml_common->add_new_record;?></button>&emsp;
-                                                <button class="btn btn-primary btn-sm" onclick="window.location.href='keyword_management.php'"><?php echo $x->add_keyword;?></button>
+                                                <a class="btn btn-primary btn-sm" href="keyword_management.php"><?php echo $x->add_keyword;?></a>
                                             </span>
                                             <!-- <div id="export"></div> -->
                                             <span class="pull-right">
