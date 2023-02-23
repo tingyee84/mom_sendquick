@@ -46,6 +46,7 @@
                                 <tr><th><?php echo $x->campaignname; ?></th><th><?php echo $x->totalsentout; ?></th><th><?php echo $x->totalreceived; ?></th><th><?php echo $x->createdby; ?></th></tr>
                                 </thead>
                                 <tbody>
+                                    <tr><td colspan="4">Loading Module and Data. Please wait.</td></tr>
                                 </tbody>
                                 <tfoot>
                                     <tr>
