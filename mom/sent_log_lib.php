@@ -194,7 +194,7 @@ function delete($idx)
 function delete_api($idx)
 {
 	global $dbconn, $userid;
-	
+	error_log("DeleteAPI: $idx");
 	$getsql = "SELECT trackid,mobile_numb from appn_outgoing_logs where id='".pg_escape_string($idx)."'";
 	$get = getSQLresult($dbconn, $getsql);
 	
