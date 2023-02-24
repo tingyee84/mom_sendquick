@@ -284,7 +284,7 @@ function check2FA($otp,$sessionid,$username) {
 	$data = array();
 	// connect db to obtain mobile number first
 	$res = pg_query($dbconn,"SELECT access_string,user_role,department,language,mobile_numb,timeout,chg_onlogon,pwd_expire,case when pwd_lastchg is not NULL then DATE_PART('day', now()::timestamp - pwd_lastchg::timestamp) else -1 END AS daypass FROM user_list WHERE userid='".pg_escape_string($username)."';");
-	if (!res) {
+	if (!$res) {
 		$data['status'] = "Unexpected error occured (DB)";
 	} else {
 		if ($row = pg_fetch_row($res)) {
