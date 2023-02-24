@@ -246,7 +246,7 @@ function addUserAccount($useridimplode, $new_userid, $password, $confirmpwd, $mo
 				{
 					$user_list_id = getSequenceID($dbconn,'user_list_id_seq');
 					$encrypted_password = getEncryptedPassword(trim($password));
-					error_log("xxxxxxxxxx encrypted_password: " . $encrypted_password);
+					//error_log("xxxxxxxxxx encrypted_password: " . $encrypted_password);
 
 					$sqlcmd = "insert into user_list 
 								(id, userid, password, access_string, mobile_numb, user_role, department, created_by, language, email, user_type, pwd_threshold, pwd_expire, timeout, bu_userid, chg_onlogon) 

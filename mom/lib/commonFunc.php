@@ -158,7 +158,7 @@ function doSQLcmd($dbconn, $sqlcmd)
 function getEncryptedPassword($password)
 {
 	$key = $_SESSION['cryptkey'];
-	error_log("xxxxxxxxxx key: " . $key);
+	//error_log("xxxxxxxxxx key: " . $key);
 
 	$l = strlen($key);
 	if ($l < 16)

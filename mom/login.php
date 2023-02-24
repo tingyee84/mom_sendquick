@@ -239,7 +239,7 @@ function resend($sessionid,$username) {
 	global $dbconn, $weburl;
 	if (otpdeduct($username)) {
 		$res = pg_query($dbconn,"SELECT mobile_numb FROM user_list WHERE userid='".pg_escape_string($username)."';");
-		if (!res) {
+		if (!$res) {
 			$data['status'] = "Unexpected error occured (DB)";
 		} else {
 			if ($row = pg_fetch_array($res,NULL,PGSQL_ASSOC)) {
