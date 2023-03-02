@@ -70,7 +70,7 @@
                                     </table>
 <?php } else if ($chk_mode == 71) { // if mom is viewing, auto hide this part first, else don't hide ?>
                                         <h3>Summary</h3>
-                                        <table id="tbl_summary" class="table table-bordered table-sm">
+                                        <table id="tbl_summary" class="table table-bordered table-sm tabletight">
                                             <tbody>
                                             </tbody>
                                         </table>
@@ -111,7 +111,7 @@
                                         <input name="mode" type="hidden" value="listapi_mim"/>
                                     </form><br>
 <?php if ($chk_mode == 68) { ?>
-                                    <table class="table table-bordered table-striped table-sm" id="tbl_dept_list">
+                                    <table class="table table-bordered table-striped table-sm tabletight" id="tbl_dept_list">
                                         <thead>
                                         <tr>
                                             <th><?php echo $x->dept; ?></th>
@@ -129,12 +129,12 @@
                                 </div>
 <?php } else if ($chk_mode == 71) { // if mom is viewing, auto hide this part first, else don't hide ?>
                                         <h3>Summary</h3>
-                                        <table id="tbl_summary_mim" class="table table-bordered table-sm" style="width:450px">
+                                        <table id="tbl_summary_mim" class="table table-bordered table-sm tabletight">
                                             <tbody>
                                             </tbody>
                                         </table>
                                         <h3>List of Message</h3>
-                                        <table class="table table-bordered table-striped table-sm" id="tbl_msg_list_mim" width="100%">
+                                        <table class="table table-bordered table-striped table-sm" id="tbl_msg_list_mim">
                                             <thead>
                                             <tr>
                                                 <th><?php echo $x->date_time; ?></th>

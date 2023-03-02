@@ -22,6 +22,20 @@ $('#datefrom, #dateto').datepicker({
 	// mom, need check permission
 	if (isset($_GET["view"]) && $_GET["view"] == "alldepts") {
 echo <<< END
+pdfMake.fonts = {
+    OpenSans : {
+        normal: 'OpenSans-Regular.ttf',
+        bold: 'OpenSans-Bold.ttf',
+        italics: 'OpenSans-Italic.ttf',
+        bolditalics: 'OpenSans-BoldItalic.ttf'
+    },
+    Simsum : {
+        normal: 'SIMSUN-regular.ttf',
+        bold: 'SIMSUN-regular.ttf',
+        italics: 'SIMSUN-regular.ttf',
+        bolditalics: 'SIMSUN-regular.ttf'
+    }
+}
 var table = $('#tbl_dept_summary').DataTable({
 	deferRender: false,
 	stateSave: false,
@@ -98,6 +112,7 @@ new $.fn.dataTable.Buttons( table, {
 			$(node).addClass("btn btn-danger btn-sm");
 		},filename:function() {return returnFilename()},orientation:'landscape',charset: 'utf-8', 
 		customize: function(doc) {
+			doc.defaultStyle.font = 'OpenSans';
 		}}
 ]});
 table.buttons().container().prependTo('#export');
@@ -112,6 +127,20 @@ END;
 			echo "$('#txtdeptname').text('{$row[0]} ');$('#txtdeptname_mim').text('{$row[0]} ');\n\n";
 		}
 echo <<< END
+pdfMake.fonts = {
+    OpenSans : {
+        normal: 'OpenSans-Regular.ttf',
+        bold: 'OpenSans-Bold.ttf',
+        italics: 'OpenSans-Italic.ttf',
+        bolditalics: 'OpenSans-BoldItalic.ttf'
+    },
+    Simsum : {
+        normal: 'SIMSUN-regular.ttf',
+        bold: 'SIMSUN-regular.ttf',
+        italics: 'SIMSUN-regular.ttf',
+        bolditalics: 'SIMSUN-regular.ttf'
+    }
+}
 function produceSummary() {
 	$.ajax({
 		cache: false,
@@ -181,6 +210,7 @@ new $.fn.dataTable.Buttons( table, {
 			$(node).addClass("btn btn-danger btn-sm");
 		},  filename:function(){return returnFilename()},orientation:'landscape',
 		customize: function(doc) {
+			doc.defaultStyle.font = 'OpenSans';
 		}}
 ]});
 table.buttons().container().prependTo('#export');
@@ -199,6 +229,7 @@ new $.fn.dataTable.Buttons( table_mim, {
 			$(node).addClass("btn btn-danger btn-sm");
 		},  filename:function(){return returnFilename()},orientation:'landscape',
 		customize: function(doc) {
+			doc.defaultStyle.font = 'OpenSans';
 		}}
 ]});
 table_mim.buttons().container().prependTo('#export_mim');
@@ -333,6 +364,20 @@ function mm(picfile,title) {
 	return " <i class='fa fa-question-circle' title='Unknown'></i>";
 }
 
+pdfMake.fonts = {
+    OpenSans : {
+        normal: 'OpenSans-Regular.ttf',
+        bold: 'OpenSans-Bold.ttf',
+        italics: 'OpenSans-Italic.ttf',
+        bolditalics: 'OpenSans-BoldItalic.ttf'
+    },
+    Simsum : {
+        normal: 'SIMSUN-regular.ttf',
+        bold: 'SIMSUN-regular.ttf',
+        italics: 'SIMSUN-regular.ttf',
+        bolditalics: 'SIMSUN-regular.ttf'
+    }
+}
 
 var table = $('#tbl_msg_list').DataTable({
 	autoWidth: false,
@@ -405,6 +450,7 @@ new $.fn.dataTable.Buttons( table, {
 			extend:'pdf', text: '<i class="fa fa-file-pdf-o"></i> {$xml_common->export} PDF',
 			exportOptions: {columns: [ 0, 1, 2, 3, 4, 5 ], orthogonal: "exportpdf" },
 			customize: function(doc) {
+				doc.defaultStyle.font = 'Simsum';
 			},
 			filename: function() {return returnFilename();},
 			init: function(api,node,config) {
@@ -488,6 +534,7 @@ new $.fn.dataTable.Buttons( table_mim, {
 			$(node).addClass("btn btn-danger btn-sm");
 		},text: '<i class="fa fa-file-pdf-o"></i> {$xml_common->export} PDF', exportOptions: {columns: [ 0, 1, 2, 3, 4, 5 ], orthogonal: "exportpdf" }, 
 		customize: function(doc) {
+			doc.defaultStyle.font = 'Simsum';
 		}, filename: function() {return returnFilename();}, charset: 'utf-8',title:function() {
 			return "$user Report ("+$('#datefrom').val() + " - " + $('#dateto').val()+")";
 		}}
