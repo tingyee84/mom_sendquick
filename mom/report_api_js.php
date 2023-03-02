@@ -71,7 +71,20 @@ function produceSummary_mim() {
 		}
 	});
 }
-
+pdfMake.fonts = {
+    OpenSans : {
+        normal: 'OpenSans-Regular.ttf',
+        bold: 'OpenSans-Bold.ttf',
+        italics: 'OpenSans-Italic.ttf',
+        bolditalics: 'OpenSans-BoldItalic.ttf'
+    },
+    Simsum : {
+        normal: 'SIMSUN-regular.ttf',
+        bold: 'SIMSUN-regular.ttf',
+        italics: 'SIMSUN-regular.ttf',
+        bolditalics: 'SIMSUN-regular.ttf'
+    }
+}
 var table = $('#tbl_msg_list').DataTable({
 	autoWidth: false,
 	deferRender: false,
