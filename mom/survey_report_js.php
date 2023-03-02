@@ -95,7 +95,20 @@ $('#from, #to').on("changeDate",function(ev){
 });
 
 <?php } else { ?>
-
+pdfMake.fonts = {
+    OpenSans : {
+        normal: 'OpenSans-Regular.ttf',
+        bold: 'OpenSans-Bold.ttf',
+        italics: 'OpenSans-Italic.ttf',
+        bolditalics: 'OpenSans-BoldItalic.ttf'
+    },
+    Simsum : {
+        normal: 'SIMSUN-regular.ttf',
+        bold: 'SIMSUN-regular.ttf',
+        italics: 'SIMSUN-regular.ttf',
+        bolditalics: 'SIMSUN-regular.ttf'
+    }
+}
 
 var table = $('#tbl_campaign_list').DataTable({
     deferRender: false,
