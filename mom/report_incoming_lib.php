@@ -15,7 +15,14 @@ function sqldaterange($datefrom,$dateto) {
 
     return "received_dtm >= '$datefrom' and received_dtm <= '$dateto'";
 }
-
+function str_to_html($str) 
+{
+    if (mb_detect_encoding(utf8_decode($str))==='UTF-8') {
+		$str = utf8_decode($str);
+	} 
+	
+	return htmlentities($str, ENT_SUBSTITUTE, "UTF-8");
+}
 switch($mode) {
     case "summary":
         $datefrom = isset($_REQUEST["datefrom"]) ? filter_input(INPUT_POST,'datefrom') : date("d/m/Y",mktime(0,0,0,date("m"),1,date("Y")));
@@ -66,7 +73,7 @@ switch($mode) {
                     array_push($data,Array(
                         "datetime" => $row[3],
                         "mobile_numb" => $row[1],
-                        "message" => $row[2],
+                        "message" => str_to_html($row[2]),
                         "keyword"=> $row[4]
                     ));
                 }
@@ -83,7 +90,7 @@ switch($mode) {
                     array_push($data,Array(
                         "datetime" => $row[3],
                         "mobile_numb" => $row[1],
-                        "message" => $row[2],
+                        "message" => str_to_html($row[2]),
                         "dept"=> $row[5],
                         "keyword"=> $row[4]
                     ));
