@@ -151,6 +151,7 @@ new $.fn.dataTable.Buttons( table, {
 			extend:'pdf', text: '<i class="fa fa-file-pdf-o"></i> <?php echo $xml_common->export.' PDF'; ?>',
 			exportOptions: {orthogonal: "exportpdf" },
 			customize: function(doc) {
+				doc.defaultStyle.font = 'Simsum';
 			},
 			filename: function () {return returnFilename();},
 			init: function(api,node,config) {
@@ -228,6 +229,7 @@ new $.fn.dataTable.Buttons( table_mim, {
 			extend:'pdf', text: '<i class="fa fa-file-pdf-o"></i> <?php echo $xml_common->export.' PDF'; ?>',
 			exportOptions: {orthogonal: "exportpdf" },
 			customize: function(doc) {
+				doc.defaultStyle.font = 'Simsum';
 			},
 			filename: function () {return returnFilename_mim();},
 			init: function(api,node,config) {

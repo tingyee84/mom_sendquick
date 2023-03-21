@@ -147,6 +147,7 @@ new $.fn.dataTable.Buttons( table, {
 		},filename:function() {return returnFilename();},charset: 'utf-8'},
 		{extend:'pdf', text: '<i class="fa fa-file-pdf-o"></i> <?php echo $xml_common->export; ?> PDF', exportOptions: {orthogonal: "exportpdf" }, 
 		customize: function(doc) {
+			doc.defaultStyle.font = 'Simsum';
 		},  init: function(api,node,config) {
 			$(node).removeClass("dt-button buttons-csv buttons-html5");
 			$(node).addClass("btn btn-danger btn-sm");
